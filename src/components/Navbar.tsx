@@ -74,7 +74,7 @@ const Navbar = () => {
 							/>
 						</Link>
 
-						<Link
+						{/* <Link
 							className="my-1 text-md font-medium text-gray-700 dark:text-gray-200 hover:text-fuchsia-500 dark:hover:text-fuchsia-400  md:mx-4 md:my-0 relative"
 							to="/latest"
 						>
@@ -86,20 +86,20 @@ const Navbar = () => {
 										: "hidden"
 								}
 							/>
-						</Link>
-						<Link
+						</Link> */}
+						{/* <Link
 							className="my-1 text-md font-medium text-gray-700 dark:text-gray-200 hover:text-fuchsia-500 dark:hover:text-fuchsia-400  md:mx-4 md:my-0 relative"
-							to="/news"
+							to="/search"
 						>
 							Fantasy News
 							<span
 								className={
-									loc.pathname === "/news"
+									loc.pathname.includes("/search")
 										? "absolute bottom-0 left-0 w-full h-1 -mb-2 bg-fuchsia-300 rounded-full"
 										: "hidden"
 								}
 							/>
-						</Link>
+						</Link> */}
 						<Link
 							className="my-1 text-md font-medium text-gray-700 dark:text-gray-200 hover:text-fuchsia-500 dark:hover:text-fuchsia-400  md:mx-4 md:my-0 relative"
 							to="/explore"
@@ -108,6 +108,19 @@ const Navbar = () => {
 							<span
 								className={
 									loc.pathname === "/explore"
+										? "absolute bottom-0 left-0 w-full h-1 -mb-2 bg-fuchsia-300 rounded-full"
+										: "hidden"
+								}
+							/>
+						</Link>
+						<Link
+							className="my-1 text-md font-medium text-gray-700 dark:text-gray-200 hover:text-fuchsia-500 dark:hover:text-fuchsia-400  md:mx-4 md:my-0 relative"
+							to="/contribute"
+						>
+							Contribute
+							<span
+								className={
+									loc.pathname === "/contribute"
 										? "absolute bottom-0 left-0 w-full h-1 -mb-2 bg-fuchsia-300 rounded-full"
 										: "hidden"
 								}

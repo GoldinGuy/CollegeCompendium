@@ -6,4 +6,6 @@ export interface Class {
 	url: string;
 	desc: string;
 	thumb: string;
+	tags: string[];
+	source_thumb: string;
 }

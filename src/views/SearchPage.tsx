@@ -2,7 +2,7 @@ import React from "react";
 import Classes from "../components/Classes";
 import CLASSES from "../data/class_data.json";
 
-const NewsPage = () => {
+const SearchPage = () => {
 	return (
 		<Classes
 			classes={CLASSES}
@@ -12,4 +12,4 @@ const NewsPage = () => {
 		/>
 	);
 };
-export default NewsPage;
+export default SearchPage;
