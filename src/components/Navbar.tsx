@@ -2,12 +2,26 @@ import { Link, useLocation } from "react-router-dom";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SearchBar from "./searchbar";
 
 const Navbar = () => {
 	const loc = useLocation();
 
 	const [mobileOpen, setMobileOpen] = useState(false);
 	const [currentPath, setPath] = useState(loc.pathname);
+
+	var custom: string[] = [];
+	var enabled: string[] = [];
+	const [tags, setTags] = useState({
+		custom,
+		enabled,
+		disabled: [""]
+	});
+
+	const addFilter = (tag: string) => {
+		tags.custom.push(tag);
+		setTags({ ...tags });
+	};
 
 	useEffect(() => {
 		if (loc.pathname !== currentPath) {
@@ -126,13 +140,14 @@ const Navbar = () => {
 								}
 							/>
 						</Link>
-						<a
-							className="my-1 text-lg font-extrabold congress text-fuchsia-400 hover:text-fuchsia-500  md:mx-4 md:my-0 inline sm:hidden lg:inline"
+						<SearchBar addFilter={addFilter} />
+						{/* <a
+							className="my-1 text-lg font-extrabold congress text-fuchsia-400 hover:text-fuchsia-500 md:mx-6 md:my-0 inline sm:hidden lg:inline"
 							href="https://twitter.com/DanielBfuchsia-500"
 						>
 							<FontAwesomeIcon icon={faTwitter} className="mr-1" />
 							@YakClasses
-						</a>
+						</a> */}
 					</div>
 				</div>
 			</div>

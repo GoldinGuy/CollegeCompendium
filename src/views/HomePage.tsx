@@ -51,7 +51,7 @@ const HomePage = () => {
 							className="inline-flex items-center justify-center w-full text-white font-semibold mb-2 bg-fuchsia-400 hover:bg-fuchsia-500 px-4 py-2 rounded-lg btn btn-light btn-lg sm:w-auto sm:mb-0 transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
 							to="/explore"
 						>
-							Explore Our Archives
+							Contribute To YakClasses
 							<FontAwesomeIcon icon={faMap} className="ml-2" />
 						</Link>
 					</div>
@@ -160,7 +160,7 @@ const HomePage = () => {
 							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 rounded-lg px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 "
 						>
 							Start Learning
-							<FontAwesomeIcon icon={faLaptop} className="ml-2" />
+							<FontAwesomeIcon icon={faArrowCircleRight} className="ml-2" />
 						</Link>
 					</div>
 					<div className=" bg-gradient-to-r from-fuchsia-400  to-blue-500 rounded-lg ">
@@ -222,36 +222,47 @@ const HomePage = () => {
 						</p>
 						<div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
 							<p>
-								<span className="block text-2xl font-bold text-white">8K+</span>
-								<span className="mt-1 block text-base text-gray-300">
-									<span className="font-medium text-white">Companies</span> use
-									laoreet amet lacus nibh integer quis.
-								</span>
-							</p>
-							<p>
-								<span className="block text-2xl font-bold text-white">
-									100+
-								</span>
-								<span className="mt-1 block text-base text-gray-300">
-									<span className="font-medium text-white">Classes listed</span>{" "}
-									on YakClasses
-								</span>
-							</p>
-							<p>
-								<span className="block text-2xl font-bold text-white">98%</span>
-								<span className="mt-1 block text-base text-gray-300">
-									<span className="font-medium text-white">5000+</span> students
-									served
-								</span>
-							</p>
-							<p>
 								<span className="block text-2xl font-bold text-white">
 									$50000+
 								</span>
 								<span className="mt-1 block text-base text-gray-300">
-									<span className="font-medium text-white">Annual cost </span>of
-									attending the universities that offer Classes on College Comp
-									Sci
+									<span className="font-medium text-white">
+										Annual cost of attending{" "}
+									</span>
+									the universities with listed classes
+								</span>
+							</p>
+							<p>
+								<span className="block text-2xl font-bold text-white">
+									1000+
+								</span>
+								<span className="mt-1 block text-base text-gray-300">
+									<span className="font-medium text-white">
+										Computer science classes compiled
+									</span>{" "}
+									and listed on YakClasses
+								</span>
+							</p>
+							<p>
+								<span className="block text-2xl font-bold text-white">
+									10000+
+								</span>
+								<span className="mt-1 block text-base text-gray-300">
+									<span className="font-medium text-white">
+										Hours of computer science
+									</span>{" "}
+									content to learn on YakClasses
+								</span>
+							</p>
+							<p>
+								<span className="block text-2xl font-bold text-white">
+									100%
+								</span>
+								<span className="mt-1 block text-base text-gray-300">
+									<span className="font-medium text-white">
+										Free & open-source for everyone
+									</span>{" "}
+									looking to learn computer science
 								</span>
 							</p>
 						</div>
@@ -273,6 +284,7 @@ const HomePage = () => {
 							className="flex items-center justify-center px-4 py-3  text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-fuchsia-400 to-fuchsia-500 hover:from-fuchsia-500 hover:to-fuchsia-600"
 						>
 							Get Started
+							<FontAwesomeIcon icon={faArrowCircleRight} className="ml-2" />
 						</Link>
 						<Link
 							to="/about"
