@@ -43,12 +43,12 @@ const ClassGallery = ({ classes }: { classes: Class[] }) => {
 		>
 			{classes?.slice(0, 9).map(Class => {
 				return (
-					<div className="group hover:scale-105 rounded shadow-lg hover:shadow-xl">
-						<a href={Class.url}>
+					<div className="group hover:scale-105 rounded shadow-lg hover:shadow-xl transition duration-500 ease-in-out transform hover:scale-105 ">
+						<a href={Class.url} target="_blank" rel="noreferrer">
 							<div className="relative mb-3">
 								<img
 									src={Class.thumb}
-									className="object-cover w-full h-56 bg-center rounded-t transition duration-500 ease-in-out transform group-hover:bg-fuchsia-500 group-hover:opacity-80 z-0 "
+									className="object-cover w-full h-56 bg-center rounded-t group-hover:bg-fuchsia-500 group-hover:opacity-80 z-0 "
 									alt="Thumbnail"
 									loading="lazy"
 								/>
@@ -60,21 +60,23 @@ const ClassGallery = ({ classes }: { classes: Class[] }) => {
 											className="rounded-full"
 										/>
 									</div>
-									<div className="ml-2 text-sm">
+									{/* <div className="ml-2 text-sm">
 										<p className="font-semibold">{Class.source}</p>
 										<p className="">{Class.year}</p>
-									</div>
+									</div> */}
 								</span>
 							</div>
 
 							<div className="p-3">
-								{/* <p className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase">
+								<p className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase">
 									{Class.source} | {Class.year}
-								</p> */}
+								</p>
 
 								<h2 className="mb-2 text-xl font-bold leading-snug text-gray-900">
 									<a
 										href={Class.url}
+										target="_blank"
+										rel="noreferrer"
 										className="text-gray-900 group-hover:text-fuchsia-500"
 									>
 										{Class.title}
