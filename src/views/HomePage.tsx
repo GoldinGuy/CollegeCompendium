@@ -203,21 +203,17 @@ const HomePage = () => {
 				<div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
 					<div className="text-left">
 						<h2 className="mb-4 text-2xl congress font-extrabold tracking-tight text-black md:leading-tight text-left md:text-4xl">
-							Help, help, I'm being repressed! Oh! Come and see the violence
-							inherent in the system! Help
+							We complement your CS journey by cataloging courses across topics
+							and experience levels
 						</h2>
 						<p className="mb-8 text-base  text-gray-600 text-left md:text-lg">
-							Well, I didn't vote for you. Did you dress her up like this? …Are
-							you suggesting that coconuts migrate? Well, we did do the nose.
-							Well, I didn't vote for you. You don't frighten us, English
-							pig-dogs! Go and boil your bottoms, sons of a silly person! I blow
-							my nose at you, so-called Ah-thoor Keeng, you and all your silly
-							English K-n-n-n-n-n-n-n-niggits! Well, we did do the nose. He
-							hasn't got shit all over him. Ni! Ni! Ni! Ni! The nose? Now, look
-							here, my good man. Shut up! Knights of Ni, we are but simple
-							travelers who seek the enchanter who lives beyond these woods.
-							Well, what do you want? Oh! Come and see the violence inherent in
-							the system!
+							College Compendium serves a single purpose: we help you find your
+							next Computer Science resource or curriculum. Regardless of where
+							you are in your journey, we provide a catalog of courses that are
+							relevant to your skill-level, time-commitment, and learning style.
+							At College Compendium, we pride ourselves in giving users the
+							tools to try, fail, and try again. With hundreds of courses (and
+							growing), you will never hit a dead end.
 						</p>
 						<Link
 							to="/news"
