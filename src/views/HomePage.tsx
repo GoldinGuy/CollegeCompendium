@@ -21,16 +21,16 @@ const HomePage = () => {
 			<section className="px-4 py-16 sm:pb-20 sm:pt-15 mx-auto max-w-7xl">
 				<div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
 					<h1 className="mb-6 congress text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
-						Computer Science
+						Audit Over 650 CS Classes
 						<br />
 						<span className="block w-full text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-blue-500 lg:inline">
-							Learn For Free
+							From Top Universities
 						</span>
 					</h1>
 					<p className="px-0 mb-6 text-lg text-gray-600 md:text-xl lg:px-24">
 						Learn at your own pace with our curated collection of <br />
 						<strong>
-							free computer science classes from top colleges across America
+							free Computer Science classes from top colleges across America
 						</strong>
 					</p>
 					<div className="mb-4 space-x-0 md:space-x-2 md:mb-6">
@@ -205,47 +205,47 @@ const HomePage = () => {
 							</span>
 						</h2>
 						<p className="mt-3 text-3xl font-extrabold text-white">
-							Computer Scientists Improve Our World. You Can Too
+							Computer Scientists Improve Our World. You Can Too!
 						</p>
 						<p className="mt-5 text-lg text-gray-300">
-							Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing
-							quis in viverra tristique sem. Ornare feugiat viverra eleifend
-							fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus
-							laoreet amet lacus nibh integer quis. Eu vulputate diam sit tellus
-							quis at.
+							Startup founder, CS student, data enthusiast, or first-time coder.
+							Our compilation of courses spans hundreds of classes across dozens
+							of domains, ranging from introductory courses to Graduate-Level
+							Seminars. Topics include: Algorithms, Data Science, Data
+							Structures, Systems, Quantum Computing, Cryptography,
+							Cybersecurity, Application Development, Video Game Design,
+							Software Engineering, and much more!
 						</p>
 						<div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
 							<p>
 								<span className="block text-2xl font-bold text-white">
-									$50000+
+									$68,800
 								</span>
 								<span className="mt-1 block text-base text-gray-300">
 									<span className="font-medium text-white">
 										Annual cost of attending{" "}
 									</span>
-									the universities with listed classes
+									a university with a top CS curriculum
 								</span>
 							</p>
 							<p>
-								<span className="block text-2xl font-bold text-white">
-									1000+
-								</span>
+								<span className="block text-2xl font-bold text-white">675</span>
 								<span className="mt-1 block text-base text-gray-300">
 									<span className="font-medium text-white">
 										Computer science classes compiled
 									</span>{" "}
-									and listed on YakClasses
+									and listed on College Compendium
 								</span>
 							</p>
 							<p>
 								<span className="block text-2xl font-bold text-white">
-									10000+
+									125,000+
 								</span>
 								<span className="mt-1 block text-base text-gray-300">
 									<span className="font-medium text-white">
-										Hours of computer science
+										Hours of Computer Science
 									</span>{" "}
-									content to learn on YakClasses
+									content to learn on College Compendium
 								</span>
 							</p>
 							<p>
@@ -256,7 +256,7 @@ const HomePage = () => {
 									<span className="font-medium text-white">
 										Free & open-source for everyone
 									</span>{" "}
-									looking to learn computer science
+									looking to learn Computer Science
 								</span>
 							</p>
 						</div>
