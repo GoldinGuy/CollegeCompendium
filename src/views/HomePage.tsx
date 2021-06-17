@@ -22,13 +22,14 @@ const HomePage = () => {
 				<div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
 					<h1 className="mb-6 congress text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
 						Audit Over 650 CS Classes
-						<br />
+						<br className="hidden sm:flex" />
 						<span className="block w-full text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-blue-500 lg:inline">
 							From Top Universities
 						</span>
 					</h1>
 					<p className="px-0 mb-6 text-lg text-gray-600 md:text-xl lg:px-24">
-						Learn at your own pace with our curated collection of <br />
+						Learn at your own pace with our curated collection of{" "}
+						<br className="hidden sm:flex" />
 						<strong>
 							free Computer Science classes from top colleges across America
 						</strong>
@@ -50,7 +51,75 @@ const HomePage = () => {
 						</Link>
 					</div>
 				</div>
-				<div className="w-full mx-auto mt-8 sm:mt-16 text-center md:w-10/12 bg-gradient-to-r from-fuchsia-400  to-blue-500 rounded-lg">
+
+				<section className="px-4 py-12 mx-auto max-w-7xl">
+					{/* <h1 className="mb-12 text-sm font-bold tracking-wide text-center text-gray-800 uppercase">
+					CS Classes From America's Top Universities
+				</h1> */}
+					<div className="grid grid-cols-2 gap-10  text-center lg:grid-cols-8 filter grayscale brightness-90">
+						<div className="flex items-center justify-center">
+							<img
+								src={CarnegieLogo}
+								alt="Carnegie Mellon"
+								className="block object-contain h-12"
+							/>
+						</div>
+						<div className="flex items-center justify-center">
+							<img
+								src={MITLogo}
+								alt="MIT"
+								className="block object-contain h-12"
+							/>
+						</div>
+
+						<div className="flex items-center justify-center">
+							<img
+								src={HarvardLogo}
+								alt="Harvard"
+								className="block object-contain h-12"
+							/>
+						</div>
+						<div className="flex items-center justify-center">
+							<img
+								src={StanfordLogo}
+								alt="Stanford"
+								className="block object-contain h-12"
+							/>
+						</div>
+
+						<div className="flex items-center justify-center">
+							<img
+								src={CalTechLogo}
+								alt="Cal Tech"
+								className="block object-contain h-12"
+							/>
+						</div>
+						<div className="flex items-center justify-center">
+							<img
+								src={PennLogo}
+								alt="Penn"
+								className="block object-contain h-12"
+							/>
+						</div>
+
+						<div className="flex items-center justify-center">
+							<img
+								src={BerkeleyLogo}
+								alt="Berkeley"
+								className="block object-contain h-12"
+							/>
+						</div>
+						<div className="flex items-center justify-center">
+							<img
+								src={DartmouthLogo}
+								alt="Dartmouth"
+								className="block object-contain h-12"
+							/>
+						</div>
+					</div>
+				</section>
+
+				<div className="w-full mx-auto mt-8 text-center md:w-10/12 bg-gradient-to-r from-fuchsia-400  to-blue-500 rounded-lg">
 					<img
 						src="https://user-images.githubusercontent.com/47064842/121788823-80234b00-cb9e-11eb-82c0-927759e0dba6.png"
 						// src="https://user-images.githubusercontent.com/47064842/121788773-04290300-cb9e-11eb-8e5e-95fa321e18db.png"
@@ -61,10 +130,7 @@ const HomePage = () => {
 			</section>
 
 			{/* College Logos  */}
-			<section className="px-4 py-12 mx-auto max-w-7xl">
-				{/* <h1 className="mb-12 text-sm font-bold tracking-wide text-center text-gray-800 uppercase">
-					CS Classes From America's Top Universities
-				</h1> */}
+			{/*TODO: <section className="px-4 py-12 mx-auto max-w-7xl">
 				<div className="grid grid-cols-2 gap-10 text-center lg:grid-cols-8 filter saturate-200 drop-shadow-lg contrast-125">
 					<div className="flex items-center justify-center">
 						<img
@@ -126,7 +192,7 @@ const HomePage = () => {
 						/>
 					</div>
 				</div>
-			</section>
+			</section> */}
 
 			{/* about  */}
 			<section className="px-4 pt-20 pb-10 mx-auto max-w-7xl">
