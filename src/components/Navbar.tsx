@@ -35,7 +35,7 @@ const Navbar = () => {
 							className="text-2xl font-extrabold congress text-gray-800 dark:text-white md:text-2xl hover:text-gray-700 dark:hover:text-gray-300 inline"
 							to="/"
 						>
-							YakClasses
+							College Compendium
 						</Link>
 					</div>
 					<div className="flex md:hidden">

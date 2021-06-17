@@ -2,7 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ClassGallery, CTA } from "../components";
 import CLASSES from "../data/class_data.json";
-import { faArrowCircleRight, faMap } from "@fortawesome/free-solid-svg-icons";
+import {
+	faArrowCircleRight,
+	faMap,
+	faPen
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import StanfordLogo from "../assets/schools/stanford.png";
@@ -46,8 +50,8 @@ const HomePage = () => {
 							className="inline-flex items-center justify-center w-full text-white font-semibold mb-2 bg-fuchsia-400 hover:bg-fuchsia-500 px-4 py-2 btn btn-light btn-lg sm:w-auto sm:mb-0 transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
 							to="/contribute"
 						>
-							Contribute To YakClasses
-							<FontAwesomeIcon icon={faMap} className="ml-2" />
+							Contribute To Compendium
+							<FontAwesomeIcon icon={faPen} className="ml-2" />
 						</Link>
 					</div>
 				</div>
