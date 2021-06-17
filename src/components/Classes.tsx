@@ -38,6 +38,7 @@ const Classes = ({
 					formatText(_class.title).includes(tag) ||
 					formatText(_class.source).includes(tag) ||
 					formatText(_class.url).includes(tag) ||
+					formatText(_class.year).includes(tag) ||
 					inTags
 				) {
 					return true;
@@ -62,6 +63,27 @@ const Classes = ({
 
 	return (
 		<>
+			<div className="container relative flex flex-col justify-between h-full max-w-6xl px-8 mx-auto xl:px-0">
+				<div className="relative flex items-center self-start w-auto mb-1 mt-2   font-black">
+					<h2
+						className="relative flex items-center self-start w-auto text-4xl font-black mr-4 "
+						key="header"
+					>
+						<span className="absolute inline-block w-full break-words h-4 mt-3 -ml-2 bg-gradient-to-r from-fuchsia-200 to-blue-300 " />
+						<span className="relative">
+							{filters?.map((tag, idx) => {
+								return (
+									<span>
+										{tag}
+										{!(idx === filters.length - 1) ? <span>,</span> : null}
+									</span>
+								);
+							})}
+						</span>
+					</h2>
+				</div>
+			</div>
+
 			{imgUrl ? (
 				<img
 					src={imgUrl}

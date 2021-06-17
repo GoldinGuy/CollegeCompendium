@@ -23,7 +23,7 @@ const SearchPage = () => {
 		<Classes
 			classes={CLASSES}
 			displayPromo={true}
-			filters={query.get("q")?.split(" ")}
+			filters={query.get("q")?.split("-")}
 		/>
 	);
 };

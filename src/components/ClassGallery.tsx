@@ -43,7 +43,7 @@ const ClassGallery = ({ classes }: { classes: Class[] }) => {
 		>
 			{classes?.slice(0, 9).map(Class => {
 				return (
-					<div className="group hover:scale-105 rounded shadow-lg hover:shadow-xl transition duration-500 ease-in-out transform hover:scale-105 ">
+					<div className="group rounded shadow-lg hover:shadow-xl transition duration-500 ease-in-out transform hover:scale-105 ">
 						<a href={Class.url} target="_blank" rel="noreferrer">
 							<div className="relative mb-3">
 								<img
