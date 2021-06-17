@@ -21,7 +21,7 @@ const CTA = () => {
 						<FontAwesomeIcon icon={faArrowCircleRight} className="ml-2" />
 					</Link>
 					<Link
-						to="/about"
+						to="/#about"
 						className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-800 bg-blue-50 hover:bg-blue-100"
 					>
 						Learn More

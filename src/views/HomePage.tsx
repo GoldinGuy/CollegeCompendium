@@ -20,7 +20,7 @@ import HarvardLogo from "../assets/schools/harvard.png";
 
 const HomePage = () => {
 	return (
-		<div className="overflow-x-hidden">
+		<div className="overflow-x-hidden" id="hero">
 			{/* hero  */}
 			<section className="px-4 py-16 sm:pb-20 sm:pt-15 mx-auto max-w-7xl">
 				<div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
@@ -56,7 +56,7 @@ const HomePage = () => {
 					</div>
 				</div>
 
-				<section className="px-4 py-12 mx-auto max-w-7xl">
+				<section className="px-4 py-12 mx-auto max-w-7xl" id="logos">
 					{/* <h1 className="mb-12 text-sm font-bold tracking-wide text-center text-gray-800 uppercase">
 					CS Classes From America's Top Universities
 				</h1> */}
@@ -199,7 +199,7 @@ const HomePage = () => {
 			</section> */}
 
 			{/* about  */}
-			<section className="px-4 pt-20 pb-10 mx-auto max-w-7xl">
+			<section className="px-4 pt-20 pb-10 mx-auto max-w-7xl" id="about">
 				<div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
 					<div className="text-left">
 						<h2 className="mb-4 text-2xl congress font-extrabold tracking-tight text-black md:leading-tight text-left md:text-4xl">
@@ -216,8 +216,8 @@ const HomePage = () => {
 							growing), you will never hit a dead end.
 						</p>
 						<Link
-							to="/news"
-							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 rounded-lg px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 "
+							to="/explore"
+							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 "
 						>
 							Start Learning
 							<FontAwesomeIcon icon={faArrowCircleRight} className="ml-2" />
@@ -234,7 +234,10 @@ const HomePage = () => {
 			</section>
 
 			{/* fav vids  */}
-			<section className=" mx-auto px-4 max-w-7xl lg:max-w-9xl mb-6  mr-6 md:mr-16 lg:mr-24">
+			<section
+				className=" mx-auto px-4 max-w-7xl lg:max-w-9xl mb-6  mr-6 md:mr-16 lg:mr-24"
+				id="featured"
+			>
 				<h2 className="mb-2 text-3xl congress font-extrabold leading-tight text-gray-900 ">
 					Featured Classes
 				</h2>
@@ -247,7 +250,7 @@ const HomePage = () => {
 			<ClassGallery classes={CLASSES} />
 
 			{/* Stats section */}
-			<div className="relative bg-gray-900 mt-20">
+			<div className="relative bg-gray-900 mt-20" id="stats">
 				<div className="h-80 absolute bottom-0 xl:inset-0 xl:h-full xl:w-full">
 					<div className="h-full w-full xl:grid xl:grid-cols-2">
 						<div className="h-full xl:relative xl:col-start-2">

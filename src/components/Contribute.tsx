@@ -75,7 +75,7 @@ const ContributeForm = () => {
 							className="mb-6 text-center text-3xl leading-9 font-extrabold text-dark"
 							key="signup"
 						>
-							Contribute More Classes To Our Compendium!
+							Contribute Classes To Our Compendium!
 						</h2>
 
 						<span
@@ -180,9 +180,9 @@ const ContributeForm = () => {
 				<button
 					type="submit"
 					onClick={handleSubmit}
-					className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-lg font-medium rounded-md text-white bg-fuchsia-500 hover:bg-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fuchsia-500 "
+					className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-lg font-medium rounded-md text-white bg-fuchsia-400 hover:bg-fuchsia-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
 				>
-					Register
+					Submit
 				</button>
 			</div>
 		</div>

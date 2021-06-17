@@ -10,7 +10,7 @@ const Footer = () => {
 				</p>
 				<span className="mb-0 text-xs text-left text-gray-600 md:mb-0 flex flex-col md:flex-row justify-between">
 					<p className="mb-2 md:mb-0 pr-6">
-						YakClasses is not affiliated with any colleges
+						College Compendium is not affiliated with any classes
 					</p>
 					<a
 						className="mb-2 md:mb-0 hover:underline pr-6"
