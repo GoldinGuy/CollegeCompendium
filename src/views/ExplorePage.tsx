@@ -5,7 +5,7 @@ const ExplorePage = () => {
 		<>
 			<section className="px-4 pb-24 pt-10 mx-auto max-w-7xl">
 				<h2 className="pb-8 mb-8 congress text-2xl font-extrabold leading-tight text-gray-900 md:text-4xl">
-					Explore the DanielVerse
+					Explore Classes
 				</h2>
 				<div className="w-full flex flex-col space-y-16">
 					<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

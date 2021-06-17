@@ -55,8 +55,9 @@ const ContributeForm = () => {
 				source: source,
 				desc: desc
 			};
-			// TODO: Actually send this info somewhere
 			console.log(payload);
+			// TODO: Actually send this info somewhere
+			setError(false);
 		} else {
 			setError(true);
 		}

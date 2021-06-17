@@ -10,19 +10,6 @@ const Navbar = () => {
 	const [mobileOpen, setMobileOpen] = useState(false);
 	const [currentPath, setPath] = useState(loc.pathname);
 
-	var custom: string[] = [];
-	var enabled: string[] = [];
-	const [tags, setTags] = useState({
-		custom,
-		enabled,
-		disabled: [""]
-	});
-
-	const addFilter = (tag: string) => {
-		tags.custom.push(tag);
-		setTags({ ...tags });
-	};
-
 	useEffect(() => {
 		if (loc.pathname !== currentPath) {
 			setPath(loc.pathname);
@@ -140,7 +127,7 @@ const Navbar = () => {
 								}
 							/>
 						</Link>
-						<SearchBar addFilter={addFilter} />
+						<SearchBar />
 						{/* <a
 							className="my-1 text-lg font-extrabold congress text-fuchsia-400 hover:text-fuchsia-500 md:mx-6 md:my-0 inline sm:hidden lg:inline"
 							href="https://twitter.com/DanielBfuchsia-500"

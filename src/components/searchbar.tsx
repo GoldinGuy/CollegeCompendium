@@ -1,7 +1,10 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
-const SearchBar = ({ addFilter }: { addFilter: Function }) => {
+const SearchBar = () => {
 	const [query, setQuery] = React.useState("");
+
+	const history = useHistory();
 
 	const inputKeyDown = async (e: any) => {
 		if (e.key === "Enter") {
@@ -16,7 +19,8 @@ const SearchBar = ({ addFilter }: { addFilter: Function }) => {
 		term = term.toLowerCase().trim().replaceAll(" ", "-");
 
 		if (term.length > 0) {
-			addFilter(term);
+			// TODO: addFilter(term);
+			history.push(`/search?${term}`);
 			setQuery("");
 		}
 	};

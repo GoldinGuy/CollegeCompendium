@@ -10,7 +10,7 @@ function App() {
 				<Navbar />
 				<Switch>
 					<Route path="/" exact component={HomePage} />
-					<Route path="/search:term" exact component={SearchPage} />
+					<Route path="/search" exact component={SearchPage} />
 					<Route path="/explore" exact component={ExplorePage} />
 					<Route path="/contribute" exact component={ContributePage} />
 				</Switch>

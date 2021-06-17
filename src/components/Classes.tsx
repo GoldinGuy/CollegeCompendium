@@ -30,7 +30,7 @@ const Classes = ({
 							<a href={classes[0].url} className="md:w-2/3 lg:w-1/2">
 								<img
 									src={classes[0].thumb}
-									className="object-cover sm:h-72 mb-5  bg-center rounded transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 hover:shadow-xl w-full"
+									className="object-cover sm:h-72 mb-5  bg-center  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 w-full"
 									alt="Thumbnail"
 									loading="lazy"
 								/>

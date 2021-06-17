@@ -36,14 +36,14 @@ const HomePage = () => {
 					<div className="mb-4 space-x-0 md:space-x-2 md:mb-6">
 						<Link
 							className="inline-flex items-center justify-center w-full mb-2 text-white font-semibold btn btn-primary bg-fuchsia-400 hover:bg-fuchsia-500 px-4 py-2 btn-lg sm:w-auto sm:mb-0 transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 mr-2"
-							to="/latest"
+							to="/explore"
 						>
 							Find A Class
 							<FontAwesomeIcon icon={faArrowCircleRight} className="ml-2" />
 						</Link>
 						<Link
 							className="inline-flex items-center justify-center w-full text-white font-semibold mb-2 bg-fuchsia-400 hover:bg-fuchsia-500 px-4 py-2 btn btn-light btn-lg sm:w-auto sm:mb-0 transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
-							to="/explore"
+							to="/contribute"
 						>
 							Contribute To YakClasses
 							<FontAwesomeIcon icon={faMap} className="ml-2" />
