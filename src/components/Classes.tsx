@@ -1,4 +1,7 @@
+import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Class } from "../typings/interfaces";
 
 function shuffle(array: Class[]) {
@@ -75,7 +78,9 @@ const Classes = ({
 								return (
 									<span>
 										{tag}
-										{!(idx === filters.length - 1) ? <span>,</span> : null}
+										{!(idx === filters.length - 1) && !tag.endsWith(",") ? (
+											<span>,</span>
+										) : null}
 									</span>
 								);
 							})}
@@ -169,12 +174,19 @@ const Classes = ({
 						})}
 				</div>
 				{filteredClasses.length === 0 ? (
-					<div className="mx-auto py-20 px-4 sm:px-6 sm:py-18 lg:px-8 lg:flex lg:items-center lg:justify-between">
-						<h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+					<div className="mx-auto py-20 px-4 sm:px-6 sm:py-18 lg:px-8 text-center">
+						<h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-10">
 							<span className="block bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent">
 								No Classes Found
 							</span>
 						</h2>
+						<Link
+							to="/explore"
+							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400 hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
+						>
+							Find A Class
+							<FontAwesomeIcon icon={faArrowCircleRight} className="ml-2" />
+						</Link>
 					</div>
 				) : null}
 
