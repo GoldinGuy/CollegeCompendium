@@ -238,10 +238,10 @@ const HomePage = () => {
 				<h2 className="mb-2 text-3xl congress font-extrabold leading-tight text-gray-900 ">
 					Featured Classes
 				</h2>
-				<p className="mb-6 text-lg font-regular text-gray-500">
+				<p className="mb-6 text-lg font-regular italic font-semibold text-gray-500">
 					"Education is the most powerful weapon which you can use to change the
 					world."{" "}
-					<span className="text-sm text-fuchsia-400"> - Nelson Mandela </span>
+					<span className="text-base text-fuchsia-400"> - Nelson Mandela </span>
 				</p>
 			</section>
 			<ClassGallery classes={CLASSES} />
@@ -289,16 +289,16 @@ const HomePage = () => {
 								</span>
 								<span className="mt-1 block text-base text-gray-300">
 									<span className="font-medium text-white">
-										Annual cost of attending{" "}
+										Annual cost of attending a university{" "}
 									</span>
-									a university with a top CS curriculum
+									with a top CS curriculum
 								</span>
 							</p>
 							<p>
 								<span className="block text-2xl font-bold text-white">675</span>
 								<span className="mt-1 block text-base text-gray-300">
 									<span className="font-medium text-white">
-										Computer science classes compiled
+										Computer Science classes compiled
 									</span>{" "}
 									and listed on College Compendium
 								</span>
@@ -309,9 +309,9 @@ const HomePage = () => {
 								</span>
 								<span className="mt-1 block text-base text-gray-300">
 									<span className="font-medium text-white">
-										Hours of Computer Science
+										Hours of Computer Science content{" "}
 									</span>{" "}
-									content to learn on College Compendium
+									to learn on College Compendium
 								</span>
 							</p>
 							<p>
