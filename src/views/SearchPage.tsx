@@ -1,21 +1,34 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import Classes from "../components/Classes";
 import CLASSES from "../data/class_data.json";
 
 const SearchPage = () => {
-	var custom: string[] = [];
-	var enabled: string[] = [];
-	const [tags, setTags] = useState({
-		custom,
-		enabled,
-		disabled: [""]
-	});
+	let query = useQuery();
 
-	const addFilter = (tag: string) => {
-		tags.custom.push(tag);
-		setTags({ ...tags });
-	};
+	// var custom: string[] = [];
+	// var enabled: string[] = [];
+	// const [tags, setTags] = useState({
+	// 	custom,
+	// 	enabled,
+	// 	disabled: [""]
+	// });
 
-	return <Classes classes={CLASSES} displayLatestPromo={true} />;
+	// const addFilter = (tag: string) => {
+	// 	tags.custom.push(tag);
+	// 	setTags({ ...tags });
+	// };
+
+	return (
+		<Classes
+			classes={CLASSES}
+			displayPromo={true}
+			filters={query.get("q")?.split(" ")}
+		/>
+	);
 };
 export default SearchPage;
+
+function useQuery() {
+	return new URLSearchParams(useLocation().search);
+}

@@ -1,18 +1,64 @@
 import { useState } from "react";
 import { Class } from "../typings/interfaces";
 
+function shuffle(array: Class[]) {
+	for (let i = array.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[array[i], array[j]] = [array[j], array[i]];
+	}
+	return array;
+}
+
 const Classes = ({
 	imgUrl,
 	classes,
-	displayLatestPromo
+	displayPromo,
+	filters
 }: {
 	imgUrl?: string;
-	displayLatestPromo?: boolean;
+	displayPromo?: boolean;
 	classes: Class[];
+	filters?: string[];
 }) => {
+	const formatText = (text: string) => {
+		return text.toLowerCase().trim().replaceAll(" ", "-");
+	};
+
+	const checkFilters = (_class: Class) => {
+		if (filters) {
+			let included = false;
+			included = filters.some(tag => {
+				let inTags = _class.tags.some(cat => {
+					if (formatText(cat).includes(tag)) {
+						return true;
+					}
+					return false;
+				});
+				if (
+					formatText(_class.title).includes(tag) ||
+					formatText(_class.source).includes(tag) ||
+					formatText(_class.url).includes(tag) ||
+					inTags
+				) {
+					return true;
+				}
+				return false;
+			});
+
+			return included;
+		}
+		return true;
+	};
+
+	const filteredClasses = shuffle(classes).filter(course => {
+		return checkFilters(course);
+	});
+
 	const [page, setPageCount] = useState(0);
-	const startVid = displayLatestPromo ? 1 : 0;
-	const MAX_PAGES = Math.floor(classes.length / 12);
+	const startVid = displayPromo ? 1 : 0;
+	const MAX_PAGES = Math.floor(filteredClasses.length / 12);
+
+	console.log(filteredClasses, filters);
 
 	return (
 		<>
@@ -25,43 +71,43 @@ const Classes = ({
 			) : null}
 			<section className="w-full px-4 py-16 mx-auto max-w-7xl md:w-4/5">
 				<div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
-					{displayLatestPromo ? (
+					{displayPromo && filteredClasses[0] ? (
 						<div className="col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-3 text-center flex justify-center ">
-							<a href={classes[0].url} className="md:w-2/3 lg:w-1/2">
+							<a href={filteredClasses[0].url} className="md:w-2/3 lg:w-1/2">
 								<img
-									src={classes[0].thumb}
+									src={filteredClasses[0].thumb}
 									className="object-cover sm:h-72 mb-5  bg-center  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 w-full"
 									alt="Thumbnail"
 									loading="lazy"
 								/>
 
 								<p className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase">
-									{classes[0].source} | {classes[0].year}
+									{filteredClasses[0].source} | {filteredClasses[0].year}
 								</p>
 								<h2 className="mb-2 text-xl font-bold leading-snug text-gray-900">
-									<a
-										href={classes[0].url}
-										className="text-gray-900 hover:text-fuchsia-500-600 bg-fuchsia-200 px-2 py-1"
-									>
-										{classes[0].title}
-									</a>
+									<span className="text-gray-900 hover:text-fuchsia-500-600 bg-fuchsia-200 px-2 py-1">
+										{filteredClasses[0].title}
+									</span>
 								</h2>
 								<p className="mb-4 text-sm font-normal text-gray-600">
-									{classes[0].desc}
+									{filteredClasses[0].desc}
 								</p>
 							</a>
 						</div>
 					) : null}
 
-					{classes
+					{filteredClasses
 						.slice(page * 12 + startVid, page * 12 + 12 + startVid)
-						.map(Class => {
+						.map((_class, idx) => {
 							return (
-								<div className="group hover:scale-105 rounded shadow-lg hover:shadow-xl">
-									<a href={Class.url}>
+								<div
+									className="group hover:scale-105 rounded shadow-lg hover:shadow-xl"
+									key={_class.id + idx}
+								>
+									<a href={_class.url}>
 										<div className="relative mb-3">
 											<img
-												src={Class.thumb}
+												src={_class.thumb}
 												className="object-cover w-full h-56 bg-center rounded-t transition duration-500 ease-in-out transform group-hover:bg-fuchsia-500 group-hover:opacity-80 z-0 "
 												alt="Thumbnail"
 												loading="lazy"
@@ -69,7 +115,7 @@ const Classes = ({
 											<span className="flex items-center text-gray-50 z-10 absolute top-5 right-5">
 												<div className="h-10 w-10 ">
 													<img
-														src={Class.source_thumb}
+														src={_class.source_thumb}
 														alt="logo"
 														className="rounded-full"
 													/>
@@ -83,19 +129,16 @@ const Classes = ({
 
 										<div className="p-3">
 											<p className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase">
-												{Class.source} | {Class.year}
+												{_class.source} | {_class.year}
 											</p>
 
 											<h2 className="mb-2 text-xl font-bold leading-snug text-gray-900">
-												<a
-													href={Class.url}
-													className="text-gray-900 group-hover:text-fuchsia-500"
-												>
-													{Class.title}
-												</a>
+												<span className="text-gray-900 group-hover:text-fuchsia-500">
+													{_class.title}
+												</span>
 											</h2>
 											<p className="mb-4 text-sm font-normal text-gray-600">
-												{Class.desc}
+												{_class.desc}
 											</p>
 										</div>
 									</a>
@@ -103,6 +146,15 @@ const Classes = ({
 							);
 						})}
 				</div>
+				{filteredClasses.length === 0 ? (
+					<div className="mx-auto py-20 px-4 sm:px-6 sm:py-18 lg:px-8 lg:flex lg:items-center lg:justify-between">
+						<h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+							<span className="block bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent">
+								No Classes Found
+							</span>
+						</h2>
+					</div>
+				) : null}
 
 				<div className="flex flex-col items-center justify-center mt-20 space-x-0 space-y-2 md:space-x-2 md:space-y-0 md:flex-row">
 					{page > 0 ? (
