@@ -55,8 +55,25 @@ const ContributeForm = () => {
 				source: source,
 				desc: desc
 			};
-			console.log(payload);
-			// TODO: Actually send this info somewhere
+			// console.log(process.env.REACT_APP_CONTRIBUTE_API, payload);
+			if (process.env.REACT_APP_CONTRIBUTE_API) {
+				const request = new XMLHttpRequest();
+				request.open(
+					"PATCH",
+					"https://json.extendsclass.com/bin/fca7c6dc9444",
+					true
+				);
+				request.setRequestHeader(
+					"Content-type",
+					"application/merge-patch+json"
+				);
+				request.setRequestHeader(
+					"Security-key",
+					`${process.env.REACT_APP_CONTRIBUTE_API}`
+				);
+				request.onreadystatechange = () => {};
+				request.send(JSON.stringify(payload));
+			}
 			setError(false);
 		} else {
 			setError(true);

@@ -160,7 +160,7 @@ const HomePage = () => {
 					</div>
 					<div className=" bg-gradient-to-r from-fuchsia-400  to-blue-500 rounded-lg ">
 						<img
-							className="w-full bg-gray-200 rounded-lg object-cover object-center-top h-72 sm:h-full opacity-70 "
+							className="w-full bg-gray-200 rounded-lg object-cover object-center-top h-72 sm:h-full opacity-100 "
 							alt="info"
 							src="https://user-images.githubusercontent.com/47064842/122471339-28655500-cf8d-11eb-8928-2d8050ce5a57.png"
 							// src="https://user-images.githubusercontent.com/47064842/121788773-04290300-cb9e-11eb-8e5e-95fa321e18db.png"
