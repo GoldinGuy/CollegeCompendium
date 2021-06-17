@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SearchBar from "./SearchBar";
+import SearchBar from "./Search";
 
 const Navbar = () => {
 	const loc = useLocation();
@@ -27,7 +27,7 @@ const Navbar = () => {
 				<div className="flex items-center justify-between">
 					<div className="flex items-center">
 						<img
-							src="https://user-images.githubusercontent.com/47064842/115316437-5d992680-a147-11eb-85c2-5fb15ee95bc3.png"
+							src="https://user-images.githubusercontent.com/47064842/122337705-b1887780-cf0c-11eb-98dd-031cb15aed45.png"
 							alt="logo"
 							className="inline w-9 h-9 mr-4"
 						/>
