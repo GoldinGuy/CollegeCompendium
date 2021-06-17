@@ -1,6 +1,6 @@
 import HomePage from "./HomePage";
-import LatestPage from "./LatestPage";
 import SearchPage from "./SearchPage";
 import ExplorePage from "./ExplorePage";
+import ContributePage from "./ContributePage";
 
-export { HomePage, LatestPage, SearchPage, ExplorePage };
+export { HomePage, SearchPage, ExplorePage, ContributePage };

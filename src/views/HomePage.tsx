@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ClassGallery } from "../components";
+import { ClassGallery, CTA } from "../components";
 import CLASSES from "../data/class_data.json";
 import { faArrowCircleRight, faMap } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -35,14 +35,14 @@ const HomePage = () => {
 					</p>
 					<div className="mb-4 space-x-0 md:space-x-2 md:mb-6">
 						<Link
-							className="inline-flex items-center justify-center w-full mb-2 text-white font-semibold btn btn-primary bg-fuchsia-400 hover:bg-fuchsia-500 px-4 py-2 rounded-lg btn-lg sm:w-auto sm:mb-0 transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 mr-2"
+							className="inline-flex items-center justify-center w-full mb-2 text-white font-semibold btn btn-primary bg-fuchsia-400 hover:bg-fuchsia-500 px-4 py-2 btn-lg sm:w-auto sm:mb-0 transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 mr-2"
 							to="/latest"
 						>
 							Find A Class
 							<FontAwesomeIcon icon={faArrowCircleRight} className="ml-2" />
 						</Link>
 						<Link
-							className="inline-flex items-center justify-center w-full text-white font-semibold mb-2 bg-fuchsia-400 hover:bg-fuchsia-500 px-4 py-2 rounded-lg btn btn-light btn-lg sm:w-auto sm:mb-0 transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
+							className="inline-flex items-center justify-center w-full text-white font-semibold mb-2 bg-fuchsia-400 hover:bg-fuchsia-500 px-4 py-2 btn btn-light btn-lg sm:w-auto sm:mb-0 transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
 							to="/explore"
 						>
 							Contribute To YakClasses
@@ -263,32 +263,7 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
-			{/* CTA  */}
-			<div className="bg-white">
-				<div className="max-w-4xl mx-auto py-20 px-4 sm:px-6 sm:py-18 lg:max-w-7xl lg:px-8 lg:flex lg:items-center lg:justify-between">
-					<h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-						<span className="block">Ready to learn some Computer Science?</span>
-						<span className="block bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent">
-							Explore our collection of classes!
-						</span>
-					</h2>
-					<div className="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
-						<Link
-							to="/explore"
-							className="flex items-center justify-center px-4 py-3  text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-fuchsia-400 to-fuchsia-500 hover:from-fuchsia-500 hover:to-fuchsia-600"
-						>
-							Get Started
-							<FontAwesomeIcon icon={faArrowCircleRight} className="ml-2" />
-						</Link>
-						<Link
-							to="/about"
-							className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-800 bg-blue-50 hover:bg-blue-100"
-						>
-							Learn More
-						</Link>
-					</div>
-				</div>
-			</div>
+			<CTA />
 		</div>
 	);
 };

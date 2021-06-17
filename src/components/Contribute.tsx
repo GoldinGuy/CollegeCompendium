@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 
 const ContributeForm = () => {
 	const [courseTitle, setCourseTitle] = useState("");
-	const [email, setEmail] = useState("");
-	const [numKids, setNumKids] = useState(1);
+	const [url, setUrl] = useState("");
+	const [source, setSource] = useState("");
+	const [desc, setDesc] = useState("");
 	const [isError, setError] = useState(false);
 
 	const titleCase = (str: string): string => {
@@ -22,29 +23,37 @@ const ContributeForm = () => {
 		setCourseTitle(newTitle);
 	};
 
-	const handleChangeInputEmail = async (
+	const handleChangeInputUrl = async (
 		event: React.ChangeEvent<HTMLInputElement>
 	): Promise<void> => {
-		const newEmail = event.target.value;
-		setEmail(newEmail);
+		const newUrl = event.target.value;
+		setUrl(newUrl);
 	};
 
-	const handleChangeInputNumKids = async (
+	const handleChangeInputSource = async (
 		event: React.ChangeEvent<HTMLInputElement>
 	): Promise<void> => {
-		const newNumKids = parseInt(event.target.value);
-		setNumKids(newNumKids);
+		const newSource = event.target.value;
+		setSource(newSource);
+	};
+
+	const handleChangeInputDesc = async (
+		event: React.ChangeEvent<HTMLTextAreaElement>
+	): Promise<void> => {
+		const newDesc = event.target.value;
+		setDesc(newDesc);
 	};
 
 	const handleSubmit = async (
 		event: React.FormEvent<HTMLButtonElement>
 	): Promise<void> => {
 		event.preventDefault();
-		if (courseTitle.length > 0 && email.length > 0 && numKids > 0) {
+		if (courseTitle.length > 0 && url.length > 0 && source.length > 0) {
 			const payload = {
 				name: titleCase(courseTitle),
-				email: email.toLowerCase(),
-				numKids
+				email: url,
+				source: source,
+				desc: desc
 			};
 			// TODO: Actually send this info somewhere
 			console.log(payload);
@@ -65,23 +74,23 @@ const ContributeForm = () => {
 							className="mb-6 text-center text-3xl leading-9 font-extrabold text-dark"
 							key="signup"
 						>
-							Sign Up for Reading Programs!
+							Contribute More Classes To Our Compendium!
 						</h2>
 
 						<span
 							className="text-sm font-bold text-gray-600 uppercase"
 							key="name"
 						>
-							Name
+							Class Title
 						</span>
 						<input
 							className="w-full p-3 mt-2 text-gray-900 bg-gray-300 rounded-lg focus:outline-none focus:shadow-outline"
 							type="text"
 							onChange={handleChangeInputCourseTitle}
 							value={courseTitle}
-							placeholder="John Doe"
+							placeholder="Foundations of Deprecation"
 							maxLength={50}
-							key="name-input"
+							key="title-input"
 						/>
 					</div>
 
@@ -90,15 +99,15 @@ const ContributeForm = () => {
 							className="text-sm font-bold text-gray-600 uppercase"
 							key="email"
 						>
-							Email
+							Link To Class
 						</span>
 						<input
 							className="w-full p-3 mt-2 text-gray-900 bg-gray-300 rounded-lg focus:outline-none focus:shadow-outline"
-							onChange={handleChangeInputEmail}
-							value={email}
+							onChange={handleChangeInputUrl}
+							value={url}
 							type="text"
-							placeholder="johndoe@email.com"
-							key="email-input"
+							placeholder="https://computerclass.college.edu"
+							key="url-input"
 							maxLength={100}
 						/>
 					</div>
@@ -107,65 +116,37 @@ const ContributeForm = () => {
 							className="text-sm font-bold text-gray-600 uppercase "
 							key="attending"
 						>
-							Number of Kids Attending
+							College Name
 						</span>
 						<input
 							className="w-full p-3 mt-2 text-gray-900 bg-gray-300 rounded-lg focus:outline-none focus:shadow-outline"
-							onChange={handleChangeInputNumKids}
-							value={numKids}
-							type="number"
-							max="5"
-							min="1"
-							key="attending-input"
-							placeholder="A Descriptively Descriptive Description"
-							maxLength={3}
+							onChange={handleChangeInputSource}
+							value={source}
+							type="text"
+							placeholder="Stanford"
+							key="source-input"
+							maxLength={100}
 						/>
 					</div>
-					{/* <div className="mt-6">
+					<div className="mt-6">
 						<span
 							className="text-sm font-bold text-gray-600 uppercase "
-							key="attending"
+							key="desc"
 						>
-							Attendee Is 
+							Class Description
 						</span>
-						<input
+						<textarea
 							className="w-full p-3 mt-2 text-gray-900 bg-gray-300 rounded-lg focus:outline-none focus:shadow-outline"
-							onChange={handleChangeInputNumKids}
-							value={numKids}
-							type="number"
-							max="5"
-							min="1"
-							key="attending-input"
+							onChange={handleChangeInputDesc}
+							value={desc}
+							key="desc-input"
 							placeholder="A Descriptively Descriptive Description"
-							maxLength={3}
+							maxLength={300}
+							rows={4}
 						/>
-					</div> */}
-				</div>
-				<div className="flex items-center justify-between">
-					<div className="flex items-center">
-						<input
-							id="agreement"
-							name="agreement"
-							type="checkbox"
-							className="h-4 w-4 text-yellow-600 focus:ring-indigo-500 border-gray-300 rounded"
-						/>
-						<label
-							htmlFor="agreement"
-							className="ml-2 block text-sm text-gray-900"
-						>
-							I have read the agreement
-						</label>
-					</div>
-					<div className="text-sm">
-						<Link
-							target="_blank"
-							to="/tos"
-							className="text-yellow-400 text-md text-center font-bold border-none focus:border-0 focus:outline-none w-full"
-						>
-							Agreement, Waiver & Release
-						</Link>
 					</div>
 				</div>
+
 				{isError && (
 					<div
 						className="flex max-w-sm w-full mx-auto bg-white shadow-md rounded-lg overflow-hidden mt-2 mb-2"
@@ -188,7 +169,7 @@ const ContributeForm = () => {
 							<div className="mx-3">
 								<span className="text-red-500 font-semibold">Error</span>
 								<p className="text-gray-600 text-sm">
-									Verify that you have filled out all required fields
+									Verify that you have provided all required fields
 								</p>
 							</div>
 						</div>
@@ -198,19 +179,8 @@ const ContributeForm = () => {
 				<button
 					type="submit"
 					onClick={handleSubmit}
-					className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-lg font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 "
+					className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-lg font-medium rounded-md text-white bg-fuchsia-500 hover:bg-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fuchsia-500 "
 				>
-					<span className="absolute left-0 inset-y-0 flex items-center pl-3">
-						<svg
-							className="h-5 w-5 text-yellow-500 group-hover:text-yellow-400"
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 20 20"
-							fill="currentColor"
-							aria-hidden="true"
-						>
-							{/* <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" /> */}
-						</svg>
-					</span>
 					Register
 				</button>
 			</div>

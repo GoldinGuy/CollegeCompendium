@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Navbar, Footer, ScrollToTop } from "./components";
-import { HomePage, LatestPage, SearchPage, ExplorePage } from "./views";
+import { HomePage, SearchPage, ExplorePage, ContributePage } from "./views";
 
 function App() {
 	return (
@@ -12,7 +12,7 @@ function App() {
 					<Route path="/" exact component={HomePage} />
 					<Route path="/search:term" exact component={SearchPage} />
 					<Route path="/explore" exact component={ExplorePage} />
-					<Route path="/contribute" exact component={LatestPage} />
+					<Route path="/contribute" exact component={ContributePage} />
 				</Switch>
 				<Footer />
 			</ScrollToTop>

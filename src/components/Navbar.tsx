@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SearchBar from "./searchbar";
+import SearchBar from "./SearchBar";
 
 const Navbar = () => {
 	const loc = useLocation();
