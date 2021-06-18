@@ -106,13 +106,25 @@ const Classes = ({
 				<div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
 					{displayPromo && filteredClasses[0] ? (
 						<div className="col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-3 text-center flex justify-center ">
-							<a href={filteredClasses[0].url} className="md:w-2/3 lg:w-1/2">
-								<img
-									src={filteredClasses[0].thumb}
-									className="object-cover sm:h-72 mb-5  bg-center  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 w-full"
-									alt="Thumbnail"
-									loading="lazy"
-								/>
+							<a
+								href={filteredClasses[0].url}
+								className="md:w-2/3 lg:w-1/2 relative"
+							>
+								<div className="transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 ">
+									<img
+										src={filteredClasses[0].thumb}
+										className="object-cover sm:h-72 mb-5 bg-center w-full"
+										alt="Thumbnail"
+										loading="lazy"
+									/>
+									<span className="flex items-center text-gray-50 z-10 absolute top-5 right-5 ">
+										<img
+											src={filteredClasses[0].source_thumb}
+											alt="logo"
+											className="h-16"
+										/>
+									</span>
+								</div>
 
 								<p className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase">
 									{filteredClasses[0].source} | {filteredClasses[0].year}
@@ -149,7 +161,7 @@ const Classes = ({
 												<img
 													src={_class.source_thumb}
 													alt="logo"
-													className="rounded-full h-10 w-10"
+													className="h-16"
 												/>
 												{/* <div className="ml-2 text-sm">
 													<p className="font-semibold">{Class.source}</p>
