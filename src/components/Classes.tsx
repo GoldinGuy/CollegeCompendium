@@ -141,13 +141,11 @@ const Classes = ({
 												loading="lazy"
 											/>
 											<span className="flex items-center text-gray-50 z-10 absolute top-5 right-5">
-												<div className="h-10 w-10 ">
-													<img
-														src={_class.source_thumb}
-														alt="logo"
-														className="rounded-full"
-													/>
-												</div>
+												<img
+													src={_class.source_thumb}
+													alt="logo"
+													className="rounded-full h-10 w-10"
+												/>
 												{/* <div className="ml-2 text-sm">
 													<p className="font-semibold">{Class.source}</p>
 													<p className="">{Class.year}</p>

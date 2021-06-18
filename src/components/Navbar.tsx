@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SearchBar from "./Search";
+import NavSearchBar from "./Search";
 
 const Navbar = () => {
 	const loc = useLocation();
@@ -19,7 +19,7 @@ const Navbar = () => {
 
 	return (
 		<nav
-			className={`z-30 w-full px-2 py-4 bg-white sm:px-4  ${
+			className={`z-30 w-full px-2 py-4 bg-white sm:px-4 h-32 ${
 				mobileOpen ? "border-b-2" : ""
 			}`}
 		>
@@ -57,7 +57,7 @@ const Navbar = () => {
 				</div>
 
 				<div
-					className={`items-center mt-4  md:mt-0 ${
+					className={`items-center mt-4 md:mt-0 ${
 						mobileOpen ? "" : "hidden md:flex"
 					}`}
 				>
@@ -102,7 +102,10 @@ const Navbar = () => {
 								}
 							/>
 						</Link>
-						<SearchBar />
+						<NavSearchBar
+							classN={loc.pathname === "/explore" ? "invisible" : ""}
+						/>
+
 						{/* <a
 							className="my-1 text-lg font-extrabold congress text-fuchsia-400 hover:text-fuchsia-500 md:mx-6 md:my-0 inline sm:hidden lg:inline"
 							href="https://twitter.com/DanielBfuchsia-500"

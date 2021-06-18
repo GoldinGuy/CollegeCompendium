@@ -180,7 +180,44 @@ const HomePage = () => {
 					<span className="text-base text-fuchsia-400"> - Nelson Mandela </span>
 				</p>
 			</section>
+
+			{/* Featured  */}
 			<ClassGallery classes={CLASSES} />
+
+			{/* about  */}
+			<section className="px-4 pt-20 pb-10 mx-auto max-w-7xl" id="about">
+				<div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
+					<div className="text-left">
+						<h2 className="mb-4 text-2xl congress font-extrabold tracking-tight text-black md:leading-tight text-left md:text-4xl">
+							By Computer Scientists, For Computer Scientists
+						</h2>
+						<p className="mb-8 text-base  text-gray-600 text-left md:text-lg">
+							College Compendium is maintained by two student developers that
+							are passionate about providing a high-quality, accessible
+							education to intellectually curious students across the world.
+							Learning Computer Science can be a very difficult journey, which
+							is why we've compiled a catalog of courses to help you achieve
+							your personal goals, regardless of interest, skill level, or time
+							commitment. If you would like to contribute to College Compendium,
+							submit a course below!
+						</p>
+						<Link
+							to="/contribute"
+							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 "
+						>
+							Submit A Course
+							<FontAwesomeIcon icon={faArrowCircleRight} className="ml-2" />
+						</Link>
+					</div>
+					<div className="rounded-lg ">
+						<img
+							className="w-full bg-gray-200 rounded-lg object-cover object-center-top h-72 sm:h-full "
+							alt="info"
+							src="https://user-images.githubusercontent.com/47064842/122471339-28655500-cf8d-11eb-8928-2d8050ce5a57.png"
+						/>
+					</div>
+				</div>
+			</section>
 
 			{/* Stats section */}
 			<div className="relative bg-gray-900 mt-20" id="stats">

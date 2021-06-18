@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
-const SearchBar = () => {
+const NavSearchBar = ({ classN }: { classN?: string }) => {
 	const [query, setQuery] = React.useState("");
 
 	const history = useHistory();
@@ -26,8 +26,8 @@ const SearchBar = () => {
 	};
 
 	return (
-		<div className="flex">
-			<div className="w-1/2 mx-auto my-0  text-gray-500">
+		<div className={`flex ${classN ?? ""}`}>
+			<div className="w-1/2 mx-auto my-0 text-gray-500">
 				<section className="flex items-center justify-center sm:h-20">
 					<div
 						className="flex items-center justify-center w-1/2"
@@ -72,4 +72,4 @@ const SearchBar = () => {
 	);
 };
 
-export default SearchBar;
+export default NavSearchBar;
