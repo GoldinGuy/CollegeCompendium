@@ -1,5 +1,6 @@
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Class } from "../typings/interfaces";
@@ -23,42 +24,46 @@ const Classes = ({
 	classes: Class[];
 	filters?: string[];
 }) => {
-	const formatText = (text: string) => {
-		return text.toLowerCase().trim().replaceAll(" ", "-");
-	};
+	useEffect(() => {
+		const formatText = (text: string) => {
+			return text.toLowerCase().trim().replaceAll(" ", "-");
+		};
 
-	const checkFilters = (_class: Class) => {
-		if (filters) {
-			let included = false;
-			included = filters.some(tag => {
-				let inTags = _class.tags.some(cat => {
-					if (formatText(cat).includes(tag)) {
+		const checkFilters = (_class: Class) => {
+			if (filters) {
+				let included = false;
+				included = filters.some(tag => {
+					let inTags = _class.tags.some(cat => {
+						if (formatText(cat).includes(tag)) {
+							return true;
+						}
+						return false;
+					});
+					if (
+						formatText(_class.title).includes(tag) ||
+						formatText(_class.source).includes(tag) ||
+						formatText(_class.url).includes(tag) ||
+						formatText(_class.year).includes(tag) ||
+						inTags
+					) {
 						return true;
 					}
 					return false;
 				});
-				if (
-					formatText(_class.title).includes(tag) ||
-					formatText(_class.source).includes(tag) ||
-					formatText(_class.url).includes(tag) ||
-					formatText(_class.year).includes(tag) ||
-					inTags
-				) {
-					return true;
-				}
-				return false;
-			});
 
-			return included;
-		}
-		return true;
-	};
+				return included;
+			}
+			return true;
+		};
 
-	const [filteredClasses, setFilteredClasses] = useState(
-		shuffle(classes).filter(course => {
-			return checkFilters(course);
-		})
-	);
+		setFilteredClasses(
+			shuffle(classes).filter(course => {
+				return checkFilters(course);
+			})
+		);
+	}, [filters, classes]);
+
+	const [filteredClasses, setFilteredClasses] = useState<Class[]>([]);
 	const [page, setPageCount] = useState(0);
 	const startVid = displayPromo ? 1 : 0;
 	const MAX_PAGES = Math.floor(filteredClasses.length / 12);

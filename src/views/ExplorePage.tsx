@@ -12,11 +12,11 @@ const ExplorePage = () => {
 		"Security",
 		"Systems",
 		"Machine Learning",
-		"Introductory Courses",
+		"Introductory",
 		"Theory",
-		"Computer Graphics",
+		"Graphics",
 		"Application Development",
-		"Game Development",
+		"Game",
 		"Algorithms",
 		"Artificial Intelligence"
 	];
@@ -24,7 +24,7 @@ const ExplorePage = () => {
 		<>
 			<section className="px-4 pb-24 pt-10 mx-auto max-w-7xl">
 				<h2 className="pb-8 mb-2 text-center congress text-2xl font-extrabold leading-tight text-gray-900 md:text-4xl">
-					Find Interesting Classes
+					Find Your Next CS Course
 				</h2>
 
 				{/* Search */}
