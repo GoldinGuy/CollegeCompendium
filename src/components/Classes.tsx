@@ -73,16 +73,17 @@ const Classes = ({
 	return (
 		<>
 			<div className="container relative flex flex-col justify-between h-full max-w-6xl px-8 mx-auto xl:px-0">
-				<div className="relative flex items-center self-start w-auto mb-1 mt-2   font-black">
+				<div className="relative flex items-center self-start sm:mb-1 mt-2 font-black w-auto">
+					{/* w-auto */}
 					<h2
 						className="relative flex items-center self-start w-auto text-4xl font-black mr-4 "
-						key="header"
+						key="header "
 					>
 						<span className="absolute inline-block w-full break-words h-4 mt-3 -ml-2 bg-gradient-to-r from-fuchsia-200 to-blue-300 " />
 						<span className="relative">
 							{filters?.map((tag, idx) => {
 								return (
-									<span>
+									<span className="inline-block text-2xl md:text-4xl">
 										{tag}
 										{!(idx === filters.length - 1) && !tag.endsWith(",") ? (
 											<span>,</span>
