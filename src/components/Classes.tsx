@@ -121,6 +121,7 @@ const Classes = ({
 										<img
 											src={filteredClasses[0].source_thumb}
 											alt="logo"
+											loading="lazy"
 											className="h-16"
 										/>
 									</span>

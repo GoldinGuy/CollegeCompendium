@@ -5,7 +5,8 @@ import FEATURED from "../data/featured.json";
 import {
 	faArrowCircleRight,
 	faBookmark,
-	faPen
+	faPen,
+	faStar
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -61,13 +62,13 @@ const HomePage = () => {
 						</button> */}
 
 						{
-							<Link
+							<a
 								className="inline-flex items-center justify-center w-full text-white font-semibold mb-2 bg-fuchsia-400 hover:bg-fuchsia-500 px-4 py-2 btn btn-light btn-lg sm:w-auto sm:mb-0 transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
-								to="/contribute"
+								href="https://github.com/GoldinGuy/CollegeCompendium"
 							>
-								Submit A Class
-								<FontAwesomeIcon icon={faPen} className="ml-2" />
-							</Link>
+								Star On GitHub
+								<FontAwesomeIcon icon={faStar} className="ml-2" />
+							</a>
 						}
 					</div>
 				</div>
@@ -143,6 +144,7 @@ const HomePage = () => {
 						// src="https://user-images.githubusercontent.com/47064842/121788823-80234b00-cb9e-11eb-82c0-927759e0dba6.png"
 						src="https://user-images.githubusercontent.com/47064842/122480760-71240a80-cf9b-11eb-8865-97e822d3f064.jpg"
 						alt="Hero"
+						loading="lazy"
 						className="w-full rounded-lg sm:h-auto  shadow-2xl object-cover object-center-top opacity-70" //max-h-96
 					/>
 				</div>
@@ -177,6 +179,7 @@ const HomePage = () => {
 						<img
 							className="w-full bg-gray-200 rounded-lg object-cover object-center-top h-72 sm:h-full opacity-70 "
 							alt="info"
+							loading="lazy"
 							// src="https://user-images.githubusercontent.com/47064842/122471339-28655500-cf8d-11eb-8928-2d8050ce5a57.png"
 							// src="https://user-images.githubusercontent.com/47064842/121788823-80234b00-cb9e-11eb-82c0-927759e0dba6.png"
 							src="https://user-images.githubusercontent.com/47064842/121788773-04290300-cb9e-11eb-8e5e-95fa321e18db.png"
@@ -232,6 +235,7 @@ const HomePage = () => {
 						<img
 							className="w-full bg-gray-200 rounded-lg object-cover object-center-top h-72 sm:h-full "
 							alt="info"
+							loading="lazy"
 							src="https://user-images.githubusercontent.com/47064842/122471339-28655500-cf8d-11eb-8928-2d8050ce5a57.png"
 						/>
 					</div>

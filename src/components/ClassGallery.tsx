@@ -69,6 +69,7 @@ const ClassGallery = ({ classes }: { classes: Class[] }) => {
 										<img
 											src={_class.source_thumb}
 											alt="logo"
+											loading="lazy"
 											className="h-16" //w-12 rounded-full
 										/>
 										{/* <div className="ml-2 text-sm">
