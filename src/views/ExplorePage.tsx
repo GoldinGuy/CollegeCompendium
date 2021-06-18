@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { useHistory, useLocation } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Classes from "../components/Classes";
 
 import CLASSES from "../data/class_data.json";
+import useQuery from "../utils";
 
 const ExplorePage = () => {
 	const history = useHistory();
@@ -30,7 +31,7 @@ const ExplorePage = () => {
 				</h2>
 
 				{/* Search */}
-				<SearchBar />
+				<LargeSearchBar asTable={query.get("table") === "true"} />
 
 				<div className="pt-10 pb-0 text-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
 					{classTags.map(tag => {
@@ -38,7 +39,12 @@ const ExplorePage = () => {
 							<div
 								onClick={() => {
 									history.push(
-										`/search?q=${tag.toLowerCase().trim().replaceAll(" ", "-")}`
+										`/search?q=${tag
+											.toLowerCase()
+											.trim()
+											.replaceAll(" ", "-")}${
+											query.get("table") === "true" ? "&table=true" : ""
+										}`
 									);
 								}}
 								className="ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 bg-fuchsia-200 text-fuchsia-700 rounded-full cursor-pointer"
@@ -56,7 +62,7 @@ const ExplorePage = () => {
 };
 export default ExplorePage;
 
-const SearchBar = () => {
+const LargeSearchBar = ({ asTable }: { asTable: boolean }) => {
 	const [query, setQuery] = useState("");
 
 	const history = useHistory();
@@ -75,7 +81,7 @@ const SearchBar = () => {
 
 		if (term.length > 0) {
 			// TODO: addFilter(term);
-			history.push(`/search?q=${term}`);
+			history.push(`/search?q=${term}${asTable ? "&table=true" : ""}`);
 			setQuery("");
 		}
 	};
@@ -126,7 +132,3 @@ const SearchBar = () => {
 		</div>
 	);
 };
-
-function useQuery() {
-	return new URLSearchParams(useLocation().search);
-}

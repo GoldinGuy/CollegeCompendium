@@ -1,27 +1,32 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import useQuery from "../utils";
 
 const NavSearchBar = ({ classN }: { classN?: string }) => {
-	const [query, setQuery] = React.useState("");
+	const [term, setTerm] = React.useState("");
 
 	const history = useHistory();
+	let query = useQuery();
 
 	const inputKeyDown = async (e: any) => {
 		if (e.key === "Enter") {
-			search(query);
+			search(term);
 		} else {
 			const newQuery = e.target.value;
-			setQuery(newQuery);
+			setTerm(newQuery);
 		}
 	};
 
 	const search = (term: string) => {
-		term = term.toLowerCase().trim().replaceAll(" ", "-");
+		let searchTerm = term.toLowerCase().trim().replaceAll(" ", "-");
 
-		if (term.length > 0) {
-			// TODO: addFilter(term);
-			history.push(`/search?q=${term}`);
-			setQuery("");
+		if (searchTerm.length > 0) {
+			history.push(
+				`/search?q=${searchTerm}${
+					query.get("table") === "true" ? "&table=true" : ""
+				}`
+			);
+			setTerm("");
 		}
 	};
 
@@ -41,7 +46,7 @@ const NavSearchBar = ({ classN }: { classN?: string }) => {
 							maxLength={25}
 							type="text"
 							id="search"
-							value={query}
+							value={term}
 							onChange={inputKeyDown}
 							onKeyUp={inputKeyDown}
 							placeholder="Search"
@@ -51,7 +56,7 @@ const NavSearchBar = ({ classN }: { classN?: string }) => {
 						<button
 							className="transform border-none focus:border-0 focus:outline-none"
 							aria-label="Submit"
-							onClick={() => search(query)}
+							onClick={() => search(term)}
 						>
 							<svg
 								className={`text-gray-500 duration-200 fill-current hover:text-gray-700 focus:text-gray-700 ${

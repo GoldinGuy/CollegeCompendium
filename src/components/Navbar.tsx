@@ -1,11 +1,14 @@
-import { Link, useLocation } from "react-router-dom";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NavSearchBar from "./Search";
+import useQuery from "../utils";
+import { faList, faTable } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
 	const loc = useLocation();
+	let query = useQuery();
+	const history = useHistory();
 
 	const [mobileOpen, setMobileOpen] = useState(false);
 	const [currentPath, setPath] = useState(loc.pathname);
@@ -78,7 +81,9 @@ const Navbar = () => {
 
 						<Link
 							className="my-1 text-md font-medium text-gray-700 dark:text-gray-200 hover:text-fuchsia-500 dark:hover:text-fuchsia-400  md:mx-4 md:my-0 relative"
-							to="/explore"
+							to={`/explore?${
+								query.get("table") === "true" ? `&table=true` : ""
+							}`}
 						>
 							Explore
 							<span
@@ -105,6 +110,23 @@ const Navbar = () => {
 						<NavSearchBar
 							classN={loc.pathname === "/explore" ? "invisible w-0" : ""}
 						/>
+						{loc.pathname === "/explore" || loc.pathname === "/search" ? (
+							<button
+								className="ml-6 focus:outline-none focus:border-0 hover:text-fuchsia-500 hidden sm:flex"
+								title="Toggle Table/Grid View"
+								onClick={() => {
+									if (query.get("table") === "true")
+										history.push(`?${query}&table=false`);
+									else history.push(`?${query}&table=true`);
+								}}
+							>
+								<FontAwesomeIcon
+									icon={query.get("table") === "true" ? faList : faTable}
+									className="text-gray-600"
+									size="lg"
+								/>
+							</button>
+						) : null}
 
 						{/* <a
 							className="my-1 text-lg font-extrabold congress text-fuchsia-400 hover:text-fuchsia-500 md:mx-6 md:my-0 inline sm:hidden lg:inline"
