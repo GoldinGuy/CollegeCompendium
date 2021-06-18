@@ -19,7 +19,7 @@ const Navbar = () => {
 
 	return (
 		<nav
-			className={`z-30 w-full px-2 py-4 bg-white sm:px-4 h-32 ${
+			className={`z-30 w-full px-2 py-4 bg-white sm:px-4 ${
 				mobileOpen ? "border-b-2" : ""
 			}`}
 		>

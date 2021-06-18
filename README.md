@@ -7,7 +7,7 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues]][issues-url]
 
-#### Looking for the CSV/Excel Files? 
+### Looking for the CSV/Excel Files? 
 
 Here they are! [csv](https://github.com/GoldinGuy/CollegeCompendium/blob/master/class_data.csv), [xlsx](https://github.com/GoldinGuy/CollegeCompendium/blob/master/class_data.xlsx)
 
