@@ -61,15 +61,13 @@ const HomePage = () => {
 							<FontAwesomeIcon icon={faBookmark} className="ml-2" />
 						</button> */}
 
-						{
-							<a
-								className="inline-flex items-center justify-center w-full text-white font-semibold mb-2 bg-fuchsia-400 hover:bg-fuchsia-500 px-4 py-2 btn btn-light btn-lg sm:w-auto sm:mb-0 transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
-								href="https://github.com/GoldinGuy/CollegeCompendium"
-							>
-								Star On GitHub
-								<FontAwesomeIcon icon={faStar} className="ml-2" />
-							</a>
-						}
+						<a
+							className="inline-flex items-center justify-center w-full text-white font-semibold mb-2 bg-fuchsia-400 hover:bg-fuchsia-500 px-4 py-2 btn btn-light btn-lg sm:w-auto sm:mb-0 transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
+							href="https://github.com/GoldinGuy/CollegeCompendium"
+						>
+							Star On GitHub
+							<FontAwesomeIcon icon={faStar} className="ml-2" />
+						</a>
 					</div>
 				</div>
 
@@ -223,13 +221,20 @@ const HomePage = () => {
 							commitment. If you would like to contribute to College Compendium,
 							submit a course below!
 						</p>
-						<Link
+						<a
+							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 "
+							href="https://github.com/GoldinGuy/CollegeCompendium"
+						>
+							Star On GitHub
+							<FontAwesomeIcon icon={faStar} className="ml-2" />
+						</a>
+						{/* <Link
 							to="/contribute"
 							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 "
 						>
 							Submit A Class
 							<FontAwesomeIcon icon={faPen} className="ml-2" />
-						</Link>
+						</Link> */}
 					</div>
 					<div className="rounded-lg ">
 						<img

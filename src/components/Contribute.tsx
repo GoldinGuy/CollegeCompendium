@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 const ContributeForm = () => {
 	const [courseTitle, setCourseTitle] = useState("");
@@ -56,6 +55,7 @@ const ContributeForm = () => {
 				desc: desc
 			};
 			// console.log(process.env.REACT_APP_CONTRIBUTE_API, payload);
+			console.log("submitting ", payload);
 			if (process.env.REACT_APP_CONTRIBUTE_API) {
 				const request = new XMLHttpRequest();
 				request.open(
@@ -75,6 +75,10 @@ const ContributeForm = () => {
 				request.send(JSON.stringify(payload));
 			}
 			setError(false);
+			setDesc("");
+			setSource("");
+			setUrl("");
+			setCourseTitle("");
 		} else {
 			setError(true);
 		}
