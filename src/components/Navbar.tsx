@@ -25,7 +25,7 @@ const Navbar = () => {
 		>
 			<div className="container md:px-6 py-3 mx-auto md:flex md:justify-between md:items-center">
 				<div className="flex items-center justify-between">
-					<div className="flex items-center">
+					<div className="flex items-center not-selectable">
 						{/* <HeaderLogo /> */}
 						<img
 							src="https://user-images.githubusercontent.com/47064842/122340134-e518d100-cf0f-11eb-8526-3c185f28e119.png"

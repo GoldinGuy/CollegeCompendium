@@ -11,6 +11,7 @@ const SearchPage = () => {
 			classes={CLASSES}
 			displayPromo={true}
 			filters={query.get("q")?.split("-")}
+			asTable={query.get("table") === "true"}
 		/>
 	);
 };

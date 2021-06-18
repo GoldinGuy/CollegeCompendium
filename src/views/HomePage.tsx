@@ -75,11 +75,12 @@ const HomePage = () => {
 					{/* <h1 className="mb-12 text-sm font-bold tracking-wide text-center text-gray-800 uppercase">
 					CS Classes From America's Top Universities
 				</h1> */}
-					<div className="grid grid-cols-2 gap-10  text-center lg:grid-cols-8 filter grayscale brightness-90">
+					<div className="grid grid-cols-2 gap-10  text-center lg:grid-cols-8 filter grayscale brightness-90 not-selectable">
 						<div className="flex items-center justify-center">
 							<img
 								src={CarnegieLogo}
 								alt="Carnegie Mellon"
+								draggable="false"
 								className="block object-contain h-12"
 							/>
 						</div>
@@ -87,6 +88,7 @@ const HomePage = () => {
 							<img
 								src={MITLogo}
 								alt="MIT"
+								draggable="false"
 								className="block object-contain h-12"
 							/>
 						</div>
@@ -95,6 +97,7 @@ const HomePage = () => {
 							<img
 								src={HarvardLogo}
 								alt="Harvard"
+								draggable="false"
 								className="block object-contain h-12"
 							/>
 						</div>
@@ -102,6 +105,7 @@ const HomePage = () => {
 							<img
 								src={StanfordLogo}
 								alt="Stanford"
+								draggable="false"
 								className="block object-contain h-12"
 							/>
 						</div>
@@ -110,6 +114,7 @@ const HomePage = () => {
 							<img
 								src={PennLogo}
 								alt="Penn"
+								draggable="false"
 								className="block object-contain h-12"
 							/>
 						</div>
@@ -117,6 +122,7 @@ const HomePage = () => {
 							<img
 								src={CornellLogo}
 								alt="Dartmouth"
+								draggable="false"
 								className="block object-contain h-12"
 							/>
 						</div>
@@ -124,6 +130,7 @@ const HomePage = () => {
 							<img
 								src={CalTechLogo}
 								alt="Cal Tech"
+								draggable="false"
 								className="block object-contain h-12"
 							/>
 						</div>
@@ -131,6 +138,7 @@ const HomePage = () => {
 							<img
 								src={BerkeleyLogo}
 								alt="Berkeley"
+								draggable="false"
 								className="block object-contain h-12"
 							/>
 						</div>

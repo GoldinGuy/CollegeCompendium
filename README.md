@@ -41,7 +41,8 @@ npm start
 
 ## Meta
 
-Created by [@GoldinGuy](https://github.com/GoldinGuy) and [@Samfydega](https://github.com/samfydega)
+Created by [@GoldinGuy](https://github.com/GoldinGuy) and [@Samfydega](https://github.com/samfydega).
+
 Distributed under the MIT license. See [LICENSE](https://github.com/GoldinGuy/CollegeCompendium/blob/master/LICENSE) for more information.
 
 <!-- Markdown link & img dfn's -->
