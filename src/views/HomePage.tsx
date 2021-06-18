@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import StanfordLogo from "../assets/schools/stanford.png";
 import PennLogo from "../assets/schools/upenn.png";
-import DartmouthLogo from "../assets/schools/dartmouth.png";
+import CornellLogo from "../assets/schools/cornell.png";
 import MITLogo from "../assets/schools/mit.png";
 import CarnegieLogo from "../assets/schools/carnegiemellon.png";
 import BerkeleyLogo from "../assets/schools/berkeley.png";
@@ -107,6 +107,20 @@ const HomePage = () => {
 
 						<div className="flex items-center justify-center">
 							<img
+								src={PennLogo}
+								alt="Penn"
+								className="block object-contain h-12"
+							/>
+						</div>
+						<div className="flex items-center justify-center">
+							<img
+								src={CornellLogo}
+								alt="Dartmouth"
+								className="block object-contain h-12"
+							/>
+						</div>
+						<div className="flex items-center justify-center">
+							<img
 								src={CalTechLogo}
 								alt="Cal Tech"
 								className="block object-contain h-12"
@@ -114,23 +128,8 @@ const HomePage = () => {
 						</div>
 						<div className="flex items-center justify-center">
 							<img
-								src={PennLogo}
-								alt="Penn"
-								className="block object-contain h-12"
-							/>
-						</div>
-
-						<div className="flex items-center justify-center">
-							<img
 								src={BerkeleyLogo}
 								alt="Berkeley"
-								className="block object-contain h-12"
-							/>
-						</div>
-						<div className="flex items-center justify-center">
-							<img
-								src={DartmouthLogo}
-								alt="Dartmouth"
 								className="block object-contain h-12"
 							/>
 						</div>

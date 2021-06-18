@@ -12,13 +12,14 @@ const ExplorePage = () => {
 		"Security",
 		"Systems",
 		"Machine Learning",
-		"Introductory",
+		"Introduction",
 		"Theory",
 		"Graphics",
 		"Application Development",
 		"Game",
 		"Algorithms",
-		"Artificial Intelligence"
+		"Artificial Intelligence",
+		"Crypto"
 	];
 	return (
 		<>
