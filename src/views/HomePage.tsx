@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ClassGallery, CTA } from "../components";
-import CLASSES from "../data/class_data.json";
+import FEATURED from "../data/featured.json";
 import { faArrowCircleRight, faPen } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -129,8 +129,8 @@ const HomePage = () => {
 				</div>
 			</section>
 
-			{/* about  */}
-			<section className="px-4 pt-20 pb-10 mx-auto max-w-7xl" id="about">
+			{/* info  */}
+			<section className="px-4 pt-20 pb-10 mx-auto max-w-7xl" id="info">
 				<div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
 					<div className="text-left">
 						<h2 className="mb-4 text-2xl congress font-extrabold tracking-tight text-black md:leading-tight text-left md:text-4xl">
@@ -182,7 +182,7 @@ const HomePage = () => {
 			</section>
 
 			{/* Featured  */}
-			<ClassGallery classes={CLASSES} />
+			<ClassGallery classes={FEATURED} />
 
 			{/* about  */}
 			<section className="px-4 pt-20 pb-10 mx-auto max-w-7xl" id="about">

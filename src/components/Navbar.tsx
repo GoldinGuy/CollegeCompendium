@@ -103,7 +103,7 @@ const Navbar = () => {
 							/>
 						</Link>
 						<NavSearchBar
-							classN={loc.pathname === "/explore" ? "invisible" : ""}
+							classN={loc.pathname === "/explore" ? "invisible w-0" : ""}
 						/>
 
 						{/* <a

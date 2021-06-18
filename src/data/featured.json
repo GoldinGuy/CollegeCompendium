@@ -1,0 +1,200 @@
+[
+	{
+		"id": "stanford-Spring-CS246",
+		"title": "CS246: Mining Massive Datasets",
+		"source": "Stanford",
+		"year": "Spring 2021",
+		"url": "http://web.stanford.edu/class/cs246/",
+		"desc": "The course will discuss data mining and machine learning algorithms for analyzing very large amounts of data. The emphasis will be on MapReduce and Spark as tools for creating parallel algorithms that can process very large amounts of data.",
+		"thumb": "https://images.unsplash.com/photo-1611924707078-da8777fc99cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80",
+		"tags": ["cs", "Stanford", "CS246"],
+		"source_thumb": "https://c.neevacdn.net/image/fetch/s--U9kMDM6b--/https%3A//tse4.mm.bing.net/th%3Fid%3DOIP.3TBYCHujstntFsKWQSBN2QHaHa%26pid%3DApi?savepath=th"
+	},
+	{
+		"id": "berkeley-Spring-CS",
+		"title": "CS 10: The Beauty and Joy of Computing",
+		"source": "Berkeley",
+		"year": "Spring 2021",
+		"url": "https://cs10.org/sp21/",
+		"desc": "An introductory course for students with minimal prior exposure to computer science. Prepares students for future computer science courses and empowers them to utilize programming to solve problems in their field of study. Presents an overview of the history, great principles, and transformative applications of computer science, as well as a comprehensive introduction to programming. T",
+		"thumb": "https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+		"tags": ["cs", "Berkeley", "CS10"],
+		"source_thumb": "https://c.neevacdn.net/image/fetch/s--vDateNtk--/https%3A//tse1.mm.bing.net/th%3Fid%3DOIP.WBTGJvw2VBZg7n_NwQDTYAHaHa%26pid%3DApi?savepath=th"
+	},
+	{
+		"id": "brown-Fall-CSCI1760:",
+		"title": "CSCI1760: Multiprocessor Synchronization",
+		"source": "Brown",
+		"year": "Fall 2020",
+		"url": "http://cs.brown.edu/courses/csci1760/",
+		"desc": "This course examines the theory and practice of multiprocessor synchronization. Subjects covered include multiprocessor architecture, mutual exclusion, wait-free and lock-free synchronization, spin locks, monitors, load balancing, concurrent data structures, and transactional synchronization.",
+		"thumb": "https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=820&q=80",
+		"tags": ["cs", "Brown", "CSCI1760"],
+		"source_thumb": "http://www.ranklogos.com/wp-content/uploads/2012/05/Brown-University-logo.jpg"
+	},
+	{
+		"id": "penn-Spring-CIS545",
+		"title": "CIS545: Big Data Analytics",
+		"source": "Penn",
+		"year": "Spring 2021",
+		"url": "https://www.seas.upenn.edu/~cis545",
+		"desc": "In the new era of big data, we are increasingly faced with the challenges of processing vast volumes of data. Given the limits of individual machines (compute power, memory, bandwidth), increasingly the solution is to process the data in parallel on many machines. This course focuses on the fundamentals of scaling computation to handle common data analytics tasks.",
+		"thumb": "https://images.unsplash.com/photo-1555066932-e78dd8fb77bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+		"tags": ["cs", "Penn", "CIS545"],
+		"source_thumb": "https://c.neevacdn.net/image/fetch/s--s95Z93Wu--/https%3A//tse3.mm.bing.net/th%3Fid%3DOIP.XuqSk9_V_313iaXSNEG8iAHaIa%26pid%3DApi?savepath=th"
+	},
+	{
+		"id": "cornell-Spring-CS6120",
+		"title": "CS6120: Advanced Compilers",
+		"source": "Cornell",
+		"year": "Spring 2021",
+		"url": "https://www.cs.cornell.edu/courses/cs6120",
+		"desc": "This is a hands-on course about implementing programming languages. It covers intermediate representations, classic optimization, runtime systems, and more advanced techniques such as parallelization, just-in-time compilation, and garbage collection. Course work consists of reading and discussing both classic and modern research papers and implementation projects based on the LLVM compiler infrastructure.",
+		"thumb": "https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1728&q=80",
+		"tags": ["cs", "Cornell", "CS6120"],
+		"source_thumb": "https://c.neevacdn.net/image/fetch/s--LIab2o-p--/https%3A//theccwh.org/wp-content/uploads/2016/11/cornell-logo-3.gif?savepath=cornell-logo-3.gif"
+	},
+	{
+		"id": "stanford-Spring-CS275",
+		"title": "CS275: Translational Bioinformatics",
+		"source": "Stanford",
+		"year": "Spring 2021",
+		"url": "https://sites.google.com/site/bmi2172016/home",
+		"desc": "Analytic, storage, and interpretive methods to optimize the transformation of genetic, genomic, and biological data into diagnostics and therapeutics for medicine. Topics: access and utility of publicly available data sources; types of genome-scale measurements in molecular biology and genomic medicine; analysis of microarray data; analysis of polymorphisms, proteomics, and protein interactions; linking genome-scale data to clinical data and phenotypes; and new questions in biomedicine using bioinformatics.",
+		"thumb": "https://images.unsplash.com/photo-1611924707078-da8777fc99cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80",
+		"tags": ["cs", "Stanford", "CS275"],
+		"source_thumb": "https://c.neevacdn.net/image/fetch/s--U9kMDM6b--/https%3A//tse4.mm.bing.net/th%3Fid%3DOIP.3TBYCHujstntFsKWQSBN2QHaHa%26pid%3DApi?savepath=th"
+	},
+	{
+		"id": "harvard-Fall-CS224",
+		"title": "CS224: Advanced Algorithms",
+		"source": "Harvard",
+		"year": "Fall 2014",
+		"url": "http://people.seas.harvard.edu/~minilek/cs224/fall14/index.html",
+		"desc": "An algorithm is a well-defined procedure for carrying out some computational task. Typically the task is given, and the job of the algorithmist is to find such a procedure which is efficient, for example in terms of processing time and/or memory consumption. CS 224 is an advanced course in algorithm design, and topics we will cover include the word RAM model, data structures, amortization, online algorithms, linear programming, semidefinite programming, approximation algorithms, hashing, randomized algorithms, fast exponential time algorithms, graph algorithms, and computational geometry.",
+		"thumb": "https://images.unsplash.com/photo-1517852058149-07c7a2e65cc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80",
+		"tags": ["cs", "Harvard", "CS224"],
+		"source_thumb": "https://c.neevacdn.net/image/fetch/s--23YgzjzK--/https%3A//americancollegecricket.com/wp-content/uploads/2012/06/HarvardLogo.jpg?savepath=HarvardLogo.jpg"
+	},
+	{
+		"id": "nyu-Spring-CSCI0202",
+		"title": "CSCI0202: Operating Systems",
+		"source": "NYU",
+		"year": "Spring 2015",
+		"url": "http://www.cs.nyu.edu/~mwalfish/classes/15sp/index.html",
+		"desc": "We hope you learn three sets of interrelated things. The first thing is how computers work. Students graduating with CS degrees should believe \"there is no magic\": they should be able to describe the chain of events that occurs when they hit a key and cause a letter to appear on the screen from the register level (or logical gate level or transistor level) to the system architecture level to the operating system level to the application level. This is philosophically important, but it is also of practical interest to developers who need to figure out how to make a system do what they want it to do.",
+		"thumb": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+		"tags": ["cs", "NYU", "CSCI0202"],
+		"source_thumb": "https://c.neevacdn.net/image/fetch/s--xAeJyjxQ--/https%3A//tse4.mm.bing.net/th%3Fid%3DOIP.3bvtE_14dOeadekx801yUwHaHa%26pid%3DApi?savepath=th"
+	},
+	{
+		"id": "utexas-Fall-CS378",
+		"title": "CS378: 3D Reconstruction with Computer Vision",
+		"source": "UTexas",
+		"year": "Fall 2014",
+		"url": "https://github.com/ut-cs378-vision-2014fall/course-info",
+		"desc": "Projects like Photosynth, Kinect, and Tango have shown the incredible potential of using computer vision to construct immersive 3D environments from easily acquired imagery. In this lab-based class, we'll dive into practical applications of 3D reconstruction, combining hardware and software to build our own 3D environments from scratch.",
+		"thumb": "https://images.unsplash.com/photo-1594892185343-0241e1d47d15?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=802&q=80",
+		"tags": ["cs", "UTexas", "CS378"],
+		"source_thumb": "https://c.neevacdn.net/image/fetch/s--DWKnKxP4--/https%3A//tse4.mm.bing.net/th%3Fid%3DOIP.uxWmR--lAWfcsXFf66nZUAHaHa%26pid%3DApi?savepath=th"
+	},
+	{
+		"id": "davis-Winter-ECS222A",
+		"title": "ECS222A: Graduate Level Algorithm Design and Analysis",
+		"source": "Davis",
+		"year": "Winter 2011",
+		"url": "http://web.cs.ucdavis.edu/~gusfield/cs222w11/",
+		"desc": "In some ways, this course examines the same issues as the undergraduate course (cs 122A here), but chooses more advanced and complex algorithms, examines some issues more deeply, and requires .more difficult and interesting homework",
+		"thumb": "https://images.unsplash.com/photo-1517148815978-75f6acaaf32c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+		"tags": ["cs", "Davis", "ECS222A"],
+		"source_thumb": "https://c.neevacdn.net/image/fetch/s--H3RZYcOz--/https%3A//tse1.mm.bing.net/th%3Fid%3DOIP.Aql-s_WSP9ehnDUGrlWJ_wHaHM%26pid%3DApi?savepath=th"
+	},
+	{
+		"id": "brown-Fall-CSCI1810:",
+		"title": "CSCI1810: Computational Molecular Biology",
+		"source": "Brown",
+		"year": "Fall 2020",
+		"url": "http://cs.brown.edu/courses/csci1810/",
+		"desc": "High-throughput experimental approaches now allow molecular biologists to make large-scale measurements of DNA, RNA, and protein, the three fundamental molecules of the cell. The resulting datasets are often too large for manual analysis and demand computational techniques. This course introduces algorithms for sequence comparison and alignment; molecular evolution and phylogenetics; DNA/RNA sequencing and assembly; recognition of genes and regulatory elements; and RNA and protein structure.",
+		"thumb": "https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=820&q=80",
+		"tags": ["cs", "Brown", "CSCI1810"],
+		"source_thumb": "http://www.ranklogos.com/wp-content/uploads/2012/05/Brown-University-logo.jpg"
+	},
+	{
+		"id": "caltech-Spring-CS156",
+		"title": "CS156: Learning from Data",
+		"source": "Caltech",
+		"year": "Spring 2012",
+		"url": "https://work.caltech.edu/telecourse.html",
+		"desc": "This is an introductory course in machine learning (ML) that covers the basic theory, algorithms, and applications. ML is a key technology in Big Data, and in many financial, medical, commercial, and scientific applications.",
+		"thumb": "https://images.unsplash.com/photo-1532522953890-ccc87dfeb0b7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+		"tags": ["cs", "Caltech", "CS156"],
+		"source_thumb": "https://c.neevacdn.net/image/fetch/s--knE7WlwI--/https%3A//tse1.mm.bing.net/th%3Fid%3DOIP.tQ35Sp3DPHztQwozkHqZQwHaHY%26pid%3DApi?savepath=th"
+	},
+	{
+		"id": "washington-Spring-CSE562:",
+		"title": "CSE562: Mobile Systems and Applications",
+		"source": "Washington",
+		"year": "Spring 2020",
+		"url": "https://courses.cs.washington.edu/courses/cse562/20sp/",
+		"desc": "Signal processing fundamentals, acoustic device and device-free tracking, physiological sensing using phones and speakers, IMU tracking and GPS localization, Wi-Fi localization and sensing, designing and building IoT device hardware, backscatter systems, mobile privacy and security, and robotics mobile systems",
+		"thumb": "https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+		"tags": ["cs", "Washington", "CSE562"],
+		"source_thumb": "https://c.neevacdn.net/image/fetch/s--q5ITmHKs--/https%3A//www.ranklogos.com/wp-content/uploads/2012/06/university-of-washington.gif?savepath=university-of-washington.gif"
+	},
+	{
+		"id": "cornell-Spring-CS4786",
+		"title": "CS4786: Machine Learning for Data Science",
+		"source": "Cornell",
+		"year": "Spring 2021",
+		"url": "https://www.cs.cornell.edu/courses/cs4786",
+		"desc": "An introduction to machine learning for data-science applications. Topics include dimensionality-reduction (such as principal components analysis, canonical correlation analysis, and random projection); clustering (such as k-means and single-link); probabilistic modeling (such as mixture models and the EM algorithm).",
+		"thumb": "https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1728&q=80",
+		"tags": ["cs", "Cornell", "CS4786"],
+		"source_thumb": "https://c.neevacdn.net/image/fetch/s--LIab2o-p--/https%3A//theccwh.org/wp-content/uploads/2016/11/cornell-logo-3.gif?savepath=cornell-logo-3.gif"
+	},
+	{
+		"id": "cornell-Spring-CS5150",
+		"title": "CS5150: Software Engineering",
+		"source": "Cornell",
+		"year": "Spring 2021",
+		"url": "https://www.cs.cornell.edu/courses/cs5150",
+		"desc": "Introduction to the practical problems of specifying, designing, building, testing, and delivering reliable software systems. Special topics include professionalism, project management, and the legal framework for software development. As a central part of the course, student teams carry out projects for real clients, using concepts of agile software development. Each project includes all aspects of software development from a feasibility study to final delivery.”",
+		"thumb": "https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1728&q=80",
+		"tags": ["cs", "Cornell", "CS5150"],
+		"source_thumb": "https://c.neevacdn.net/image/fetch/s--LIab2o-p--/https%3A//theccwh.org/wp-content/uploads/2016/11/cornell-logo-3.gif?savepath=cornell-logo-3.gif"
+	},
+	{
+		"id": "stanford-Spring-CS193P",
+		"title": "CS193P: iOS Application Development",
+		"source": "Stanford",
+		"year": "Spring 2021",
+		"url": "https://cs193p.sites.stanford.edu",
+		"desc": "Stanford's CS193p course, Developing Applications for iOS, explains the fundamentals of how to build applications for iPhone and iPad using SwiftUI.  Most recently offered in Spring quarter 2021, the lectures were given to Stanford students in an on-line format due to the novel coronavirus pandemic and are now being made available (at least 2 per week) to all via Stanford's YouTube channel.",
+		"thumb": "https://images.unsplash.com/photo-1611924707078-da8777fc99cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80",
+		"tags": ["cs", "Stanford", "CS193P"],
+		"source_thumb": "https://c.neevacdn.net/image/fetch/s--U9kMDM6b--/https%3A//tse4.mm.bing.net/th%3Fid%3DOIP.3TBYCHujstntFsKWQSBN2QHaHa%26pid%3DApi?savepath=th"
+	},
+	{
+		"id": "harvard-Fall-AM207",
+		"title": "AM207: Monte Carlo Methods and Stochastic Optimization",
+		"source": "Harvard",
+		"year": "Fall 2016",
+		"url": "http://am207.github.io/2016/index.html",
+		"desc": "This course introduces important principles of Monte Carlo techniques and demonstrates the power of these techniques with simple (but very useful) applications. Starting from the basic ideas of Bayesian analysis and Markov chain Monte Carlo samplers, we move to more recent developments such as slice sampling, multi-grid Monte Carlo, Hamiltonian Monte Carlo, parallel tempering and multi-nested methods. We complete our investigation of Monte Carlo samplers with streaming methods such as particle filters/sequential Monte Carlo. Throughout the course we delve into related topics in stochastic optimization and inference such as genetic algorithms, simulated annealing, probabilistic Gaussian models, and Gaussian processes.",
+		"thumb": "https://images.unsplash.com/photo-1517852058149-07c7a2e65cc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80",
+		"tags": ["cs", "Harvard", "AM207"],
+		"source_thumb": "https://c.neevacdn.net/image/fetch/s--23YgzjzK--/https%3A//americancollegecricket.com/wp-content/uploads/2012/06/HarvardLogo.jpg?savepath=HarvardLogo.jpg"
+	},
+	{
+		"id": "mit-Spring-6.857",
+		"title": "6.857: Computer and Network Security",
+		"source": "MIT",
+		"year": "Spring 2015",
+		"url": "http://courses.csail.mit.edu/6.857/2015/",
+		"desc": "6.857 Network and Computer Security is an upper-level undergraduate, first-year graduate course on network and computer security. It fits within the Computer Systems and Architecture Engineering concentration.",
+		"thumb": "https://images.unsplash.com/photo-1605379399843-5870eea9b74e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+		"tags": ["cs", "MIT", "6.857"],
+		"source_thumb": "https://c.neevacdn.net/image/fetch/s--M1zTnLNQ--/https%3A//tse1.mm.bing.net/th%3Fid%3DOIP.uE8M_e6R82wXCl4zu8CuZgHaEK%26pid%3DApi?savepath=th"
+	}
+]

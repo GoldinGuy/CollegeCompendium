@@ -1,19 +1,58 @@
-// import playlists from "../assets/backup/explore.json";
-
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
+import { ClassGallery, CTA } from "../components";
+
+import CLASSES from "../data/class_data.json";
 
 const ExplorePage = () => {
+	const history = useHistory();
+	const classTags = [
+		"Programming Languages",
+		"Compilers",
+		"Security",
+		"Systems",
+		"Machine Learning",
+		"Introductory Courses",
+		"Theory",
+		"Computer Graphics",
+		"Application Development",
+		"Game Development",
+		"Algorithms",
+		"Artificial Intelligence"
+	];
 	return (
 		<>
 			<section className="px-4 pb-24 pt-10 mx-auto max-w-7xl">
 				<h2 className="pb-8 mb-2 text-center congress text-2xl font-extrabold leading-tight text-gray-900 md:text-4xl">
-					Explore Classes
+					Find Interesting Classes
 				</h2>
+
+				{/* Search */}
 				<SearchBar />
-				<div className="w-full flex flex-col space-y-16">
+
+				<div className="pt-4 pb-16 text-center">
+					{classTags.map(tag => {
+						return (
+							<div
+								onClick={() => {
+									history.push(
+										`/search?q=${tag.toLowerCase().trim().replaceAll(" ", "-")}`
+									);
+								}}
+								className="ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 bg-fuchsia-200 text-fuchsia-700 rounded-full cursor-pointer"
+							>
+								#{tag}
+							</div>
+						);
+					})}
+				</div>
+
+				{/* Featured  */}
+				<ClassGallery classes={CLASSES} />
+
+				{/*<div className="w-full flex flex-col space-y-16">
 					<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-						{/* {playlists.map(list => {
+						 {playlists.map(list => {
 							return (
 								<a
 									className=" gap-6 mb-4"
@@ -50,10 +89,11 @@ const ExplorePage = () => {
 									</div>
 								</a>
 							);
-						})} */}
+						})} 
 					</div>
-				</div>
+				</div> */}
 			</section>
+			<CTA />
 		</>
 	);
 };
@@ -88,7 +128,7 @@ const SearchBar = () => {
 			<div className="w-full my-0 text-gray-500">
 				<section className="flex items-center justify-center sm:h-20">
 					<div
-						className="flex items-center justify-center w-2/3"
+						className="flex items-center justify-center w-full md:w-2/3"
 						role="search"
 						aria-label="Sitewide"
 					>

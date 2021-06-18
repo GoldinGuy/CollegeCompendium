@@ -1,0 +1,12 @@
+
+
+/* highlight on drag */
+*::selection {
+    background: rgba(245, 208, 254, 1)
+}
+*::-moz-selection {
+  background: rgba(245, 208, 254, 1)
+}
+*::-webkit-selection {
+    background: rgba(245, 208, 254, 1)
+}
