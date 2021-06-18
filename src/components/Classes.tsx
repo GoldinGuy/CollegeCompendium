@@ -54,10 +54,11 @@ const Classes = ({
 		return true;
 	};
 
-	const filteredClasses = shuffle(classes).filter(course => {
-		return checkFilters(course);
-	});
-
+	const [filteredClasses, setFilteredClasses] = useState(
+		shuffle(classes).filter(course => {
+			return checkFilters(course);
+		})
+	);
 	const [page, setPageCount] = useState(0);
 	const startVid = displayPromo ? 1 : 0;
 	const MAX_PAGES = Math.floor(filteredClasses.length / 12);
