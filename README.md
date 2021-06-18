@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# CollegeCompendium
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📓 Learn at your own pace with our curated collection of free Computer Science classes from top colleges across America
 
-## Available Scripts
 
-In the project directory, you can run:
+[![Discuss On Discord][discord]][discord-url]
+[![Contributors][contributors-shield]][contributors-url]
+[![Issues][issues]][issues-url]
 
-### `yarn start`
+#### Looking for the CSV/Excel Files? 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Here they are! [csv](https://github.com/GoldinGuy/CollegeCompendium/blob/master/class_data.csv), [xlsx](https://github.com/GoldinGuy/CollegeCompendium/blob/master/class_data.xlsx)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### We Complement Your CS Journey By Cataloging Classes Across Topics & Experience Levels
 
-### `yarn test`
+College Compendium serves a single purpose: we help you find your next Computer Science resource or curriculum. Regardless of where you are in your journey, we provide a catalog of classes that are relevant to your skill-level, time-commitment, and learning style. This project is maintained by two student developers that are passionate about providing a high-quality, accessible education to intellectually curious students across the world. Learning Computer Science can be a very difficult journey, which is why we've compiled a catalog of courses to help you achieve your personal goals, regardless of interest, skill level, or time commitment. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[View Site](https://collegecompendium.goldin.io/)
 
-### `yarn build`
+## Development setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Simply clone the repository, then run
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To test the app, run
 
-### `yarn eject`
+```
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contributing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Fork CollegeCompendium [here](https://github.com/GoldinGuy/CollegeCompendium/fork)
+2. Create a feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Meta
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Created by [@GoldinGuy](https://github.com/GoldinGuy) and [@Samfydega](https://github.com/samfydega)
+Distributed under the MIT license. See [LICENSE](https://github.com/GoldinGuy/CollegeCompendium/blob/master/LICENSE) for more information.
 
-## Learn More
+<!-- Markdown link & img dfn's -->
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[discord-url]: https://discord.gg/gKYSMeJ
+[discord]: https://img.shields.io/discord/689176425701703810
+[issues]: https://img.shields.io/github/issues/GoldinGuy/Ideastorm
+[issues-url]: https://github.com/GoldinGuy/Ideastorm/issues
+[contributors-shield]: https://img.shields.io/github/contributors/GoldinGuy/Ideastorm.svg?style=flat-square
+[contributors-url]: https://github.com/GoldinGuy/Ideastorm/graphs/contributors
