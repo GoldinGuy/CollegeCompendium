@@ -7,15 +7,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Class } from "../typings/interfaces";
+// import { shuffle } from "../utils";
 import ExploreTable from "./Table";
-
-function shuffle(array: Class[]) {
-	for (let i = array.length - 1; i > 0; i--) {
-		const j = Math.floor(Math.random() * (i + 1));
-		[array[i], array[j]] = [array[j], array[i]];
-	}
-	return array;
-}
 
 const Classes = ({
 	imgUrl,
@@ -63,7 +56,7 @@ const Classes = ({
 		};
 
 		setFilteredClasses(
-			shuffle(classes).filter(course => {
+			classes.filter(course => {
 				return checkFilters(course);
 			})
 		);

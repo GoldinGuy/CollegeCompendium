@@ -94,7 +94,7 @@ const ContributeForm = () => {
 					<div>
 						<h2
 							className="mb-6 text-center text-3xl leading-9 font-extrabold text-dark"
-							key="signup"
+							key="contribute"
 						>
 							Contribute Classes To Our Compendium!
 						</h2>

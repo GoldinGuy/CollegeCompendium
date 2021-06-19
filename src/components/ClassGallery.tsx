@@ -1,14 +1,9 @@
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Class } from "../typings/interfaces";
-
-function shuffle(array: Class[]) {
-	for (let i = array.length - 1; i > 0; i--) {
-		const j = Math.floor(Math.random() * (i + 1));
-		[array[i], array[j]] = [array[j], array[i]];
-	}
-	return array;
-}
+import { shuffle } from "../utils";
 
 const ClassGallery = ({ classes }: { classes: Class[] }) => {
 	const responsive = {
@@ -81,7 +76,11 @@ const ClassGallery = ({ classes }: { classes: Class[] }) => {
 
 								<div className="p-3">
 									<p className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase">
-										{_class.source} | {_class.year}
+										{_class.source} | {_class.year}{" "}
+										<FontAwesomeIcon
+											icon={faExternalLinkAlt}
+											className="float-right"
+										/>
 									</p>
 
 									<h2 className="mb-2 text-xl font-bold leading-snug text-gray-900">

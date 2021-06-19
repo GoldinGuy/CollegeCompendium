@@ -26,7 +26,7 @@ const Footer = () => {
 					</a>
 					<a
 						className="mb-2 md:mb-0 hover:underline pr-6"
-						href="mailto:yakclasses@gmail.com&subject=YakClasses Inquiry"
+						href="mailto:yakclasses@gmail.com&subject=College Compendium Inquiry"
 					>
 						Contact
 					</a>

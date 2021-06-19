@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import useQuery from "../utils";
+import { useQuery } from "../utils";
 
 const NavSearchBar = ({ classN }: { classN?: string }) => {
 	const [term, setTerm] = React.useState("");

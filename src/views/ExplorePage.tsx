@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import Classes from "../components/Classes";
 
 import CLASSES from "../data/class_data.json";
-import useQuery from "../utils";
+import { shuffle, useQuery } from "../utils";
 
 const ExplorePage = () => {
 	const history = useHistory();
@@ -56,7 +56,7 @@ const ExplorePage = () => {
 				</div>
 
 				<Classes
-					classes={CLASSES.slice(0, 18)}
+					classes={shuffle(CLASSES).slice(0, 18)}
 					asTable={query.get("table") === "true"}
 				/>
 			</section>
