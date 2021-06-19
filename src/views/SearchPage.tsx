@@ -1,5 +1,4 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import Classes from "../components/Classes";
 import CLASSES from "../data/class_data.json";
 import useQuery from "../utils";

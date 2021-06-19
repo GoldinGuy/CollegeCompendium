@@ -2,12 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ClassGallery, CTA } from "../components";
 import FEATURED from "../data/featured.json";
-import {
-	faArrowCircleRight,
-	faBookmark,
-	faPen,
-	faStar
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowCircleRight, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import StanfordLogo from "../assets/schools/stanford.png";
