@@ -55,7 +55,10 @@ const ExplorePage = () => {
 					})}
 				</div>
 
-				<Classes classes={CLASSES} asTable={query.get("table") === "true"} />
+				<Classes
+					classes={CLASSES.slice(0, 18)}
+					asTable={query.get("table") === "true"}
+				/>
 			</section>
 		</>
 	);

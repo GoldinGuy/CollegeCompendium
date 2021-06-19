@@ -74,7 +74,7 @@ const Classes = ({
 	const startVid = displayPromo ? 1 : 0;
 	const MAX_PAGES = Math.floor(filteredClasses.length / 12);
 
-	console.log(filteredClasses, filters);
+	// console.log(filteredClasses, filters);
 
 	return (
 		<>
