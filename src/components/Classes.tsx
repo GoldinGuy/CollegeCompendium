@@ -7,7 +7,6 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Class } from "../typings/interfaces";
-// import { shuffle } from "../utils";
 import ExploreTable from "./Table";
 
 const Classes = ({
