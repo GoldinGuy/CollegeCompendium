@@ -191,7 +191,7 @@ const HomePage = () => {
 
 			{/* fav vids  */}
 			<section
-				className=" mx-auto px-4 max-w-7xl lg:max-w-9xl mb-6  mr-6 md:mr-16 lg:mr-24"
+				className="mx-auto px-4 max-w-7xl lg:max-w-9xl mb-6 mr-6 md:mr-16 lg:mr-24"
 				id="featured"
 			>
 				<h2 className="mb-2 text-3xl congress font-extrabold leading-tight text-gray-900 ">
@@ -231,13 +231,6 @@ const HomePage = () => {
 							Star On GitHub
 							<FontAwesomeIcon icon={faStar} className="ml-2" />
 						</a>
-						{/* <Link
-							to="/contribute"
-							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 "
-						>
-							Submit A Class
-							<FontAwesomeIcon icon={faPen} className="ml-2" />
-						</Link> */}
 					</div>
 					<div className="rounded-lg ">
 						<img

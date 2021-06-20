@@ -12,20 +12,31 @@ const CTA = () => {
 						Explore our collection of classes!
 					</span>
 				</h2>
-				<div className="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
+				<div className="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5 items-center">
 					<Link
 						to="/explore"
-						className="flex items-center justify-center px-4 py-3  text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-fuchsia-400 to-fuchsia-500 hover:from-fuchsia-500 hover:to-fuchsia-600"
+						className="flex items-center justify-center px-4 py-3  text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-fuchsia-400 to-fuchsia-500 hover:from-fuchsia-500 hover:to-fuchsia-600 mb-3 sm:mb-0"
 					>
 						Get Started
 						<FontAwesomeIcon icon={faArrowCircleRight} className="ml-2" />
 					</Link>
-					<Link
+					{/* <Link
 						to="/#about"
 						className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-800 bg-blue-50 hover:bg-blue-100"
 					>
 						Learn More
-					</Link>
+					</Link> */}
+					<a
+						href="https://www.producthunt.com/posts/college-compendium?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-college-compendium"
+						target="_blank"
+						rel="noreferrer"
+						className=""
+					>
+						<img
+							src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=300824&theme=light&period=daily"
+							alt="College Compendium - A collection of 650+ university CS courses for the curious | Product Hunt"
+						/>
+					</a>
 				</div>
 			</div>
 		</div>
