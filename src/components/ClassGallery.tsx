@@ -65,12 +65,8 @@ const ClassGallery = ({ classes }: { classes: Class[] }) => {
 											src={_class.source_thumb}
 											alt="logo"
 											loading="lazy"
-											className="h-16" //w-12 rounded-full
+											className="h-16"
 										/>
-										{/* <div className="ml-2 text-sm">
-													<p className="font-semibold">{Class.source}</p>
-													<p className="">{Class.year}</p>
-												</div> */}
 									</span>
 								</div>
 

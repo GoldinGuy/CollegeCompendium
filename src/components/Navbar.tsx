@@ -133,14 +133,6 @@ const Navbar = () => {
 								/>
 							</button>
 						) : null}
-
-						{/* <a
-							className="my-1 text-lg font-extrabold congress text-fuchsia-400 hover:text-fuchsia-500 md:mx-6 md:my-0 inline sm:hidden lg:inline"
-							href="https://twitter.com/DanielBfuchsia-500"
-						>
-							<FontAwesomeIcon icon={faTwitter} className="mr-1" />
-							@CollegeCompendium
-						</a> */}
 					</div>
 				</div>
 			</div>

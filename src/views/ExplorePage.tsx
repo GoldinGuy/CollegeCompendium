@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Classes from "../components/Classes";
-
 import CLASSES from "../data/class_data.json";
 import { shuffle, useQuery } from "../utils";
 
 const ExplorePage = () => {
 	const history = useHistory();
 	let query = useQuery();
+
+	// TODO: add more filters here
 	const classTags = [
 		"Programming Languages",
 		"Compilers",

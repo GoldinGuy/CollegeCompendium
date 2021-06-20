@@ -3585,17 +3585,7 @@
 		"tags": ["cs", "Cornell", "CS1114"],
 		"source_thumb": "https://user-images.githubusercontent.com/47064842/122510182-245c2600-cfd3-11eb-920d-e838e9771591.png"
 	},
-	{
-		"id": "cornell-Spring-CS1132",
-		"title": "CS1132: Short Course in MATLAB",
-		"source": "Cornell",
-		"year": "Spring 2021",
-		"url": "https://www.cs.cornell.edu/courses/cs1132",
-		"desc": "Introduction to the MATLAB programming language. Covers the basic programming constructs of MATLAB, including assignment, conditionals, iteration, functions, arrays, vectorized computation, and scientific graphics. Designed for students who need MATLAB for research or other courses. Does not assume any previous programming experience.",
-		"thumb": "https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1728&q=80",
-		"tags": ["cs", "Cornell", "CS1132"],
-		"source_thumb": "https://user-images.githubusercontent.com/47064842/122510182-245c2600-cfd3-11eb-920d-e838e9771591.png"
-	},
+
 	{
 		"id": "cornell-Spring-CS/INF",
 		"title": "CS/INFO 1305: Computation & Culture in the Digital Age",

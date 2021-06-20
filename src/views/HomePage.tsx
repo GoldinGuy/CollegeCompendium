@@ -43,19 +43,6 @@ const HomePage = () => {
 							<FontAwesomeIcon icon={faArrowCircleRight} className="ml-2" />
 						</Link>
 
-						{/*TODO: <button
-							className="inline-flex items-center justify-center w-full text-white font-semibold mb-2 bg-fuchsia-400 hover:bg-fuchsia-500 px-4 py-2 btn btn-light btn-lg sm:w-auto sm:mb-0 transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
-							onClick={() => {
-								// browser.bookmarks.create({
-								// 	title: "College Compendium | Free CS Classes",
-								// 	url: "http://localhost:8000/"
-								// });
-							}}
-						>
-							Bookmark This Site
-							<FontAwesomeIcon icon={faBookmark} className="ml-2" />
-						</button> */}
-
 						<a
 							className="inline-flex items-center justify-center w-full text-white font-semibold mb-2 bg-fuchsia-400 hover:bg-fuchsia-500 px-4 py-2 btn btn-light btn-lg sm:w-auto sm:mb-0 transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
 							href="https://github.com/GoldinGuy/CollegeCompendium"
@@ -65,11 +52,8 @@ const HomePage = () => {
 						</a>
 					</div>
 				</div>
-
+				{/* logos */}
 				<section className="px-4 py-12 mx-auto max-w-7xl" id="logos">
-					{/* <h1 className="mb-12 text-sm font-bold tracking-wide text-center text-gray-800 uppercase">
-					CS Classes From America's Top Universities
-				</h1> */}
 					<div className="grid grid-cols-2 gap-10  text-center lg:grid-cols-8 filter grayscale brightness-90 not-selectable">
 						<div className="flex items-center justify-center">
 							<img
@@ -189,7 +173,7 @@ const HomePage = () => {
 				</div>
 			</section>
 
-			{/* fav vids  */}
+			{/* featured  */}
 			<section
 				className="mx-auto px-4 max-w-7xl lg:max-w-9xl mb-6 mr-6 md:mr-16 lg:mr-24"
 				id="featured"
@@ -203,8 +187,6 @@ const HomePage = () => {
 					<span className="text-base text-fuchsia-400"> - Nelson Mandela </span>
 				</p>
 			</section>
-
-			{/* Featured  */}
 			<ClassGallery classes={FEATURED} />
 
 			{/* about  */}
@@ -215,14 +197,31 @@ const HomePage = () => {
 							By Computer Scientists, For Computer Scientists
 						</h2>
 						<p className="mb-8 text-base  text-gray-600 text-left md:text-lg">
-							College Compendium is maintained by two student developers that
-							are passionate about providing a high-quality, accessible
-							education to intellectually curious students across the world.
-							Learning Computer Science can be a very difficult journey, which
-							is why we've compiled a catalog of courses to help you achieve
-							your personal goals, regardless of interest, skill level, or time
-							commitment. If you would like to contribute to College Compendium,
-							submit a course below!
+							College Compendium is maintained by{" "}
+							<a
+								href="https://github.com/GoldinGuy"
+								target="_blank"
+								rel="noreferrer"
+								className="text-fuchsia-500 hover:text-fuchsia-600"
+							>
+								@GoldinGuy
+							</a>{" "}
+							and{" "}
+							<a
+								href="https://github.com/samfydega"
+								target="_blank"
+								rel="noreferrer"
+								className="text-fuchsia-500 hover:text-fuchsia-600"
+							>
+								@Samfydega
+							</a>
+							, two student developers that are passionate about providing a
+							high-quality, accessible education to intellectually curious
+							people across the world. Learning Computer Science can be a very
+							difficult journey, which is why we've compiled a catalog of
+							courses to help you achieve your personal goals, regardless of
+							interest, skill level, or time commitment. If you would like to
+							contribute to College Compendium, submit a course below!
 						</p>
 						<a
 							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 "
@@ -243,7 +242,7 @@ const HomePage = () => {
 				</div>
 			</section>
 
-			{/* Stats section */}
+			{/* stats */}
 			<div className="relative bg-gray-900 mt-20" id="stats">
 				<div className="h-80 absolute bottom-0 xl:inset-0 xl:h-full xl:w-full">
 					<div className="h-full w-full xl:grid xl:grid-cols-2">
@@ -326,6 +325,7 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
+			{/* cta  */}
 			<CTA />
 		</div>
 	);

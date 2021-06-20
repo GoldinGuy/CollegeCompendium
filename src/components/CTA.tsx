@@ -20,12 +20,6 @@ const CTA = () => {
 						Get Started
 						<FontAwesomeIcon icon={faArrowCircleRight} className="ml-2" />
 					</Link>
-					{/* <Link
-						to="/#about"
-						className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-blue-800 bg-blue-50 hover:bg-blue-100"
-					>
-						Learn More
-					</Link> */}
 					<a
 						href="https://www.producthunt.com/posts/college-compendium?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-college-compendium"
 						target="_blank"
