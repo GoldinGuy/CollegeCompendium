@@ -1,3 +1,7 @@
+import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Footer = () => {
 	return (
 		<footer className="px-6 sm:px-12 md:px-24 pb-12 mx-auto max-w-screen bg-gray-50">
@@ -16,19 +20,21 @@ const Footer = () => {
 						className="mb-2 md:mb-0 hover:underline pr-6"
 						href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
 					>
-						Terms of Service
+						Terms of Service{" "}
+						<FontAwesomeIcon icon={faInfoCircle} className="ml-2 " />
 					</a>
 					<a
 						className="mb-2 md:mb-0 hover:underline pr-6"
-						href="https://www.youtube.com/watch?v=SIaFtAKnqBU&list=PLSLWyQKazD3X0W72mUUmd0hHXJvA0RNOk&index=35"
+						href="https://discord.gg/gKYSMeJ"
+						// href="https://www.youtube.com/watch?v=SIaFtAKnqBU&list=PLSLWyQKazD3X0W72mUUmd0hHXJvA0RNOk&index=35"
 					>
-						Join the Team
+						Discord <FontAwesomeIcon icon={faDiscord} className="ml-2 " />
 					</a>
 					<a
 						className="mb-2 md:mb-0 hover:underline pr-6"
-						href="mailto:yakclasses@gmail.com&subject=College Compendium Inquiry"
+						href="mailto:gspam275@gmail.com&subject=College Compendium Inquiry"
 					>
-						Contact
+						Contact <FontAwesomeIcon icon={faEnvelope} className="ml-2 " />
 					</a>
 				</span>
 			</div>

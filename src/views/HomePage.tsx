@@ -194,7 +194,8 @@ const HomePage = () => {
 				<div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
 					<div className="text-left">
 						<h2 className="mb-4 text-2xl congress font-extrabold tracking-tight text-black md:leading-tight text-left md:text-4xl">
-							By Computer Scientists, For Computer Scientists
+							For Computer Scientists, <br />
+							By Computer Scientists
 						</h2>
 						<p className="mb-8 text-base  text-gray-600 text-left md:text-lg">
 							College Compendium is maintained by{" "}
@@ -263,11 +264,11 @@ const HomePage = () => {
 					<div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
 						<h2 className="text-sm font-semibold tracking-wide uppercase">
 							<span className="bg-gradient-to-r from-purple-300 to-fuchsia-300 bg-clip-text text-transparent">
-								Why learn computer science?
+								Why College Compendium?
 							</span>
 						</h2>
 						<p className="mt-3 text-3xl font-extrabold text-white">
-							Computer Scientists Improve Our World. You Can Too!
+							Join Over 30000 Programmers And Learn With College Compendium
 						</p>
 						<p className="mt-5 text-lg text-gray-300">
 							Startup founder, CS student, data enthusiast, or first-time coder.
