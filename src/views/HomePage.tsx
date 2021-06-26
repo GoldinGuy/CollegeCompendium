@@ -268,7 +268,7 @@ const HomePage = () => {
 							</span>
 						</h2>
 						<p className="mt-3 text-3xl font-extrabold text-white">
-							Join Over 30000 Programmers And Learn With College Compendium
+							Join Over 40000 Programmers And Learn With College Compendium
 						</p>
 						<p className="mt-5 text-lg text-gray-300">
 							Startup founder, CS student, data enthusiast, or first-time coder.
