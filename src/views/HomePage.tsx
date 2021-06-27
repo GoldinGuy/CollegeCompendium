@@ -200,7 +200,7 @@ const HomePage = () => {
 						<p className="mb-8 text-base  text-gray-600 text-left md:text-lg">
 							College Compendium is maintained by{" "}
 							<a
-								href="https://github.com/GoldinGuy"
+								href="https://www.linkedin.com/in/sethgoldin/"
 								target="_blank"
 								rel="noreferrer"
 								className="text-fuchsia-500 hover:text-fuchsia-600"
@@ -209,7 +209,7 @@ const HomePage = () => {
 							</a>{" "}
 							and{" "}
 							<a
-								href="https://github.com/samfydega"
+								href="https://www.linkedin.com/in/samcrombie/"
 								target="_blank"
 								rel="noreferrer"
 								className="text-fuchsia-500 hover:text-fuchsia-600"
