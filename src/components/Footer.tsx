@@ -32,7 +32,7 @@ const Footer = () => {
 					</a>
 					<a
 						className="mb-2 md:mb-0 hover:underline pr-6"
-						href="mailto:crombiesamuel@gmail.com&subject=College Compendium Inquiry"
+						href="mailto:team@collegecompendium.org&subject=College Compendium Inquiry"
 					>
 						Contact <FontAwesomeIcon icon={faEnvelope} className="ml-2 " />
 					</a>
