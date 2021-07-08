@@ -1,6 +1,6 @@
 # CollegeCompendium
 
-📓 **Join over 40000 programmers and learn at your own pace with our curated collection of free Computer Science classes from top colleges across America**
+📓 **Join over 50000 programmers and learn at your own pace with our curated collection of free Computer Science classes from top colleges across America**
 
 
 [![Discuss On Discord][discord]][discord-url]
