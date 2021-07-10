@@ -29,7 +29,7 @@ const TempSplashPage = () => {
 							<span className="sr-only">Your Email</span>
 							<input
 								// className="mt-0 form-input form-input-lg"
-                            className="w-full p-3 text-md text-gray-900 bg-gray-300 rounded-xl focus:outline-none focus:shadow-outline"
+                            className="w-full p-3 text-md text-gray-900 bg-gray-200 rounded-xl focus:outline-none focus:shadow-outline"
                             type="email"
                             placeholder="Enter your email..."
                             required={true}
@@ -50,10 +50,10 @@ const TempSplashPage = () => {
 																{
 																	method: "POST",
 																     mode: "no-cors",
-																	// headers: {
-																	// 	"Content-Type": "application/json",
-																	// 	"Access-Control-Allow-Methods": "*"
-																	// },
+																	headers: {
+																		"Content-Type": "application/json",
+																		// "Access-Control-Allow-Methods": "*"
+																	},
 																	body: JSON.stringify({
 																		value1: email
 																	})
