@@ -46,17 +46,17 @@ const TempSplashPage = () => {
 														) {
 															console.log("Email is valid: ", email);
 															fetch(
-																`https://maker.ifttt.com/trigger/email_received/with/key/${process.env.REACT_APP_IFTTT_KEY}`,
+																`https://maker.ifttt.com/trigger/email_received/with/key/${process.env.REACT_APP_IFTTT_KEY}?&value1=${email}`,
 																{
 																	method: "POST",
-																     mode: "no-cors",
-																	headers: {
-																		"Content-Type": "application/json",
-																		// "Access-Control-Allow-Methods": "*"
-																	},
-																	body: JSON.stringify({
-																		value1: email
-																	})
+																	mode: "no-cors",
+																	// headers: {
+																	// 	"Content-Type": "application/json"
+																	// 	// "Access-Control-Allow-Methods": "*"
+																	// },
+																	// body: JSON.stringify({
+																	// 	value1: email
+																	// })
 																}
 															);
 															setEmail("");
