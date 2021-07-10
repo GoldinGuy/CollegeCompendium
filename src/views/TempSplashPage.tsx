@@ -39,23 +39,27 @@ const TempSplashPage = () => {
 						</label>
                     <button
                         onClick={() => {
-                            if (email.includes("@") && email.includes(".")) {
-                                console.log("Email is valid: ", email);
-                                fetch(
-																	`https://maker.ifttt.com/trigger/email_received/with/key/d1GRYXlqwcEwhwQ427TbFn`,
-																	{
-																		method: "POST",
-																		headers: {
-																			"Content-Type": "application/json",
-																			"Access-Control-Allow-Methods": "*"
-																		},
-																		body: JSON.stringify({
-																			value1: email
-																		})
-																	}
-																);
-                                setEmail("")
-                            }
+                            if (
+															email.includes("@") &&
+															email.includes(".") &&
+															process.env.REACT_APP_IFTTT_KEY
+														) {
+															console.log("Email is valid: ", email);
+															fetch(
+																`https://maker.ifttt.com/trigger/email_received/with/key/${process.env.REACT_APP_IFTTT_KEY}`,
+																{
+																	method: "POST",
+																	headers: {
+																		"Content-Type": "application/json",
+																		"Access-Control-Allow-Methods": "*"
+																	},
+																	body: JSON.stringify({
+																		value1: email
+																	})
+																}
+															);
+															setEmail("");
+														}
                         }}
 							className="w-full col-auto btn py-3 btn-primary btn-lg lg:col-span-2 rounded-xl text-white bg-fuchsia-400 hover:bg-fuchsia-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 font-semibold"
 							type="submit"
