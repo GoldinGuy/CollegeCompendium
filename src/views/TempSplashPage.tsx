@@ -49,11 +49,11 @@ const TempSplashPage = () => {
 																`https://maker.ifttt.com/trigger/email_received/with/key/${process.env.REACT_APP_IFTTT_KEY}`,
 																{
 																	method: "POST",
-																	mode: "cors",
-																	headers: {
-																		"Content-Type": "application/json",
-																		"Access-Control-Allow-Methods": "*"
-																	},
+																     mode: "no-cors",
+																	// headers: {
+																	// 	"Content-Type": "application/json",
+																	// 	"Access-Control-Allow-Methods": "*"
+																	// },
 																	body: JSON.stringify({
 																		value1: email
 																	})
