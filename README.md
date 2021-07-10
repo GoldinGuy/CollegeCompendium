@@ -1,6 +1,6 @@
 # CollegeCompendium
 
-📓 **Join over 30000 programmers and learn at your own pace with our curated collection of free Computer Science classes from top colleges across America**
+📓 **Join over 50000 programmers and learn at your own pace with our curated collection of free Computer Science classes from top colleges across America**
 
 
 [![Discuss On Discord][discord]][discord-url]
@@ -17,7 +17,7 @@ Here they are! [csv](https://github.com/GoldinGuy/CollegeCompendium/blob/master/
 
 College Compendium serves a single purpose: we help you find your next Computer Science resource or curriculum. Regardless of where you are in your journey, we provide a catalog of classes that are relevant to your skill-level, time-commitment, and learning style. This project is maintained by two student developers that are passionate about providing a high-quality, accessible education to intellectually curious students across the world. Learning Computer Science can be a very difficult journey, which is why we've compiled a catalog of courses to help you achieve your personal goals, regardless of interest, skill level, or time commitment. 
 
-[View Site](https://collegecompendium.goldin.io/)
+[View Site](https://collegecompendium.org)
 
 ## Development setup
 
