@@ -19,59 +19,58 @@ const TempSplashPage = () => {
 					<p className="mb-6 text-lg text-gray-500 md:text-xl md:leading-normal">
 						<i className="mb-4 block">
 							We’re on a mission to bring the best of open source learning to
-							the students everywhere!{" "}
+							students everywhere
 						</i>
 						Our site is currently down, but feel free to join our mailing list
-						so we can let you know when the site is back up.
+						so we can let you know when we're back!
 					</p>
 					<form className="grid w-full grid-cols-1 gap-3 pt-1 mx-auto mb-8 lg:grid-cols-6 md:w-7/12">
 						<label className="col-auto lg:col-span-4 ">
 							<span className="sr-only">Your Email</span>
 							<input
-								// className="mt-0 form-input form-input-lg"
-                            className="w-full p-3 text-md text-gray-900 bg-gray-200 rounded-xl focus:outline-none focus:shadow-outline"
-                            type="email"
-                            placeholder="Enter your email..."
-                            required={true}
-                            onChange={(e) => setEmail(e.target.value)}
-                            value={email}
+								className="w-full p-3 text-md text-gray-900 bg-gray-200 rounded-xl focus:outline-none focus:shadow-outline"
+								type="email"
+								placeholder="Enter your email..."
+								required={true}
+								onChange={e => setEmail(e.target.value)}
+								value={email}
 							/>
 						</label>
-                    <button
-                        onClick={() => {
-                            if (
-															email.includes("@") &&
-															email.includes(".") &&
-															process.env.REACT_APP_IFTTT_KEY
-														) {
-															console.log("Email is valid: ", email);
-															fetch(
-																`https://maker.ifttt.com/trigger/email_received/with/key/${process.env.REACT_APP_IFTTT_KEY}?&value1=${email}`,
-																{
-																	method: "POST",
-																	mode: "no-cors",
-																	// headers: {
-																	// 	"Content-Type": "application/json"
-																	// 	// "Access-Control-Allow-Methods": "*"
-																	// },
-																	// body: JSON.stringify({
-																	// 	value1: email
-																	// })
-																}
-															);
-															setEmail("");
-														}
-                        }}
+						<button
+							onClick={() => {
+								if (
+									email.includes("@") &&
+									email.includes(".") &&
+									process.env.REACT_APP_IFTTT_KEY
+								) {
+									console.log("Email is valid: ", email);
+									fetch(
+										`https://maker.ifttt.com/trigger/email_received/with/key/${process.env.REACT_APP_IFTTT_KEY}?&value1=${email}`,
+										{
+											method: "POST",
+											mode: "no-cors"
+											// headers: {
+											// 	"Content-Type": "application/json"
+											// 	// "Access-Control-Allow-Methods": "*"
+											// },
+											// body: JSON.stringify({
+											// 	value1: email
+											// })
+										}
+									);
+									setEmail("");
+								}
+							}}
 							className="w-full col-auto btn py-3 btn-primary btn-lg lg:col-span-2 rounded-xl text-white bg-fuchsia-400 hover:bg-fuchsia-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 font-semibold"
 							type="submit"
 						>
-							Get Started
+						Oh Yeah!
 						</button>
 					</form>
 					<div className="flex flex-col justify-start mb-3 space-x-0 space-y-2 text-sm text-gray-600 md:flex-row md:justify-center md:space-x-8 md:space-y-0">
 						<a
 							className="hover:underline"
-							href="mailto:gspam275@gmail.com&subject=College Compendium Inquiry"
+							href="mailto:team@collegecompendium.org&subject=College Compendium Inquiry"
 						>
 							Get In Touch{" "}
 							<FontAwesomeIcon icon={faEnvelope} className="ml-2 " />
