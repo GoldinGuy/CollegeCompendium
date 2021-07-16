@@ -53,7 +53,7 @@ const HomePage = () => {
 					</div>
 				</div>
 				{/* logos */}
-				<section className="px-4 py-12 mx-auto max-w-7xl" id="logos">
+				{/* <section className="px-4 py-12 mx-auto max-w-7xl" id="logos">
 					<div className="grid grid-cols-2 gap-10  text-center lg:grid-cols-8 filter grayscale brightness-90 not-selectable">
 						<div className="flex items-center justify-center">
 							<img
@@ -122,7 +122,7 @@ const HomePage = () => {
 							/>
 						</div>
 					</div>
-				</section>
+				</section> */}
 
 				<div className="w-full mx-auto mt-8 text-center md:w-10/12 bg-gradient-to-r from-fuchsia-400  to-blue-500 rounded-lg">
 					<img

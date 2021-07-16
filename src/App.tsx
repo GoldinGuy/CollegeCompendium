@@ -12,9 +12,8 @@ function App() {
 	return (
 		<BrowserRouter basename="/">
 			<ScrollToTop>
-				<Route path="/" exact component={TempSplashPage} />
-				{/*
-				TODO: disable while under active development
+				{/* TODO: disable while under active development */}
+				{/* <Route path="/" exact component={TempSplashPage} /> */}
 				<Navbar />
 				<Switch>
 					<Route path="/" exact component={HomePage} />
@@ -22,7 +21,7 @@ function App() {
 					<Route path="/explore" exact component={ExplorePage} />
 					<Route path="/contribute" exact component={ContributePage} />
 				</Switch>
-				<Footer /> */}
+				<Footer />
 			</ScrollToTop>
 		</BrowserRouter>
 	);

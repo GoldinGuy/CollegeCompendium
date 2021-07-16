@@ -1,4 +1,5 @@
 import { Class } from "../typings/interfaces";
+import { collegeColors } from "../utils";
 
 const ExploreTable = ({ classes }: { classes: Class[] }) => {
 	if (classes.length > 0) {
@@ -40,15 +41,22 @@ const ExploreTable = ({ classes }: { classes: Class[] }) => {
 									return (
 										<tbody className="bg-white divide-y divide-gray-200">
 											<tr>
-												<td className="px-6 py-4 whitespace-nowrap">
+												<td className="px-6 py-4 whitespace-nowrap relative">
+													<div
+														className="w-2 h-full mb-3 absolute bottom-0 left-0 top-0"
+														style={{
+															background:
+																collegeColors[_class.source.toLowerCase()],
+														}}
+													/>
 													<div className="flex items-center">
-														<div className="flex-shrink-0 h-10 w-10">
-															<img
-																className="h-10 m-auto"
-																src={_class.source_thumb}
-																alt="logo"
-															/>
-														</div>
+														<div
+															className="w-2 h-full mb-3"
+															style={{
+																background:
+																	collegeColors[_class.source.toLowerCase()],
+															}}
+														/>
 														<div className="ml-4">
 															<div className="text-sm font-medium text-gray-900">
 																{_class.source}
@@ -78,7 +86,7 @@ const ExploreTable = ({ classes }: { classes: Class[] }) => {
 													{_class.desc}
 												</td>
 												<td className="px-6 py-4 ">
-													{_class.tags.map(word => {
+													{_class.tags.map((word) => {
 														if (
 															word.toUpperCase() !==
 																_class.source.toUpperCase() &&

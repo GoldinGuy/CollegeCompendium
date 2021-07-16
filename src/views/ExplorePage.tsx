@@ -34,7 +34,7 @@ const ExplorePage = () => {
 				{/* Search */}
 				<LargeSearchBar asTable={query.get("table") === "true"} />
 
-				<div className="pt-10 pb-0 text-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
+				<div className="pt-6 pb-0 text-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
 					{classTags.map(tag => {
 						return (
 							<div
@@ -91,8 +91,8 @@ const LargeSearchBar = ({ asTable }: { asTable: boolean }) => {
 	};
 
 	return (
-		<div className="flex max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
-			<div className="w-full my-0 text-gray-500">
+		<div className="flex max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl overflow-x-hidden">
+			<div className="w-full my-0 text-gray-600">
 				<section className="flex items-center justify-center sm:h-20">
 					<div
 						className="flex items-center justify-center w-full md:w-2/3"

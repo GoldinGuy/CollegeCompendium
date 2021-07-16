@@ -1,12 +1,22 @@
 import {
 	faArrowCircleRight,
-	faExternalLinkAlt
+	faBook,
+	faBookmark,
+	faExternalLinkAlt,
+	faFileAudio,
+	faFileInvoice,
+	faFilePowerpoint,
+	faFileSignature,
+	faFileVideo,
+	faFileWord,
+	faVideo
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Class } from "../typings/interfaces";
+import { collegeColors } from "../utils";
 import ExploreTable from "./Table";
 
 const Classes = ({
@@ -70,7 +80,7 @@ const Classes = ({
 
 	return (
 		<>
-			<div className="container relative flex flex-col justify-between h-full max-w-6xl px-8 mx-auto xl:px-0">
+			<div className="container relative flex flex-col justify-between h-full max-w-6xl px-8 mx-auto xl:px-0 overflow-x-hidden">
 				<div className="relative flex items-center self-start sm:mb-1 mt-2 font-black w-auto">
 					{/* w-auto */}
 					<h2
@@ -109,34 +119,26 @@ const Classes = ({
 								<div className="col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-3 text-center flex justify-center ">
 									<a
 										href={filteredClasses[0].url}
-										className="md:w-2/3 lg:w-1/2 relative"
+										className="md:w-2/3 lg:w-1/2 relative hover:shadow-xl"
 									>
-										<div className="transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 ">
-											<img
-												src={filteredClasses[0].thumb}
-												className="object-cover sm:h-72 mb-5 bg-center w-full"
-												alt="Thumbnail"
-												loading="lazy"
-											/>
-											<span className="flex items-center text-gray-50 z-10 absolute top-5 right-5 ">
-												<img
-													src={filteredClasses[0].source_thumb}
-													alt="logo"
-													loading="lazy"
-													className="h-16"
-												/>
-											</span>
-										</div>
-
-										<p className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase">
+										<div
+											className="w-full h-2 mb-3"
+											style={{
+												background:
+													collegeColors[
+														filteredClasses[0].source.toLowerCase()
+													],
+											}}
+										/>
+										<p className="mb-4 text-xs font-semibold tracking-wider text-gray-400 uppercase ">
 											{filteredClasses[0].source} | {filteredClasses[0].year}
 										</p>
-										<h2 className="mb-2 text-xl font-bold leading-snug text-gray-900">
-											<span className="text-gray-900 hover:text-fuchsia-500-600 bg-fuchsia-200 px-2 py-1">
+										<h2 className="mb-4 text-xl font-bold leading-snug text-gray-900">
+											<span className="text-gray-900 hover:text-fuchsia-500 bg-fuchsia-200 px-2 py-1">
 												{filteredClasses[0].title}
 											</span>
 										</h2>
-										<p className="mb-4 text-sm font-normal text-gray-600">
+										<p className="mb-5 text-sm font-normal text-gray-600  px-2">
 											{filteredClasses[0].desc}
 										</p>
 									</a>
@@ -148,31 +150,18 @@ const Classes = ({
 								.map((_class, idx) => {
 									return (
 										<div
-											className="group hover:scale-105 rounded shadow-lg hover:shadow-xl"
+											className="group hover:scale-105 rounded shadow-md hover:shadow-xl"
+											style={{ height: "fit-content" }}
 											key={_class.id + idx}
 										>
+											<div
+												className="w-full h-2 mb-1"
+												style={{
+													background:
+														collegeColors[_class.source.toLowerCase()],
+												}}
+											/>
 											<a href={_class.url}>
-												<div className="mb-3 relative">
-													<img
-														src={_class.thumb}
-														className="object-cover w-full h-56 bg-center rounded-t transition duration-500 ease-in-out transform group-hover:bg-fuchsia-500 group-hover:opacity-80 z-0 "
-														alt="Thumbnail"
-														loading="lazy"
-													/>
-													<span className="flex items-center text-gray-50 z-10 absolute top-5 right-5">
-														<img
-															src={_class.source_thumb}
-															alt="logo"
-															className="h-16"
-														/>
-
-														{/* <div className="ml-2 text-sm">
-													<p className="font-semibold">{Class.source}</p>
-													<p className="">{Class.year}</p>
-												</div> */}
-													</span>
-												</div>
-
 												<div className="p-3">
 													<p className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase">
 														{_class.source} | {_class.year}{" "}
@@ -190,6 +179,43 @@ const Classes = ({
 													<p className="mb-4 text-sm font-normal text-gray-600">
 														{_class.desc}
 													</p>
+													<span className="flex justify-center py-2 px-1 text-gray-600">
+														<FontAwesomeIcon
+															icon={faBookmark}
+															className="mr-3"
+															size="lg"
+														/>
+														<FontAwesomeIcon
+															icon={faFileAudio}
+															size="lg"
+															className="mr-3"
+														/>
+														<FontAwesomeIcon
+															icon={faFileVideo}
+															size="lg"
+															className="mr-3"
+														/>
+														<FontAwesomeIcon
+															icon={faFileWord}
+															size="lg"
+															className="mr-3"
+														/>
+														<FontAwesomeIcon
+															icon={faFilePowerpoint}
+															className="mr-3"
+															size="lg"
+														/>
+														<FontAwesomeIcon
+															icon={faFileInvoice}
+															className="mr-3"
+															size="lg"
+														/>
+														<FontAwesomeIcon
+															icon={faFileSignature}
+															className="mr-3"
+															size="lg"
+														/>
+													</span>
 												</div>
 											</a>
 										</div>
