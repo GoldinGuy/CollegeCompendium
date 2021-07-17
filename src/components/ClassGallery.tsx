@@ -49,7 +49,7 @@ const ClassGallery = ({ classes }: { classes: Class[] }) => {
 				.map((_class, idx) => {
 					return (
 						<div
-							className="group hover:scale-105 rounded shadow-md hover:shadow-xl"
+							className="group hover:scale-105 rounded hover:shadow-xl"
 							style={{ height: "fit-content" }}
 							key={_class.id + idx}
 						>
@@ -59,7 +59,7 @@ const ClassGallery = ({ classes }: { classes: Class[] }) => {
 									background: collegeColors[_class.source.toLowerCase()],
 								}}
 							/>
-							<a href={_class.url}>
+							<a href={_class.url} target="_blank" rel="noreferrer">
 								<div className="p-3">
 									<p className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase">
 										{_class.source} | {_class.year}{" "}
