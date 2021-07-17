@@ -1,15 +1,12 @@
 import {
 	faArrowCircleRight,
-	faBook,
-	faBookmark,
+	faClipboard,
 	faExternalLinkAlt,
-	faFileAudio,
 	faFileInvoice,
-	faFilePowerpoint,
 	faFileSignature,
 	faFileVideo,
-	faFileWord,
-	faVideo
+	faPencilAlt,
+	faVideo,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
@@ -113,7 +110,7 @@ const Classes = ({
 							className="object-cover w-screen object-center-top h-32 sm:h-full"
 						/>
 					) : null}
-					<section className="w-full px-4 py-16 mx-auto max-w-7xl md:w-4/5">
+					<section className="w-full px-4 py-12 mx-auto max-w-7xl md:w-4/5">
 						<div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
 							{displayPromo && filteredClasses[0] ? (
 								<div className="col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-3 text-center flex justify-center ">
@@ -179,42 +176,41 @@ const Classes = ({
 													<p className="mb-4 text-sm font-normal text-gray-600">
 														{_class.desc}
 													</p>
-													<span className="flex justify-center py-2 px-1 text-gray-600">
-														<FontAwesomeIcon
-															icon={faBookmark}
+													<span className="py-2 text-gray-500">
+														{/* <FontAwesomeIcon
+															icon={faClipboard}
 															className="mr-3"
 															size="lg"
 														/>
 														<FontAwesomeIcon
-															icon={faFileAudio}
-															size="lg"
+															icon={faPencilAlt}
 															className="mr-3"
+															size="lg"
 														/>
+														<FontAwesomeIcon
+															icon={faVideo}
+															className="mr-3"
+															size="lg"
+														/> */}
 														<FontAwesomeIcon
 															icon={faFileVideo}
 															size="lg"
 															className="mr-3"
-														/>
-														<FontAwesomeIcon
-															icon={faFileWord}
-															size="lg"
-															className="mr-3"
-														/>
-														<FontAwesomeIcon
-															icon={faFilePowerpoint}
-															className="mr-3"
-															size="lg"
+															title="Video Lecture"
 														/>
 														<FontAwesomeIcon
 															icon={faFileInvoice}
 															className="mr-3"
 															size="lg"
+															title="Written Notes"
 														/>
 														<FontAwesomeIcon
 															icon={faFileSignature}
 															className="mr-3"
 															size="lg"
+															title="Assignments"
 														/>
+												
 													</span>
 												</div>
 											</a>

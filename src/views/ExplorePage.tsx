@@ -26,15 +26,15 @@ const ExplorePage = () => {
 	];
 	return (
 		<>
-			<section className="px-4 pb-20 pt-6 mx-auto max-w-7xl">
-				<h2 className="pb-8 mb-1 text-center congress text-2xl font-extrabold leading-tight text-gray-900 md:text-4xl">
+			<section className="px-4 pb-16 pt-6 mx-auto max-w-7xl">
+				<h2 className="pb-6 mb-1 text-center congress text-2xl font-extrabold leading-tight text-gray-900 md:text-4xl">
 					Find Your Next CS Course
 				</h2>
 
 				{/* Search */}
 				<LargeSearchBar asTable={query.get("table") === "true"} />
 
-				<div className="pt-6 pb-0 text-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
+				<div className="pt-4 pb-0 text-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
 					{classTags.map(tag => {
 						return (
 							<div
