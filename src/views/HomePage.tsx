@@ -4,15 +4,17 @@ import { ClassGallery, CTA } from "../components";
 import FEATURED from "../data/featured.json";
 import { faArrowCircleRight, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import EmailForm from "../components/EmailForm";
 
-import StanfordLogo from "../assets/schools/stanford.png";
-import PennLogo from "../assets/schools/upenn.png";
-import CornellLogo from "../assets/schools/cornell.png";
-import MITLogo from "../assets/schools/mit.png";
-import CarnegieLogo from "../assets/schools/carnegiemellon.png";
-import BerkeleyLogo from "../assets/schools/berkeley.png";
-import CalTechLogo from "../assets/schools/caltech.png";
-import HarvardLogo from "../assets/schools/harvard.png";
+// import StanfordLogo from "../assets/schools/stanford.png";
+// import PennLogo from "../assets/schools/upenn.png";
+// import CornellLogo from "../assets/schools/cornell.png";
+// import MITLogo from "../assets/schools/mit.png";
+// import CarnegieLogo from "../assets/schools/carnegiemellon.png";
+// import BerkeleyLogo from "../assets/schools/berkeley.png";
+// import CalTechLogo from "../assets/schools/caltech.png";
+// import HarvardLogo from "../assets/schools/harvard.png";
 
 const HomePage = () => {
 	return (
@@ -28,7 +30,7 @@ const HomePage = () => {
 						</span>
 					</h1>
 					<p className="px-0 mb-6 text-lg text-gray-600 md:text-xl lg:px-24">
-						Learn at your own pace with our curated collection of{" "}
+						Learn at your own pace with a curated collection of{" "}
 						<br className="hidden sm:flex" />
 						<strong>
 							free Computer Science classes from top colleges across America
@@ -146,11 +148,10 @@ const HomePage = () => {
 						<p className="mb-8 text-base  text-gray-600 text-left md:text-lg">
 							College Compendium serves a single purpose: we help you find your
 							next Computer Science resource or curriculum. Regardless of where
-							you are in your journey, we provide a catalog of classes that are
-							relevant to your skill-level, time-commitment, and learning style.
-							At College Compendium, we pride ourselves in giving users the
-							tools to try, fail, and try again. With hundreds of classes (and
-							growing), you will never hit a dead end.
+							you are in your journey, we've compiled a catalog of classes that
+							are relevant to your skill-level, time-commitment, and learning
+							style. With hundreds of classes (and growing), you will never hit
+							a dead end.
 						</p>
 						<Link
 							to="/explore"
@@ -219,18 +220,27 @@ const HomePage = () => {
 							, two student developers that are passionate about providing a
 							high-quality, accessible education to intellectually curious
 							people across the world. Learning Computer Science can be a very
-							difficult journey, which is why we've compiled a catalog of
-							courses to help you achieve your personal goals, regardless of
-							interest, skill level, or time commitment. If you would like to
-							contribute to College Compendium, submit a course below!
+							difficult journey, which is why we've created a catalog of courses
+							to help you achieve your personal goals.
 						</p>
 						<a
+							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 "
+							target="_blank"
+							rel="noreferrer"
+							href="https://discord.gg/gKYSMeJ"
+						>
+							Join The Discord
+							<FontAwesomeIcon icon={faDiscord} className="ml-2" />
+						</a>
+
+						{/* <a
 							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 "
 							href="https://github.com/GoldinGuy/CollegeCompendium"
 						>
 							Star On GitHub
 							<FontAwesomeIcon icon={faStar} className="ml-2" />
 						</a>
+					 */}
 					</div>
 					<div className="rounded-lg ">
 						<img
@@ -277,7 +287,7 @@ const HomePage = () => {
 							Seminars. Topics include: Algorithms, Data Science, Data
 							Structures, Systems, Quantum Computing, Cryptography,
 							Cybersecurity, Application Development, Video Game Design,
-							Software Engineering, and much more!
+							Software Engineering, and more!
 						</p>
 						<div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
 							<p>
@@ -326,8 +336,10 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
+
 			{/* cta  */}
 			<CTA />
+			<EmailForm />
 		</div>
 	);
 };
