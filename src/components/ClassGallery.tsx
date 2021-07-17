@@ -1,9 +1,9 @@
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { faExternalLinkAlt, faFileInvoice, faFileSignature, faFileVideo } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Class } from "../typings/interfaces";
-import { shuffle } from "../utils";
+import { collegeColors, shuffle } from "../utils";
 
 const ClassGallery = ({ classes }: { classes: Class[] }) => {
 	const responsive = {
@@ -49,27 +49,17 @@ const ClassGallery = ({ classes }: { classes: Class[] }) => {
 				.map((_class, idx) => {
 					return (
 						<div
-							className="group hover:scale-105 rounded shadow-lg hover:shadow-xl"
+							className="group hover:scale-105 rounded shadow-md hover:shadow-xl"
+							style={{ height: "fit-content" }}
 							key={_class.id + idx}
 						>
+							<div
+								className="w-full h-2 mb-1"
+								style={{
+									background: collegeColors[_class.source.toLowerCase()],
+								}}
+							/>
 							<a href={_class.url}>
-								<div className="relative mb-3">
-									<img
-										src={_class.thumb}
-										className="object-cover w-full h-56 bg-center rounded-t transition duration-500 ease-in-out transform group-hover:bg-fuchsia-500 group-hover:opacity-80 z-0 "
-										alt="Thumbnail"
-										loading="lazy"
-									/>
-									<span className="flex items-center text-gray-50 z-10 absolute top-5 right-5">
-										<img
-											src={_class.source_thumb}
-											alt="logo"
-											loading="lazy"
-											className="h-16"
-										/>
-									</span>
-								</div>
-
 								<div className="p-3">
 									<p className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase">
 										{_class.source} | {_class.year}{" "}
@@ -87,6 +77,26 @@ const ClassGallery = ({ classes }: { classes: Class[] }) => {
 									<p className="mb-4 text-sm font-normal text-gray-600">
 										{_class.desc}
 									</p>
+									<span className="py-2 text-gray-500">
+										<FontAwesomeIcon
+											icon={faFileVideo}
+											size="lg"
+											className="mr-3"
+											title="Video Lecture"
+										/>
+										<FontAwesomeIcon
+											icon={faFileInvoice}
+											className="mr-3"
+											size="lg"
+											title="Written Notes"
+										/>
+										<FontAwesomeIcon
+											icon={faFileSignature}
+											className="mr-3"
+											size="lg"
+											title="Assignments"
+										/>
+									</span>
 								</div>
 							</a>
 						</div>

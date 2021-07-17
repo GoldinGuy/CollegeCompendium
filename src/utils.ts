@@ -38,4 +38,6 @@ export const collegeColors = {
 	carnegiemellon: "#B71E34",
 	columbia: "#9BCBEB",
 	rpi: "#D6001C",
+	nyu: "#9BCBEB",
+	utexas: '',
 };

@@ -1,16 +1,5 @@
 [
 	{
-		"id": "stanford-Spring-CS246",
-		"title": "CS246: Mining Massive Datasets",
-		"source": "Stanford",
-		"year": "Spring 2021",
-		"url": "http://web.stanford.edu/class/cs246/",
-		"desc": "The course will discuss data mining and machine learning algorithms for analyzing very large amounts of data. The emphasis will be on MapReduce and Spark as tools for creating parallel algorithms that can process very large amounts of data.",
-		"thumb": "https://images.unsplash.com/photo-1611924707078-da8777fc99cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80",
-		"tags": ["cs", "Stanford", "CS246"],
-		"source_thumb": "https://user-images.githubusercontent.com/47064842/122510077-f1b22d80-cfd2-11eb-87a4-8a83637c2e8e.png"
-	},
-	{
 		"id": "berkeley-Spring-CS",
 		"title": "CS 10: The Beauty and Joy of Computing",
 		"source": "Berkeley",
@@ -20,6 +9,17 @@
 		"thumb": "https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
 		"tags": ["cs", "Berkeley", "CS10"],
 		"source_thumb": "https://user-images.githubusercontent.com/47064842/122510120-08f11b00-cfd3-11eb-8d7c-8d824fe080dc.png"
+	},
+	{
+		"id": "columbia-Spring-EECSE6894",
+		"title": "EECSE6894: Deep Learning for Computer Vision and Natural Language Processing",
+		"source": "Columbia",
+		"year": "Spring 2015",
+		"url": "http://llcao.net/cu-deeplearning15/index.html",
+		"desc": "This graduate level research class focuses on deep learning techniques for vision and natural language processing problems. It gives an overview of the various deep learning models and techniques, and surveys recent advances in the related fields. This course uses Theano as the main programminging tool. GPU programming experiences are preferred although not required. Frequent paper presentations and a heavy programming workload are expected.",
+		"thumb": "https://images.unsplash.com/photo-1603575448360-153f093fd0b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+		"tags": ["cs", "Columbia", "EECSE6894"],
+		"source_thumb": "https://user-images.githubusercontent.com/47064842/122511984-296ea480-cfd6-11eb-96fc-b6b54e272947.png"
 	},
 	{
 		"id": "brown-Fall-CSCI1760:",
@@ -54,17 +54,7 @@
 		"tags": ["cs", "Cornell", "CS6120"],
 		"source_thumb": "https://user-images.githubusercontent.com/47064842/122510182-245c2600-cfd3-11eb-920d-e838e9771591.png"
 	},
-	{
-		"id": "stanford-Spring-CS275",
-		"title": "CS275: Translational Bioinformatics",
-		"source": "Stanford",
-		"year": "Spring 2021",
-		"url": "https://sites.google.com/site/bmi2172016/home",
-		"desc": "Analytic, storage, and interpretive methods to optimize the transformation of genetic, genomic, and biological data into diagnostics and therapeutics for medicine. Topics: access and utility of publicly available data sources; types of genome-scale measurements in molecular biology and genomic medicine; analysis of microarray data; analysis of polymorphisms, proteomics, and protein interactions; linking genome-scale data to clinical data and phenotypes; and new questions in biomedicine using bioinformatics.",
-		"thumb": "https://images.unsplash.com/photo-1611924707078-da8777fc99cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80",
-		"tags": ["cs", "Stanford", "CS275"],
-		"source_thumb": "https://user-images.githubusercontent.com/47064842/122510077-f1b22d80-cfd2-11eb-87a4-8a83637c2e8e.png"
-	},
+
 	{
 		"id": "harvard-Fall-CS224",
 		"title": "CS224: Advanced Algorithms",
@@ -164,17 +154,7 @@
 		"tags": ["cs", "Cornell", "CS5150"],
 		"source_thumb": "https://user-images.githubusercontent.com/47064842/122510182-245c2600-cfd3-11eb-920d-e838e9771591.png"
 	},
-	{
-		"id": "stanford-Spring-CS193P",
-		"title": "CS193P: iOS Application Development",
-		"source": "Stanford",
-		"year": "Spring 2021",
-		"url": "https://cs193p.sites.stanford.edu",
-		"desc": "Stanford's CS193p course, Developing Applications for iOS, explains the fundamentals of how to build applications for iPhone and iPad using SwiftUI.  Most recently offered in Spring quarter 2021, the lectures were given to Stanford students in an on-line format due to the novel coronavirus pandemic and are now being made available (at least 2 per week) to all via Stanford's YouTube channel.",
-		"thumb": "https://images.unsplash.com/photo-1611924707078-da8777fc99cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80",
-		"tags": ["cs", "Stanford", "CS193P"],
-		"source_thumb": "https://user-images.githubusercontent.com/47064842/122510077-f1b22d80-cfd2-11eb-87a4-8a83637c2e8e.png"
-	},
+
 	{
 		"id": "harvard-Fall-AM207",
 		"title": "AM207: Monte Carlo Methods and Stochastic Optimization",
@@ -196,5 +176,16 @@
 		"thumb": "https://images.unsplash.com/photo-1605379399843-5870eea9b74e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
 		"tags": ["cs", "MIT", "6.857"],
 		"source_thumb": "https://user-images.githubusercontent.com/47064842/122510478-aba99980-cfd3-11eb-8241-5f56b2d39c60.png"
+	},
+	{
+		"id": "cornell-Spring-CS5780",
+		"title": "CS5780: Introduction to Machine Learning",
+		"source": "Cornell",
+		"year": "Spring 2021",
+		"url": "https://www.cs.cornell.edu/courses/cs5780",
+		"desc": "The course provides an introduction to machine learning, focusing on supervised learning and its theoretical foundations. Topics include regularized linear models, boosting, kernels, deep networks, generative models, online learning, and ethical questions arising in ML applications.",
+		"thumb": "https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1728&q=80",
+		"tags": ["cs", "Cornell", "CS5780"],
+		"source_thumb": "https://user-images.githubusercontent.com/47064842/122510182-245c2600-cfd3-11eb-920d-e838e9771591.png"
 	}
 ]
