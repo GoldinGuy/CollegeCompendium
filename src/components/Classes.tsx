@@ -117,6 +117,8 @@ const Classes = ({
 									<a
 										href={filteredClasses[0].url}
 										className="md:w-2/3 lg:w-1/2 relative hover:shadow-xl"
+										target="_blank"
+										rel="noreferrer"
 									>
 										<div
 											className="w-full h-2 mb-3"
@@ -210,7 +212,6 @@ const Classes = ({
 															size="lg"
 															title="Assignments"
 														/>
-												
 													</span>
 												</div>
 											</a>
