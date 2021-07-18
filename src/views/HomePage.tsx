@@ -140,11 +140,11 @@ const HomePage = () => {
 							// src="https://user-images.githubusercontent.com/47064842/121788823-80234b00-cb9e-11eb-82c0-927759e0dba6.png"
 							src="https://user-images.githubusercontent.com/47064842/121788773-04290300-cb9e-11eb-8e5e-95fa321e18db.png"
 						/>
-						{/* <div className="absolute top-0 left-0 w-full h-full flex-col flex items-center justify-center">
+						<div className="absolute top-0 left-0 w-full h-full flex-col flex items-center justify-center">
 							<h1 className="mb-4 text-ld font-bold tracking-wide text-center text-gray-200 uppercase">
 								AS Seen On
 							</h1>
-							<div className="filter grayscale brightness-10 invert not-selectable">
+							<div className="filter grayscale brightness-50 invert not-selectable">
 								<a
 									className="flex items-center justify-center"
 									href="https://www.morningbrew.com/sidekick/stories/2021/06/21/sidekicks-smarter-living-recs-0621"
@@ -159,7 +159,7 @@ const HomePage = () => {
 									></img>
 								</a>
 							</div>
-						</div> */}
+						</div>
 					</div>
 				</div>
 			</section>
