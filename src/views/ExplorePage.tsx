@@ -28,7 +28,7 @@ const ExplorePage = () => {
 		<>
 			<section className="px-4 pb-16 pt-6 mx-auto max-w-7xl">
 				<h2 className="pb-6 mb-1 text-center congress text-2xl font-extrabold leading-tight text-gray-900 md:text-4xl">
-					Find Your Next CS Course
+					Find Your Next CS Resource
 				</h2>
 
 				{/* Search */}
