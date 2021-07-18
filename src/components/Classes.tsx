@@ -162,7 +162,10 @@ const Classes = ({
 											/>
 											<a href={_class.url} target="_blank" rel="noreferrer">
 												<div className="p-3">
-													<p className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase">
+													<p
+														className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase"
+													
+													>
 														{_class.source} | {_class.year}{" "}
 														<FontAwesomeIcon
 															icon={faExternalLinkAlt}

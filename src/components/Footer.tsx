@@ -12,7 +12,7 @@ const Footer = () => {
 						Goldin Web Design
 					</a>
 				</p>
-				<span className="mb-0 text-sm text-left text-gray-600 md:mb-0 flex flex-col md:flex-row justify-between">
+				<span className="mb-0 text-xs xl:text-sm text-left text-gray-600 md:mb-0 flex flex-col md:flex-row justify-between">
 					<p className="mb-2 md:mb-0 pr-6">
 						College Compendium is not affiliated with any colleges or classes. Please do <i>not</i> attempt to contact professors.
 					</p>
