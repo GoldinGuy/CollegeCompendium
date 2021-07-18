@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Navbar, Footer, ScrollToTop } from "./components";
+import TermsOfService from "./components/Terrms";
 import {
 	TempSplashPage, HomePage,
 	SearchPage,
@@ -20,6 +21,7 @@ function App() {
 					<Route path="/search" exact component={SearchPage} />
 					<Route path="/explore" exact component={ExplorePage} />
 					<Route path="/contribute" exact component={ContributePage} />
+					<Route path="/tos" exact component={TermsOfService} />
 				</Switch>
 				<Footer />
 			</ScrollToTop>
