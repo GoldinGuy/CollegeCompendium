@@ -7,14 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import EmailForm from "../components/EmailForm";
 
-// import StanfordLogo from "../assets/schools/stanford.png";
-// import PennLogo from "../assets/schools/upenn.png";
-// import CornellLogo from "../assets/schools/cornell.png";
-// import MITLogo from "../assets/schools/mit.png";
-// import CarnegieLogo from "../assets/schools/carnegiemellon.png";
-// import BerkeleyLogo from "../assets/schools/berkeley.png";
-// import CalTechLogo from "../assets/schools/caltech.png";
-// import HarvardLogo from "../assets/schools/harvard.png";
 
 const HomePage = () => {
 	return (
@@ -23,7 +15,7 @@ const HomePage = () => {
 			<section className="px-4 py-16 sm:pb-20 sm:pt-15 mx-auto max-w-7xl">
 				<div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
 					<h1 className="mb-6 congress text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
-						Audit Over 650 CS Classes
+						Audit Over 800 CS Classes
 						<br className="hidden sm:flex" />
 						<span className="block w-full text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-blue-500 lg:inline">
 							From Top Universities
@@ -33,7 +25,7 @@ const HomePage = () => {
 						Learn at your own pace with a curated collection of{" "}
 						<br className="hidden sm:flex" />
 						<strong>
-							free Computer Science classes from top colleges across America
+							free Computer Science resources from top colleges across America
 						</strong>
 					</p>
 					<div className="mb-4 space-x-0 md:space-x-2 md:mb-6">
@@ -54,79 +46,8 @@ const HomePage = () => {
 						</a>
 					</div>
 				</div>
-				{/* logos */}
-				{/* <section className="px-4 py-12 mx-auto max-w-7xl" id="logos">
-					<div className="grid grid-cols-2 gap-10  text-center lg:grid-cols-8 filter grayscale brightness-90 not-selectable">
-						<div className="flex items-center justify-center">
-							<img
-								src={CarnegieLogo}
-								alt="Carnegie Mellon"
-								draggable="false"
-								className="block object-contain h-12"
-							/>
-						</div>
-						<div className="flex items-center justify-center">
-							<img
-								src={MITLogo}
-								alt="MIT"
-								draggable="false"
-								className="block object-contain h-12"
-							/>
-						</div>
 
-						<div className="flex items-center justify-center">
-							<img
-								src={HarvardLogo}
-								alt="Harvard"
-								draggable="false"
-								className="block object-contain h-12"
-							/>
-						</div>
-						<div className="flex items-center justify-center">
-							<img
-								src={StanfordLogo}
-								alt="Stanford"
-								draggable="false"
-								className="block object-contain h-12"
-							/>
-						</div>
-
-						<div className="flex items-center justify-center">
-							<img
-								src={PennLogo}
-								alt="Penn"
-								draggable="false"
-								className="block object-contain h-12"
-							/>
-						</div>
-						<div className="flex items-center justify-center">
-							<img
-								src={CornellLogo}
-								alt="Dartmouth"
-								draggable="false"
-								className="block object-contain h-12"
-							/>
-						</div>
-						<div className="flex items-center justify-center">
-							<img
-								src={CalTechLogo}
-								alt="Cal Tech"
-								draggable="false"
-								className="block object-contain h-12"
-							/>
-						</div>
-						<div className="flex items-center justify-center">
-							<img
-								src={BerkeleyLogo}
-								alt="Berkeley"
-								draggable="false"
-								className="block object-contain h-12"
-							/>
-						</div>
-					</div>
-				</section> */}
-
-				<div className="w-full mx-auto mt-8 text-center md:w-10/12 bg-gradient-to-r from-fuchsia-400  to-blue-500 rounded-lg">
+				<div className="w-full mx-auto mt-12 text-center md:w-10/12 bg-gradient-to-r from-fuchsia-400  to-blue-500 rounded-lg">
 					<img
 						// src="https://user-images.githubusercontent.com/47064842/121788823-80234b00-cb9e-11eb-82c0-927759e0dba6.png"
 						src="https://user-images.githubusercontent.com/47064842/122480760-71240a80-cf9b-11eb-8865-97e822d3f064.jpg"
@@ -137,21 +58,70 @@ const HomePage = () => {
 				</div>
 			</section>
 
+			{/* logos */}
+			{/* TODO: */}
+			<section className="px-4 pb-10 mx-auto max-w-7xl" id="logos">
+				<h1 className="mb-8 text-sm font-bold tracking-wide text-center text-gray-700 uppercase">
+					AS Seen On
+				</h1>
+				<div className="grid grid-cols-2 gap-10 text-center lg:grid-cols-3 filter grayscale brightness-90 not-selectable">
+					<a
+						className=" items-center justify-center hidden lg:flex"
+						href="https://www.morningbrew.com/sidekick/stories/2021/06/21/sidekicks-smarter-living-recs-0621"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<span
+							draggable="false"
+							className="block object-contain h-12 text-2xl text-gray-600 font-bold"
+						>
+							r/LearnProgramming
+						</span>
+					</a>
+					<a
+						className="flex items-center justify-center"
+						href="https://www.morningbrew.com/sidekick/stories/2021/06/21/sidekicks-smarter-living-recs-0621"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<img
+							draggable="false"
+							className="block object-contain h-12"
+							src="https://morningbrew-oslo.s3.us-west-2.amazonaws.com/1582323261.jpg"
+							alt="Morning Brew"
+						></img>
+					</a>
+					<a
+						className="flex items-center justify-center"
+						href="https://www.producthunt.com/posts/college-compendium"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<img
+							src="https://cdn.worldvectorlogo.com/logos/product-hunt-1.svg"
+							alt="Product Hunt"
+							draggable="false"
+							className="block object-contain h-12"
+						/>
+					</a>
+				</div>
+			</section>
+
 			{/* info  */}
 			<section className="px-4 pt-20 pb-10 mx-auto max-w-7xl" id="info">
 				<div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
 					<div className="text-left">
 						<h2 className="mb-4 text-2xl congress font-extrabold tracking-tight text-black md:leading-tight text-left md:text-4xl">
-							We Complement Your CS Journey By Cataloging Classes Across Topics
-							& Experience Levels
+							We Complement Your CS Journey By Cataloging CS Resources Across
+							Topics & Experience Levels
 						</h2>
 						<p className="mb-8 text-base  text-gray-600 text-left md:text-lg">
 							College Compendium serves a single purpose: we help you find your
 							next Computer Science resource or curriculum. Regardless of where
-							you are in your journey, we've compiled a catalog of classes that
-							are relevant to your skill-level, time-commitment, and learning
-							style. With hundreds of classes (and growing), you will never hit
-							a dead end.
+							you are in your journey, we've compiled a catalog of CS course
+							resources that are relevant to your skill-level, time-commitment,
+							and learning style. With hundreds of classes (and growing), you
+							will never hit a dead end.
 						</p>
 						<Link
 							to="/explore"
@@ -217,11 +187,12 @@ const HomePage = () => {
 							>
 								@Samfydega
 							</a>
-							, two student developers that are passionate about providing a
-							high-quality, accessible education to intellectually curious
-							people across the world. Learning Computer Science can be a very
-							difficult journey, which is why we've created a catalog of courses
-							to help you achieve your personal goals.
+							, two student developers that are passionate about providing
+							high-quality, accessible education resources to intellectually
+							curious people across the world. Learning and applying Computer
+							Science skills can be a very difficult journey, which is why we've
+							created a catalog of education resources and courses to help you
+							achieve your personal goals.
 						</p>
 						<a
 							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 "
@@ -278,7 +249,8 @@ const HomePage = () => {
 							</span>
 						</h2>
 						<p className="mt-3 text-3xl font-extrabold text-white">
-							Join Over 50000 Programmers And Learn With College Compendium
+							Join over 55000 Programmers and Creatives Learning with College
+							Compendium
 						</p>
 						<p className="mt-5 text-lg text-gray-300">
 							Startup founder, CS student, data enthusiast, or first-time coder.
@@ -302,7 +274,9 @@ const HomePage = () => {
 								</span>
 							</p>
 							<p>
-								<span className="block text-2xl font-bold text-white">675</span>
+								<span className="block text-2xl font-bold text-white">
+									800+
+								</span>
 								<span className="mt-1 block text-base text-gray-300">
 									<span className="font-medium text-white">
 										Computer Science classes compiled
@@ -339,7 +313,6 @@ const HomePage = () => {
 
 			{/* cta  */}
 			<CTA />
-			<EmailForm />
 		</div>
 	);
 };

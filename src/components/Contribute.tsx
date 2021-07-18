@@ -10,7 +10,8 @@ const ContributeForm = () => {
 	const titleCase = (str: string): string => {
 		var splitStr: string[] = str.toLowerCase().split(" ");
 		for (var i = 0; i < splitStr.length; i++) {
-			splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].slice(1);
+			splitStr[i] =
+				splitStr[i].charAt(0).toString().toUpperCase() + splitStr[i].slice(1);
 		}
 		return splitStr.join(" ");
 	};
@@ -145,7 +146,7 @@ const ContributeForm = () => {
 							onChange={handleChangeInputSource}
 							value={source}
 							type="text"
-							placeholder="Stanford"
+							placeholder="South Harmon Institute of Technology"
 							key="source-input"
 							maxLength={100}
 						/>

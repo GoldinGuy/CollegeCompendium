@@ -1,5 +1,5 @@
 
-import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowCircleRight, faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -118,7 +118,11 @@ const Classes = ({
 											style={{
 												background:
 													collegeColors[
-														filteredClasses[0].source.toString().toLowerCase().replace(' ', '').trim()
+														filteredClasses[0].source
+															.toString()
+															.toLowerCase()
+															.replace(" ", "")
+															.trim()
 													],
 											}}
 										/>
@@ -133,6 +137,41 @@ const Classes = ({
 										<p className="mb-5 text-sm font-normal text-gray-600  px-2">
 											{filteredClasses[0].desc}
 										</p>
+										<div className="py-2 text-gray-500">
+											{filteredClasses[0].contains.videos && (
+												<span className="flex items-center text-sm text-gray-500">
+													<FontAwesomeIcon
+														icon={faCheck}
+														size="sm"
+														className="ml-2 mr-2 text-fuchsia-500"
+														// title="Video Lecture"
+													/>{" "}
+													Video Lecture(s)
+												</span>
+											)}
+											{filteredClasses[0].contains.written && (
+												<span className="flex items-center  text-sm text-gray-500">
+													<FontAwesomeIcon
+														icon={faCheck}
+														size="sm"
+														className="ml-2 mr-2 text-fuchsia-500"
+														// title="Written Notes"
+													/>{" "}
+													Written Notes
+												</span>
+											)}
+											{filteredClasses[0].contains.assignments && (
+												<span className="flex items-center text-sm text-gray-500">
+													<FontAwesomeIcon
+														icon={faCheck}
+														className="ml-2 mr-2 text-fuchsia-500"
+														size="sm"
+														// title="Assignments"
+													/>
+													Assignments
+												</span>
+											)}
+										</div>
 									</a>
 								</div>
 							) : null}

@@ -1,6 +1,7 @@
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import EmailForm from "./EmailForm";
 
 const CTA = () => {
 	return (
@@ -33,6 +34,7 @@ const CTA = () => {
 					</a>
 				</div>
 			</div>
+			<EmailForm />
 		</div>
 	);
 };

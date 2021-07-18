@@ -1,3 +1,5 @@
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Class } from "../typings/interfaces";
 import { collegeColors } from "../utils";
 
@@ -33,11 +35,17 @@ const ExploreTable = ({ classes }: { classes: Class[] }) => {
 											scope="col"
 											className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
 										>
+										Contains
+										</th>
+										<th
+											scope="col"
+											className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+										>
 											Tags
 										</th>
 									</tr>
 								</thead>
-								{classes.map(_class => {
+								{classes.map((_class) => {
 									return (
 										<tbody className="bg-white divide-y divide-gray-200">
 											<tr>
@@ -46,7 +54,13 @@ const ExploreTable = ({ classes }: { classes: Class[] }) => {
 														className="w-2 h-full mb-3 absolute bottom-0 left-0 top-0"
 														style={{
 															background:
-																collegeColors[_class.source.toLowerCase()],
+																collegeColors[
+																	_class.source
+																		.toString()
+																		.toLowerCase()
+																		.replace(" ", "")
+																		.trim()
+																],
 														}}
 													/>
 													<div className="flex items-center">
@@ -54,7 +68,13 @@ const ExploreTable = ({ classes }: { classes: Class[] }) => {
 															className="w-2 h-full mb-3"
 															style={{
 																background:
-																	collegeColors[_class.source.toLowerCase()],
+																	collegeColors[
+																		_class.source
+																			.toString()
+																			.toLowerCase()
+																			.replace(" ", "")
+																			.trim()
+																	],
 															}}
 														/>
 														<div className="ml-4">
@@ -86,10 +106,62 @@ const ExploreTable = ({ classes }: { classes: Class[] }) => {
 													{_class.desc}
 												</td>
 												<td className="px-6 py-4 ">
+													<span className="py-2 text-gray-500">
+														{/* <FontAwesomeIcon
+															icon={faClipboard}
+															className="mr-3"
+															size="lg"
+														/>
+														<FontAwesomeIcon
+															icon={faPencilAlt}
+															className="mr-3"
+															size="lg"
+														/>
+														<FontAwesomeIcon
+															icon={faVideo}
+															className="mr-3"
+															size="lg"
+														/> */}
+														{_class.contains.videos && (
+															<span className="flex items-center text-sm text-gray-500 whitespace-nowrap">
+																<FontAwesomeIcon
+																	icon={faCheck}
+																	size="sm"
+																	className="mr-2 text-fuchsia-500"
+																	// title="Video Lecture"
+																/>{" "}
+																Video Lecture(s)
+															</span>
+														)}
+														{_class.contains.written && (
+															<span className="flex items-center  text-sm text-gray-500 whitespace-nowrap">
+																<FontAwesomeIcon
+																	icon={faCheck}
+																	size="sm"
+																	className="mr-2 text-fuchsia-500"
+																	// title="Written Notes"
+																/>{" "}
+																Written Notes
+															</span>
+														)}
+														{_class.contains.assignments && (
+															<span className="flex items-center text-sm text-gray-500 whitespace-nowrap">
+																<FontAwesomeIcon
+																	icon={faCheck}
+																	className="mr-2 text-fuchsia-500"
+																	size="sm"
+																	// title="Assignments"
+																/>
+																Assignments
+															</span>
+														)}
+													</span>
+												</td>
+												<td className="px-6 py-4 ">
 													{_class.tags.map((word) => {
 														if (
-															word.toUpperCase() !==
-																_class.source.toUpperCase() &&
+															word.toString().toUpperCase() !==
+																_class.source.toString().toUpperCase() &&
 															word !== "cs"
 														) {
 															return (

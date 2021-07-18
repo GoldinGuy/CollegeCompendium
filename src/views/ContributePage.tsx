@@ -5,6 +5,7 @@ const ContributePage = () => {
 	return (
 		<div className="overflow-x-hidden bg-gray-50">
 			<ContributeForm />
+			{/* cta  */}
 			<CTA />
 		</div>
 	);

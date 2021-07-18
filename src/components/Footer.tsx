@@ -1,6 +1,7 @@
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -14,15 +15,17 @@ const Footer = () => {
 				</p>
 				<span className="mb-0 text-xs xl:text-sm text-left text-gray-600 md:mb-0 flex flex-col md:flex-row justify-between">
 					<p className="mb-2 md:mb-0 pr-6">
-						College Compendium is not affiliated with any colleges or classes. Please do <i>not</i> attempt to contact professors.
+						College Compendium is not affiliated with any colleges or classes.
+						Please do <i>not</i> attempt to contact professors.
 					</p>
-					<a
+					<Link
+						to="/tos"
 						className="mb-2 md:mb-0 hover:underline pr-6"
-						href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
+						// href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
 					>
 						Terms of Service{" "}
 						<FontAwesomeIcon icon={faInfoCircle} className="ml-2 " />
-					</a>
+					</Link>
 					<a
 						className="mb-2 md:mb-0 hover:underline pr-6"
 						href="https://discord.gg/gKYSMeJ"
