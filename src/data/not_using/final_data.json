@@ -7050,7 +7050,7 @@
             "CS4803"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": true,
             "assignments": false
         }
@@ -7210,7 +7210,7 @@
             "CS8803"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": false,
             "assignments": false
         }
@@ -7242,7 +7242,7 @@
             "CS1301"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": false,
             "assignments": false
         }
@@ -7466,7 +7466,7 @@
             "CS7646"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": true,
             "assignments": false
         }
@@ -7482,7 +7482,7 @@
             "CS4649"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": false,
             "assignments": false
         }
@@ -7546,7 +7546,7 @@
             "CS6290"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": false,
             "assignments": false
         }
@@ -7562,7 +7562,7 @@
             "CS6210"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": false,
             "assignments": false
         }
@@ -7594,7 +7594,7 @@
             "CS7450"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": false,
             "assignments": false
         }
@@ -7786,7 +7786,7 @@
             "15-110"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": true,
             "assignments": true
         }
@@ -8042,7 +8042,7 @@
             "15-453"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": true,
             "assignments": true
         }
@@ -8154,7 +8154,7 @@
             "15-459"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": true,
             "assignments": true
         }
@@ -8170,7 +8170,7 @@
             "15-455"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": false,
             "assignments": false
         }
@@ -8186,7 +8186,7 @@
             "15-855"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": false,
             "assignments": false
         }
@@ -8202,7 +8202,7 @@
             "15-251"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": false,
             "assignments": false
         }
@@ -8218,7 +8218,7 @@
             "15-751"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": false,
             "assignments": false
         }
@@ -8234,7 +8234,7 @@
             "15-751"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": false,
             "assignments": false
         }
@@ -8250,7 +8250,7 @@
             "15-462"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": false,
             "assignments": false
         }
@@ -8506,7 +8506,7 @@
             "05-436"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": true,
             "assignments": true
         }
@@ -8618,7 +8618,7 @@
             "11-777"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": true,
             "assignments": false
         }
@@ -8730,7 +8730,7 @@
             "11-492"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": true,
             "assignments": false
         }
@@ -8874,7 +8874,7 @@
             "10-418"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": true,
             "assignments": false
         }
@@ -8938,7 +8938,7 @@
             "10-708"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": true,
             "assignments": true
         }
@@ -9082,7 +9082,7 @@
             "16-425"
         ],
         "contains": {
-            "videos": false,
+            "videos": true,
             "written": true,
             "assignments": true
         }

@@ -60,7 +60,7 @@ const HomePage = () => {
 
 			{/* logos */}
 			{/* TODO: */}
-			<section className="px-4 pb-10 mx-auto max-w-7xl" id="logos">
+			{/* <section className="px-4 pb-10 mx-auto max-w-7xl" id="logos">
 				<h1 className="mb-8 text-sm font-bold tracking-wide text-center text-gray-700 uppercase">
 					AS Seen On
 				</h1>
@@ -105,7 +105,7 @@ const HomePage = () => {
 						/>
 					</a>
 				</div>
-			</section>
+			</section> */}
 
 			{/* info  */}
 			<section className="px-4 pt-20 pb-10 mx-auto max-w-7xl" id="info">
@@ -131,7 +131,7 @@ const HomePage = () => {
 							<FontAwesomeIcon icon={faArrowCircleRight} className="ml-2" />
 						</Link>
 					</div>
-					<div className=" bg-gradient-to-r from-fuchsia-400  to-blue-500 rounded-lg ">
+					<div className=" bg-gradient-to-r from-fuchsia-400  to-blue-500 rounded-lg relative">
 						<img
 							className="w-full bg-gray-200 rounded-lg object-cover object-center-top h-72 sm:h-full opacity-70 "
 							alt="info"
@@ -140,6 +140,26 @@ const HomePage = () => {
 							// src="https://user-images.githubusercontent.com/47064842/121788823-80234b00-cb9e-11eb-82c0-927759e0dba6.png"
 							src="https://user-images.githubusercontent.com/47064842/121788773-04290300-cb9e-11eb-8e5e-95fa321e18db.png"
 						/>
+						{/* <div className="absolute top-0 left-0 w-full h-full flex-col flex items-center justify-center">
+							<h1 className="mb-4 text-ld font-bold tracking-wide text-center text-gray-200 uppercase">
+								AS Seen On
+							</h1>
+							<div className="filter grayscale brightness-10 invert not-selectable">
+								<a
+									className="flex items-center justify-center"
+									href="https://www.morningbrew.com/sidekick/stories/2021/06/21/sidekicks-smarter-living-recs-0621"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<img
+										draggable="false"
+										className="block object-contain h-14"
+										src="https://morningbrew-oslo.s3.us-west-2.amazonaws.com/1582323261.jpg"
+										alt="Morning Brew"
+									></img>
+								</a>
+							</div>
+						</div> */}
 					</div>
 				</div>
 			</section>
