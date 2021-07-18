@@ -24,7 +24,7 @@ const Classes = ({
 }) => {
 	useEffect(() => {
 		const formatText = (text: string) => {
-			return text.toLowerCase().trim().replaceAll(" ", "-");
+			return text.toString().toLowerCase().trim().replaceAll(" ", "-");
 		};
 
 		const checkFilters = (_class: Class) => {
@@ -118,7 +118,7 @@ const Classes = ({
 											style={{
 												background:
 													collegeColors[
-														filteredClasses[0].source.toLowerCase()
+														filteredClasses[0].source.toString().toLowerCase().replace(' ', '').trim()
 													],
 											}}
 										/>

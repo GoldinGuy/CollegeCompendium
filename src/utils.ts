@@ -40,4 +40,8 @@ export const collegeColors = {
 	rpi: "#D6001C",
 	nyu: "#57068c",
 	utexas: "#BF5700",
+	uchicago: '#800000',
+	riverside: '#2D6CC0',
+	georgiatech: '#B3A369',
+	utoronto: '#25355A'
 };

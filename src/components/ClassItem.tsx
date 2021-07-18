@@ -1,5 +1,6 @@
 import {
 	faArrowCircleRight,
+	faCheck,
 	faClipboard,
 	faExternalLinkAlt,
 	faFileInvoice,
@@ -23,20 +24,16 @@ const ClassItem = ({ _class, idx }: { _class: Class, idx: number }) => {
 				className="w-full h-2 mb-1"
 				style={{
 					background:
-						collegeColors[_class.source.toLowerCase()],
+						collegeColors[
+							_class.source.toString().toLowerCase().trim().replaceAll(" ", "")
+						],
 				}}
 			/>
 			<a href={_class.url} target="_blank" rel="noreferrer">
 				<div className="p-3">
-					<p
-						className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase"
-													
-					>
+					<p className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase">
 						{_class.source} | {_class.year}{" "}
-						<FontAwesomeIcon
-							icon={faExternalLinkAlt}
-							className="float-right"
-						/>
+						<FontAwesomeIcon icon={faExternalLinkAlt} className="float-right" />
 					</p>
 
 					<h2 className="mb-2 text-xl font-bold leading-snug text-gray-900">
@@ -63,24 +60,39 @@ const ClassItem = ({ _class, idx }: { _class: Class, idx: number }) => {
 															className="mr-3"
 															size="lg"
 														/> */}
-						<FontAwesomeIcon
-							icon={faFileVideo}
-							size="lg"
-							className="mr-3"
-							title="Video Lecture"
-						/>
-						<FontAwesomeIcon
-							icon={faFileInvoice}
-							className="mr-3"
-							size="lg"
-							title="Written Notes"
-						/>
-						<FontAwesomeIcon
-							icon={faFileSignature}
-							className="mr-3"
-							size="lg"
-							title="Assignments"
-						/>
+						{_class.contains.videos && (
+							<span className="flex items-center text-sm text-gray-500">
+								<FontAwesomeIcon
+									icon={faCheck}
+									size="sm"
+									className="mr-2 text-fuchsia-500"
+									// title="Video Lecture"
+								/>{" "}
+								Video Lecture(s)
+							</span>
+						)}
+						{_class.contains.written && (
+							<span className="flex items-center  text-sm text-gray-500">
+								<FontAwesomeIcon
+									icon={faCheck}
+									size="sm"
+									className="mr-2 text-fuchsia-500"
+									// title="Written Notes"
+								/>{" "}
+								Written Notes
+							</span>
+						)}
+						{_class.contains.assignments && (
+							<span className="flex items-center text-sm text-gray-500">
+								<FontAwesomeIcon
+									icon={faCheck}
+									className="mr-2 text-fuchsia-500"
+									size="sm"
+									// title="Assignments"
+								/>
+								Assignments
+							</span>
+						)}
 					</span>
 				</div>
 			</a>

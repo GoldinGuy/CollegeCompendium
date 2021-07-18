@@ -6736,7 +6736,7 @@
 	{
 		"id": "CMU-15-451-Fall",
 		"title": "CMU 15-451/651",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2012",
 		"url": "https://www.cs.cmu.edu/~avrim/451f12/",
 		"desc": "This course is about designing algorithms for computational problems, and how to think clearly about analyzing correctness and running time. The main goal of this course is to provide the intellectual tools needed for designing and analyzing your own algorithms for new problems you need to solve in the future. We will also discuss a bit of Complexity Theory (which looks at the intrinsic difficulty of computational problems) as well as some Algorithmic Game Theory, Computational Geometry, and Machine Learning.",
@@ -6750,7 +6750,7 @@
 	{
 		"id": "CMU-CSM2020-Spring",
 		"title": "CSM2020",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2020",
 		"url": "https://sites.google.com/site/cellandsystemsmodeling/home?authuser=0",
 		"desc": "This course will introduce students to the theory and practice of modeling biological systems from the molecular to the population level with an emphasis on intracellular processes. Topics covered include kinetic and equilibrium descriptions of biological processes, systematic approaches to model building and parameter estimation, analysis of biochemical circuits modeled as differential equations, modeling the effects of noise using stochastic methods. A range of biological models and applications will be considered including gene regulatory networks cell signaling, molecular motors, and developmental biology. Weekly recitations will introduce computational skills and provide students hands-on experience with methods and models presented in class. Course requirements include weekly homework assignments, a final project, and a take-home exam.",
@@ -6764,7 +6764,7 @@
 	{
 		"id": "CMU-15-354-Spring",
 		"title": "15-354 Computational Discrete Mathematics",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://www.cs.cmu.edu/~cdm/index.html",
 		"desc": "This course is about the computational aspects of some of the standard concepts of discrete mathematics (relations, functions, logic, graphs, algebra, automata), with emphasis on efficient algorithms. We begin with a brief introduction to computability and computational complexity. Other topics include: iteration, orbits and fixed points, order and equivalence relations, propositional logic and satisfiability testing, finite fields and shift register sequences, finite state machines, and cellular automata. Computational support for some of the material is available in the form of a Mathematica package.",
@@ -6778,7 +6778,7 @@
 	{
 		"id": "CMU-15-355-Spring",
 		"title": "15-355: Modern Computer Algebra",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "http://www.andrew.cmu.edu/course/15-355/",
 		"desc": "The goal of this course is to investigate the relationship between algebra and computation. The course is designed to expose students to algorithms used for symbolic computation, as well as to the concepts from modern algebra which are applied to the development of these algorithms. This course provides a hands-on introduction to many of the most important ideas used in symbolic mathematical computation, which involves solving system of polynomial equations, analytic integration, solving linear difference equations, and proving combinatorial identities. It is expected that students should be able to handle modest amount of programming in Mathematica.",
@@ -6792,7 +6792,7 @@
 	{
 		"id": "CMU-15356-Spring",
 		"title": "15356/15856:  Introduction to Cryptography",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://www.cs.cmu.edu/~goyal/15356/",
 		"desc": "This is an introduction to cryptography course. The course is open to graduate and undergraduate students. It is cross-listed with 15-856. This is the website for both the course sections. The course does not assume any prior background in cryptography or computer security",
@@ -6806,7 +6806,7 @@
 	{
 		"id": "CMU-15-110-Spring",
 		"title": "15-110: Principles of Computing",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://cs-cmuq.github.io/110-www/#main",
 		"desc": "The course will take the student along the way that starts from a complex, possibly large problem to solve, and then move step by step to its abstraction, to its formalization into an algorithmic recipe, to the encoding of the algorithm using the constructs of the python language, to the run-time execution and error correction of the programming code, to the efficiency analysis of the developed algorithm and code.",
@@ -6820,7 +6820,7 @@
 	{
 		"id": "CMU-15-288-Spring",
 		"title": "15-288: Machine Learning in a Nutshell",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://web2.qatar.cmu.edu/~gdicaro/15288/",
 		"desc": "This course is about the application of machine learning (ML) concepts and models to solve challenging real-world problems.",
@@ -6834,7 +6834,7 @@
 	{
 		"id": "CMU-15-281-Fall",
 		"title": "15-281: Artificial Intelligence: Representation and Problem Solving",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2020",
 		"url": "https://web2.qatar.cmu.edu/~gdicaro/15281/",
 		"desc": "In this course, this is issue is somehow narrowed down to the concept of rationality : the notion of Artificial Intelligence is treated as equivalent to that of Computational Rationality. Given well defined preferences, a rational agent always selects the actions whose outcomes result in the maximization of the expected utility.",
@@ -6848,7 +6848,7 @@
 	{
 		"id": "CMU-15-382-Spring",
 		"title": "15-382: Collective Intelligence",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2019",
 		"url": "https://web2.qatar.cmu.edu/~gdicaro/15382/",
 		"desc": "This course is about modeling and control of systems involving a large number of autonomous components that interact with each other, dynamically adapting to their changing environment as a result of mutual, possibly non-linear, interactions.",
@@ -6862,7 +6862,7 @@
 	{
 		"id": "CMU-16-385-Spring",
 		"title": "16-385: Computer Vision",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2020",
 		"url": "https://www.cs.cmu.edu/~16385/",
 		"desc": "This course provides a comprehensive introduction to computer vision. Major topics include image processing, detection and recognition, geometry-based and physics-based vision and video analysis. Students will learn basic concepts of computer vision as well as hands on experience to solve real-life vision problems.",
@@ -6876,7 +6876,7 @@
 	{
 		"id": "CMU-15-386-Spring",
 		"title": "15-386/686: Neural Computation",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://www.cnbc.cmu.edu/~tai/nc21.html",
 		"desc": "This course explores computational principles at multiple levels, from individual neurons to circuits and systems, with a view to bridging brain science and machine learning.",
@@ -6890,7 +6890,7 @@
 	{
 		"id": "CMU-15-388-Spring",
 		"title": "15-388: Practical Data Science",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "http://www.datasciencecourse.org/lectures/",
 		"desc": "Topics covered include: collecting and processing data using relational methods, time series approaches, graph and network models, free text analysis, and spatial geographic methods; analyzing the data using a variety of statistical and machine learning methods include linear and non-linear regression and classification, unsupervised learning and anomaly detection, plus advanced machine learning methods like kernel approaches, boosting, or deep learning; visualizing and presenting data, particularly focusing the case of high-dimensional data;",
@@ -6904,7 +6904,7 @@
 	{
 		"id": "CMU-15-394-Spring",
 		"title": "15-394:  Intermediate Rapid Prototyping",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2017",
 		"url": "https://www.cs.cmu.edu/afs/cs/academic/class/15394u-s17/schedule.html",
 		"desc": "This course covers additional topics in rapid prototyping beyond the content of 15-294. Example topics include mechanism design, procedural shape generation using Grasshopper, 3D scanning and mesh manipulation, and advanced SolidWorks concepts.",
@@ -6918,7 +6918,7 @@
 	{
 		"id": "CMU-15-440-Spring",
 		"title": "15-440: Distributed Systems",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2014",
 		"url": "https://www.cs.cmu.edu/~dga/15-440/S14/index.html",
 		"desc": "15-440 is an introductory course in distributed systems. The emphasis will be on the techniques for creating functional, usable, and high-performance distributed systems. To make the issues more concrete, the class includes several multi-week projects requiring significant design and implementation.",
@@ -6932,7 +6932,7 @@
 	{
 		"id": "CMU-15-441-Fall",
 		"title": "15-441: Compiler Design",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2017",
 		"url": "https://www.cs.cmu.edu/~janh/courses/411/17/index.html",
 		"desc": "This course covers the design and implementation of compiler and run-time systems for high-level languages, and examines the interaction between language design, compiler design, and run-time organization. Topics covered include syntactic and lexical analysis, handling of user-defined types and type-checking, context analysis, code generation and optimization, and memory management and run-time organization.",
@@ -6946,7 +6946,7 @@
 	{
 		"id": "CMU-15-414-Spring",
 		"title": "15-414: Bug Catching: Automated Programming Verification",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://www.cs.cmu.edu/~15414/index.html",
 		"desc": "High-profile bugs continue to plague the software industry, leading to major problems in the reliability, safety, and security of systems. This course teaches students how to write bug-free code through the process of software verification, which aims to prove the correctness of a program with respect to a mathematical specification.",
@@ -6960,7 +6960,7 @@
 	{
 		"id": "CMU-15-415-Fall",
 		"title": "15-415: Database Applications",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2016",
 		"url": "https://15415.courses.cs.cmu.edu/fall2016/syllabus.html",
 		"desc": "This course covers the fundamental topics for Database Management Systems: Database System Architectural Principles (ACID properties; data abstraction; external, conceptual, and internal schemata; data independence; data definition and data manipulation languages), Data models (entity-relationship and relational data models; data structures, integrity constraints, and operations for each data model; relational query languages: SQL, algebra, calculus), Theory of database design (functional dependencies; normal forms; dependency preservation; information loss), Query Optimization (equivalence of expressions, algebraic manipulation; optimization of selections and joins), Storage Strategies (indices, B-trees, hashing), Query Processing (execution of sort, join, and aggregation operators), and Transaction Processing (recovery and concurrency control).",
@@ -6974,7 +6974,7 @@
 	{
 		"id": "CMU-15-417-Spring",
 		"title": "15-417: HOT Compilation",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2020",
 		"url": "https://www.cs.cmu.edu/~crary/hotc/",
 		"desc": "The course covers the implementation of compilers for higher-order typed languages such as ML. Topics include type checking, type directed compilation, elaboration, phase splitting, CPS conversion, closure conversion, allocation, and garbage collection. The course is disjoint from the standard compilers course (15-411); thus, topics such as parsing and code generation are not covered. Students will implement an ML compiler and runtime system as a term project.",
@@ -6988,7 +6988,7 @@
 	{
 		"id": "CMU-15-418-Spring",
 		"title": "15-418: Parallel Computer Architecture and Programming",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://www.cs.cmu.edu/~418/index.html",
 		"desc": "From smart phones, to multi-core CPUs and GPUs, to the world's largest supercomputers, parallel processing is ubiquitous in modern computing. The goal of this course is to provide a deep understanding of the fundamental principles and engineering trade-offs involved in designing modern parallel computing systems as well as to teach parallel programming techniques necessary to effectively utilize these machines. Because writing good parallel programs requires an understanding of key machine performance characteristics, this course will cover hardware design and how that affects software design.",
@@ -7002,7 +7002,7 @@
 	{
 		"id": "CMU-17-214-Spring",
 		"title": "17-214: Principles of Software Construction",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2020",
 		"url": "https://www.cs.cmu.edu/~charlie/courses/17-214/2020-spring/",
 		"desc": "In this course, students engage with concepts related to the construction of software systems at scale, building on their understanding of the basic building blocks of data structures, algorithms, program structures, and computer structures. The course covers technical topics in four areas: (1) concepts of design for complex systems, (2) object oriented programming, (3) techniques for robustness, including testing and static and dynamic analysis for programs, and (4) concurrent software.",
@@ -7016,7 +7016,7 @@
 	{
 		"id": "CMU-15-445-Fall",
 		"title": "15-445: Database Systems",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2020",
 		"url": "https://15445.courses.cs.cmu.edu/fall2020/",
 		"desc": "This course is on the design and implementation of database management systems. Topics include data models (relational, document, key/value), storage models (n-ary, decomposition), query languages (SQL, stored procedures), storage architectures (heaps, log-structured), indexing (order preserving trees, hash tables), transaction processing (ACID, concurrency control), recovery (logging, checkpoints), query processing (joins, sorting, aggregation, optimization), and parallel architectures (multi-core, distributed). Case studies on open-source and commercial database systems are used to illustrate these techniques and trade-offs. The course is appropriate for students that are prepared to flex their strong systems programming skills.",
@@ -7030,7 +7030,7 @@
 	{
 		"id": "CMU-15-453-Spring",
 		"title": "15-453: Formal Languages, Automata, and Computability",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2015",
 		"url": "http://www.contrib.andrew.cmu.edu/~okahn/flac-s15/index.html",
 		"desc": "This course provides an introduction to formal languages, automata, computability, and complexity. The course consists of a traditional lecture component supported by weekly homework assignments and quizzes and a course project. There are two midterms and a final examination.",
@@ -7044,7 +7044,7 @@
 	{
 		"id": "CMU-15-455-Fall",
 		"title": "15-455: Undergraduate Complexity Theory",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2019",
 		"url": "https://www.cs.cmu.edu/~15455/index.html",
 		"desc": "This course provides a gentle introduction into complexity theory, the theory of computations that are restricted by various resource bounds (time, space, energy, ...). We start with a brief tour of the computational universe at large and then home in on the low complexity classes that are most relevant in theoretical computer science such as NP and PSPACE. Time permitting, we may take a look some non-traditional models of computation such as cellular automata or infinite time Turing machines.",
@@ -7058,7 +7058,7 @@
 	{
 		"id": "CMU-15-859N-Spring",
 		"title": "15-859N: Spectral Graph Theory with Applications to ML",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://www.cs.cmu.edu/afs/cs/academic/class/15859n-s21/schedule.html",
 		"desc": "This class will be a continuation of the Spectral Graph Theory class 15-859N in Spring 2020. The class will be gin with a review of material from the Spring 2020 class. Afterwards the remaining material will be topic not covered. The course will also cover high dimensional geometry topics that overlap with spectral graph theory. Student in the class will be required to pick and present a paper or topic relevant to the class. For those of you who are more inclined to the experimental side, a presentation on your experiments will be acceptable.",
@@ -7072,7 +7072,7 @@
 	{
 		"id": "CMU-15-451-Fall",
 		"title": "15-451: Algorithms",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2020",
 		"url": "https://www.cs.cmu.edu/~15451-f20/index.html",
 		"desc": "This course is about the design and analysis of algorithms. We will study specific algorithms for a variety of problems, as well as powerful modelling techniques (e.g. graphs and linear programming) and design paradigms (e.g. amortized analysis, dynamic programming, and sweep-line). (The complete list of topics is on the \"Home/Schedule\" page linked above.) We will study ways to analyze the efficiency of algorithms, and give lower bounds on the complexity of a problem. The topics have been chosen for their power, beauty, and practicality.",
@@ -7086,7 +7086,7 @@
 	{
 		"id": "CMU-15-750-Spring",
 		"title": "15-750: Graduate Algorithms",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2019",
 		"url": "https://www.cs.cmu.edu/afs/cs/academic/class/15750-s19/schedule.html",
 		"desc": "The course will cover a fairly wide range of topics in algorithm design. Some of the topics will be quite a bit older work from the 1960s to more recent work from this century. We hope to present as many different tools and algorithms as time permits.",
@@ -7100,7 +7100,7 @@
 	{
 		"id": "CMU-15-456-Fall",
 		"title": "15-456: Computational Geometry",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2017",
 		"url": "https://www.cs.cmu.edu/afs/cs/academic/class/15456-f17/schedule.html",
 		"desc": "Extending algorithm design from one dimension to higher dimension, approximation algorithm in higher dimension, and topological algorithms.",
@@ -7114,7 +7114,7 @@
 	{
 		"id": "CMU-15-458-Spring",
 		"title": "CS 15-458/858: Discrete Differential Geometry",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://brickisland.net/DDGSpring2021/",
 		"desc": "This course focuses on three-dimensional geometry processing, while simultaneously providing a first course in traditional differential geometry.",
@@ -7128,7 +7128,7 @@
 	{
 		"id": "CMU-15-459-Fall",
 		"title": "15-459: Quantum Computation and Information at CMU",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2018",
 		"url": "https://www.youtube.com/playlist?list=PLm3J0oaFux3YL5qLskC6xQ24JpMwOAeJz",
 		"desc": "Covers the basics of quantum computing, with a little bit of quantum information theory at the end.",
@@ -7142,7 +7142,7 @@
 	{
 		"id": "CMU-15-455-Spring",
 		"title": "Undergrad Complexity Theory at CMU",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2017",
 		"url": "https://www.youtube.com/playlist?list=PLm3J0oaFux3YL5vLXpzOyJiLtqLp6dCW2",
 		"desc": "Corresponds roughly to \"Part III\" of Sipser's textbook. Prerequisites: basic knowledge of CS Theory (such as big-O notation and Turing Machines); e.g., CMU's 15-251, \"Great Theoretical Ideas in Computer Science\":",
@@ -7156,7 +7156,7 @@
 	{
 		"id": "CMU-15-855-Fall",
 		"title": "15-855: Graduate Complexity Theory at CMU",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2017",
 		"url": "https://www.youtube.com/playlist?list=PLm3J0oaFux3b8Gg1DdaJOzYNsaXYLAOKH",
 		"desc": "Covers most of what I think you should know to get started in complexity theory research.",
@@ -7170,10 +7170,10 @@
 	{
 		"id": "CMU-15-251-Spring",
 		"title": "15-251: Great Ideas in Theoretical Computer Science",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2016",
 		"url": "https://www.youtube.com/playlist?list=PLm3J0oaFux3aafQm568blS9blxtA_EWQv",
-		"desc": "A subset of various lectures from Carnegie Mellon University's 15-251: Great Ideas in Theoretical Computer Science, given in Springs of 2013, 2015, 2016 by Ryan O'Donnell.",
+		"desc": "A subset of various lectures from Carnegie Mellon's 15-251: Great Ideas in Theoretical Computer Science, given in Springs of 2013, 2015, 2016 by Ryan O'Donnell.",
 		"tags": ["15-251"],
 		"contains": {
 			"videos": false,
@@ -7184,10 +7184,10 @@
 	{
 		"id": "CMU-15-751-Fall",
 		"title": "Analysis of Boolean Functions at CMU",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2012",
 		"url": "https://www.youtube.com/playlist?list=PLm3J0oaFux3YypJNaF6sRAf2zC1QzMuTA",
-		"desc": "23 lectures of a graduate course on Analysis of Boolean Functions, given Fall 2012 by Ryan O'Donnell at Carnegie Mellon University.",
+		"desc": "23 lectures of a graduate course on Analysis of Boolean Functions, given Fall 2012 by Ryan O'Donnell at Carnegie Mellon.",
 		"tags": ["15-751"],
 		"contains": {
 			"videos": false,
@@ -7198,7 +7198,7 @@
 	{
 		"id": "CMU-15-751-Spring",
 		"title": "15-751: CS Theory Toolkit at CMU",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2020",
 		"url": "https://www.youtube.com/playlist?list=PLm3J0oaFux3ZYpFLwwrlv_EHH9wtH6pnX",
 		"desc": "Covers a large number of the math/CS topics that you need to know for reading and doing research in Computer Science Theory.",
@@ -7212,7 +7212,7 @@
 	{
 		"id": "CMU-15-462-Spring",
 		"title": "15-462: Computer Graphics",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "http://15462.courses.cs.cmu.edu/spring2021/home",
 		"desc": "This course provides a comprehensive introduction to computer graphics. Focuses on fundamental concepts and techniques, and their cross-cutting relationship to multiple problem domains in graphics (rendering, animation, geometry, imaging). Topics include: sampling, aliasing, interpolation, rasterization, geometric transformations, parameterization, visibility, compositing, filtering, convolution, curves & surfaces, geometric data structures, subdivision, meshing, spatial hierarchies, ray tracing, radiometry, reflectance, light fields, geometric optics, Monte Carlo rendering, importance sampling, camera models, high-performance ray tracing, differential equations, time integration, numerical differentiation, physically-based animation, optimization, numerical linear algebra, inverse kinematics, Fourier methods, data fitting, example-based synthesis.",
@@ -7226,7 +7226,7 @@
 	{
 		"id": "CMU-15-463-Fall",
 		"title": "15-463: Computational Photography",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2020",
 		"url": "http://graphics.cs.cmu.edu/courses/15-463/2020_fall/",
 		"desc": "This course provides an overview of the state of the art in computational photography. At the start of the course, we will study modern image processing pipelines, including those encountered on mobile phone and DSLR cameras, and advanced image and video editing algorithms. Then we will continue to learn about the physical and computational aspects of tasks such as 3D scanning, coded photography, lightfield imaging, time-of-flight imaging, VR/AR displays, and computational light transport. Near the end of the course, we will discuss active research topics, such as creating cameras that capture video at the speed of light, cameras that look around walls, or cameras that can see below skin.",
@@ -7240,7 +7240,7 @@
 	{
 		"id": "CMU-15-464-Spring",
 		"title": "15-464: Technical Animation",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2013",
 		"url": "https://www.cs.cmu.edu/~15464-s13/",
 		"desc": "This course introduces techniques for computer animation such as keyframing, procedural methods, motion capture, and simulation. We will focus primarily on character animation, but will also discuss animation of cloth and natural phenomena. Recent research results will be considered as well as basic techniques.",
@@ -7254,7 +7254,7 @@
 	{
 		"id": "CMU-15-466-Fall",
 		"title": "15-466: Computer Game Programming",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2019",
 		"url": "http://graphics.cs.cmu.edu/courses/15-466-f19/",
 		"desc": "Computer Game Programming will help you build the programming skills needed to turn ideas into games. This means we'll be covering both runtime systems and the asset pipelines to fuel them, along with some game-design exercises (with an eye to thrifty code).",
@@ -7268,7 +7268,7 @@
 	{
 		"id": "CMU-15-468-Spring",
 		"title": "15-468: Physics-based Rendering",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "http://graphics.cs.cmu.edu/courses/15-468/",
 		"desc": "This course is an introduction to physics-based rendering at the advanced undergraduate and introductory graduate level. During the course, we will cover fundamentals of light transport, including topics such as the rendering and radiative transfer equation, light transport operators, path integral formulations, and approximations such as diffusion and single scattering. Additionally, we will discuss state-of-the-art models for illumination, surface and volumetric scattering, and sensors. Finally, we will use these theoretical foundations to develop Monte Carlo algorithms and sampling techniques for efficiently simulating physically-accurate images.",
@@ -7282,7 +7282,7 @@
 	{
 		"id": "CMU-15-483-Fall",
 		"title": "15-483: Truth, Justice, and Algorithms",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2018",
 		"url": "https://www.cs.cmu.edu/~15896/index.html",
 		"desc": "The course's topics include: fair division algorithms for allocating divisible and indivisible goods, and approximate notions of fairness; computational social choice, e.g., voting rules that optimize welfare, and methods for dealing with manipulation in elections; online matching algorithms (competitive analysis, not dating) and kidney exchange; the design of truthful auctions, as well as other topics in mechanism design; noncooperative games, including Nash equilibrium and correlated equilibrium, their computation, connections to learning theory, and the price of anarchy in congestion and routing games; and cryptocurrencies, with an emphasis on game-theoretic issues.",
@@ -7296,7 +7296,7 @@
 	{
 		"id": "CMU-15-492-Fall",
 		"title": "15-492: Speech Processing",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2011",
 		"url": "http://www.speech.cs.cmu.edu/15-492/",
 		"desc": "Speech Processing offers a practical and theoretical understanding of how human speech can be processed by computers. It covers speech recognition, speech synthesis and spoken dialog systems. The course involves practicals where the student will build working speech recognition systems, build their own synthetic voice and build a complete telephone spoken dialog system. This work will be based on existing toolkits. Details of algorithms, techniques and limitations of state of the art speech systems will also be presented. This course is designed for students wishing understand how to process real data for real applications, applying statistical and machine learning techniques as well as working with limitations in the technology.",
@@ -7310,7 +7310,7 @@
 	{
 		"id": "CMU-15-494-Spring",
 		"title": "15-494: Cognitive Robotics",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2019",
 		"url": "https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15494-s19/",
 		"desc": "This course explores the implementation of intelligent behavior in mobile robots, focusing on the Cozmo robot by Anki. It consistes of a series of Monday/Wednesday lectures, a parallel series of Friday hands-on labs and problem sets, and a capstone project taking up the last four weeks.",
@@ -7324,7 +7324,7 @@
 	{
 		"id": "CMU-15-539-Fall",
 		"title": "15-539: Computer Science Pedagogy",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2017",
 		"url": "https://www.cs.cmu.edu/~539/index.html",
 		"desc": "A broad introduction to Computer Science Pedagogy at the grade 9-12 and first-year college levels. Students will implement, test, deploy, and manage free, online, interactive, autograded CS curricular content. As the semester progresses, students may also design some original content as well",
@@ -7338,7 +7338,7 @@
 	{
 		"id": "CMU-15-719-Spring",
 		"title": "15-719: Advanced Cloud Computing",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://www.cs.cmu.edu/~15719/index.html",
 		"desc": "Computing in the cloud has emerged as a leading paradigm for cost-effective, scalable, well-managed computing. Users pay for services provided in a broadly shared, power efficient datacenter, enabling dynamic computing needs to be met without paying for more than is needed. Actual machines may be virtualized into machine-like services, or more abstract programming platforms, or application-specific services, with the cloud computing infrastructure managing sharing, scheduling, reliability, availability, elasticity, privacy, provisioning and geographic replication.",
@@ -7352,7 +7352,7 @@
 	{
 		"id": "CMU-05-318-Fall",
 		"title": "05-318: Human-AI Interaction",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2020",
 		"url": "https://haiicmu.github.io/",
 		"desc": "In short, the goal of this course is to introduce students to ways of thinking about how Artificial Intelligence will and has impacted humans, and how we can design interactive intelligent systems that are usable and beneficial to humans, and respect human values. As students in this course, you will build a number of different interactive technologies powered by AI, gain practical experience with what impacts their usability for humans, understand the various places that humans exist in the data pipeline that drives machine learning, and learn to think both optimistically and critically of what AI systems can do and how they can and should be integrated into society.",
@@ -7366,7 +7366,7 @@
 	{
 		"id": "CMU-05-431-Spring",
 		"title": "05-431: Software Structures for User Interfaces",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://www.cs.cmu.edu/~bam/uicourse/05631fall2021/",
 		"desc": "This course considers the basic and detailed concepts that go into building software to implement user interfaces (UIs). It considers factors of input, output, application interface, and related infrastructure as well as the typical patterns used to implement them.",
@@ -7380,7 +7380,7 @@
 	{
 		"id": "CMU-05-773-Spring",
 		"title": "05-773: Computer Science Perspectives in HCI",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://www.cs.cmu.edu/~bam/uicourse/csmini2021/",
 		"desc": "This course is designed to provide new PhD candidates in Human-Computer Interaction (HCI) with an initial base of knowledge about technical research in the field.  Using a seminar-style – centered around readings and discussion – it will consider a broad introduction to the research literature, approaches, and methods from the technical side of HCI.  Students should leave the course with an appreciation of how and why technical HCI work is typically done, an ability to understand work presented in the technical HCI literature, and a knowledge of past and current work across a range of different key topics within the field.",
@@ -7394,7 +7394,7 @@
 	{
 		"id": "CMU-05-830-Spring",
 		"title": "05-830: Advanced User Interface Software",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2020",
 		"url": "https://www.cs.cmu.edu/~bam/uicourse/830spring20/",
 		"desc": "This course will cover the research and implementation of user interface software. The students will get a comprehensive understanding of all the approaches that have been investigated by researchers and commercial systems for user interface software. This will be of value to people planning to be user interface researchers or implementers, or people interested in learning how to provide user interface frameworks for others.",
@@ -7408,7 +7408,7 @@
 	{
 		"id": "CMU-05-640-Spring",
 		"title": "05-640: Interaction Techniques",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2019",
 		"url": "https://www.cs.cmu.edu/~bam/uicourse/05440inter2019/",
 		"desc": "This course will provide a comprehensive study of the many ways to interact with computers and computerized devices. An “interaction technique” starts when the user does something that causes an electronic device to respond, and includes the direct feedback from the device to the user.",
@@ -7422,7 +7422,7 @@
 	{
 		"id": "CMU-05-683-Fall",
 		"title": "05-683: Introduction to Human-Computer Interaction for Technology Executives",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2018",
 		"url": "https://www.cs.cmu.edu/~bam/uicourse/05863fall18/index.html",
 		"desc": "This course provides an overview and introduction to the field of human-computer interaction, with a focus on how it applies to managers, technology executives, and others who will work with HCI professionals. Particular emphasis will be placed on what HCI methods and HCI-trained specialists can bring to design and development teams. The course will provide a hands-on introduction to proven tools and techniques for creating and improving user interfaces, such as Contextual Inquiry, Rapid Prototyping, Heuristic Analysis, and Think-Aloud Usability Testing. Students at the end of the course will have learned how to perform some useful techniques and will have an understanding of systematic procedures for creating usable and useful designs and systems.",
@@ -7436,7 +7436,7 @@
 	{
 		"id": "CMU-05-436-Spring",
 		"title": "05-436: Usable Privacy and Security",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2014",
 		"url": "http://cups.cs.cmu.edu/courses/ups-sp14/",
 		"desc": "There is growing recognition that technology alone will not provide all of the solutions to security and privacy problems. Human factors play an important role in these areas, and it is important for security and privacy experts to have an understanding of how people will interact with the systems they develop. This course is designed to introduce students to a variety of usability and user interface problems related to privacy and security and to give them experience in designing studies aimed at helping to evaluate usability issues in security and privacy systems. The course is suitable both for students interested in privacy and security who would like to learn more about usability, as well as for students interested in usability who would like to learn more about security and privacy. Much of the course will be taught in a graduate seminar style in which all students will be expected to do a weekly reading assignment and each week different students will prepare a presentation for the class. Students will also work on a group project throughout the semester.",
@@ -7450,7 +7450,7 @@
 	{
 		"id": "CMU-17-355-Spring",
 		"title": "17-355: Program Analysis",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://cmu-program-analysis.github.io/2021/index.html",
 		"desc": "This course covers both foundations and practical aspects of the automated analysis of programs, which is becoming increasingly critical to find software errors and assure program correctness. The theory of abstract interpretation captures the essence of a broad range of program analyses and supports reasoning about their correctness. Building on this foundation, the course will describe program representations, data flow analysis, alias analysis, interprocedural analysis, dynamic analysis, and symbolic execution. Through assignments and projects, students will design and implement practical analysis tools that find bugs and verify properties of software.",
@@ -7464,7 +7464,7 @@
 	{
 		"id": "CMU-17-356-Spring",
 		"title": "17-356: Software Engineering for Startups",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2019",
 		"url": "https://cmu-17-356.github.io/",
 		"desc": "In this course, we will teach you the engineering skills necessary to succeed in the highly-uncertain environment associated with a technology startup. Our focus in this class is technical; that is, we will not be spending very much time on the business side of the startup equation (though given how much business drives engineering goals, of course we will not completely ignore it!). If you are instead interested in the entrepreneurship side of the equation, we encourage you to consider 15-390, Entrepreneurship for Computer Scientists.",
@@ -7478,7 +7478,7 @@
 	{
 		"id": "CMU-17-396-Spring",
 		"title": "17-396: Language Design and Prototyping",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2020",
 		"url": "https://www.cs.cmu.edu/~aldrich/courses/17-396/",
 		"desc": "15-411 is all about compilers, and focuses on writing sophisticated compilers that produce good assembly code. In contrast, this class is also about design, and it focuses on writing very simple interpreters and transpilers that help you get a language running quickly so you can try it out!",
@@ -7492,7 +7492,7 @@
 	{
 		"id": "CMU-17-445-Summer",
 		"title": "17-445: Machine Learning in Production/AI Engineering",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Summer 2021",
 		"url": "https://ckaestne.github.io/seai/",
 		"desc": "Formerly Software Engineering for AI-Enabled Systems (SE4AI), CMU course that covers how to build, deploy, assure, and maintain applications with machine-learned models. Covers responsible AI (safety, security, fairness, explainability, …) and MLOps.*",
@@ -7506,7 +7506,7 @@
 	{
 		"id": "CMU-10-403-Spring",
 		"title": "10-403: Deep Reinforcement Learning",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://cmudeeprl.github.io/403_website/",
 		"desc": "This course brings together many disciplines of Artificial Intelligence (including computer vision, robot control, reinforcement learning, language understanding) to show how to develop intelligent agents that can learn to sense the world and learn to act by imitating others, maximizing sparse rewards, and/or satisfying their curiosity.",
@@ -7520,7 +7520,7 @@
 	{
 		"id": "CMU-10-301-Spring",
 		"title": "10-301:  Introduction to Machine Learning",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://www.cs.cmu.edu/~mgormley/courses/10601/index.html",
 		"desc": "This course covers the theory and practical algorithms for machine learning from a variety of perspectives.",
@@ -7534,7 +7534,7 @@
 	{
 		"id": "CMU-11-777-Fall",
 		"title": "11-777: MultiModal Machine Learning",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2020",
 		"url": "https://cmu-multicomp-lab.github.io/mmml-course/fall2020/",
 		"desc": "Multimodal machine learning (MMML) is a vibrant multi-disciplinary research field which addresses some of the original goals of artificial intelligence by integrating and modeling multiple communicative modalities, including linguistic, acoustic, and visual messages.",
@@ -7548,7 +7548,7 @@
 	{
 		"id": "CMU-11-755-Fall",
 		"title": "11-755: Machine Learning for Signal Processing",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2010",
 		"url": "http://mlsp.cs.cmu.edu/courses/fall2010/",
 		"desc": "This course discusses the use of machine learning techniques to process signals. We cover a variety of topics, from data driven approaches for characterization of signals such as audio including speech, images and video, and machine learning methods for a variety of speech and image processing problems.",
@@ -7562,10 +7562,10 @@
 	{
 		"id": "CMU-11-731-Fall",
 		"title": "11-731: Machine Translation and Sequence-to-sequence Models",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2018",
 		"url": "http://phontron.com/class/mtandseq2seq2018/index.html",
-		"desc": "Machine Translation and Sequence-to-Sequence Models is an introductory graduate-level course (at Carnegie Mellon University's Language Technology Institute) surveying the primary approaches and methods for developing systems to translate between human languages, or other sequential data. The main objective of the course is to obtain basic understanding and implementation skills for modern methods for MT and sequence transduction, including how to design models, how to learn the model parameters, how to search for the best output, and how to create training data. The course will focus on machine translation, but also briefly cover tasks such as dialog response generation, image caption generation, and others.",
+		"desc": "Machine Translation and Sequence-to-Sequence Models is an introductory graduate-level course (at Carnegie Mellon's Language Technology Institute) surveying the primary approaches and methods for developing systems to translate between human languages, or other sequential data. The main objective of the course is to obtain basic understanding and implementation skills for modern methods for MT and sequence transduction, including how to design models, how to learn the model parameters, how to search for the best output, and how to create training data. The course will focus on machine translation, but also briefly cover tasks such as dialog response generation, image caption generation, and others.",
 		"tags": ["11-731"],
 		"contains": {
 			"videos": false,
@@ -7576,7 +7576,7 @@
 	{
 		"id": "CMU-11-830-Spring",
 		"title": "11-830: Computational Ethics for NLP",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2020",
 		"url": "http://demo.clab.cs.cmu.edu/ethical_nlp2020/#summary",
 		"desc": "As language technologies have become increasingly prevalent, there is a growing awareness that decisions we make about our data, methods, and tools are often tied up with their impact on people and societies. This course introduces students to real-world applications of language technologies and the potential ethical implications associated with them. We discuss philosophical foundations of ethical research along with advanced state-of-the art techniques.",
@@ -7590,7 +7590,7 @@
 	{
 		"id": "CMU-11-721-Fall",
 		"title": "11-721: Grammars and Lexicons",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2007",
 		"url": "https://www.cs.cmu.edu/afs/cs.cmu.edu/project/cmt-55/lti/Courses/721/2007/www/index.html#Syllabus",
 		"desc": "Grammars and Lexicons is an introductory graduate course on linguistic data analysis and theory, focusing on methodologies that are suitable for computational implementations. The course covers major syntactic and morphological phenomena in a variety of languages.",
@@ -7604,7 +7604,7 @@
 	{
 		"id": "CMU-11-711-Fall",
 		"title": "11-711: Algorithms for NLP",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2020",
 		"url": "http://demo.clab.cs.cmu.edu/11711fa20/",
 		"desc": "This course will explore foundational statistical techniques for the automatic analysis of natural (human) language text. Towards this end the course will introduce pragmatic formalisms for representing structure in natural language, and algorithms for annotating raw text with those structures. The dominant modeling paradigm is corpus-driven statistical learning, covering both supervised and unsupervised methods. Algorithms for NLP is a lab-based course. This means that instead of homeworks and exams, you will mainly be graded based on four hands-on coding projects.",
@@ -7618,7 +7618,7 @@
 	{
 		"id": "CMU-11-611-Fall",
 		"title": "11-611: Language and Statistics",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2019",
 		"url": "http://langandstats.cs.cmu.edu/",
 		"desc": "The goal of \"Language and Statistics\" is to ground the data-driven techniques used in language technologies in sound statistical methodology. We start by formulating various language technology problems in both an information theoretic framework (the source-channel paradigm) and a Bayesian framework (the Bayes classifier). We then discuss the statistical properties of words, sentences, documents and whole languages, and the various computational formalisms used to represent language. These discussions naturally lead to specific concepts in statistical estimation.",
@@ -7632,7 +7632,7 @@
 	{
 		"id": "CMU-11-492-Fall",
 		"title": "11-492: Speech Processing",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2020",
 		"url": "http://tts.speech.cs.cmu.edu/courses/11492/schedule.html",
 		"desc": "Speech Processing offers a practical and theoretical understanding of how human speech can be processed by computers. It covers speech recognition, speech synthesis and spoken dialog systems. The course involves practicals where the student will build working speech recognition systems, build their own synthetic voice and build a complete spoken dialog system. This work will be based on existing toolkits. Details of algorithms, techniques and limitations of state of the art speech systems will also be presented. This course is designed for students wishing understand how to process real data for real applications, applying statistical and machine learning techniques as well as working with limitations in the technology.",
@@ -7646,7 +7646,7 @@
 	{
 		"id": "CMU-11-411-Spring",
 		"title": "11-411: Natural Language Processing",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "http://demo.clab.cs.cmu.edu/NLP/#overview",
 		"desc": "This course is about a variety of ways to represent human languages (like English and Chinese) as computational systems, and how to exploit those representations to write programs that do neat stuff with text and speech data.",
@@ -7660,7 +7660,7 @@
 	{
 		"id": "CMU-18-734-Fall",
 		"title": "ECE 18-734: Foundations of Privacy",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2019",
 		"url": "http://course.ece.cmu.edu/~ece734/index.html",
 		"desc": "We will study privacy in a few settings where rigorous definitions and enforcement mechanisms are being developed - statistical disclosure limitation (as may be used by the census bureau in releasing statistics), semantics and logical specification of privacy policies that constrain information flow and use (e.g., by privacy regulations such as the HIPAA Privacy Rule and the Gramm-Leach-Bliley Act), principled audit and accountability mechanisms for enforcing privacy policies, anonymous communication protocols - and other settings in which privacy concerns have prompted much research, such as in social networks, location privacy and Web privacy (in particular, online tracking & targeted advertising).",
@@ -7674,7 +7674,7 @@
 	{
 		"id": "CMU-17-645-Fall",
 		"title": "17-645: Software Engineering for AI-Enabled Systems",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2019",
 		"url": "https://ckaestne.github.io/seai/F2019/",
 		"desc": "The course takes a software engineering perspective on building software systems with a significant machine learning or AI component. It discusses how to take an idea and a model developed by a data scientist (e.g., scripts and Jupyter notebook) and deploy it as part of scalable and maintainable system (e.g., mobile apps, web applications, IoT devices). Rather than focusing on modeling and learning itself, this course assumes a working relationship with a data scientist and focuses on issues of design, implementation, operation, and assurance and how those interact with the data scientist's modeling.",
@@ -7688,7 +7688,7 @@
 	{
 		"id": "CMU-17-450-Spring",
 		"title": "17-450: Crafting Software",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://cmu-crafting-software.github.io//",
 		"desc": "In this course, students are expected to have been exposed to some basic programming concepts, such as variables, if-statements, loops, and arrays. However, students are not expected to have extensive programming experience. This course is not appropriate for students that have completed more than two courses involving programming. We expect students in this class to have diverse backgrounds and experience.",
@@ -7702,7 +7702,7 @@
 	{
 		"id": "CMU-17-337-Spring",
 		"title": "17-337: Artificial Intelligence Methods for Social Good",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://feifang.info/artificial-intelligence-methods-for-social-good-spring-2021/",
 		"desc": "The rapid advance in artificial intelligence (AI) has opened up new possibilities of using AI to tackle the most challenging societal problems today. This course brings together a set of advanced AI methods that allow us to address such challenges and promote social good.",
@@ -7716,7 +7716,7 @@
 	{
 		"id": "CMU-17-562-Fall",
 		"title": "17-562: Law of Computer Technology",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2020",
 		"url": "http://euro.ecom.cmu.edu/program/law/17-762/",
 		"desc": "This course is both a survey of computer law and an examination of how courts and administrative agencies make decisions on issues involving computer technology.",
@@ -7730,7 +7730,7 @@
 	{
 		"id": "CMU-17-599-Fall",
 		"title": "17-599: Advanced Topics in Machine Learning and Game Theory",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2020",
 		"url": "https://feifang.info/advanced-topics-in-machine-learning-and-game-theory-fall-2020/",
 		"desc": "This course is designed to be a graduate-level course covering the topics at the intersection of machine learning and game theory.",
@@ -7744,7 +7744,7 @@
 	{
 		"id": "CMU-10-417-Fall",
 		"title": "10-417: Intermediate Deep Learning",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2020",
 		"url": "https://andrejristeski.github.io/10417-20/",
 		"desc": "The goal of this course is to introduce students to both the foundational ideas and the recent advances in deep learning. The first part of the course will focus on supervised learning, including neural networks, back-propagation algorithm, convolutional models, recurrent neural networks, and their extensions with applications to image recognition, video analysis, and language modelling. The second part of the course will cover unsupervised learning, including variational autoencoders, sparse-coding, Boltzmann machines, and generative adversarial networks.",
@@ -7758,7 +7758,7 @@
 	{
 		"id": "CMU-10-418-Fall",
 		"title": "10-418: Machine Learning for Structured Data",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2019",
 		"url": "https://www.cs.cmu.edu/~mgormley/courses/10418/index.html",
 		"desc": "In this course, we will study modern approaches to structured prediction building on probabilistic graphical models, deep learning, and search. The course will focus on three key aspects: models, inference, and learning. The models we consider will focus on both generative and discriminative models such as Bayesian networks, Markov random fields (MRFs), conditional random fields (CRFs), and deep neural networks including convolutional neural networks (CNNs) and recurrent neural networks (RNNs) – as well as hybrids of graphical models and neural networks. The course will explore approaches to exact and approximate inference: junction tree algorithm, approximate marginal inference by Markov chain Monte Carlo (MCMC) and variational methods, approximate MAP inference by integer linear programming (ILP) and search.",
@@ -7772,7 +7772,7 @@
 	{
 		"id": "CMU-10-606-Fall",
 		"title": "10-606: Mathematical/Computational Foundations for Machine Learning",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2018",
 		"url": "https://www.cs.cmu.edu/~mgormley/courses/606-607-f18/index.html",
 		"desc": "This course provides a place for students to practice the necessary mathematical background for further study in machine learning. Topics covered include probability (random variables, modeling with continuous and discrete distributions), linear algebra (inner product spaces, linear operators), and multivariate differential calculus (partial derivatives, matrix differentials). The course assumes some background in each of the above, but will review and give practice in each. (It does not provide from-scratch coverage of all of the above, which would be impossible in a course of this length.) Some coding will be required: the course will provide practice with translating the above mathematical concepts into concrete programs.",
@@ -7786,7 +7786,7 @@
 	{
 		"id": "CMU-36-708-Spring",
 		"title": "36-708: Statistical Methods for Machine Learning",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2019",
 		"url": "http://www.stat.cmu.edu/~larry/=sml/",
 		"desc": "This course is an advanced course focusing on the intsersection of Statistics and Machine Learning. The goal is to study modern methods and the underlying theory for those methods.",
@@ -7800,7 +7800,7 @@
 	{
 		"id": "CMU-10-707-Spring",
 		"title": "10-707: Advanced Deep Learning",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2020",
 		"url": "https://andrejristeski.github.io/10707-S20/",
 		"desc": "Models that are capable of extracting complex, hierarchical representations from high-dimensional data lie at the core of solving many ML and AI domains, such as visual object recognition, information retrieval, natural language processing, and speech perception. While the usefulness of such deep learning techniques is undisputed, our understanding of them is still in many ways nascent. The goal of this course is to introduce students to recent and exciting developments (both theoretical and practical) in these methods.",
@@ -7814,7 +7814,7 @@
 	{
 		"id": "CMU-10-708-Spring",
 		"title": "10-708: Probabilistic Graph Models",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2019",
 		"url": "https://sailinglab.github.io/pgm-spring-2019/",
 		"desc": "Many of the problems in artificial intelligence, statistics, computer systems, computer vision, natural language processing, and computational biology, among many other fields, can be viewed as the search for a coherent global conclusion from local information. The probabilistic graphical models framework provides an unified view for this wide range of problems, enables efficient inference, decision-making and learning in problems with a very large number of attributes and huge datasets. This graduate-level course will provide you with a strong foundation for both applying graphical models to complex problems and for addressing core research topics in graphical models.",
@@ -7828,7 +7828,7 @@
 	{
 		"id": "CMU-10-725-Fall",
 		"title": "10-725: Convex Optimization",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2019",
 		"url": "http://www.stat.cmu.edu/~ryantibs/convexopt/#homework",
 		"desc": "This course is designed to give a graduate-level student a thorough grounding in these properties and their role in optimization, and a broad comprehension of algorithms tailored to exploit such properties. The focus will be on convex optimization problems (though we also may touch upon nonconvex optimization problems at some points). We will visit and revisit important applications in machine learning and statistics.",
@@ -7842,7 +7842,7 @@
 	{
 		"id": "CMU-36-350-Fall",
 		"title": "36-350: Statistical Computing",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2019",
 		"url": "https://www.stat.cmu.edu/~ryantibs/statcomp/",
 		"desc": "Students will learn the core of ideas of programming—data structures, functions, iteration, debugging, logical design, and abstraction—through writing code to assist in statistical analyses. Students will learn how to write maintainable code, as well as debug and test code for correctness. They will learn how to set up and run stochastic simulations, how to fit basic statistical models and assess the results, and how to work with and filter large data sets. Since code is an important form of communication among scientists, students will also learn how to comment and organize code.",
@@ -7856,7 +7856,7 @@
 	{
 		"id": "CMU-10-737-Fall",
 		"title": "10-737: Creative AI",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2019",
 		"url": "http://kangeunsu.com/creativeai19f/#schedule",
 		"desc": "This course is where we explore these questions through seminars and projects. Our goal is to design computational models that present the very possibility of the creative AI.",
@@ -7870,7 +7870,7 @@
 	{
 		"id": "CMU-10-405-Spring",
 		"title": "10-405: Machine Learning with Large Data Sets",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://10605.github.io/",
 		"desc": "Large datasets pose difficulties across the machine learning pipeline. They are difficult to visualize and introduce computational, storage, and communication bottlenecks during data preprocessing and model training. Moreover, high capacity models often used in conjunction with large datasets introduce additional computational and storage hurdles during model training and inference. This course is intended to provide a student with the mathematical, algorithmic, and practical knowledge of issues involving learning with large datasets. Among the topics considered are: data cleaning, visualization, and pre-processing at scale; principles of parallel and distributed computing for machine learning; techniques for scalable deep learning; analysis of programs in terms of memory, computation, and (for parallel methods) communication complexity; and methods for low-latency inference.",
@@ -7884,7 +7884,7 @@
 	{
 		"id": "CMU-10-831-Spring",
 		"title": "10-831: Machine Learning in Policy",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2018",
 		"url": "https://www.andrew.cmu.edu/user/jweiss2/mlp/index.html",
 		"desc": "Machine learning, a field derived primarily from computer science and statistics, has matured and gained wide adoption. Alongside exponential increases in data measurement and availability, the ability to develop appropriate and tailored analyses is in demand. As practitioners in the social sciences consider machine learning methods, however, limitations and externalities of the applications of machine learning techniques are being identified, such as overconfidence in settings with concept drift, lack of generalizability due to selection bias, and magnification of inequities. Machine Learning in Policy seeks to (1) demonstrate motivations and successes of machine learning, to (2) contrast them with more classical methods, and to (3) investigate the promise and cautions of machine learning for public policy.",
@@ -7898,7 +7898,7 @@
 	{
 		"id": "CMU-16-311-Spring",
 		"title": "16-311: Introduction to Robotics",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://www.cs.cmu.edu/~16311/current/",
 		"desc": "This course presents an overview of robotics in practice and research with topics including vision, motion planning, mobile mechanisms, kinematics, inverse kinematics, and sensors.",
@@ -7912,7 +7912,7 @@
 	{
 		"id": "CMU-16-350-Spring",
 		"title": "16-350: Planning Techniques for Robotics",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2021",
 		"url": "https://www.cs.cmu.edu/~maxim/classes/robotplanning/",
 		"desc": "Planning is one of the core components that enable robots to be autonomous. Robot planning is responsible for deciding in real-time what the robot should do next, how to do it, where the robot should move next and how to move there. This class does an in-depth study of popular planning techniques in robotics and examines their use in ground and aerial robots, humanoids, mobile manipulation platforms and multi-robot systems. The students learn the theory of these methods and also implement them in a series of programming-based projects.",
@@ -7926,7 +7926,7 @@
 	{
 		"id": "CMU-16-432-Spring",
 		"title": "16-432: Designing Computer Vision Apps",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2017",
 		"url": "http://ci2cv.net/16432/",
 		"desc": "Topics will include using conventional computer vision software tools (OpenCV, MATLAB toolboxes, VLFeat, TensorFlow, etc.), and development on iOS devices using mobile vision libraries such as GPUImage and fast math libraries like Armadillo and Eigen. For consistency, all app development will be in iOS and it is expected that all students participating in the class have access to an Intel-based MAC running OS X El Capitan or later. Although the coursework will be focused on a single operating system, the knowledge gained from this class will easily generalize to other mobile platforms such as Android etc.",
@@ -7940,7 +7940,7 @@
 	{
 		"id": "CMU-16-425-Spring",
 		"title": "16-425: Methods in Bio(Medical) Image Analysis",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2020",
 		"url": "https://www.cs.cmu.edu/~galeotti/methods_course/",
 		"desc": "Students will gain theoretical and practical skills in 2D, 3D, and 4D biomedical image analysis, including skills relevant to general image analysis. The fundamentals of computational medical image analysis will be explored, leading to current research in applying geometry and statistics to segmentation, registration, visualization, and image understanding. Additional and related covered topics include de-noising/restoration, morphology, level sets, and shape/feature analysis.",
@@ -7954,7 +7954,7 @@
 	{
 		"id": "CMU-16-623-Fall",
 		"title": "16-623: Advanced Computer Vision Apps",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2016",
 		"url": "http://16623.courses.cs.cmu.edu/",
 		"desc": "This course is aimed at covering advanced concepts associated with the emerging topic of applying computer vision to app development on smart devices and embedded devices. Computer vision is a discipline that attempts to extract information from images and videos. Nearly every smart device on the planet has a camera, and people are increasingly interested in how to develop apps that use computer vision to perform an ever expanding list of things including: 3D mapping, photo/image search, people/object tracking, augmented reality etc. This course is intended for students who have taken previous courses in  computer vision, but are keen to explore advanced topics associated with their application to smart and embedded devices",
@@ -7968,7 +7968,7 @@
 	{
 		"id": "CMU-16-647-Spring",
 		"title": "16-647: Human-Robot Interaction",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2016",
 		"url": "https://www.cs.cmu.edu/~illah/16-467/index.html",
 		"desc": "This course is primarily lecture-based, with in-class participatory mini-projects, group homework assignments, a group term project that will enable students to put theory to practice using state-of-the-art interactive robots, and a final. The topics covered will include underlying robotic technologies, as they relate to human-robot interaction, interaction methodologies and techniques, study design, man-machine coupling, ethics and the singularity, and will include discussions of application domains that feature HRI.",
@@ -7982,7 +7982,7 @@
 	{
 		"id": "CMU-16-741-Fall",
 		"title": "16-741: Mechanics of Manipulation",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2019",
 		"url": "https://www.cs.cmu.edu/afs/cs/academic/class/16741-s07/www/index.html",
 		"desc": "To understand the mechanical processes governing manipulation, with a focus on the interaction of hand with environment. The class focuses on models founded on classical mechanics: kinematics, statics, and dynamics of interacting rigid bodies. We will develop techniques for rigid body mechanics, kinematic constraint, Coulomb friction, gravity, and impact, and apply these techniques to manipulation problems including picking and placing, parts orienting, assembly, and mobile manipulation.",
@@ -7996,7 +7996,7 @@
 	{
 		"id": "CMU-16-883-Fall",
 		"title": "16-883:L Provably Safe Robotics",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Fall 2019",
 		"url": "https://www.cs.cmu.edu/~cliu6/provably-safe-robotics.html",
 		"desc": "Safe autonomy has become increasingly critical in many application domains. It is important to ensure not only the safety of the ego robot, but also the safety of other agents (humans or robots) that directly interact with the autonomy.",
@@ -8010,7 +8010,7 @@
 	{
 		"id": "CMU-16-848-Spring",
 		"title": "16-848: Hands: Design and Control for Dexterous Manipulation",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2018",
 		"url": "http://graphics.cs.cmu.edu/nsp/course/16899-s18/",
 		"desc": "In this course, we will survey robotic hands and learn about the human hand with the goal of pushing the frontiers on hand design and control for dexterous manipulation. We will consider the necessary kinematics and dynamics for dexterity, what sensors are required to carry out dexterous interactions, the importance of reflexes and compliance, and the challenge of uncertainty. We will examine the human hand: its structure, sensing capabilities, human grasp choice and control strategies for inspiration and benchmarking. Students will be asked to present one or two research papers, participate in discussions and short research or design exercises, and carry out a final project.",
@@ -8024,7 +8024,7 @@
 	{
 		"id": "CMU-16-824-Spring",
 		"title": "16-824: Visual  Learning and Recognition",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2017",
 		"url": "http://graphics.cs.cmu.edu/courses/16-824/2017_spring/index.html",
 		"desc": "A graduate course in Computer Vision with emphasis on representation and reasoning for large amounts of data (images, videos and associated tags, text, gps-locations etc) toward the ultimate goal of Image Understanding. We will be reading an eclectic mix of classic and recent papers on topics including: Theories of Perception, Mid-level Vision (Grouping, Segmentation, Poselets), Object and Scene Recognition, 3D Scene Understanding, Action Recognition, Contextual Reasoning, Image Parsing, Joint Language and Vision Models, etc. We will be covering a wide range of supervised, semi-supervised and unsupervised approaches for each of the topics above.",
@@ -8038,7 +8038,7 @@
 	{
 		"id": "CMU-16-823-Spring",
 		"title": "16-823: Physics-based Methods in Vision",
-		"source": "Carnegie Mellon University",
+		"source": "Carnegie Mellon",
 		"year": "Spring 2011",
 		"url": "https://www.cs.cmu.edu/afs/cs/academic/class/16823-f06/",
 		"desc": "Everyday we observe an extraordinary array of light and color phenomena around us, ranging from the dazzling effects of the atmosphere, the complex appearances of surfaces and materials and underwater scenarios. For a long time, artists, scientists and photographers have been fascinated by these effects, and have focused their attention on capturing and understanding these phenomena. In this course, we take a computational approach to modeling and analyzing these phenomena, which we collectively call as \"visual appearance\". The first half of the course focuses on the physical fundamentals of visual appearance, while the second half of the course focuses on algorithms and applications in a variety of fields such as computer vision, graphics and remote sensing and technologies such as underwater and aerial imaging. This course unifies concepts usually learnt in physical sciences and their application in imaging sciences. The course will also include a photography competition in addition to analytical and practical assignments.",
