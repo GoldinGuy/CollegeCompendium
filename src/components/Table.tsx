@@ -37,12 +37,12 @@ const ExploreTable = ({ classes }: { classes: Class[] }) => {
 										>
 										Contains
 										</th>
-										<th
+										{/* <th
 											scope="col"
 											className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
 										>
 											Tags
-										</th>
+										</th> */}
 									</tr>
 								</thead>
 								{classes.map((_class) => {
@@ -157,7 +157,7 @@ const ExploreTable = ({ classes }: { classes: Class[] }) => {
 														)}
 													</span>
 												</td>
-												<td className="px-6 py-4 ">
+												{/* <td className="px-6 py-4 ">
 													{_class.tags.map((word) => {
 														if (
 															word.toString().toUpperCase() !==
@@ -171,7 +171,7 @@ const ExploreTable = ({ classes }: { classes: Class[] }) => {
 															);
 														} else return null;
 													})}
-												</td>
+												</td> */}
 											</tr>
 										</tbody>
 									);
