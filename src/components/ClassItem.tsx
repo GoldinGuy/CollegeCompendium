@@ -1,13 +1,13 @@
 import {
-	faArrowCircleRight,
+	// faArrowCircleRight,
 	faCheck,
-	faClipboard,
+	// faClipboard,
 	faExternalLinkAlt,
-	faFileInvoice,
-	faFileSignature,
-	faFileVideo,
-	faPencilAlt,
-	faVideo,
+	// faFileInvoice,
+	// faFileSignature,
+	// faFileVideo,
+	// faPencilAlt,
+	// faVideo,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Class } from "../typings/interfaces";
@@ -29,7 +29,7 @@ const ClassItem = ({ _class, idx }: { _class: Class, idx: number }) => {
 						],
 				}}
 			/>
-			<a href={_class.url} target="_blank" rel="noreferrer">
+			<a href={_class.url} target="_blank" rel="noreferrer"key={_class.id}>
 				<div className="p-3">
 					<p className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase">
 						{_class.source} | {_class.year}{" "}

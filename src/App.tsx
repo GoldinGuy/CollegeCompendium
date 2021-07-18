@@ -3,7 +3,8 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Navbar, Footer, ScrollToTop } from "./components";
 import TermsOfService from "./components/Terrms";
 import {
-	TempSplashPage, HomePage,
+	// TempSplashPage,
+	HomePage,
 	SearchPage,
 	ExplorePage,
 	ContributePage

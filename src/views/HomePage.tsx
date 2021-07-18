@@ -5,7 +5,6 @@ import FEATURED from "../data/featured.json";
 import { faArrowCircleRight, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
-import EmailForm from "../components/EmailForm";
 
 
 const HomePage = () => {
