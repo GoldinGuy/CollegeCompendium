@@ -22,7 +22,7 @@ const TempSplashPage = () => {
 							students everywhere
 						</i>
 						Our site is currently down, but feel free to join our mailing list
-						so we can let you know when we're back!
+						so we can let you know when we're back! You can also visit the <a href="https://github.com/GoldinGuy/CollegeCompendium" target="_blank" rel="noreferrer" className="text-fuchsia-500 hover:text-blue-500">Github</a> for the raw data.
 					</p>
 					<form className="grid w-full grid-cols-1 gap-3 pt-1 mx-auto mb-8 lg:grid-cols-6 md:w-7/12">
 						<label className="col-auto lg:col-span-4 ">
