@@ -1,9 +1,7 @@
-import { faExternalLinkAlt, faFileInvoice, faFileSignature, faFileVideo } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Class } from "../typings/interfaces";
-import { collegeColors, shuffle } from "../utils";
+import { shuffle } from "../utils";
 import ClassItem from "./ClassItem";
 
 const ClassGallery = ({ classes }: { classes: Class[] }) => {

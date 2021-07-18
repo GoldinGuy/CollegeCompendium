@@ -5,7 +5,7 @@ export function useQuery() {
 	return new URLSearchParams(useLocation().search);
 }
 
-export function shuffle(array: Class[]) {
+export function shuffle(array: Class[]): Class[] {
 	for (let i = array.length - 1; i > 0; i--) {
 		const j = Math.floor(Math.random() * (i + 1));
 		[array[i], array[j]] = [array[j], array[i]];

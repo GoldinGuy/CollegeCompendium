@@ -14,7 +14,7 @@ const Classes = ({
 	classes,
 	displayPromo,
 	filters,
-	asTable
+	asTable,
 }: {
 	imgUrl?: string;
 	displayPromo?: boolean;
@@ -30,8 +30,8 @@ const Classes = ({
 		const checkFilters = (_class: Class) => {
 			if (filters) {
 				let included = false;
-				included = filters.some(tag => {
-					let inTags = _class.tags.some(cat => {
+				included = filters.some((tag) => {
+					let inTags = _class.tags.some((cat) => {
 						if (formatText(cat).includes(tag)) {
 							return true;
 						}
@@ -55,7 +55,7 @@ const Classes = ({
 		};
 
 		setFilteredClasses(
-			classes.filter(course => {
+			classes.filter((course) => {
 				return checkFilters(course);
 			})
 		);
@@ -140,7 +140,7 @@ const Classes = ({
 							{filteredClasses
 								.slice(page * 12 + startVid, page * 12 + 12 + startVid)
 								.map((_class, idx) => {
-									return (<ClassItem _class={_class} idx={idx} />)
+									return <ClassItem _class={_class} idx={idx} />;
 								})}
 						</div>
 
