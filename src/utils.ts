@@ -43,5 +43,6 @@ export const collegeColors = {
 	uchicago: '#800000',
 	riverside: '#2D6CC0',
 	georgiatech: '#B3A369',
-	utoronto: '#25355A'
+	utoronto: '#25355A',
+	upitt: "#003594"
 };

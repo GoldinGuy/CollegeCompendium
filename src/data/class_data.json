@@ -6652,7 +6652,7 @@
 	{
 		"id": "UPitt-CS2750-Spring",
 		"title": "CS2750 Machine Learning",
-		"source": "University of Pittsburgh",
+		"source": "UPITT",
 		"year": "Spring 2020",
 		"url": "https://people.cs.pitt.edu/~milos/courses/cs2750-Spring2020/",
 		"desc": "The goal of the field of machine learning is to build computer systems that learn from experience and that are capable to adapt to their environments. Learning techniques and methods developed by researchers in this field have been successfully applied to a variety of learning tasks in a broad range of areas, including, for example, text classification, gene discovery, financial forecasting, credit card fraud detection, collaborative filtering, design of adaptive web agents and others.",
@@ -6666,7 +6666,7 @@
 	{
 		"id": "UPitt-CS2710-Fall",
 		"title": "CS2710 Foundations of Artificial Intelligence",
-		"source": "University of Pittsburgh",
+		"source": "UPITT",
 		"year": "Fall 2019",
 		"url": "https://people.cs.pitt.edu/~milos/courses/cs2710-Fall2019/",
 		"desc": "This course will provide an introduction to the fundamental concepts and techniques underlying the construction of intelligent computer systems. Topics covered in the course include: problem solving and search, logic and knowledge representation, planning, reasoning and decision-making in the presence of uncertainty, and machine learning.",
@@ -6680,7 +6680,7 @@
 	{
 		"id": "UPitt-CS441-Spring",
 		"title": "CS441 Discrete Mathematics for Computer Science",
-		"source": "University of Pittsburgh",
+		"source": "UPITT",
 		"year": "Spring 2013",
 		"url": "http://people.cs.pitt.edu/~milos/courses/cs441/index.html#Abstract",
 		"desc": "The purpose of this course is to understand and use (abstract) discrete structures that are backbones of computer science. In particular, this class is meant to introduce logic, proofs, sets, relations, functions, counting, and probability, with an emphasis on applications in computer science.",
@@ -6694,7 +6694,7 @@
 	{
 		"id": "UPitt-CS3750-Spring",
 		"title": "CS 3750  Advanced Topics in Machine Learning",
-		"source": "University of Pittsburgh",
+		"source": "UPITT",
 		"year": "Spring 2020",
 		"url": "https://people.cs.pitt.edu/~milos/courses/cs3750-Spring2020/",
 		"desc": "The objective of the Advances Machine Learning course is to expand on the material covered in the introductory Machine Learning course (CS2750). It focuses on special topics in ML such as exact and approximate inference in graphical models, dimensionality reduction and component analysis methods, latent variable models, models of documents and words, time series models, selected topic from deep neural networks and reinforcement learning. The course will consist of (student-lead) presentations and discussions. Students will be evaluated based on their participation in discussions, presentations and projects.",
