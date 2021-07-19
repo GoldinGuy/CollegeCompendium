@@ -48,7 +48,6 @@ const HomePage = () => {
 
 				<div className="w-full mx-auto mt-12 text-center md:w-10/12 bg-gradient-to-r from-fuchsia-400  to-blue-500 rounded-lg">
 					<img
-					
 						src="https://user-images.githubusercontent.com/47064842/122480760-71240a80-cf9b-11eb-8865-97e822d3f064.jpg"
 						alt="Hero"
 						loading="lazy"
@@ -56,7 +55,6 @@ const HomePage = () => {
 					/>
 				</div>
 			</section>
-
 
 			{/* info  */}
 			<section className="px-4 pt-20 pb-10 mx-auto max-w-7xl" id="info">
@@ -157,11 +155,11 @@ const HomePage = () => {
 								@Samfydega
 							</a>
 							, two student developers that are passionate about providing
-							high-quality, accessible education resources to intellectually
+							high-quality, accessible educational resources to intellectually
 							curious people across the world. Learning and applying computer
 							science skills can be a very difficult journey, which is why we've
-							created a catalog of education resources and courses to help you
-							achieve your personal goals.
+							created a catalog of open source classes with resources to help you achieve
+							your personal goals. 
 						</p>
 						<a
 							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 "
