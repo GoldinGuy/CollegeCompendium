@@ -48,7 +48,7 @@ const HomePage = () => {
 
 				<div className="w-full mx-auto mt-12 text-center md:w-10/12 bg-gradient-to-r from-fuchsia-400  to-blue-500 rounded-lg">
 					<img
-						// src="https://user-images.githubusercontent.com/47064842/121788823-80234b00-cb9e-11eb-82c0-927759e0dba6.png"
+					
 						src="https://user-images.githubusercontent.com/47064842/122480760-71240a80-cf9b-11eb-8865-97e822d3f064.jpg"
 						alt="Hero"
 						loading="lazy"
@@ -57,54 +57,6 @@ const HomePage = () => {
 				</div>
 			</section>
 
-			{/* logos */}
-			{/* TODO: */}
-			{/* <section className="px-4 pb-10 mx-auto max-w-7xl" id="logos">
-				<h1 className="mb-8 text-sm font-bold tracking-wide text-center text-gray-700 uppercase">
-					AS Seen On
-				</h1>
-				<div className="grid grid-cols-2 gap-10 text-center lg:grid-cols-3 filter grayscale brightness-90 not-selectable">
-					<a
-						className=" items-center justify-center hidden lg:flex"
-						href="https://www.morningbrew.com/sidekick/stories/2021/06/21/sidekicks-smarter-living-recs-0621"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<span
-							draggable="false"
-							className="block object-contain h-12 text-2xl text-gray-600 font-bold"
-						>
-							r/LearnProgramming
-						</span>
-					</a>
-					<a
-						className="flex items-center justify-center"
-						href="https://www.morningbrew.com/sidekick/stories/2021/06/21/sidekicks-smarter-living-recs-0621"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<img
-							draggable="false"
-							className="block object-contain h-12"
-							src="https://morningbrew-oslo.s3.us-west-2.amazonaws.com/1582323261.jpg"
-							alt="Morning Brew"
-						></img>
-					</a>
-					<a
-						className="flex items-center justify-center"
-						href="https://www.producthunt.com/posts/college-compendium"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<img
-							src="https://cdn.worldvectorlogo.com/logos/product-hunt-1.svg"
-							alt="Product Hunt"
-							draggable="false"
-							className="block object-contain h-12"
-						/>
-					</a>
-				</div>
-			</section> */}
 
 			{/* info  */}
 			<section className="px-4 pt-20 pb-10 mx-auto max-w-7xl" id="info">
@@ -135,8 +87,6 @@ const HomePage = () => {
 							className="w-full bg-gray-200 rounded-lg object-cover object-center-top h-72 sm:h-full opacity-70 "
 							alt="info"
 							loading="lazy"
-							// src="https://user-images.githubusercontent.com/47064842/122471339-28655500-cf8d-11eb-8928-2d8050ce5a57.png"
-							// src="https://user-images.githubusercontent.com/47064842/121788823-80234b00-cb9e-11eb-82c0-927759e0dba6.png"
 							src="https://user-images.githubusercontent.com/47064842/121788773-04290300-cb9e-11eb-8e5e-95fa321e18db.png"
 						/>
 						<div className="absolute top-0 left-0 w-full h-full flex-col flex items-center justify-center">
