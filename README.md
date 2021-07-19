@@ -13,10 +13,10 @@
 
 Here they are! [csv](https://github.com/GoldinGuy/CollegeCompendium/blob/master/class_data.csv), [xlsx](https://github.com/GoldinGuy/CollegeCompendium/blob/master/class_data.xlsx)
 
-### We Complement Your CS Journey By Cataloging Classes Across Topics & Experience Levels
+### We Complement Your CS Journey By Cataloging Resources Across Topics & Experience Levels
 
 College Compendium serves a single purpose: we help you find your
-next Computer Science resource or curriculum. Regardless of where
+next computer science resource or curriculum. Regardless of where
 you are in your journey, we've compiled a catalog of CS course
 resources that are relevant to your skill-level, time-commitment,
 and learning style. With hundreds of classes (and growing), you

@@ -116,7 +116,7 @@ const HomePage = () => {
 						</h2>
 						<p className="mb-8 text-base  text-gray-600 text-left md:text-lg">
 							College Compendium serves a single purpose: we help you find your
-							next Computer Science resource or curriculum. Regardless of where
+							next computer science resource or curriculum. Regardless of where
 							you are in your journey, we've compiled a catalog of CS course
 							resources that are relevant to your skill-level, time-commitment,
 							and learning style. With hundreds of classes (and growing), you
@@ -208,8 +208,8 @@ const HomePage = () => {
 							</a>
 							, two student developers that are passionate about providing
 							high-quality, accessible education resources to intellectually
-							curious people across the world. Learning and applying Computer
-							Science skills can be a very difficult journey, which is why we've
+							curious people across the world. Learning and applying computer
+							science skills can be a very difficult journey, which is why we've
 							created a catalog of education resources and courses to help you
 							achieve your personal goals.
 						</p>
@@ -222,15 +222,6 @@ const HomePage = () => {
 							Join The Discord
 							<FontAwesomeIcon icon={faDiscord} className="ml-2" />
 						</a>
-
-						{/* <a
-							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 "
-							href="https://github.com/GoldinGuy/CollegeCompendium"
-						>
-							Star On GitHub
-							<FontAwesomeIcon icon={faStar} className="ml-2" />
-						</a>
-					 */}
 					</div>
 					<div className="rounded-lg ">
 						<img
