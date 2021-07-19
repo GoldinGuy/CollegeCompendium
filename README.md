@@ -11,7 +11,7 @@
 
 ### Looking for the CSV/Excel Files? 
 
-Here they are! [csv](https://github.com/GoldinGuy/CollegeCompendium/blob/master/class_data.csv), [xlsx](https://github.com/GoldinGuy/CollegeCompendium/blob/master/class_data.xlsx)
+Here they are! [csv](https://github.com/GoldinGuy/CollegeCompendium/blob/master/class_data.csv), [xlsx](https://github.com/GoldinGuy/CollegeCompendium/blob/master/class_data.xls)
 
 ### We Complement Your CS Journey By Cataloging Resources Across Topics & Experience Levels
 
