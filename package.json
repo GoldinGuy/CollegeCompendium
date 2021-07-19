@@ -1,6 +1,6 @@
 {
-	"name": "classes",
-	"version": "0.1.0",
+	"name": "college-compendium",
+	"version": "1.1.0",
 	"private": true,
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.35",
