@@ -1,6 +1,6 @@
 # CollegeCompendium
 
-📓 **Join over 55000 programmers and learn at your own pace with our curated collection of free and open source Computer Science resources from top colleges across America**
+📓 **Join over 55000 programmers and learn at your own pace with a curated collection of free and open source Computer Science resources from top colleges across America**
 
 
 [![Discuss On Discord][discord]][discord-url]
