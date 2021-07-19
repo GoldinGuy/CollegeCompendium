@@ -24,7 +24,7 @@ const HomePage = () => {
 						Learn at your own pace with a curated collection of{" "}
 						<br className="hidden sm:flex" />
 						<strong>
-							free Computer Science resources from top colleges across America
+							free and open source computer science resources from top colleges
 						</strong>
 					</p>
 					<div className="mb-4 space-x-0 md:space-x-2 md:mb-6">
