@@ -4,9 +4,17 @@ const TermsOfService = () => {
     return (
 			<div className="px-4 sm:px-10 md:px-20 lg:px-30 text-gray-600">
 				<span className="text-2xl font-semibold mt-4 block">Terms of Use</span>
-				We are doing this as an accommodation, we are not collecting your
-				information, and we are not making any profit. College Compendium is a free
-				compilation of student-submitted open-source content widely available on the web and is not affiliated in any way with any college, university, or resource linked to on our platform.
+				College Compendium uses the{" "}
+				<a href="https://github.com/GoldinGuy/CollegeCompendium/blob/master/LICENSE">
+					MIT
+				</a>{" "}
+				open-source license.
+				<br />
+				<br /> We are doing this as an accommodation, we are not collecting your
+				information, and we are not making any profit. College Compendium is a
+				free compilation of student-submitted open-source content widely
+				available on the web and is not affiliated in any way with any college,
+				university, or resource linked to on our platform.
 				<span className="text-md font-semibold mt-4 block">
 					PLEASE READ THIS TERMS OF USE CAREFULLY.{" "}
 				</span>

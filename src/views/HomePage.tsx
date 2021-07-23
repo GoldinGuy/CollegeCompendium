@@ -70,7 +70,7 @@ const HomePage = () => {
 							you are in your journey, we've compiled a catalog of CS course
 							resources that are relevant to your skill-level, time-commitment,
 							and learning style. With hundreds of classes (and growing), you
-							will never hit a dead end.
+							will never hit a dead end. 
 						</p>
 						<Link
 							to="/explore"
@@ -158,8 +158,8 @@ const HomePage = () => {
 							high-quality, accessible educational resources to intellectually
 							curious people across the world. Learning and applying computer
 							science skills can be a very difficult journey, which is why we've
-							created a catalog of open source classes with resources to help you achieve
-							your personal goals. 
+							created a catalog of open source classes with resources to help
+							you achieve your personal goals.
 						</p>
 						<a
 							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 "
