@@ -207,7 +207,7 @@ const HomePage = () => {
 							</span>
 						</h2>
 						<p className="mt-3 text-3xl font-extrabold text-white">
-							Join over 55000 Programmers and Creatives Learning with College
+							Join over 60000 Programmers In Over 147 Countries Learning with College
 							Compendium
 						</p>
 						<p className="mt-5 text-lg text-gray-300">
