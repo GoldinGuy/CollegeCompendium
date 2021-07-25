@@ -48,41 +48,49 @@ const ContributeForm = () => {
 		event: React.FormEvent<HTMLButtonElement>
 	): Promise<void> => {
 		event.preventDefault();
-		if (courseTitle.length > 0 && url.length > 0 && source.length > 0) {
-			const payload = {
-				name: titleCase(courseTitle),
-				email: url,
-				source: source,
-				desc: desc
-			};
-			// console.log(process.env.REACT_APP_CONTRIBUTE_API, payload);
-			console.log("submitting ", payload);
-			if (process.env.REACT_APP_CONTRIBUTE_API) {
-				const request = new XMLHttpRequest();
-				request.open(
-					"PATCH",
-					"https://json.extendsclass.com/bin/fca7c6dc9444",
-					true
-				);
-				request.setRequestHeader(
-					"Content-type",
-					"application/merge-patch+json"
-				);
-				request.setRequestHeader(
-					"Security-key",
-					`${process.env.REACT_APP_CONTRIBUTE_API}`
-				);
-				request.onreadystatechange = () => {};
-				request.send(JSON.stringify(payload));
-			}
+		if (url.length > 0) {
+			console.log("submitting ", url);
+			window.open(`mailto:team@collegecompendium.org?subject=ClassContribution&body=${url}`);
 			setError(false);
-			setDesc("");
-			setSource("");
 			setUrl("");
-			setCourseTitle("");
 		} else {
 			setError(true);
 		}
+		// if (courseTitle.length > 0 && url.length > 0 && source.length > 0) {
+		// 	const payload = {
+		// 		name: titleCase(courseTitle),
+		// 		email: url,
+		// 		source: source,
+		// 		desc: desc
+		// 	};
+		// 	// console.log(process.env.REACT_APP_CONTRIBUTE_API, payload);
+		// 	console.log("submitting ", payload);
+		// 	if (process.env.REACT_APP_CONTRIBUTE_API) {
+		// 		const request = new XMLHttpRequest();
+		// 		request.open(
+		// 			"PATCH",
+		// 			"https://json.extendsclass.com/bin/fca7c6dc9444",
+		// 			true
+		// 		);
+		// 		request.setRequestHeader(
+		// 			"Content-type",
+		// 			"application/merge-patch+json"
+		// 		);
+		// 		request.setRequestHeader(
+		// 			"Security-key",
+		// 			`${process.env.REACT_APP_CONTRIBUTE_API}`
+		// 		);
+		// 		request.onreadystatechange = () => {};
+		// 		request.send(JSON.stringify(payload));
+		// 	}
+		// 	setError(false);
+		// 	setDesc("");
+		// 	setSource("");
+		// 	setUrl("");
+		// 	setCourseTitle("");
+		// } else {
+		// 	setError(true);
+		// }
 	};
 
 	return (
@@ -100,7 +108,7 @@ const ContributeForm = () => {
 							Contribute Classes To Our Compendium!
 						</h2>
 
-						<span
+						{/* <span
 							className="text-sm font-bold text-gray-600 uppercase"
 							key="name"
 						>
@@ -114,7 +122,7 @@ const ContributeForm = () => {
 							placeholder="Foundations of Deprecation"
 							maxLength={50}
 							key="title-input"
-						/>
+						/> */}
 					</div>
 
 					<div className="mt-6">
@@ -134,7 +142,7 @@ const ContributeForm = () => {
 							maxLength={100}
 						/>
 					</div>
-					<div className="mt-6">
+					{/* <div className="mt-6">
 						<span
 							className="text-sm font-bold text-gray-600 uppercase "
 							key="attending"
@@ -167,7 +175,7 @@ const ContributeForm = () => {
 							maxLength={300}
 							rows={4}
 						/>
-					</div>
+					</div> */}
 				</div>
 
 				{isError && (
