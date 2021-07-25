@@ -4277,7 +4277,7 @@
         "source": "Tufts",
         "year": "Spring 2021",
         "url": "http://www.cs.tufts.edu/comp/177",
-        "desc": "N/A",
+        "desc": "Visualization as a tool for data analysis, recall, inference, and decision-making. Tools for visual description and presentation. Principles of effective visualization, including data-visual mapping, interaction techniques, color theory, cognitive and perceptual psychology, and human factors of visual depictions of data.",
         "tags": [
             "COMP177"
         ],
@@ -9304,6 +9304,1638 @@
         "desc": "Object-oriented design of software using Python, a modern high-level language. Introduction to abstract data types, fundamental algorithms, and basics of complexity analysis.",
         "tags": [
             "CS313E"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC401-Spring",
+        "title": "CSC401: Natural Language Computing",
+        "source": "UToronto",
+        "year": "Spring 2021",
+        "url": "http://www.cs.toronto.edu/~frank/csc401/",
+        "desc": "This course presents an introduction to natural language computing in applications such as information retrieval and extraction, intelligent web searching, speech recognition, and machine translation. These applications will involve various statistical and machine learning techniques.",
+        "tags": [
+            "CSC401"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2501-Fall",
+        "title": "CSC2501: Computational Linguistics",
+        "source": "UToronto",
+        "year": "Fall 2015",
+        "url": "http://www.cs.toronto.edu/~frank/csc2501/",
+        "desc": "This course covers, as the name suggests, computational linguistics and the understanding and generation of natural language by machines. Topics include syntactic processing, semantics and semantic interpretation, pragmatics, pronouns, definite descriptions, discourse context, and machine translation.",
+        "tags": [
+            "CSC2501"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2518-Fall",
+        "title": "CSC2518: Spoken Language Processing (Speech in healthcare and assistive technologies)",
+        "source": "UToronto",
+        "year": "Fall 2014",
+        "url": "http://www.cs.toronto.edu/~frank/csc2518/",
+        "desc": "This is a graduate course broadly on topics of speech processing by machine including digital signal processing, automatic speech recognition, and speech synthesis. The theme this year is Speech in healthcare and assistive technologies which will include automatic dictation of speech for medical records, analysis of speech in language pathologies (e.g., in cerebral palsy, Parkinson's disease, and Alzheimer's disease), and assistive technologies such as text-to-speech (with and without brain-computer interfaces) for people with limited speech ability.",
+        "tags": [
+            "CSC2518"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC311-Spring",
+        "title": "CSC311: Introduction to Machine Learning",
+        "source": "UToronto",
+        "year": "Spring 2020",
+        "url": "https://amfarahmand.github.io/csc311/",
+        "desc": "By the end of this course, the students will learn about (roughly categorized): Machine Learning Problems: Supervised (regression and classification), Unsupervised (clustering, dimension reduction), Reinforcement Learning, Models: Linear and Nonlinear (Basis Expansion and Neural Networks), Loss functions: Squared Loss, Cross Entropy, Hinge, Exponential, etc., Regularizers: l1 and l2, Probabilistic viewpoint: Maximum Likelihood Estimation, Maximum A Posteriori, Bayesian inference, Bias and Variance Tradeoff, Ensemble methods: Bagging and Boosting, Optimization technique in ML: Gradient Descent and Stochastic Gradient Descent",
+        "tags": [
+            "CSC311"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2547-Spring",
+        "title": "CSC2547: Introduction to Reinforcement Learning",
+        "source": "UToronto",
+        "year": "Spring 2021",
+        "url": "https://www.youtube.com/playlist?list=PLCveiXxL2xNbiDq51a8iJwPRq2aO0ykrq",
+        "desc": "This is an introductory course on reinforcement learning (RL) and sequential decision-making under uncertainty with an emphasis on understanding the theoretical foundation. We study how dynamic programming methods such as value and policy iteration can be used to solve sequential decision-making problems with known models, and how those approaches can be extended in order to solve reinforcement learning problems, where the model is unknown. Other topics include, but not limited to, function approximation in RL, policy gradient methods, model-based RL, and balancing the exploration-exploitation trade-off. The course will be delivered as a mix of lectures and reading of classical and recent papers assigned to students. As the emphasis is on understanding the foundation, you should expect to go through mathematical detail and proofs. Required background for this course includes being comfortable with probability theory and statistics, calculus, linear algebra, optimization, and (supervised) machine learning.",
+        "tags": [
+            "CSC2547"
+        ],
+        "contains": {
+            "videos": true,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC411-Fall",
+        "title": "CSC411: Machine Learning and Data Mining",
+        "source": "UToronto",
+        "year": "Fall 2018",
+        "url": "https://www.cs.toronto.edu/~rgrosse/courses/csc411_f18/",
+        "desc": "Machine learning is a set of techniques that allow machines to learn from data and experience, rather than requiring humans to specify the desired behavior by hand. Over the past two decades, machine learning techniques have become increasingly central both in AI as an academic field, and in the technology industry. This course provides a broad introduction to some of the most commonly used ML algorithms. It also serves to introduce key algorithmic principles which will serve as a foundation for more advanced courses, such as CSC412/2506 (Probabilistic Learning and Reasoning) and CSC421/2516 (Neural Networks and Deep Learning).",
+        "tags": [
+            "CSC411"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-ECE444-Fall",
+        "title": "ECE444: Software Engineering",
+        "source": "UToronto",
+        "year": "Fall 2020",
+        "url": "https://shuiblue.github.io/UofT-ECE444/",
+        "desc": "Successful software projects require more than just technical expertise. Figuring out what the client wants, collaborating in a team, managing complexity, mitigating risks, staying on time and budget, and determining under various constraints when a product is good enough to be shipped are at least equally important topics that often have a significant human component. ECE444 explores these issues broadly covering the fundamentals of modern software engineering.",
+        "tags": [
+            "ECE444"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-ECE1742-Winter",
+        "title": "ECE1724: Empirical Software Engineering",
+        "source": "UToronto",
+        "year": "Winter 2021",
+        "url": "https://shuiblue.github.io/UofT-ECE1724S2-EmpiricalSE/",
+        "desc": "We will focus on software engineering related research questions in readings and assignments. Students will mine and integrate data from and across online software repositories (e.g., GitHub and Stack Overflow) and employ a spectrum of data analysis techniques, ranging from statistical modeling to social network analysis. For the final research project, we encourage students to come up with a research question of interest to themselves. The delivery will be a research paper, and one or more empirical methods presented in class have to be part of the paper.",
+        "tags": [
+            "ECE1742"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2130-Fall",
+        "title": "CSC2130: Empirical Research Methods for Computer Scientists",
+        "source": "UToronto",
+        "year": "Fall 2014",
+        "url": "http://www.cs.toronto.edu/~sme/CSC2130/index.html",
+        "desc": "This course will explore the role of empiricism in computer science research, and will prepare students for advanced research by examining how to plan, conduct and report on empirical investigations. The course will cover techniques applicable to each of the steps of a research project, including formulating research questions, theory building, data analysis (using both qualitative and quantitative methods), building evidence, assessing validity, and publishing. The course will cover the principal research methods used to study human interaction with computer technology: controlled experiment, case studies, surveys, archival analysis, action research and ethnographies. We will relate these methods to relevant metatheories in the philosophy and sociology of science, and critically review published examples of work that used each of the principle methods in computer science.",
+        "tags": [
+            "CSC2130"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-ECE344-Winter",
+        "title": "ECE344: Operating Systems",
+        "source": "UToronto",
+        "year": "Winter 2021",
+        "url": "https://www.eecg.utoronto.ca/~yuan/teaching/ece344/index.html",
+        "desc": "In this course discuss the principles in the design and implementation of operating systems software. Topics include: Introduction to operating systems concepts, process management, memory management, file systems for both hard drive and SSD, virtualization, and distributed operating systems. The laboratory exercises will require implementing a simple, but functional operating system from ground up.",
+        "tags": [
+            "ECE344"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-ECE1759-Fall",
+        "title": "ECE1759: Advances in Operating Systems",
+        "source": "UToronto",
+        "year": "Fall 2020",
+        "url": "https://www.eecg.utoronto.ca/~yuan/teaching/gradOS/index.html",
+        "desc": "This course examines advanced research topics in the area of operating systems. We will read research papers that capture some of the important advancements in OS research. You will learn how to read a research paper, how to articulate your insights into a research paper, how to present a paper, and how to distill complex systems into their essence.",
+        "tags": [
+            "ECE1759"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-ECE454-Fall",
+        "title": "ECE454: Computer Systems Programming",
+        "source": "UToronto",
+        "year": "Fall 2018",
+        "url": "https://www.eecg.utoronto.ca/~yuan/teaching/ece454/index.html",
+        "desc": "This course goes beyond prior programming courses to teach students to better understand computer hardware, operating systems, and compilers from a programmer's perspective. In particular this course leverages this improved understanding to allow students to program for good performance. Students will learn how to measure and understand program execution and behavior, how to get the most out of an optimizing compiler, how memory is allocated and managed, and how to exploit caches and the memory hierarchy. Furthermore, students will learn about current trends in multicore, multithreaded, and data parallel hardware, how to exploit parallelism in their programs, the fundamentals of parallel architectures and synchronization techniques, and the recent trend of distributed data analytics (e.g., big data analytics) ---these latter topics are relatively new to undergraduate curricula and in increasing demand in industry. Students will get hands-on experience with most topics through programming assignments.",
+        "tags": [
+            "ECE454"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-MATA35-Summer",
+        "title": "MATA35: Calculus II for Biological Sciences",
+        "source": "UToronto",
+        "year": "Summer 2021",
+        "url": "http://www.math.toronto.edu/ywyu/MATA35-2021-Summer/",
+        "desc": "This is a lower-level course introducing mathematical techniques that will be useful for majors/specialists in biology and allied disciplines, and how to apply those techniques for biological problems. The prerequisite for this class is MATA29 (Calculus I for the Life Sciences); you are expected to have a solid grounding in basic algebra, transcendental functions, limits, and differential calculus, as well as exposure to antiderivatives an integral calculus. This course will cover multiple integration, linear algebra, regression analysis, differential equations, biological modelling, power series, and linearization of nonlinear systems. Unlike other courses covering similar material (MATA22-23, MATB44, MATC58), we will focus on applying techniques rather than understanding the underlying rigorous theory.",
+        "tags": [
+            "MATA35"
+        ],
+        "contains": {
+            "videos": true,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-MATC58-Winter",
+        "title": "MATC58: An Introduction to Mathematical Biology",
+        "source": "UToronto",
+        "year": "Winter 2021",
+        "url": "http://www.math.toronto.edu/ywyu/MATC58-2021-Winter/",
+        "desc": "This is an upper level course introducing mathematical biology for 3rd and 4th-year math majors and specialists. The prerequisite for this class is MATB44 (differential equations I), and you are expected to have a solid grounding in calculus, linear algebra, and differential equations. Additionally, there will be basic programming and modelling assignments in Python.",
+        "tags": [
+            "MATC58"
+        ],
+        "contains": {
+            "videos": true,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-MAT1801-Winter",
+        "title": "MAT1801: Methods of Applied Mathematics II",
+        "source": "UToronto",
+        "year": "Winter 2020",
+        "url": "http://www.math.toronto.edu/ywyu/MAT1801-2020W/",
+        "desc": "This course covers the formulation and solution of applied problems. Sources of these problems are the fields of engineering, physics, computer science, chemistry, biology, medicine, economics, statistics, and the social sciences. In this course, we will focus on the mathematical underpinnings of modern data science. The core of the class will revolve around understanding high-dimensional space, matrix factorization, and probabilistic techniques. Topics may include Markov chains, streaming/sketching algorithms, clustering, spectral graph theory, random graphs, wavelets, graphical models, and computational topology. The precise topics will vary with the instructor and the interests of the class. This course forms the foundation for research in applied mathematics.",
+        "tags": [
+            "MAT1801"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-MATB44H3-Fall",
+        "title": "MATB44H3: Differential Equations I",
+        "source": "UToronto",
+        "year": "Fall 2019",
+        "url": "http://www.math.toronto.edu/ywyu/MATB44H32019/",
+        "desc": "This is an introductory course in differential equations designed for second-year math majors and specialists. However, non-majors/specialists are most welcome, assuming they have the necessary background. Having a heterogeneous student body can make portions of the class more interesting. The prerequisites are MATA36H3/MATA37H3 (single-variable calculus) and MATA22H3/MATA23H3 (linear algebra) and the corequisite is MATB41H3 (multi-variable calculus).",
+        "tags": [
+            "MATB44H3"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-ECE1762-Fall",
+        "title": "ECE1762: Algorithms and Data Structures",
+        "source": "UToronto",
+        "year": "Fall 2016",
+        "url": "https://www.eecg.utoronto.ca/~ece1762/",
+        "desc": "This course covers fundamentals of computer algorithms and data structures. The objective is to give the audience an introduction to combinatorial modeling, algorithms and the underlying analysis. It also aims to present a wide range of fundamental data structures and examine their complexity in terms of space/time. In brief, the course will start with a review of a number of basic combinatorial tools such as recurrences, worst/best/average case analysis, probability, and discrete mathematics (summations, principles of counting, induction). Next, it will present a wide range of fundamental data structures and algorithms along with a detailed analysis of their time/space behavior and real life use. Topics include searching and sorting, dictionary operations, dynamic programming, greedy methods, graph algorithms (shortest paths, maximum flow), parallel algorithms, intro to NP-completeness, approximation algorithms and one advanced topic of choice such as matrix multiplication, FFT or amortized analysis.",
+        "tags": [
+            "ECE1762"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-STA130-Fall",
+        "title": "STA130: An Introduction to Statistical Reasoning and Data Science",
+        "source": "UToronto",
+        "year": "Fall 2018",
+        "url": "https://ntaback.github.io/UofT_STA130/",
+        "desc": "Statistics is about how we can learn from data. Data Science is a relatively new interdisciplinary field that also includes the computational aspects of carrying out a data analysis, including acquisition, management, and analysis of data. Statistical reasoning and computing with data play important roles in this emerging discipline. The purpose of this course is to give you a broad introduction to many of the ways statisticians learn from data. In addition to statistical reasoning, learning from data involves computation and communication. We will use the R programming language and environment for statistical computing, and tutorials will introduce students to communicating statistical knowledge.",
+        "tags": [
+            "STA130"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-JSC270H1S-Winter",
+        "title": "JSC270H1S: Data Science I",
+        "source": "UToronto",
+        "year": "Winter 2021",
+        "url": "https://jsc270.github.io/index.html",
+        "desc": "This course will focus on introducing students to the fundamentals of data science, including data cleaning and exploration, visualization, and statistical reasoning. The course will also emphasize professional skills, such as oral/ written communication, end-to-end workflows, teamwork, and state-of-the-art computer programming tools. The practical applications of these skills will be demonstrated through guest lectures with experts from academia and industry, across a variety of disciplines. Students will be evaluated using several different techniques, including programming assignments, written reflections, and oral presentations.",
+        "tags": [
+            "JSC270H1S"
+        ],
+        "contains": {
+            "videos": true,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-STA305-Fall",
+        "title": "STA305: Design of Scientific Studies",
+        "source": "UToronto",
+        "year": "Fall 2019",
+        "url": "https://scidesign.github.io/index.html",
+        "desc": "This course will provide an introduction to the fundamental concepts of the design of scientific studies including the design of experiments and observational studies. Students will be become acquainted with statistical methods used to design and analyze experiments and observational studies. In particular, this course will cover: experiments versus observational studies, clinical trial design, comparing several groups using a completely randomized design, randomized blocks, Latin squares, incomplete block designs, factorial designs, causal inference in randomized and non-randomized studies, and adjusting for selection bias using propensity score methods.",
+        "tags": [
+            "STA305"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-MAT1510-Winter",
+        "title": "MAT1510: Deep Learning: Theory & Data Science",
+        "source": "UToronto",
+        "year": "Winter 2021",
+        "url": "https://sites.google.com/view/mat1510",
+        "desc": "Deep learning systems have revolutionized field after another, leading to unprecedented empirical performance. Yet, their intricate structure led most practitioners and researchers to regard them as blackboxes, with little that could be understood. In this course, we will review experimental and theoretical works aiming to improve our understanding of modern deep learning systems.",
+        "tags": [
+            "MAT1510"
+        ],
+        "contains": {
+            "videos": true,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-ECE1784H-Fall",
+        "title": "ECE1784H: Trustworthy Machine Learning",
+        "source": "UToronto",
+        "year": "Fall 2019",
+        "url": "https://www.papernot.fr/teaching/f19-trustworthy-ml",
+        "desc": "The deployment of machine learning in real-world systems calls for a set of complementary technologies that will ensure that machine learning is trustworthy. Here, the notion of trust is used in its broad meaning: the course covers different topics in emerging research areas related to the broader study of security and privacy in machine learning. Students will learn about attacks against computer systems leveraging machine learning, as well as defense techniques to mitigate such attacks.",
+        "tags": [
+            "ECE1784H"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC121-Winter",
+        "title": "CSC121: Computer Science for Statistics",
+        "source": "UToronto",
+        "year": "Winter 2017",
+        "url": "http://www.cs.utoronto.ca/~radford/csc121.S17/",
+        "desc": "CSC121 is an introduction to programming aimed at students studying to be statisticians, or who otherwise expect to use statistics extensively in their work. It uses the R language, which is widely used for statistical research and applications. It is meant to be accessible to students with no programming experience. Although it is motivated by statistical applications, no specific knowledge of statistics is required to take this course.",
+        "tags": [
+            "CSC121"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-STA414-Winter",
+        "title": "STA414: Statistical Methods for Machine Learning and Data Mining",
+        "source": "UToronto",
+        "year": "Winter 2014",
+        "url": "http://www.utstat.utoronto.ca/~radford/sta414.S14/",
+        "desc": "This course covers some of the theory and methodology of statistical aspects of machine learning. The preliminary set of topics to be covered include: Linear methods for regression, Bayesian linear regression, linear models for classification, probabilistic Generative and Discriminative models, regularization methods, model comparison and BIC, Neural Networks, radial basis function networks, Kernel Methods, Gaussian processes, Support Vector Machines, and other topics.",
+        "tags": [
+            "STA414"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-ECE1724-Winter",
+        "title": "ECE1724: Empirical Software Engineering",
+        "source": "UToronto",
+        "year": "Winter 2020",
+        "url": "https://www.eecg.utoronto.ca/~ashvin/courses/ece1724/2020w/index.html",
+        "desc": "The course covers advanced topics, broadly in the area of distributed systems, storage and databases, with a focus on web-scale applications. The goal is provide a survey of research in this area, rather than focus on a specific topic.",
+        "tags": [
+            "ECE1724"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-ECE1781-Winter",
+        "title": "ECE1781: Dependable Software Systems",
+        "source": "UToronto",
+        "year": "Winter 2018",
+        "url": "https://www.eecg.utoronto.ca/~ashvin/courses/ece1781/2018w/index.html",
+        "desc": "This advanced graduate-level course focuses on dependability in software systems and examines current research that aims to address challenges caused by software and hardware bugs and software misconfiguration. Students are expected to read and critique recent research papers in operating systems that cover these areas. They are also expected to work on a research project and make class presentations. While there are no specific prerequisites for this course, students who have taken undergraduate or graduate courses in operating systems, networks and distributed systems will have an edge.",
+        "tags": [
+            "ECE1781"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-LIN1505-Fall",
+        "title": "LIN1505: Computational Linguistics",
+        "source": "UToronto",
+        "year": "Fall 2019",
+        "url": "https://www.cs.toronto.edu/~barend/lin1505_2019.html",
+        "desc": "This course deals with computational methods in linguistics. It combines a theoretical approach (reflecting on the role computational methods can play in linguistic argumentation by discussing overview papers as well as topical papers on computational approaches to various subfields of linguistics) with a practical one (learning how to develop and program computational methods to address linguistic research questions; no prior knowledge required, we start with the very basics!).",
+        "tags": [
+            "LIN1505"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-ECE1747H-Fall",
+        "title": "ECE1747J: Parallel Programming",
+        "source": "UToronto",
+        "year": "Fall 2020",
+        "url": "https://www.eecg.utoronto.ca/~amza/ece1747h/index.html",
+        "desc": "This course is an intermediate graduate course in the area of parallel programming. In the first part of the course we will briefly introduce the architecture of parallel systems and the concept of data dependencies/races. The three most commonly used parallel programming paradigms (shared memory, distributed memory and data parallel) will  then be examined in detail. An overview of automatic parallelization of programs and the use of parallel processing in related domains such as parallel and distributed database transaction processing will also be given.",
+        "tags": [
+            "ECE1747H"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC2426F-Fall",
+        "title": "CSC2426F: Fundamentals of Cryptography",
+        "source": "UToronto",
+        "year": "Fall 2020",
+        "url": "http://www.cs.toronto.edu/~rackoff/2426f20/Cryptonotes.html",
+        "desc": "We will cover the fundamental material that is needed for creating or using cryptographic algorithms and protocols. The emphasis will be on rigorous definitions of security, and on constructions whose security can be proven from reasonable assumptions about the security of underlying, more primitive objects. This course contains the basic mathematical background of cryptography, and should be useful and interesting to computer scientists, electrical engineers, and mathematicians.",
+        "tags": [
+            "CSC2426F"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC343-Winter",
+        "title": "CSC343: Intro to Data Management",
+        "source": "UToronto",
+        "year": "Winter 2017",
+        "url": "https://www.teach.cs.toronto.edu//~csc343h/winter/",
+        "desc": "Lecture notes regarading SQL, data management, and other relevant materials.",
+        "tags": [
+            "CSC343"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC420-Winter",
+        "title": "CSC420: Introduction to Image Understanding",
+        "source": "UToronto",
+        "year": "Winter 2021",
+        "url": "https://www.cs.utoronto.ca/~fidler/teaching/2021/CSC420.html",
+        "desc": "Everyone has large photo collections these days. How can you intelligently find all pictures in which your dog appears? How can you find all pictures in which you are frowning? Can we make cars smart, e.g., can the car drive you to school while you finish your last homework? How can a home robot understand the environment, e.g., switch on a tv when being told so and serve you dinner? If you take a few pictures of your living room, can you reconstruct it in 3D (which allows you to render it from any new viewpoint and thus allows you to create a \"virtual tour\" of your room)? Can you reconstruct it from one image alone? How can you efficiently browse your home movie collection, e.g. find all shots in which Tom Cruise is chasing a bad guy?",
+        "tags": [
+            "CSC420"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC373-Spring",
+        "title": "CSC373: Algorithm Design, Analysis, and Complexity",
+        "source": "UToronto",
+        "year": "Spring 2018",
+        "url": "https://www.cs.toronto.edu/~jepson/csc373/",
+        "desc": "Standard algorithm design techniques: divide-and-conquer, greedy strategies, dynamic programming, linear programming, randomization, network flows, approximation algorithms. Brief introduction to NPcompleteness: polynomial time reductions, examples of various NP-complete problems, self-reducibility. Additional topics may include approximation and randomized algorithms. Students will be expected to show good design principles and adequate skills at reasoning about the correctness and complexity of algorithms.",
+        "tags": [
+            "CSC373"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC336-Fall",
+        "title": "CSC336: Numerical Methods",
+        "source": "UToronto",
+        "year": "Fall 2019",
+        "url": "https://www.cs.toronto.edu/~krj/courses/336/index.html",
+        "desc": "The study of computational methods for solving problems in linear algebra, non-linear equations, and approximation. The aim is to give students a basic understanding of both floating-point arithmetic and the implementation of algorithms used to solve numerical problems, as well as a familiarity with current numerical computing environments",
+        "tags": [
+            "CSC336"
+        ],
+        "contains": {
+            "videos": false,
+            "written": false,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-MMF2021-Fall",
+        "title": "MMF2021: Numerical Methods for Finance",
+        "source": "UToronto",
+        "year": "Fall 2019",
+        "url": "https://www.cs.toronto.edu/~krj/courses/2021/index.html",
+        "desc": "This course is an introduction to numerical methods for mathematical finance. We will begin with a quick review of floating-point computation. The main focus of the course is the use of Monte Carlo Methods and Numerical Methods for PDEs applied to problems that arise in mathematical finance.",
+        "tags": [
+            "MMF2021"
+        ],
+        "contains": {
+            "videos": false,
+            "written": false,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC466-Winter",
+        "title": "CSC466: Numerical Methods for Optimization Problems",
+        "source": "UToronto",
+        "year": "Winter 2020",
+        "url": "https://www.cs.toronto.edu/~krj/courses/466-2305/index.html",
+        "desc": "Numerical methods for unconstrained optimization problems, in particular line search methods and trust region methods. Topics include steepest descent, Newton’s method, quasiNewton methods, conjugate gradient methods and techniques for large problems. This course will normally be offered every other year.",
+        "tags": [
+            "CSC466"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC466-Winter",
+        "title": "CSC466: Computational Methods for Partial Differential Questions",
+        "source": "UToronto",
+        "year": "Winter 2019",
+        "url": "https://www.cs.toronto.edu/~krj/courses/446-2310/index.html",
+        "desc": "Finite Difference and Finite Element methods for Boundary Value Problems (BVPs), including 2-point BVPs and 2-dimensional BVPs. Consistency, stability and convergence of methods. Efficiency of the solution of linear systems. Possibly, initial value problems and the method-of-lines. Special topics of interest among domain decomposition, multigrid, FFT solvers.",
+        "tags": [
+            "CSC466"
+        ],
+        "contains": {
+            "videos": false,
+            "written": false,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSCD37H-Winter",
+        "title": "CSCD37H: Analysis of Numerical Algorithms for Computational Mathematics",
+        "source": "UToronto",
+        "year": "Winter 2013",
+        "url": "http://www.cs.toronto.edu/~enright/teaching/D37/index.html",
+        "desc": "Mathematical models of real systems that cannot be solved analytically can be approximated by numerical algorithms. This course examines the efficiency, accuracy and reliability of numerical algorithms for several classes of models, including models involving least squares, nonlinear equations, optimization, quadrature and systems of ordinary differential equations.",
+        "tags": [
+            "CSCD37H"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSCC5-Winter",
+        "title": "CSCC51H: Numerical Approximation, Integration, and Ordinary Differential Equations",
+        "source": "UToronto",
+        "year": "Winter 2013",
+        "url": "http://www.cs.toronto.edu/~enright/teaching/C51/index.html",
+        "desc": "Mathematical models of real systems that cannot be solved analytically can be approximated by numerical algorithms. This course examines the efficiency, accuracy and reliability of numerical algorithms for several classes of models, including models involving least squares, nonlinear equations, optimization, quadrature and systems of ordinary differential equations.",
+        "tags": [
+            "CSCC5"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC463-Winter",
+        "title": "CSC463H: Computational Complexity and Computability",
+        "source": "UToronto",
+        "year": "Winter 2019",
+        "url": "http://www.math.toronto.edu/rossman/CSC463.html",
+        "desc": "Turing machines, Church’s Thesis, decidability and semi-decidability, diagonal arguments, the Halting Problem and other undecidable problems, reductions, complete problems. Computational Complexity (7 weeks): The classes P and NP, polynomial time reducibility, NP-completeness, Cook-Levin Theorem, various NP-complete problems, time and space complexity, intractable problems, other topics.",
+        "tags": [
+            "CSC463"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC438F-Fall",
+        "title": "CSC438F: Computability and Logic",
+        "source": "UToronto",
+        "year": "Fall 2017",
+        "url": "http://www.cs.toronto.edu/~sacook/csc438h/",
+        "desc": "Syntax and semantics of the propositional and predicate calculus, completeness of Gentzen proof systems, formal theories, nonstandard models, and the Godel Incompleteness Theorems. Recursive and primitive recursive functions, Church’s thesis, unsolvable problems, recursively enumerable sets.",
+        "tags": [
+            "CSC438F"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC413-Winter",
+        "title": "CSC413: Neural Networks and Deep Learning",
+        "source": "UToronto",
+        "year": "Winter 2021",
+        "url": "https://csc413-uoft.github.io/2021/",
+        "desc": "It is very hard to hand design programs to solve many real world problems, e.g. distinguishing images of cats v.s. dogs. Machine learning algorithms allow computers to learn from example data, and produce a program that does the job. Neural networks are a class of machine learning algorithm originally inspired by the brain, but which have recently have seen a lot of success at practical applications. They’re at the heart of production systems at companies like Google and Facebook for image processing, speech-to-text, and language understanding. This course gives an overview of both the foundational ideas and the recent advances in neural net algorithms.",
+        "tags": [
+            "CSC413"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC411-Fall",
+        "title": "CSC411: Introduction to Machine Learning",
+        "source": "UToronto",
+        "year": "Fall 2016",
+        "url": "http://www.cs.toronto.edu/~urtasun/courses/CSC411_Fall16/CSC411_Fall16.html#introduction",
+        "desc": "This class is an introductory undergraduate course in machine learning. The class will briefly cover topics in regression, classification, mixture models, neural networks, deep learning, ensemble methods and reinforcement learning.",
+        "tags": [
+            "CSC411"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC317-Winter",
+        "title": "CSC317: Computer Graphics",
+        "source": "UToronto",
+        "year": "Winter 2021",
+        "url": "https://github.com/karansher/computer-graphics-csc317/",
+        "desc": "This course introduces the basic concepts and algorithms of computer graphics. It covers the basic methods needed to model and render 3D objects, including much of the following: graphics displays, basic optics, line drawing, affine and perspective transformations, windows and viewports, clipping, visibility, illumination and reflectance models, radiometry, energy transfer models, parametric representations, curves and surfaces, texture mapping, graphics hardware, ray tracing, graphics toolkits, animation systems.",
+        "tags": [
+            "CSC317"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2626-Winter",
+        "title": "CSC2626: Imitation Learning for Robotics",
+        "source": "UToronto",
+        "year": "Winter 2021",
+        "url": "http://www.cs.toronto.edu/~florian/courses/csc2626w21/",
+        "desc": "In the next few decades we are going to witness millions of people, from various backgrounds and levels of technical expertise, needing to effectively interact with robotic technologies on a daily basis. As such, people will need to modify the behavior of their robots without explicitly writing code, but by providing only a small number of kinesthetic or visual demonstrations. At the same time, robots should try to infer and predict the human's intentions and internal objectives from past interactions, in order to provide assistance before it is explicitly asked. This graduate-level course will examine some of the most important papers in imitation learning for robot control, placing more emphasis on developments in the last 10 years. Its purpose is to familiarize students with the frontiers of this research area, to help them identify open problems, and to enable them to make a novel contribution.",
+        "tags": [
+            "CSC2626"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC477-Fall",
+        "title": "CSC477: Introduction to Mobile Robotics",
+        "source": "UToronto",
+        "year": "Fall 2020",
+        "url": "http://www.cs.toronto.edu/~florian/courses/csc477_fall20/",
+        "desc": "This course provides an introduction to robotic systems from a computational perspective. A robot is regarded as an intelligent computer that can use sensors and act on the world. We will consider the definitional problems in robotics and look at how they are being solved in practice and by the research community. The emphasis is on algorithms, probabilistic reasoning, optimization, inference mechanisms, and behavior strategies, as opposed to electromechanical systems design. This course aims to help students improve their probabilistic modeling skills and instill the idea that a robot that explicitly accounts for its uncertainty works better than a robot that does not.",
+        "tags": [
+            "CSC477"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2556-Spring",
+        "title": "CSC2556: Algorithms for Collective Decision Making",
+        "source": "UToronto",
+        "year": "Spring 2021",
+        "url": "https://www.cs.toronto.edu/~nisarg/teaching/2556s21/index.html",
+        "desc": "This course surveys algorithms that aid a group of biological or artificial agents in making collective decisions. The course specifically focuses on the area of computational social choice, which lies at the intersection of computer science and economics. This area has recently seen a growing number of real-world applications and this course reviews the theoretical foundations at the core of its success.",
+        "tags": [
+            "CSC2556"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC373H1F-Fall",
+        "title": "CSC373H1F: Algorithm Desig, Analysis, and Complexity",
+        "source": "UToronto",
+        "year": "Fall 2020",
+        "url": "https://www.cs.toronto.edu/~nisarg/teaching/373f20/index.html",
+        "desc": "By the end of this course, you will be familiar with standard algorithm design techniques (divide and conquer, greedy algorithms, dynamic programming, network flow, linear programming, approximation, randomization), and understand the importance of computational complexity.",
+        "tags": [
+            "CSC373H1F"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC304-Fall",
+        "title": "CSC304: Algorithmic Game Theory and Mechanism Design",
+        "source": "UToronto",
+        "year": "Fall 2019",
+        "url": "https://www.cs.toronto.edu/~nisarg/teaching/304f19/",
+        "desc": "This is a relatively new interdisciplinary course that introduces students from computer science and related disciplines to the well established fields of algorithmic game theory and mechanism design. These fields sit at the interface between computer science and economics, and have recently seen a growing number of real-world applications. This course will review the basic models and core theoretical insights that have been instrumental in the development of these fields. The course will be organized in three parts: game theory, mechanism design with money, and mechanism design without money. In particular, it will cover (possibly a subset of) the following topics:",
+        "tags": [
+            "CSC304"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2547F-Fall",
+        "title": "CSC2541F: AI and Ethics: Mathematical Foundations and Algorithms",
+        "source": "UToronto",
+        "year": "Fall 2019",
+        "url": "https://www.cs.toronto.edu/~toni/Courses/Fairness/fair.html",
+        "desc": "This is an introductory-level graduate course on social and ethical aspects of machine learning. Machine learning systems are becoming increasingly important in many domains where they are used to make predictions and decisions that often have life-altering consequences. Examples include machine learning algorithms for criminal sentencing, health insurance decisions, car insurance rates, and targeted advertising to name just a few. As these systems are becoming ubiquitious it is of extreme importance to address issues of privacy, fairness and accountability.",
+        "tags": [
+            "CSC2547F"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2429-Winter",
+        "title": "CSC2429: Proof Complexity, Mathematical Programming, and Algorithms",
+        "source": "UToronto",
+        "year": "Winter 2018",
+        "url": "https://www.cs.toronto.edu/~toni/Courses/Proofs-SOS-2018/CS2429.html",
+        "desc": "This is a topics course which will cover a new and growing body of work in algorithms and complexity theory that focuses on algebraic and semialgebraic proof systems. Sherali Adams (SA) is the basic proof system that underlies linear programming, and the Sum-of-Squares (SOS) proof system underlies semidefinite programming. Similarly their algebraic counterparts (which manipulate low degree polynomial equalities rather than inequalities) are the Nullstellensatz proof system, and the Polynomial Calculus (PC), which are closely connected to th",
+        "tags": [
+            "CSC2429"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC263H1-Fall",
+        "title": "CSC263H1: Data Structures and Analysis",
+        "source": "UToronto",
+        "year": "Fall 2015",
+        "url": "http://www.cs.toronto.edu/~toni/Courses/263-2015/index.html",
+        "desc": "Algorithm analysis: worst-case, average-case, and amortized complexity. Standard abstract data types, such as graphs, dictionaries, priority queues, and disjoint sets. A variety of data structures for implementing these abstract data types, such as balanced search trees, hashing, heaps, and disjoint forests. Design, implementation, and comparison of data structures. Introduction to lower bounds.",
+        "tags": [
+            "CSC263H1"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2401-Fall",
+        "title": "CSC2401: Computational Complexity Theory",
+        "source": "UToronto",
+        "year": "Fall 2015",
+        "url": "https://www.cs.toronto.edu/~toni/Courses/Complexity2015/",
+        "desc": "This is a graduate introductory level course in computational complexity theory. It is appropriate for all graduate students in Computer Science. The main part of the course will be an introduction to complexity theory where we will discuss uniform and non-uniform models of computation, time and space complexity classes, complexity hierarchies, reductions and completeness, randomization in computation, approximation algorithms, and lower bound methods. In the latter part of the course, we will discuss several new results in complexity theory. Such advanced topics may include: Hastad’s famous switching lemma and its applications, including lower bounds for constant-depth circuits, better upper bounds for satisfiability, and connections to learning theory; communication complexity and its applications; NP, coNP and propositional proof complexity",
+        "tags": [
+            "CSC2401"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSCD70-Winter",
+        "title": "CSCD70: Compiler Optimization",
+        "source": "UToronto",
+        "year": "Winter 2021",
+        "url": "https://uoft-ecosystem.github.io/CSCD70/index.html",
+        "desc": "The goal of this course is introduce students to the theoretical and practical aspects of building optimizing compilers that effectively exploit modern architectures. The course will begin with the fundamentals of compiler optimization, and will build upon these fundamentals to address issues in state-of-the-art commercial and research machines. Topics include the followings: intermediate representations, basic blocks and control flow graphs, dataflow analysis, partial redundancy elimination, loop optimizations, register allocation, instruction scheduling, inter-procedural analysis, memory hierarchy optimizations, extracting parallelism, and dynamic optimizations. Students will implement significant optimizations within LLVM, a modern research compiler framework.",
+        "tags": [
+            "CSCD70"
+        ],
+        "contains": {
+            "videos": true,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2224-Fall",
+        "title": "CSC2224: Parallel Computer Architecture and Programming",
+        "source": "UToronto",
+        "year": "Fall 2020",
+        "url": "https://csc2224.github.io/index.html",
+        "desc": "The goal of this course is to build a strong understanding of the fundamentals of the architecture of parallel computers and efficient programming for them. We will examine how architectures are designed to exploit and extract different types of parallelism. The focus will be on fundamentals, tradeoffs in parallel architecture design, and cutting-edge research. Architectures studied may include parallel microprocessors, GPUs and FPGAs.",
+        "tags": [
+            "CSC2224"
+        ],
+        "contains": {
+            "videos": true,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSCB58-Fall",
+        "title": "CSCB58: Computer Organizatio0n",
+        "source": "UToronto",
+        "year": "Fall 2020",
+        "url": "https://cscb58f20.ml/index.html",
+        "desc": "The goal of this course is to understand and design the underlying architecture (digital structures) of computer systems. Specifically students will learn about the binary data representation and manipulation, boolean logic, components of computer systems, memory technology, peripherals, structure of a CPU, assembly languages, instruction execution, and addressing techniques. There are a number of laboratory periods in which students conduct experiments to build digital logic circuits on simulators.",
+        "tags": [
+            "CSCB58"
+        ],
+        "contains": {
+            "videos": true,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC473-Winter",
+        "title": "CSC473: Advanced Algorithms",
+        "source": "UToronto",
+        "year": "Winter 2020",
+        "url": "https://www.cs.toronto.edu/~anikolov/CSC473W20/index.html",
+        "desc": "Advanced algorithm design techniques, with emphasis on the role that geometry, approximation, randomization, and parallelism play in modern algorithms. Examples will be drawn from linear programming; randomized algorithms; streaming algorithms and parallel algorithms in the Map-Reduce model.",
+        "tags": [
+            "CSC473"
+        ],
+        "contains": {
+            "videos": false,
+            "written": false,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2414-Fall",
+        "title": "CSC2412: Algorithms for Private Data Analysis",
+        "source": "UToronto",
+        "year": "Fall 2019",
+        "url": "https://www.cs.toronto.edu/~anikolov/CSC2412F19/CSC2412.html",
+        "desc": "In this course we will study privacy in data analysis from a rigorous theoretical perspective. We will focus on Differential Privacy: a recent approach to achieving strong provable privacy guarantees in the analysis of sensitive data. Informally, a data analysis algorithm is differentially private if changing the data of a single individual changes the output distribution of the algorithm only slightly. This guarantee ensures that the privacy risk to any individual increases only slightly by participating in data collection. Our focus will be on the design of efficient differentially private algorithms. In the process, we will learn about fascinating connections between differential privacy and machine learning, geometry, and game theory.",
+        "tags": [
+            "CSC2414"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSCC63-Winter",
+        "title": "CSCC63: Com[itability and Computational Complexity",
+        "source": "UToronto",
+        "year": "Winter 2018",
+        "url": "https://www.cs.toronto.edu/~molloy/c63-18/index.html",
+        "desc": "An introduction to computability theory and computational complexity theory.",
+        "tags": [
+            "CSCC63"
+        ],
+        "contains": {
+            "videos": false,
+            "written": false,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC384-Winter",
+        "title": "CSC384: Introduction to Artificial Intelligence",
+        "source": "UToronto",
+        "year": "Winter 2020",
+        "url": "https://www.teach.cs.toronto.edu//~csc384h/winter/index.html",
+        "desc": "This course will provide a survey of general topics in artificial intelligence, both classical and contemporary. It consists of a two-hour lecture and a one-hour tutorial each week, as well as selected readings from the text.",
+        "tags": [
+            "CSC384"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2542-Summer",
+        "title": "CSC2542: Topics in Knowledger Representation and Reasoning: Automated Planning and Reasoning about Action",
+        "source": "UToronto",
+        "year": "Summer 2014",
+        "url": "http://www.cs.toronto.edu/~sheila/2542/s14/slides.html",
+        "desc": "CSC2542 is a seminar-style topics course that explores recent advances in knowledge representation and reasoning. The course draws predominantly on research readings. The format of the course is a mix of class lectures, seminars, and student paper presentations. A course project will make up a significant part of a student's course mark.",
+        "tags": [
+            "CSC2542"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC2527H-Spring",
+        "title": "CSC2527H:m Advanced Topics in Ubiquitous Computing",
+        "source": "UToronto",
+        "year": "Spring 2018]",
+        "url": "https://mariakakis.github.io/ubicomp-course/",
+        "desc": "The aim of this class will be to introduce you to ubiquitous computing (ubicomp). We will focus on how traditional topics of computing have evolved to support the vision of a connected, portable, and human-centric computing environment. Because ubicomp is an applied field, the course covers contributions across various fields: human-computer interaction, embedded computing, computer vision, distributed systems, machine learning, and electrical engineering. You will gain practical experience in developing sensing systems for activity recognition and gestural interaction. The course will be a combination of lectures, tutorials, class discussions, and demonstrations.",
+        "tags": [
+            "CSC2527H"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-AdvancedTopicsinMobileHealth-Winter",
+        "title": "Advanced Topics in Mobile Health",
+        "source": "UToronto",
+        "year": "Winter 2021",
+        "url": "https://mariakakis.github.io/mhealth-course/",
+        "desc": "This course will examine the growing prominence of mobile health over the past twenty years. After briefly discussing various definitions of mobile health, we will focus our attention on how people are using the sensors embedded in ubiquitous and novel devices to capture indicators of physical and mental health. More specifically, we will study how sensors are being used to measure physiological signals, psychomotor function, and disease-specific symptoms. We will also explore the how human factors play an important role in these technologies. This course requires an undergraduate-level understanding of machine learning and programming, although familiarity with computer vision, signal processing, and human-computer interaction will also be beneficial. Beyond weekly readings, students will be expected to complete and present a course project at the end of the term.",
+        "tags": [
+            "AdvancedTopicsinMobileHealth"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC2206-Fall",
+        "title": "CSC2206: Systems Modelling and Analysis",
+        "source": "UToronto",
+        "year": "Fall 2020",
+        "url": "http://www.cs.toronto.edu/~marbach/csc2206_F20.html",
+        "desc": "The emphasis of the course is on models for systems with uncertainty. We study the properties of various models and discuss how they can be applied to analyze system performance. Concepts covered include Poisson, renewal, and Markov processes.",
+        "tags": [
+            "CSC2206"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC358-Fall",
+        "title": "CSC358: Introduction to Computer Networks",
+        "source": "UToronto",
+        "year": "Fall 2019",
+        "url": "http://www.cs.toronto.edu/~marbach/csc358_F19.html",
+        "desc": "Layered network architecture, ARQ retransmission strategies, delay models for data networks, multiaccess communication, routing, congestion control, addressing.",
+        "tags": [
+            "CSC358"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-STA4273-Winter",
+        "title": "STA4273: Minimizng Expectations",
+        "source": "UToronto",
+        "year": "Winter 2021",
+        "url": "https://www.cs.toronto.edu/~cmaddis/courses/sta4273_w21/",
+        "desc": "This seminar course introduces students to the various methodological issues at stake in the problem of optimizing expected values and leads them in a discussion of its recent developments in machine learning. The course emphasizes the interplay between reinforcement learning and Bayesian inference. While most of the readings are applied or methodological, there are topics for more theoretically-minded students. Students will be expected to present a paper, prepare code notebooks, and complete a final project on a topic of their choice.",
+        "tags": [
+            "STA4273"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC2520-Fall",
+        "title": "CSC2520: Geometry Processing",
+        "source": "UToronto",
+        "year": "Fall 2020",
+        "url": "https://github.com/alecjacobson/geometry-processing-csc2520",
+        "desc": "The class is aimed at preparing students for working with geometric data via understanding fundamental theoretical concepts. Students should have a background in Linear Algebra and Computer Programming. Previous experience with Numerical Methods, Differential Equations, and Differential Geometry is appreciated but not required.",
+        "tags": [
+            "CSC2520"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC418-Fall",
+        "title": "CSC418: Computer Graphcs",
+        "source": "UToronto",
+        "year": "Fall 2019",
+        "url": "https://github.com/alecjacobson/computer-graphics-csc418#courseoverview",
+        "desc": "This course introduces the basic concepts and algorithms of computer graphics. It covers the basic methods needed to model and render 3D objects, including much of the following: graphics displays, basic optics, line drawing, affine and perspective transformations, windows and viewports, clipping, visibility, illumination and reflectance models, radiometry, energy transfer models, parametric representations, curves and surfaces, texture mapping, graphics hardware, ray tracing, graphics toolkits, animation systems.",
+        "tags": [
+            "CSC418"
+        ],
+        "contains": {
+            "videos": false,
+            "written": false,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2541-Winter",
+        "title": "CSC2541: Topics in Machine Learning: Neural Net Training Dynamics",
+        "source": "UToronto",
+        "year": "Winter 2021",
+        "url": "https://www.cs.toronto.edu/~rgrosse/courses/csc2541_2021/",
+        "desc": "As a result, the practical success of neural nets has outpaced our ability to understand how they work. This class is about developing the conceptual tools to understand what happens when a neural net trains. Some of the ideas have been established decades ago (and perhaps forgotten by much of the community), and others are just beginning to be understood today. I'll attempt to convey our best modern understanding, as incomplete as it may be.",
+        "tags": [
+            "CSC2541"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC2515-Fall",
+        "title": "CSC2515: Machine Learning",
+        "source": "UToronto",
+        "year": "Fall 2019",
+        "url": "https://www.cs.toronto.edu/~rgrosse/courses/csc2515_2019/",
+        "desc": "Machine learning is a set of techniques that allow machines to learn from data and experience, rather than requiring humans to specify the desired behavior by hand. Over the past two decades, machine learning techniques have become increasingly central both in AI as an academic field, and in the technology industry. This course provides a broad introduction to some of the most commonly used ML algorithms.",
+        "tags": [
+            "CSC2515"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC421-Winter",
+        "title": "CSC421: Neural Networks and Deep Learning",
+        "source": "UToronto",
+        "year": "Winter 2019",
+        "url": "https://www.cs.toronto.edu/~rgrosse/courses/csc421_2019/",
+        "desc": "This course gives an overview of both the foundational ideas and the recent advances in neural net algorithms. Roughly the first 2/3 of the course focuses on supervised learning --- training the network to produce a specified behavior when one has lots of labeled examples of that behavior. The last 1/3 focuses on unsupervised learning and reinforcement learning.",
+        "tags": [
+            "CSC421"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC321-Winter",
+        "title": "CSC321: Introduction to Neural Networks and Machine Learning",
+        "source": "UToronto",
+        "year": "Winter 2018",
+        "url": "https://www.cs.toronto.edu/~rgrosse/courses/csc321_2018/",
+        "desc": "This course gives an overview of both the foundational ideas and the recent advances in neural net algorithms. Roughly the first 2/3 of the course focuses on supervised learning -- training the network to produce a specified behavior when one has lots of labeled examples of that behavior. The last 1/3 focuses on unsupervised learning and reinforcement learning.",
+        "tags": [
+            "CSC321"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2541-Fall",
+        "title": "CSC2541: Topics in Machine Learning: Scalable and Flexible Models of Uncertainty",
+        "source": "UToronto",
+        "year": "Fall 2017",
+        "url": "https://csc2541-f17.github.io/",
+        "desc": "The first half of the course will cover a set of algorithmic tools for modeling uncertainty: Gaussian processes, Bayesian neural nets, and variational inference. We will focus on continuous models and the setting of function approximation, in order to avoid overlap with other iterations of this course (see below). I.e., we will have little if any coverage of generative models or discrete latent variables. The second half of the course will cover applications of uncertainty modeling: neural net sparsification, active learning, black-box optimization, reinforcement learning, and adversarial robustness.",
+        "tags": [
+            "CSC2541"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC2547-Winter",
+        "title": "CSC2547: Current Topics in Machine Learning Methods in 3D and Geometric Deep Learning",
+        "source": "UToronto",
+        "year": "Winter 2021",
+        "url": "http://www.pair.toronto.edu/csc2547-w21/schedule/",
+        "desc": "This course introduces deep learning methods and modern advances in 3D Vision. We will study representations, learning algorithms and generative models for 3D vision tasks at object and scene level. We will then study Geometric Deep Learning and concepts of Manifold Learning as relevant to Deep Learning. The 3D nature of this topic has many potential applications in graphics, robotics, content creation, mixed reality, biometrics, and more.",
+        "tags": [
+            "CSC2547"
+        ],
+        "contains": {
+            "videos": true,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC2621-Winter",
+        "title": "CSC2621: Topics in Robotics Reinforcement Learning in Robotics",
+        "source": "UToronto",
+        "year": "Winter 2020",
+        "url": "http://www.pair.toronto.edu/csc2621-w20/#/contents/04-grading",
+        "desc": "This graduate-level seminar course will cover topics and new research frontiers in reinforcement learning (RL). Planned topics include: Model-Based and Model-Free RL, Policy Search, Monte Carlo Tree Search, off-policy evaluation, temporal abstraction/hierarchical approaches, inverse reinforcement learning and imitation learning.",
+        "tags": [
+            "CSC2621"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC2229-Winter",
+        "title": "CSC2229: Software-Defined Networking",
+        "source": "UToronto",
+        "year": "Winter 2020",
+        "url": "https://www.cs.toronto.edu/~yganjali/courses/csc2229/",
+        "desc": "This is a MSc/PhD level course introducing Software-Defined Networking (SDN). SDN is an emerging paradigm in computer networks that facilitates change and innovation in infrastructure and network applications by pushing network control functionalities to a logically centralized controller.",
+        "tags": [
+            "CSC2229"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CS2548-Winter",
+        "title": "CSC2548: Machine Learning in Computer Vision",
+        "source": "UToronto",
+        "year": "Winter 2018",
+        "url": "https://www.cs.utoronto.ca/~fidler/teaching/2018/CSC2548.html#introduction",
+        "desc": "In recent years, Deep Learning has become a dominant Machine Learning tool for a wide variety of domains. One of its biggest successes has been in Computer Vision where the performance in problems such object and action recognition has been improved dramatically. In this course, we will be reading up on various Computer Vision problems, the state-of-the-art techniques involving different neural architectures and brainstorming about promising new directions.",
+        "tags": [
+            "CS2548"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-STA414-Winter",
+        "title": "STA414: Statistical Methods for Machine Learning II",
+        "source": "UToronto",
+        "year": "Winter 2021",
+        "url": "https://erdogdu.github.io/sta414/",
+        "desc": "This course introduces commonly used machine learning algorithms such as linear and logistic regression, random forests, decision trees, neural networks, support vector machines, boosting etc. It will also offer a broad view of model-building and optimization techniques that are based on probabilistic building blocks which will serve as a foundation for more advanced machine learning courses.",
+        "tags": [
+            "STA414"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2532-Winter",
+        "title": "CSC2532: Statistical Learning Theory",
+        "source": "UToronto",
+        "year": "Winter 2021",
+        "url": "https://erdogdu.github.io/csc2532/",
+        "desc": "Topics may include: Asymptotic statistics, Uniform Convergence, Generalization, Complexity measures, Kernel Methods, Online Learning, Sampling.",
+        "tags": [
+            "CSC2532"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2547-Winter",
+        "title": "CSC2547: Topics in Statistical Learning Theory",
+        "source": "UToronto",
+        "year": "Winter 2019",
+        "url": "https://erdogdu.github.io/csc2547_s19/",
+        "desc": "Gaussian mean estimation & Stein's paradox, information inequality and Max entropy principle, asymptotic statistics, uniform convergence & generalization, epsilon-nets and covering technique, rademacher complexity I & II, kernel methods, and other topics.",
+        "tags": [
+            "CSC2547"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2720H-Winter",
+        "title": "CSC2720H: Systems Thinking for Global Problems",
+        "source": "UToronto",
+        "year": "Winter 2020",
+        "url": "http://www.cs.toronto.edu/~sme/SystemsThinking/",
+        "desc": "This course is unlike any other graduate course you have taken. You will play games, solve puzzles, and tell stories. Each activity will create a system around you, with its own dynamics. Sometimes you will try to beat the system and discover you cannot. Other times you will discover you can change a system by changing your perspective of it. In the process, you will discover how complex patterns of behaviour can arise from simple structures and simple rules. You will draw on such insights to develop a deeper understanding of how the world works. You will start to see the systems around you in a whole new light, and you will develop a new mental toolkit for analyzing complex global issues, modeling their structure and behaviour, and understanding how and why change happens.",
+        "tags": [
+            "CSC2720H"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-PMU199H1F-Fall",
+        "title": "PMU188H1F: Computing the Climate",
+        "source": "UToronto",
+        "year": "Fall 2015",
+        "url": "http://www.cs.toronto.edu/~sme/PMU199-climate-computing/",
+        "desc": "This course will examine the role of computers and software in understanding climate change. We will explore the use of computer models to build simulations of the global climate, including a historical view of the use of computer models to understand weather and climate, and a detailed look at the current state of computer modelling, especially how global climate models are tested, what kinds of experiments are performed with them, how scientists know they can trust the models, and how they deal with uncertainty. The course will also explore the role of computer models in helping to shape society's responses to climate change, in particular, what they can (and can't) tell us about how to make effective decisions about government policy, international treaties, community action and the choices we make as individuals.",
+        "tags": [
+            "PMU199H1F"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC412-Winter",
+        "title": "CSC412: Probabilistic Machine Learning",
+        "source": "UToronto",
+        "year": "Winter 2020",
+        "url": "https://probmlcourse.github.io/csc412/",
+        "desc": "The language of probability allows us to coherently and automatically account for uncertainty. This course will teach you how to build, fit, and do inference in probabilistic models. These models let us generate novel images and text, find meaningful latent representations of data, take advantage of large unlabeled datasets, and even let us do analogical reasoning automatically. This course will teach the basic building blocks of these models and the computational tools needed to use them.",
+        "tags": [
+            "CSC412"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2547-Fall",
+        "title": "CSC2547: Learning to Search",
+        "source": "UToronto",
+        "year": "Fall 2019",
+        "url": "https://duvenaud.github.io/learning-to-search/",
+        "desc": "In planning, search, active learning, programming, and approximate inference, we usually face a series of similar tasks. We can often generalize from the problems solved so far, or even combine parts of previous solutions to solve a new one. This course will survey foundational ideas, recent work, and applications in this area. Specifically, it will cover self-improving tree-search methods such as alphazero, meta-learning, hypernetworks, self-tuning gradient estimators, amortized inference, self-improving theorem provers, and planning in POMDPs. Evaluation will be based mainly on a project involving original research by the students. Students should already be familiar with the basics of machine learning such as linear algebra, optimization, and probability.",
+        "tags": [
+            "CSC2547"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-STA4273-Spring",
+        "title": "STA4273: Learning Discrete Latent Structure",
+        "source": "UToronto",
+        "year": "Spring 2018",
+        "url": "https://duvenaud.github.io/learn-discrete/",
+        "desc": "New inference methods allow us to train learn generative latent-variable models. These models can generate novel images and text, find meaningful latent representations of data, take advantage of large unlabeled datasets, and even let us do analogical reasoning automatically. However, most generative models such as GANs and variational autoencoders currently have pre-specified model structure, and represent data using fixed-dimensional continuous vectors. This seminar course will develop extensions to these approaches to learn model structure, and represent data using mixed discrete and continuous data structures such as lists of vectors, graphs, or even programs. The class will have a major project component, and will be run in a similar manner to Differentiable Inference and Generative Models",
+        "tags": [
+            "STA4273"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2541-Fall",
+        "title": "CSC2541: Differentiable Infertence and Generative Models",
+        "source": "UToronto",
+        "year": "Fall 2016",
+        "url": "https://www.cs.toronto.edu/~duvenaud/courses/csc2541/index.html",
+        "desc": "In the last few years, new inference methods have allowed big advances in probabilistic generative models. These models let us generate novel images and text, find meaningful latent representations of data, take advantage of large unlabeled datasets, and even let us do analogical reasoning automatically. This course will tour recent innovations in inference methods such as recognition networks, black-box stochastic variational inference, and adversarial autoencoders. It will also cover recent advances in generative model design, such as deconvolutional image models, thought vectors, and recurrent variational autoencoders. The class will have a major project component.",
+        "tags": [
+            "CSC2541"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-ECE1779-Spring",
+        "title": "ECE1779: Introduction to Cloud Computing",
+        "source": "UToronto",
+        "year": "Spring 2021",
+        "url": "https://www.cs.toronto.edu/~delara/courses/ece1779/#home",
+        "desc": "This course provides an introduction into the technologies behind cloud computing. A combination of lectures and hands-on programming assignments expose the student to the leading cloud computing paradigms and programming interfaces (e.g., EC2, Lambda). In addition, lectures provide an overview of the underlying technological concepts that make cloud computing possible (e.g., virtualization, scalability, fault tolerance, security).",
+        "tags": [
+            "ECE1779"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC2125-Winter",
+        "title": "CSC2125: Topics in Software Engineering: Safety and Certification of Autonomous Vehicles",
+        "source": "UToronto",
+        "year": "Winter 2019",
+        "url": "http://www.cs.toronto.edu/~chechik/courses19/csc2125/index.htm",
+        "desc": "Before the dream of autonomous vehicles can be fully realized, we need to understand what their safety means and how to assure it. Yet, since autonomous vehicles typically include components constructed via machine learning, existing techniques and even existing standards are not directly applicable and need to be adjusted. In this course, we will explore some challenges in this field and survey recent work on safety and certification, specifically in the model-driven context. The application focus will be self-driving cars.",
+        "tags": [
+            "CSC2125"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC2125-Winter",
+        "title": "CSC2125: Modeling Methods, Tools and Techniques",
+        "source": "UToronto",
+        "year": "Winter 2018",
+        "url": "http://www.cs.toronto.edu/~chechik/courses18/csc2125/index.htm",
+        "desc": "Model-based software engineering (MBSE) is an approach to software development in which software models play a primary and indispensible role.  MBSE allows developers to work and reason about software requirements, design, and correctness at higher levels of abstraction, and to generate automatically implementations, deployments, and other artifacts.  MBSE has been successfully applied in several industries (automotive, aeronautic, information systems), in defining software product lines and in system safety assurance (albeit often in an ad-hoc fashion).   This course will look at the state of the art of MBSE and its future research directions.",
+        "tags": [
+            "CSC2125"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC2227S-Summer",
+        "title": "CSC2227S: Topics in the Design and Implementation of Operating Systems",
+        "source": "UToronto",
+        "year": "Summer 2021",
+        "url": "http://www.cs.toronto.edu/~demke/2227/S.21/index.shtml",
+        "desc": "This course examines the design, implementation and analysis of selected aspects of operating systems with a focus on networked systems and the impact of emerging hardware such as persistent memory. It covers topics such as: resource naming and discovery, scheduling and load balancing; fault-tolerance, availability, and persistence; distributed communication models; and storage. We will explore these topics in the context of a variety of system designs including local and distributed systems.",
+        "tags": [
+            "CSC2227S"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC2421-Fall",
+        "title": "CSC2421: Topics in Algorithms: Online and other Myopic Algorithms",
+        "source": "UToronto",
+        "year": "Fall 2019",
+        "url": "http://www.cs.toronto.edu/~bor/2421f19/",
+        "desc": "In a seminal 1985 paper, Sleator and Tarjan argued for a worst case analysis of online algorithms such as paging and list accessing. This became known as competitive analysis. Not surprisingly, such worst analysis was already present in earlier works for example by Graham and Yao for scheduling problems. Since these earlier works, there has been a continuing and growing interest in online algorithms, in terms of applications (eg online advertising and other auctions, graph colouring and matching, maximum satisfiability, etc.), in terms of alternative online models (eg small space streaming, sequential and parallel streams), extensions to the basic online model (revocable decisions, greedy-like algorithms), and in terms of alternatives to the competitive analysis framework (eg, a return to stochastic input models). This course will be based on a textbook that is now being written by Denis Pankratov and myself. This topic is part of recent interest within theoretical computer science that emphasizes \"conceptually simple algorithms\" (e.g., the SOSA conference). A preliminary table of contents is provided below. In terms of a prerequisite, I strongly suggest a course similar to our undergraduate algorithms course CSC37",
+        "tags": [
+            "CSC2421"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC303-Spring",
+        "title": "CSC303: Social and Information Networks",
+        "source": "UToronto",
+        "year": "Spring 2020",
+        "url": "http://www.cs.toronto.edu/~bor/303s20/",
+        "desc": "A course on how networks underlie social phenomena with an emphasis on developing intuition and reasoning about broadly applicable concepts in network analysis. Topics include: introduction to graph theory and graph theoretic algorithms, social networks and relevant concepts, network dynamics, information networks, network dynamics; information diffusioa, \"six derees of separation\", community detertion.",
+        "tags": [
+            "CSC303"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2547-Winter",
+        "title": "CSC2547: Machine Learning for Machine Vision as Inverse Graphics",
+        "source": "UToronto",
+        "year": "Winter 2020",
+        "url": "https://www.cs.toronto.edu/~bonner/courses/2020s/csc2547/",
+        "desc": "This is an advanced graduate course in machine learning. It is primarily a seminar course in which students will read and present papers from the literature. There will also be a major course project. The goal is to bring students to the state of the art in this exciting field. Tentative topics include generative and discriminative models for vision, convolutional and deconvolutional neural nets, variational inference and autoencoders, capsule networks, group symmetries and equivariance, visual attention mechanisms, differentiable renderers, and applications.",
+        "tags": [
+            "CSC2547"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC2545-Winter",
+        "title": "CSC2545: Kernel Methods and Support Vector Machnes",
+        "source": "UToronto",
+        "year": "Winter 2017",
+        "url": "https://www.cs.toronto.edu/~bonner/courses/2017s/csc2545/",
+        "desc": "The introduction of Support Vector Machines (SVMs) in the 1990s led to an explosion of applications and deepening theoretical analysis that have established SVMs as one of the standard tools for machine learning and data mining. This course provides a comprehensive introduction to SVMs and other kernel methods, including theory, algorithms and applications. Topics covered will be selected from the following: support vector classification and regression; novelty detection and feature extraction; non-linear dimensionality reduction; reproducing kernel maps; regularization; statistical learning theory and robust estimation; convex optimization and implementation; kernel design and applications. Homework assignments will be a mix of theory and programming.",
+        "tags": [
+            "CSC2545"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC324-Fall",
+        "title": "CSC324: Principles of Programming Languages",
+        "source": "UToronto",
+        "year": "Fall 2016",
+        "url": "https://www.cs.toronto.edu/~bonner/courses/2016f/csc324/",
+        "desc": "Major topics in the development of modern programming languages. Syntax specification, type systems, type inference, exception handling, information hiding, structural recursion, run-time storage management, and programming paradigms. T",
+        "tags": [
+            "CSC324"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2600-Fall",
+        "title": "CSC2600: Topics in Computer Science: Convex Optimization",
+        "source": "UToronto",
+        "year": "Fall 2010",
+        "url": "https://www.cs.toronto.edu/~bonner/courses/2010f/csc2600/",
+        "desc": "This course is an introduction to the theory, algorithms and applications of convex optimization. The goal is to give students a working knowledge of the subject, i.e., the ability to recognize, formulate, and solve convex optimization problems. Topics covered will be selected from the following: convex sets and functions, linear and quadratic optimization, geometric and semidefinite programming, strong and weak duality, algorithms for constrained and unconstrained problems, interior point methods, and applications. The course should be of special interest to students in machine learning, machine vision, graphics, numerical analysis, combinatorial optimization and electrical engineering.",
+        "tags": [
+            "CSC2600"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2512-Winter",
+        "title": "CSC2512: Advanced Propositional Reasoning",
+        "source": "UToronto",
+        "year": "Winter 2020",
+        "url": "http://www.cs.toronto.edu/~fbacchus/csc2512/",
+        "desc": "We will examine current algorithms and techniques for solving various types of propositional reasoning problems. This will include the problems of finding a satisfying model (SAT), finding a satisfying model to a propositional formula augmented with a non-propositional formula over a decidable logical theory (SMT), finding an satisfying model that optimizes a specified cost function (MaxSat), counting the number of satisfying models (#SAT), and determining the truth or falsity of a closed quantified Boolean formula (QBF).",
+        "tags": [
+            "CSC2512"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC2541-Fall",
+        "title": "CSC2541: Deep Reinforcement Learning",
+        "source": "UToronto",
+        "year": "Fall 2018",
+        "url": "https://csc2541-f18.github.io/#",
+        "desc": "Learning by interaction or trial-and-error is a core aspect of any intelligence system. Reinforcement learning (RL) is a paradigm aiming to develop computational methods that allow intelligent agents to learn by interacting with their environments. In this course, we will cover the basic formulation of the Markov decision process (MDP), learning algorithms for tabular MDPs. This course will mainly focus on various function approximation methods using deep neural networks. The examples will include game playing and robot locomotion control.",
+        "tags": [
+            "CSC2541"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": false
+        }
+    },
+    {
+        "id": "UToronto-CSC209-Winter",
+        "title": "CSC209: Software Tools and Systems",
+        "source": "UToronto",
+        "year": "Winter 2013",
+        "url": "https://www.teach.cs.toronto.edu/~csc209h/winter/index.html",
+        "desc": "Software techniques in a Unix-style environment, using scripting languages and a machine-oriented programming language (typically C). What goes on in the operating system when programs are executed. Core topics: creating and using software tools, pipes and filters, file processing, shell programming, processes, system calls, signals, basic network programming.",
+        "tags": [
+            "CSC209"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC165-Summer",
+        "title": "CSC165: Mathematical Expression and Reasoning for Computer Science",
+        "source": "UToronto",
+        "year": "Summer 2013",
+        "url": "https://www.cs.toronto.edu/~david/courses/csc165_s13/home.html",
+        "desc": "This course introduces the ideas of formal logic and proof as tools that you will use throughout your undergraduate studies. You will learn to communicate clearly and precisely, and to make logically sound arguments about the code you write. You will learn the notation and techniques of mathematical logic and apply this to analysing the efficiency of computer algorithms. In the final weeks of the course, we will turn our attention from algorithms (e.g., quicksort) to problems (e.g., sorting a list) and get a taste of complexity and computability theory.",
+        "tags": [
+            "CSC165"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC148-Fall",
+        "title": "CSC148: Introduction to Computer Science",
+        "source": "UToronto",
+        "year": "Fall 2014",
+        "url": "https://www.cs.toronto.edu/~david/courses/csc148_f14/index.html",
+        "desc": "Welcome to CSC148! In this course, you’ll learn about important tools and ideas in computer science that will set the foundation for all future computer science courses you’ll take. Among the most important topics we’ll cover are object-oriented programming, data structures, and recursion. Throughout the course, we’ll also emphasize the good habits essential to success in computer programming: designing before you code, testing beyond printing, and learning without teachers.",
+        "tags": [
+            "CSC148"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC236-Fall",
+        "title": "CSC236: Introdution to Theory of Computation",
+        "source": "UToronto",
+        "year": "Fall 2018",
+        "url": "https://www.teach.cs.toronto.edu/~heap/Old/236/F18/",
+        "desc": "In this course we learn to apply rigour and proof to some fundamental tasks of computing",
+        "tags": [
+            "CSC236"
+        ],
+        "contains": {
+            "videos": false,
+            "written": true,
+            "assignments": true
+        }
+    },
+    {
+        "id": "UToronto-CSC104-Fall",
+        "title": "CSC104: Computational Thinking",
+        "source": "UToronto",
+        "year": "Fall 2017",
+        "url": "http://www.cs.toronto.edu/~heap/104/F17/",
+        "desc": "CSC104, “Computational Thinking” introduces undergrads to Computer Science, with the aim that they should change the world of computing, rather than just observe it. Here’s a summary of the administrative details for Fall 2017.",
+        "tags": [
+            "CSC104"
         ],
         "contains": {
             "videos": false,
