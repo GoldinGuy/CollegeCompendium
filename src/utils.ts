@@ -71,4 +71,5 @@ export const collegeColors = {
 	utoronto: "#25355A",
 	upitt: "#003594",
 	michigan: "#FFCB05",
+	tomlooman: "#8C1515",
 };
