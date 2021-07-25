@@ -15,14 +15,25 @@ export function useQuery() {
 
 // fisher yates
 export function shuffle(array: Class[]): Class[] {
-	var m = array.length,
-		t,
-		i;
-	while (m) {
-		i = Math.floor(Math.random() * m--);
-		t = array[m];
-		array[m] = array[i];
-		array[i] = t;
+	var a = array.length,
+		c: Class,
+		i: number;
+	while (a) {
+		i = Math.floor(Math.random() * a--);
+		// if (
+		// 	array[i].contains.written === true &&
+		// 	array[i].contains.assignments === true &&
+		// 	array[i].contains.videos === true
+		// ) {
+		// 	c = array[a - (Math.floor(Math.random() * a) + 1)];
+		// 	console.log(c);
+		// 	array[a] = array[i];
+		// 	array[i] = c;
+		// } else {
+			c = array[a];
+			array[a] = array[i];
+			array[i] = c;
+		// }
 	}
 	return array;
 }

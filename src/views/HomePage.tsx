@@ -38,6 +38,8 @@ const HomePage = () => {
 
 						<a
 							className="inline-flex items-center justify-center w-full text-white font-semibold mb-2 bg-fuchsia-400 hover:bg-fuchsia-500 px-4 py-2 btn btn-light btn-lg sm:w-auto sm:mb-0 transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
+							target="_blank"
+							rel="noreferrer"
 							href="https://github.com/GoldinGuy/CollegeCompendium"
 						>
 							Star On GitHub
