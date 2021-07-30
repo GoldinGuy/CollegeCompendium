@@ -22,7 +22,8 @@ const ExplorePage = () => {
 		"Game",
 		"Algorithms",
 		"Artificial Intelligence",
-		"Crypto"
+		"Crypto",
+		"Database"
 	];
 	return (
 		<>
@@ -91,7 +92,10 @@ const LargeSearchBar = ({ asTable }: { asTable: boolean }) => {
 	};
 
 	return (
-		<div className="flex max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl overflow-x-hidden">
+		<div
+			className="flex max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl "
+			// overflow-x-hidden
+		>
 			<div className="w-full my-0 text-gray-600">
 				<section className="flex items-center justify-center sm:h-20">
 					<div

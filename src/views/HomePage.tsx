@@ -14,9 +14,10 @@ const HomePage = () => {
 			<section className="px-4 py-16 sm:pb-20 sm:pt-15 mx-auto max-w-7xl">
 				<div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
 					<h1 className="mb-6 congress text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
-						Audit Over 900 CS Classes
+						Audit Over <br className="sm:hidden" /> 900 CS Classes
 						<br className="hidden sm:flex" />
 						<span className="block w-full text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-blue-500 lg:inline">
+							{" "}
 							From Top Universities
 						</span>
 					</h1>
@@ -50,7 +51,8 @@ const HomePage = () => {
 
 				<div className="w-full mx-auto mt-12 text-center md:w-10/12 bg-gradient-to-r from-fuchsia-400  to-blue-500 rounded-lg">
 					<img
-						src="https://user-images.githubusercontent.com/47064842/122480760-71240a80-cf9b-11eb-8865-97e822d3f064.jpg"
+						src="https://user-images.githubusercontent.com/47064842/121788773-04290300-cb9e-11eb-8e5e-95fa321e18db.png"
+						//src="https://user-images.githubusercontent.com/47064842/122480760-71240a80-cf9b-11eb-8865-97e822d3f064.jpg"
 						alt="Hero"
 						loading="lazy"
 						className="w-full rounded-lg sm:h-auto  shadow-2xl object-cover object-center-top opacity-70" //max-h-96
@@ -72,7 +74,7 @@ const HomePage = () => {
 							you are in your journey, we've compiled a catalog of CS course
 							resources that are relevant to your skill-level, time-commitment,
 							and learning style. With hundreds of classes (and growing), you
-							will never hit a dead end. 
+							will never hit a dead end.
 						</p>
 						<Link
 							to="/explore"
@@ -82,8 +84,14 @@ const HomePage = () => {
 							<FontAwesomeIcon icon={faArrowCircleRight} className="ml-2" />
 						</Link>
 					</div>
-					<div className=" bg-gradient-to-r from-fuchsia-400  to-blue-500 rounded-lg relative">
+					<div className=" rounded-lg relative">
 						<img
+							className="w-full bg-gray-200 rounded-lg object-cover object-center-top h-72 sm:h-full opacity-100 "
+							alt="info"
+							loading="lazy"
+							src="https://user-images.githubusercontent.com/47064842/127606430-11de7939-b12d-4cef-8d15-8dd76aaa372c.png"
+						/>
+						{/* <img
 							className="w-full bg-gray-200 rounded-lg object-cover object-center-top h-72 sm:h-full opacity-70 "
 							alt="info"
 							loading="lazy"
@@ -108,7 +116,7 @@ const HomePage = () => {
 									></img>
 								</a>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</section>
@@ -132,6 +140,14 @@ const HomePage = () => {
 			{/* about  */}
 			<section className="px-4 pt-20 pb-10 mx-auto max-w-7xl" id="about">
 				<div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
+					<div className="rounded-lg ">
+						<img
+							className="w-full bg-gray-200 rounded-lg object-cover object-center-top h-72 sm:h-full "
+							alt="info"
+							loading="lazy"
+							src="https://user-images.githubusercontent.com/47064842/122471339-28655500-cf8d-11eb-8928-2d8050ce5a57.png"
+						/>
+					</div>
 					<div className="text-left">
 						<h2 className="mb-4 text-2xl congress font-extrabold tracking-tight text-black md:leading-tight text-left md:text-4xl">
 							For Computer Scientists, <br />
@@ -173,14 +189,6 @@ const HomePage = () => {
 							<FontAwesomeIcon icon={faDiscord} className="ml-2" />
 						</a>
 					</div>
-					<div className="rounded-lg ">
-						<img
-							className="w-full bg-gray-200 rounded-lg object-cover object-center-top h-72 sm:h-full "
-							alt="info"
-							loading="lazy"
-							src="https://user-images.githubusercontent.com/47064842/122471339-28655500-cf8d-11eb-8928-2d8050ce5a57.png"
-						/>
-					</div>
 				</div>
 			</section>
 
@@ -209,8 +217,8 @@ const HomePage = () => {
 							</span>
 						</h2>
 						<p className="mt-3 text-3xl font-extrabold text-white">
-							Join over 60000 Programmers In Over 147 Countries Learning with College
-							Compendium
+							Join over 60000 Programmers In Over 147 Countries Learning with
+							College Compendium
 						</p>
 						<p className="mt-5 text-lg text-gray-300">
 							Startup founder, CS student, data enthusiast, or first-time coder.
