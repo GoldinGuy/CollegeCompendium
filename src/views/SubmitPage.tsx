@@ -1,7 +1,7 @@
 import React from "react";
 import { ContributeForm, CTA } from "../components";
 
-const ContributePage = () => {
+const SubmitPage = () => {
 	return (
 		<div className="overflow-x-hidden bg-gray-50">
 			<ContributeForm />
@@ -10,4 +10,4 @@ const ContributePage = () => {
 		</div>
 	);
 };
-export default ContributePage;
+export default SubmitPage;

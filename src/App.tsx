@@ -7,7 +7,7 @@ import {
 	HomePage,
 	SearchPage,
 	ExplorePage,
-	ContributePage
+	SubmitPage
 } from "./views";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
 					<Route path="/" exact component={HomePage} />
 					<Route path="/search" exact component={SearchPage} />
 					<Route path="/explore" exact component={ExplorePage} />
-					<Route path="/contribute" exact component={ContributePage} />
+					<Route path="/submit" exact component={SubmitPage} />
 					<Route path="/tos" exact component={TermsOfService} />
 				</Switch>
 				<Footer />

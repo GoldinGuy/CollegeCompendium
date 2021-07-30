@@ -105,7 +105,7 @@ const ContributeForm = () => {
 							className="mb-6 text-center text-3xl leading-9 font-extrabold text-dark"
 							key="contribute"
 						>
-							Contribute Classes To Our Compendium!
+							Submit Classes To Our Compendium!
 						</h2>
 
 						{/* <span
