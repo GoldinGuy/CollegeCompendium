@@ -60,7 +60,7 @@ const NavSearchBar = ({ classN }: { classN?: string }) => {
 						<input
 							maxLength={25}
 							type="text"
-							id="search"
+							id="search-nav"
 							value={term}
 							onChange={inputKeyDown}
 							onKeyUp={inputKeyDown}

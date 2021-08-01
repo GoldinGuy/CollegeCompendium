@@ -16,12 +16,13 @@ You can contact us for more details at team@collegecompendium.org. */
 import React from "react";
 import { Link } from "react-router-dom";
 import { ClassGallery, CTA } from "../components";
-import FEATURED from "../data/featured.json";
+// import FEATURED from "../data/featured.json";
 import { faArrowCircleRight, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { Class } from "../typings/interfaces";
 
-const HomePage = () => {
+const HomePage = ({ featured, loading }: { featured: Class[]; loading: boolean }) => {
 	return (
 		<div className="overflow-x-hidden" id="hero">
 			{/* hero  */}
@@ -149,7 +150,7 @@ const HomePage = () => {
 					<span className="text-base text-fuchsia-400"> - Nelson Mandela </span>
 				</p>
 			</section>
-			<ClassGallery classes={FEATURED} />
+			<ClassGallery classes={featured} loading={loading} />
 
 			{/* about  */}
 			<section className="px-4 pt-20 pb-10 mx-auto max-w-7xl" id="about">

@@ -32,3 +32,5 @@ schools
 class_data.csv
 class_data.xls
 class_data.xlsx
+data/
+remove_line.js

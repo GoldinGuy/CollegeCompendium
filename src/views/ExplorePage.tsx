@@ -16,10 +16,11 @@ You can contact us for more details at team@collegecompendium.org. */
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Classes from "../components/Classes";
-import CLASSES from "../data/class_data.json";
+import { Class } from "../typings/interfaces";
+// import CLASSES from "../data/class_data.json";
 import { shuffle, useQuery } from "../utils";
 
-const ExplorePage = () => {
+const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean }) => {
 	const history = useHistory();
 	let query = useQuery();
 
@@ -65,6 +66,7 @@ const ExplorePage = () => {
 									);
 								}}
 								className="ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 bg-fuchsia-200 text-fuchsia-700 rounded-full cursor-pointer"
+								key={tag}
 							>
 								#{tag}
 							</div>
@@ -73,8 +75,9 @@ const ExplorePage = () => {
 				</div>
 
 				<Classes
-					classes={shuffle(CLASSES).slice(0, 18)}
+					classes={shuffle(classes)?.slice(0, 18) ?? []}
 					asTable={query.get("table") === "true"}
+					loading={loading}
 				/>
 			</section>
 		</>
@@ -124,7 +127,7 @@ const LargeSearchBar = ({ asTable }: { asTable: boolean }) => {
 						<input
 							maxLength={25}
 							type="text"
-							id="search"
+							id="search-explore"
 							value={query}
 							onChange={inputKeyDown}
 							onKeyUp={inputKeyDown}

@@ -15,17 +15,24 @@ You can contact us for more details at team@collegecompendium.org. */
 
 import React from "react";
 import Classes from "../components/Classes";
-import CLASSES from "../data/class_data.json";
+// import CLASSES from "../data/class_data.json";
+import { Class } from "../typings/interfaces";
 import { shuffle, useQuery } from "../utils";
 
-const SearchPage = () => {
+const SearchPage = ({
+	classes,loading,
+}: {
+	classes: Class[];
+	loading: boolean;
+}) => {
 	let query = useQuery();
 
 	return (
 		<Classes
-			classes={shuffle(CLASSES)}
+			classes={shuffle(classes)}
 			displayPromo={true}
 			filters={query.get("q")?.split("-")}
+			loading={loading}
 			asTable={query.get("table") === "true"}
 		/>
 	);

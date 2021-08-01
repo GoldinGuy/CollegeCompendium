@@ -22,6 +22,7 @@ import { Class } from "../typings/interfaces";
 import { collegeColors } from "../utils";
 import ClassItem from "./ClassItem";
 import ExploreTable from "./Table";
+import ClipLoader from "react-spinners/ClipLoader";
 
 const Classes = ({
 	imgUrl,
@@ -29,12 +30,14 @@ const Classes = ({
 	displayPromo,
 	filters,
 	asTable,
+	loading
 }: {
 	imgUrl?: string;
 	displayPromo?: boolean;
 	classes: Class[];
 	filters?: string[];
-	asTable: boolean;
+    asTable: boolean;
+	loading: boolean
 }) => {
 	useEffect(() => {
 		const formatText = (text: string) => {
@@ -89,13 +92,16 @@ const Classes = ({
 					{/* w-auto */}
 					<h2
 						className="relative flex items-center self-start w-auto text-4xl font-black mr-4 "
-						key="header "
+						key="header"
 					>
 						<span className="absolute inline-block w-full break-words h-4 mt-3 -ml-2 bg-gradient-to-r from-fuchsia-200 to-blue-300 " />
 						<span className="relative">
 							{filters?.map((tag, idx) => {
 								return (
-									<span className="inline-block text-2xl md:text-4xl">
+									<span
+										className="inline-block text-2xl md:text-4xl"
+										key={tag + idx}
+									>
 										{tag}
 										{!(idx === filters.length - 1) && !tag.endsWith(",") ? (
 											<span>,</span>
@@ -115,12 +121,16 @@ const Classes = ({
 							src={imgUrl}
 							alt="header img"
 							className="object-cover w-screen object-center-top h-32 sm:h-full"
+							key="header-img"
 						/>
 					) : null}
 					<section className="w-full px-4 py-12 mx-auto max-w-7xl md:w-4/5">
 						<div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
 							{displayPromo && filteredClasses[0] ? (
-								<div className="col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-3 text-center flex justify-center ">
+								<div
+									className="col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-3 text-center flex justify-center "
+									key="featured-class"
+								>
 									<a
 										href={filteredClasses[0].url}
 										className="md:w-2/3 lg:w-1/2 relative hover:shadow-xl"
@@ -191,30 +201,52 @@ const Classes = ({
 							) : null}
 
 							{filteredClasses
-								.slice(page * 12 + startVid, page * 12 + 12 + startVid)
+								?.slice(page * 12 + startVid, page * 12 + 12 + startVid)
 								.map((_class, idx) => {
 									return <ClassItem _class={_class} idx={idx} />;
 								})}
 						</div>
 
 						{filteredClasses.length === 0 ? (
-							<div className="mx-auto py-20 px-4 sm:px-6 sm:py-18 lg:px-8 text-center">
-								<h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-10">
-									<span className="block bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent">
-										No Classes Found
-									</span>
-								</h2>
-								<Link
-									to="/explore"
-									className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400 hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
+							loading ? (
+								<div
+									className="mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center"
+									key="loader"
 								>
-									Find A Class
-									<FontAwesomeIcon icon={faArrowCircleRight} className="ml-2" />
-								</Link>
-							</div>
+									<ClipLoader
+										color={"#e47cfc"}
+										loading={loading}
+										size={100}
+									/>
+								</div>
+							) : (
+								<div
+									className="mx-auto py-20 px-4 sm:px-6 sm:py-18 lg:px-8 text-center"
+									key="none-found"
+								>
+									<h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-10">
+										<span className="block bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent">
+											No Classes Found
+										</span>
+									</h2>
+									<Link
+										to="/explore"
+										className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400 hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
+									>
+										Find A Class
+										<FontAwesomeIcon
+											icon={faArrowCircleRight}
+											className="ml-2"
+										/>
+									</Link>
+								</div>
+							)
 						) : null}
 
-						<div className="flex flex-col items-center justify-center mt-20 space-x-0 space-y-2 md:space-x-2 md:space-y-0 md:flex-row">
+						<div
+							className="flex flex-col items-center justify-center mt-20 space-x-0 space-y-2 md:space-x-2 md:space-y-0 md:flex-row"
+							key="nav"
+						>
 							{page > 0 ? (
 								<button
 									onClick={() => {
@@ -239,10 +271,13 @@ const Classes = ({
 					</section>
 				</>
 			) : (
-				<section className="px-4 pb-20 pt-6 mx-auto max-w-7xl">
+				<section className="px-4 pb-20 pt-6 mx-auto max-w-7xl" key="table">
 					<ExploreTable classes={filteredClasses} />
 					{filteredClasses.length === 0 ? (
-						<div className="mx-auto py-20 px-4 sm:px-6 sm:py-18 lg:px-8 text-center">
+						<div
+							className="mx-auto py-20 px-4 sm:px-6 sm:py-18 lg:px-8 text-center"
+							key="class-not-found"
+						>
 							<h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-10">
 								<span className="block bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent">
 									No Classes Found

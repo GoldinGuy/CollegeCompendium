@@ -15,11 +15,12 @@ You can contact us for more details at team@collegecompendium.org. */
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { ClipLoader } from "react-spinners";
 import { Class } from "../typings/interfaces";
 import { shuffle } from "../utils";
 import ClassItem from "./ClassItem";
 
-const ClassGallery = ({ classes }: { classes: Class[] }) => {
+const ClassGallery = ({ classes,loading }: { classes: Class[], loading: boolean }) => {
 	const responsive = {
 		desktop: {
 			breakpoint: { max: 3000, min: 1024 },
@@ -39,31 +40,43 @@ const ClassGallery = ({ classes }: { classes: Class[] }) => {
 	};
 
 	return (
-		<Carousel
-			swipeable={true}
-			draggable={false}
-			showDots={true}
-			responsive={responsive}
-			ssr={true} // render carousel on server-side.
-			infinite={true}
-			autoPlay={false}
-			autoPlaySpeed={1000}
-			keyBoardControl={true}
-			customTransition="all .5"
-			transitionDuration={500}
-			containerClass="carousel-container"
-			removeArrowOnDeviceType={["tablet", "mobile"]}
-			// deviceType={this.props.deviceType}
-			dotListClass="custom-dot-list-style focus:outline-none focus:border-0 text-fuchsia-500 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500"
-			itemClass="carousel-item-padding-40-px p-6 "
-			className="mb-6"
-		>
-			{shuffle(classes)
-				?.slice(0, 9)
-				.map((_class, idx) => {
-					return <ClassItem _class={_class} idx={idx} />;
-				})}
-		</Carousel>
+	<>
+			{loading ? (
+				<div className="mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center"
+					key="gallery-loader">
+									<ClipLoader
+										color={"#e47cfc"}
+										loading={loading}
+										size={100}
+									/>
+								</div> ) : 
+				(<Carousel
+					swipeable={true}
+					draggable={false}
+					showDots={true}
+					responsive={responsive}
+					ssr={true} // render carousel on server-side.
+					infinite={true}
+					autoPlay={false}
+					autoPlaySpeed={1000}
+					keyBoardControl={true}
+					customTransition="all .5"
+					transitionDuration={500}
+					containerClass="carousel-container"
+					removeArrowOnDeviceType={["tablet", "mobile"]}
+					// deviceType={this.props.deviceType}
+					dotListClass="custom-dot-list-style focus:outline-none focus:border-0 text-fuchsia-500 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500"
+					itemClass="carousel-item-padding-40-px p-6 "
+					className="mb-6"
+				>
+					{shuffle(classes)
+						?.slice(0, 9)
+						.map((_class, idx) => {
+							return <ClassItem _class={_class} idx={idx} />;
+						}) ?? []}
+				</Carousel>)
+			}
+			</>
 	);
 };
 export default ClassGallery;

@@ -13,10 +13,11 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 You can contact us for more details at team@collegecompendium.org. */
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Navbar, Footer, ScrollToTop } from "./components";
 import TermsOfService from "./components/Terms";
+import { Class } from "./typings/interfaces";
 import {
 	// TempSplashPage,
 	HomePage,
@@ -26,16 +27,100 @@ import {
 } from "./views";
 
 function App() {
+	const [classes, setClasses] = useState<Class[]>([])
+	const [featured, setFeatured] = useState<Class[]>([]);
+	const [loading, setLoading] = useState(true);
+
+	useEffect(() => {
+			console.log(process.env.REACT_APP_JSONIO_API_KEY);
+		if (featured.length === 0) {
+			const locF = localStorage.getItem('featured')
+			if (locF && typeof locF === 'string') {
+				setFeatured(JSON.parse(locF));
+			} else if (
+				process.env.REACT_APP_JSONIO_API_KEY &&
+				process.env.REACT_APP_FEATURED_JSON_ID
+			) {
+				let fReq = new XMLHttpRequest();
+				fReq.onreadystatechange = () => {
+					if (fReq.readyState === XMLHttpRequest.DONE) {
+						// console.log(cReq.responseText);
+						if (fReq.status === 200) {
+							setFeatured(JSON.parse(fReq.responseText));
+							localStorage.setItem("featured", fReq.responseText);
+						}
+					}
+				};
+				fReq.open(
+					"GET",
+					`https://api.jsonbin.io/v3/b/${process.env.REACT_APP_FEATURED_JSON_ID}/latest`,
+					true
+				);
+				fReq.setRequestHeader(
+					"X-Master-Key",
+					`${process.env.REACT_APP_JSONIO_API_KEY}`
+				);
+				fReq.setRequestHeader("X-Bin-Meta", "false");
+				fReq.send();
+			}
+		}
+		if (classes.length === 0) {
+			const locC = localStorage.getItem('classes');
+			if (locC && typeof locC === 'string') {
+				setClasses(JSON.parse(locC));
+			} else if (
+				process.env.REACT_APP_JSONIO_API_KEY &&
+				process.env.REACT_APP_CLASSES_JSON_ID
+			) {
+				let cReq = new XMLHttpRequest();
+				cReq.onreadystatechange = () => {
+					if (cReq.readyState === XMLHttpRequest.DONE) {
+						// console.log(cReq.responseText);
+						if (cReq.status === 200) {
+							setClasses(JSON.parse(cReq.responseText));
+							localStorage.setItem("classes", cReq.responseText);
+						}
+					}
+				};
+				cReq.open(
+					"GET",
+					`https://api.jsonbin.io/v3/b/${process.env.REACT_APP_CLASSES_JSON_ID}/latest`,
+					true
+				);
+				cReq.setRequestHeader(
+					"X-Master-Key",
+					`${process.env.REACT_APP_JSONIO_API_KEY}`
+				);
+				cReq.setRequestHeader("X-Bin-Meta", "false");
+				cReq.send();
+			}
+		}
+		if (classes.length > 0 && featured.length > 0) {
+			setLoading(false);
+		} 
+	}, [classes.length, featured.length]);
+
+	console.log(process.env.REACT_APP_JSONIO_API_KEY);
+
 	return (
 		<BrowserRouter basename="/">
 			<ScrollToTop>
-				{/* TODO: disable while under active development */}
+				{/* TODO: enable while under active development */}
 				{/* <Route path="/" exact component={TempSplashPage} /> */}
 				<Navbar />
 				<Switch>
-					<Route path="/" exact component={HomePage} />
-					<Route path="/search" exact component={SearchPage} />
-					<Route path="/explore" exact component={ExplorePage} />
+					<Route
+						path="//"
+						render={() => <HomePage featured={featured} loading={loading} />}
+					/>
+					<Route
+						path="/search"
+						render={() => <SearchPage classes={classes} loading={loading} />}
+					/>
+					<Route
+						path="/explore"
+						render={() => <ExplorePage classes={classes} loading={loading} />}
+					/>
 					<Route path="/submit" exact component={SubmitPage} />
 					<Route path="/tos" exact component={TermsOfService} />
 				</Switch>

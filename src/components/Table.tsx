@@ -31,24 +31,28 @@ const ExploreTable = ({ classes }: { classes: Class[] }) => {
 										<th
 											scope="col"
 											className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+											key="meta"
 										>
 											Meta
 										</th>
 										<th
 											scope="col"
 											className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+											key="title"
 										>
 											Title
 										</th>
 										<th
 											scope="col"
 											className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+											key="desc"
 										>
 											Description
 										</th>
 										<th
 											scope="col"
 											className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+											key="contains"
 										>
 											Contains
 										</th>
@@ -60,9 +64,12 @@ const ExploreTable = ({ classes }: { classes: Class[] }) => {
 										</th> */}
 									</tr>
 								</thead>
-								{classes.map((_class) => {
+								{classes.map((_class, idx) => {
 									return (
-										<tbody className="bg-white divide-y divide-gray-200">
+										<tbody
+											className="bg-white divide-y divide-gray-200"
+											key={_class.id + idx}
+										>
 											<tr>
 												<td className="px-6 py-4 whitespace-nowrap relative">
 													<div

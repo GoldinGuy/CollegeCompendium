@@ -30,6 +30,9 @@ export function useQuery() {
 
 // fisher yates
 export function shuffle(array: Class[]): Class[] {
+	if(!array || array.length === 0) {
+		return [];
+	}
 	var a = array.length,
 		c: Class,
 		i: number;
