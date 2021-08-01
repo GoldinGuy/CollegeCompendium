@@ -1,3 +1,18 @@
+/*  College Compendium Component File
+Copyright (C) 2021 Seth Goldin & Samuel Crombie
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version. 
+You may not use your own version of this program commerically.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+You can contact us for more details at team@collegecompendium.org. */
+
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,7 +28,7 @@ const Footer = () => {
 					</a>{" "}
 					is licensed under{" "}
 					<a href="https://github.com/GoldinGuy/CollegeCompendium/blob/master/LICENSE">
-						MIT
+						GNU AGPL 3.0
 					</a>
 				</p>
 				<span className="mb-0 text-xs lg:text-sm text-left text-gray-600 md:mb-0 flex flex-col md:flex-row justify-between">
@@ -26,7 +41,8 @@ const Footer = () => {
 						className="mb-2 md:mb-0 hover:underline pr-6 flex items-center"
 						// href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
 					>
-						Terms	<FontAwesomeIcon icon={faInfoCircle} className="ml-2 inline" />
+						Terms{" "}
+						<FontAwesomeIcon icon={faInfoCircle} className="ml-2 inline" />
 					</Link>
 					<a
 						className="mb-2 md:mb-0 hover:underline pr-6 flex items-center"

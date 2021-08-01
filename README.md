@@ -9,9 +9,9 @@
 
 <a href="https://www.producthunt.com/posts/college-compendium?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-college-compendium" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=300824&theme=light&period=daily" alt="College Compendium - A collection of 800+ university CS courses for the curious | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
-### Looking for the CSV/Excel Files? 
+<!-- ### Looking for the CSV/Excel Files? 
 
-Here they are! [csv](https://github.com/GoldinGuy/CollegeCompendium/blob/master/class_data.csv), [xlsx](https://github.com/GoldinGuy/CollegeCompendium/blob/master/class_data.xls)
+Here they are! [csv](https://github.com/GoldinGuy/CollegeCompendium/blob/master/class_data.csv), [xlsx](https://github.com/GoldinGuy/CollegeCompendium/blob/master/class_data.xls) -->
 
 ### We Complement Your CS Journey By Cataloging Resources Across Topics & Experience Levels
 
@@ -50,7 +50,7 @@ npm start
 
 Created by [@GoldinGuy](https://github.com/GoldinGuy) and [@Samfydega](https://github.com/samfydega).
 
-Distributed under the MIT license. See [LICENSE](https://github.com/GoldinGuy/CollegeCompendium/blob/master/LICENSE) for more information.
+Distributed under the GNU Affero General Public License v3.0 license. See [LICENSE](https://github.com/GoldinGuy/CollegeCompendium/blob/master/LICENSE) for more information.
 
 <!-- Markdown link & img dfn's -->
 

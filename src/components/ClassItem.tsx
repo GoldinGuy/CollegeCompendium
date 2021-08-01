@@ -1,3 +1,18 @@
+/*  College Compendium Component File
+Copyright (C) 2021 Seth Goldin & Samuel Crombie
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version. 
+You may not use your own version of this program commerically.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+You can contact us for more details at team@collegecompendium.org. */
+
 import {
 	// faArrowCircleRight,
 	faCheck,
@@ -13,7 +28,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Class } from "../typings/interfaces";
 import { collegeColors } from "../utils";
 
-const ClassItem = ({ _class, idx }: { _class: Class, idx: number }) => {
+const ClassItem = ({ _class, idx }: { _class: Class; idx: number }) => {
 	return (
 		<div
 			className="group hover:scale-105 rounded hover:shadow-xl"
@@ -29,7 +44,7 @@ const ClassItem = ({ _class, idx }: { _class: Class, idx: number }) => {
 						],
 				}}
 			/>
-			<a href={_class.url} target="_blank" rel="noreferrer"key={_class.id}>
+			<a href={_class.url} target="_blank" rel="noreferrer" key={_class.id}>
 				<div className="p-3">
 					<p className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase">
 						{_class.source} | {_class.year}{" "}
@@ -98,5 +113,5 @@ const ClassItem = ({ _class, idx }: { _class: Class, idx: number }) => {
 			</a>
 		</div>
 	);
-}
-export default ClassItem
+};
+export default ClassItem;

@@ -1,3 +1,18 @@
+/*  College Compendium Component File
+Copyright (C) 2021 Seth Goldin & Samuel Crombie
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version. 
+You may not use your own version of this program commerically.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+You can contact us for more details at team@collegecompendium.org. */
+
 import { useState } from "react";
 
 const EmailForm = () => {
@@ -6,7 +21,6 @@ const EmailForm = () => {
 	return (
 		<section className="px-4 py-8 mx-auto max-w-7xl">
 			<div className="w-full mx-auto text-left md:w-11/12 xl:w-8/12 md:text-center">
-			
 				<p className="mb-6 text-lg text-gray-500 md:text-xl md:leading-normal">
 					<i className="mb-4 block">
 						We’re on a mission to bring the best of open source learning to

@@ -1,3 +1,18 @@
+/*  College Compendium Component File
+Copyright (C) 2021 Seth Goldin & Samuel Crombie
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version. 
+You may not use your own version of this program commerically.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+You can contact us for more details at team@collegecompendium.org. */
+
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Class } from "../typings/interfaces";
@@ -9,18 +24,18 @@ const ClassGallery = ({ classes }: { classes: Class[] }) => {
 		desktop: {
 			breakpoint: { max: 3000, min: 1024 },
 			items: 3,
-			slidesToSlide: 3
+			slidesToSlide: 3,
 		},
 		tablet: {
 			breakpoint: { max: 1024, min: 464 },
 			items: 2,
-			slidesToSlide: 2
+			slidesToSlide: 2,
 		},
 		mobile: {
 			breakpoint: { max: 464, min: 0 },
 			items: 1,
-			slidesToSlide: 1
-		}
+			slidesToSlide: 1,
+		},
 	};
 
 	return (
@@ -46,7 +61,7 @@ const ClassGallery = ({ classes }: { classes: Class[] }) => {
 			{shuffle(classes)
 				?.slice(0, 9)
 				.map((_class, idx) => {
-				return (<ClassItem _class={_class} idx={idx} />)
+					return <ClassItem _class={_class} idx={idx} />;
 				})}
 		</Carousel>
 	);
