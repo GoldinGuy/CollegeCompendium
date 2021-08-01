@@ -32,7 +32,7 @@ function App() {
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
-			console.log(process.env.REACT_APP_JSONIO_API_KEY);
+			// console.log(process.env.REACT_APP_JSONIO_API_KEY);
 		if (featured.length === 0) {
 			const locF = localStorage.getItem('featured')
 			if (locF && typeof locF === 'string') {
@@ -100,7 +100,6 @@ function App() {
 		} 
 	}, [classes.length, featured.length]);
 
-	console.log(process.env.REACT_APP_JSONIO_API_KEY);
 
 	return (
 		<BrowserRouter basename="/">
