@@ -28,3 +28,7 @@ tailwind.output.css
 /logos
 not_using
 schools
+
+class_data.csv
+class_data.xls
+class_data.xlsx
