@@ -19,9 +19,12 @@ const TermsOfService = () => {
 	return (
 		<div className="px-4 sm:px-10 md:px-20 lg:px-30 text-gray-600">
 			<span className="text-2xl font-semibold mt-4 block">Terms of Use</span>
-			College Compendium uses the{" "}
+			College Compendium Corporation is a nonprofit organization based in
+			Florida dedicated to improving access of computer-science educational
+			resources to students across the world. The College Compendium website is licensed
+			under the{" "}
 			<a href="https://github.com/GoldinGuy/CollegeCompendium/blob/master/LICENSE">
-				MIT
+				GNU AGPL 3.0
 			</a>{" "}
 			open-source license.
 			<br />

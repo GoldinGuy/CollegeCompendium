@@ -18,10 +18,11 @@ import {
 	faExternalLinkAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 import { Class } from "../typings/interfaces";
 import { collegeColors } from "../utils";
 
-const ClassItem = ({ _class, idx }: { _class: Class; idx: number }) => {
+const ClassItem = React.memo(({ _class, idx }: { _class: Class; idx: number }) => {
 	return (
 		<div
 			className="group hover:scale-105 rounded hover:shadow-xl"
@@ -125,5 +126,5 @@ const ClassItem = ({ _class, idx }: { _class: Class; idx: number }) => {
 			</a>
 		</div>
 	);
-};
+});
 export default ClassItem;

@@ -16,7 +16,7 @@ You can contact us for more details at team@collegecompendium.org. */
 import React from "react";
 import { ContributeForm, CTA } from "../components";
 
-const SubmitPage = () => {
+const SubmitPage = React.memo(() => {
 	return (
 		<div className="overflow-x-hidden bg-gray-50">
 			<ContributeForm />
@@ -24,5 +24,5 @@ const SubmitPage = () => {
 			<CTA />
 		</div>
 	);
-};
+});
 export default SubmitPage;

@@ -16,27 +16,27 @@ You can contact us for more details at team@collegecompendium.org. */
 import React, { useState } from "react";
 
 const ContributeForm = () => {
-	const [courseTitle, setCourseTitle] = useState("");
+	// const [courseTitle, setCourseTitle] = useState("");
 	const [url, setUrl] = useState("");
-	const [source, setSource] = useState("");
-	const [desc, setDesc] = useState("");
+	// const [source, setSource] = useState("");
+	// const [desc, setDesc] = useState("");
 	const [isError, setError] = useState(false);
 
-	const titleCase = (str: string): string => {
-		var splitStr: string[] = str.toLowerCase().split(" ");
-		for (var i = 0; i < splitStr.length; i++) {
-			splitStr[i] =
-				splitStr[i].charAt(0).toString().toUpperCase() + splitStr[i].slice(1);
-		}
-		return splitStr.join(" ");
-	};
+	// const titleCase = (str: string): string => {
+	// 	var splitStr: string[] = str.toLowerCase().split(" ");
+	// 	for (var i = 0; i < splitStr.length; i++) {
+	// 		splitStr[i] =
+	// 			splitStr[i].charAt(0).toString().toUpperCase() + splitStr[i].slice(1);
+	// 	}
+	// 	return splitStr.join(" ");
+	// };
 
-	const handleChangeInputCourseTitle = async (
-		event: React.ChangeEvent<HTMLInputElement>
-	): Promise<void> => {
-		const newTitle = event.target.value;
-		setCourseTitle(newTitle);
-	};
+	// const handleChangeInputCourseTitle = async (
+	// 	event: React.ChangeEvent<HTMLInputElement>
+	// ): Promise<void> => {
+	// 	const newTitle = event.target.value;
+	// 	setCourseTitle(newTitle);
+	// };
 
 	const handleChangeInputUrl = async (
 		event: React.ChangeEvent<HTMLInputElement>
@@ -45,19 +45,19 @@ const ContributeForm = () => {
 		setUrl(newUrl);
 	};
 
-	const handleChangeInputSource = async (
-		event: React.ChangeEvent<HTMLInputElement>
-	): Promise<void> => {
-		const newSource = event.target.value;
-		setSource(newSource);
-	};
+	// const handleChangeInputSource = async (
+	// 	event: React.ChangeEvent<HTMLInputElement>
+	// ): Promise<void> => {
+	// 	const newSource = event.target.value;
+	// 	setSource(newSource);
+	// };
 
-	const handleChangeInputDesc = async (
-		event: React.ChangeEvent<HTMLTextAreaElement>
-	): Promise<void> => {
-		const newDesc = event.target.value;
-		setDesc(newDesc);
-	};
+	// const handleChangeInputDesc = async (
+	// 	event: React.ChangeEvent<HTMLTextAreaElement>
+	// ): Promise<void> => {
+	// 	const newDesc = event.target.value;
+	// 	setDesc(newDesc);
+	// };
 
 	const handleSubmit = async (
 		event: React.FormEvent<HTMLButtonElement>

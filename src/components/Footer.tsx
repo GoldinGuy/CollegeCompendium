@@ -16,21 +16,20 @@ You can contact us for more details at team@collegecompendium.org. */
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = React.memo(() => {
 	return (
 		<footer className="px-6 sm:px-12 md:px-24 pb-12 mx-auto max-w-screen bg-gray-50">
 			<div className="flex flex-col items-start justify-between pt-10 mt-10 border-t border-gray-100 md:flex-row md:items-center">
 				<p className="mb-2 font-semibold text-sm text-left text-gray-600 md:mb-0">
+					© 2021{" "}
 					<a href="https://collegecompendium.org" className="text-fuchsia-500">
-						College Compendium
+						College Compendium Nonprofit Corporation
 					</a>{" "}
-					is licensed under{" "}
-					<a href="https://github.com/GoldinGuy/CollegeCompendium/blob/master/LICENSE">
-						GNU AGPL 3.0
-					</a>
 				</p>
+
 				<span className="mb-0 text-xs lg:text-sm text-left text-gray-600 md:mb-0 flex flex-col md:flex-row justify-between">
 					<p className="mb-2 md:mb-0 pr-6">
 						College Compendium is not affiliated with any colleges or classes.
@@ -61,5 +60,5 @@ const Footer = () => {
 			</div>
 		</footer>
 	);
-};
+});
 export default Footer;

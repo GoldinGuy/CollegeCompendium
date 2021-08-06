@@ -15,10 +15,11 @@ You can contact us for more details at team@collegecompendium.org. */
 
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 import { Class } from "../typings/interfaces";
 import { collegeColors } from "../utils";
 
-const ExploreTable = ({ classes }: { classes: Class[] }) => {
+const ExploreTable = React.memo(({ classes }: { classes: Class[] }) => {
 	if (classes.length > 0) {
 		return (
 			<div className="flex flex-col py-12">
@@ -205,5 +206,5 @@ const ExploreTable = ({ classes }: { classes: Class[] }) => {
 			</div>
 		);
 	} else return null;
-};
+});
 export default ExploreTable;

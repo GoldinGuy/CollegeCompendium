@@ -22,7 +22,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { Class } from "../typings/interfaces";
 
-const HomePage = ({ featured, loading }: { featured: Class[]; loading: boolean }) => {
+const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading: boolean }) => {
 	return (
 		<div className="overflow-x-hidden" id="hero">
 			{/* hero  */}
@@ -169,7 +169,7 @@ const HomePage = ({ featured, loading }: { featured: Class[]; loading: boolean }
 							By Computer Scientists
 						</h2>
 						<p className="mb-8 text-base  text-gray-600 text-left md:text-lg">
-							College Compendium is maintained by{" "}
+							College Compendium is a nonprofit organization led by{" "}
 							<a
 								href="https://github.com/GoldinGuy"
 								target="_blank"
@@ -187,11 +187,11 @@ const HomePage = ({ featured, loading }: { featured: Class[]; loading: boolean }
 							>
 								@Samfydega
 							</a>
-							, two student developers that are passionate about providing
-							high-quality, accessible educational resources to intellectually
+							, two student developers passionate about improving access to
+							high-quality educational computer science resources to intellectually
 							curious people across the world. Learning and applying computer
-							science skills can be a very difficult journey, which is why we've
-							created a catalog of open source classes with resources to help
+							science skills can be a difficult journey, which is why we've
+							created a catalog of public classes with resources to help
 							you achieve your personal goals.
 						</p>
 						<a
@@ -228,12 +228,11 @@ const HomePage = ({ featured, loading }: { featured: Class[]; loading: boolean }
 					<div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
 						<h2 className="text-sm font-semibold tracking-wide uppercase">
 							<span className="bg-gradient-to-r from-purple-300 to-fuchsia-300 bg-clip-text text-transparent">
-								Why College Compendium?
+								Improving Access To Computer Science
 							</span>
 						</h2>
 						<p className="mt-3 text-3xl font-extrabold text-white">
-							Join over 60000 Programmers In Over 147 Countries Learning with
-							College Compendium
+							Join Over 60000 Programmers In 147 Countries Learning with College Compendium
 						</p>
 						<p className="mt-5 text-lg text-gray-300">
 							Startup founder, CS student, data enthusiast, or first-time coder.
@@ -298,5 +297,5 @@ const HomePage = ({ featured, loading }: { featured: Class[]; loading: boolean }
 			<CTA />
 		</div>
 	);
-};
+});
 export default HomePage;

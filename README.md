@@ -22,7 +22,7 @@ resources that are relevant to your skill-level, time-commitment,
 and learning style. With hundreds of classes (and growing), you
 will never hit a dead end.
 
-[View Site](https://collegecompendium.org)
+[View The Official College Compendium Site](https://collegecompendium.org)
 
 ## Development setup
 
@@ -48,9 +48,9 @@ npm start
 
 ## Meta
 
-Created by [@GoldinGuy](https://github.com/GoldinGuy) and [@Samfydega](https://github.com/samfydega).
+College Compendium Corporation is a nonprofit organization led by [@GoldinGuy](https://github.com/GoldinGuy) and [@Samfydega](https://github.com/samfydega) dedicated to improving access of computer-science educational resources to students across the world. 
 
-Distributed under the GNU Affero General Public License v3.0 license. See [LICENSE](https://github.com/GoldinGuy/CollegeCompendium/blob/master/LICENSE) for more information.
+The College Compendium website is distributed under the GNU Affero General Public License v3.0 license. See [LICENSE](https://github.com/GoldinGuy/CollegeCompendium/blob/master/LICENSE) for more information.
 
 <!-- Markdown link & img dfn's -->
 
