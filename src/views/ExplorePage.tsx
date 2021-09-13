@@ -21,12 +21,9 @@ import ReactGA from "react-ga4";
 // import CLASSES from "../data/class_data.json";
 import { shuffle, useQuery } from "../utils";
 
-const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean }) => {
-	const history = useHistory();
-	let query = useQuery();
 
 	// TODO: add more filters here
-	const classTags = [
+	const CLASS_TAGS = [
 		"Programming Languages",
 		"Compilers",
 		"Security",
@@ -42,6 +39,17 @@ const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean 
 		"Crypto",
 		"Database",
 	];
+
+const DATA_TAGS = [
+			"Written Notes",
+			"Assignments",
+			"Video Lecture(s)"
+		];
+
+const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean }) => {
+	const history = useHistory();
+	let query = useQuery();
+
 	return (
 		<>
 			<section className="px-4 pb-16 pt-6 mx-auto max-w-7xl">
@@ -53,7 +61,7 @@ const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean 
 				<LargeSearchBar asTable={query.get("table") === "true"} />
 
 				<div className="pt-4 pb-0 text-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
-					{classTags.map((tag) => {
+					{CLASS_TAGS.map((tag) => {
 						return (
 							<div
 								onClick={() => {
@@ -72,6 +80,32 @@ const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean 
 									);
 								}}
 								className="ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 bg-fuchsia-200 text-fuchsia-700 rounded-full cursor-pointer"
+								key={tag}
+							>
+								#{tag}
+							</div>
+						);
+					})}
+					<br />
+					{DATA_TAGS.map((tag) => {
+						return (
+							<div
+								onClick={() => {
+									ReactGA.event({
+										category: "filtering",
+										action: "filtered-resources",
+										label: tag,
+									});
+									history.push(
+										`/search?q=${tag
+											.toLowerCase()
+											.trim()
+											.replaceAll(" ", "-")}${
+											query.get("table") === "true" ? "&table=true" : ""
+										}`
+									);
+								}}
+								className="ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 bg-gray-200 text-gray-700 rounded-full cursor-pointer"
 								key={tag}
 							>
 								#{tag}
