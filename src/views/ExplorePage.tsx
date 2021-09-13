@@ -20,6 +20,7 @@ import { Class } from "../typings/interfaces";
 import ReactGA from "react-ga4";
 // import CLASSES from "../data/class_data.json";
 import { shuffle, useQuery } from "../utils";
+import { ContributeForm } from "../components";
 
 
 	// TODO: add more filters here
@@ -93,8 +94,8 @@ const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean 
 					asTable={query.get("table") === "true"}
 					loading={loading}
 				/>
-			
 			</section>
+			<ContributeForm />
 		</>
 	);
 };

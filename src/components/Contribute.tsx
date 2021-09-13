@@ -16,48 +16,23 @@ You can contact us for more details at team@collegecompendium.org. */
 import React, { useState } from "react";
 
 const ContributeForm = () => {
-	// const [courseTitle, setCourseTitle] = useState("");
 	const [url, setUrl] = useState("");
-	// const [source, setSource] = useState("");
-	// const [desc, setDesc] = useState("");
+	const [topic, setTopic] = useState("");
+
 	const [isError, setError] = useState(false);
 
-	// const titleCase = (str: string): string => {
-	// 	var splitStr: string[] = str.toLowerCase().split(" ");
-	// 	for (var i = 0; i < splitStr.length; i++) {
-	// 		splitStr[i] =
-	// 			splitStr[i].charAt(0).toString().toUpperCase() + splitStr[i].slice(1);
-	// 	}
-	// 	return splitStr.join(" ");
-	// };
-
-	// const handleChangeInputCourseTitle = async (
+	// const handleChangeInputUrl = async (
 	// 	event: React.ChangeEvent<HTMLInputElement>
 	// ): Promise<void> => {
-	// 	const newTitle = event.target.value;
-	// 	setCourseTitle(newTitle);
+	// 	const newUrl = event.target.value;
+	// 	setUrl(newUrl);
 	// };
-
-	const handleChangeInputUrl = async (
-		event: React.ChangeEvent<HTMLInputElement>
-	): Promise<void> => {
-		const newUrl = event.target.value;
-		setUrl(newUrl);
-	};
-
-	// const handleChangeInputSource = async (
-	// 	event: React.ChangeEvent<HTMLInputElement>
-	// ): Promise<void> => {
-	// 	const newSource = event.target.value;
-	// 	setSource(newSource);
-	// };
-
-	// const handleChangeInputDesc = async (
-	// 	event: React.ChangeEvent<HTMLTextAreaElement>
-	// ): Promise<void> => {
-	// 	const newDesc = event.target.value;
-	// 	setDesc(newDesc);
-	// };
+		const handleChangeInputTopic = async (
+			event: React.ChangeEvent<HTMLInputElement>
+		): Promise<void> => {
+			const newTopic = event.target.value;
+			setTopic(newTopic);
+		};
 
 	const handleSubmit = async (
 		event: React.FormEvent<HTMLButtonElement>
@@ -73,45 +48,11 @@ const ContributeForm = () => {
 		} else {
 			setError(true);
 		}
-		// if (courseTitle.length > 0 && url.length > 0 && source.length > 0) {
-		// 	const payload = {
-		// 		name: titleCase(courseTitle),
-		// 		email: url,
-		// 		source: source,
-		// 		desc: desc
-		// 	};
-		// 	// console.log(process.env.REACT_APP_CONTRIBUTE_API, payload);
-		// 	console.log("submitting ", payload);
-		// 	if (process.env.REACT_APP_CONTRIBUTE_API) {
-		// 		const request = new XMLHttpRequest();
-		// 		request.open(
-		// 			"PATCH",
-		// 			"https://json.extendsclass.com/bin/fca7c6dc9444",
-		// 			true
-		// 		);
-		// 		request.setRequestHeader(
-		// 			"Content-type",
-		// 			"application/merge-patch+json"
-		// 		);
-		// 		request.setRequestHeader(
-		// 			"Security-key",
-		// 			`${process.env.REACT_APP_CONTRIBUTE_API}`
-		// 		);
-		// 		request.onreadystatechange = () => {};
-		// 		request.send(JSON.stringify(payload));
-		// 	}
-		// 	setError(false);
-		// 	setDesc("");
-		// 	setSource("");
-		// 	setUrl("");
-		// 	setCourseTitle("");
-		// } else {
-		// 	setError(true);
-		// }
+
 	};
 
 	return (
-		<div id="register" className="py-28">
+		<div id="register" className="py-14 bg-gray-50">
 			<div
 				className="grid max-w-screen-xl grid-cols-1 gap-8 px-8  mx-auto text-dark md:grid-cols-1 md:px-12 lg:px-32 xl:px-64 mb-5"
 				key="input-form"
@@ -122,27 +63,30 @@ const ContributeForm = () => {
 							className="mb-6 text-center text-3xl leading-9 font-extrabold text-dark"
 							key="contribute"
 						>
-							Submit Classes To Our Compendium!
+							Don't see what you're looking for?
+							{/* <br />
+							Share it with us! */}
 						</h2>
-
-						{/* <span
-							className="text-sm font-bold text-gray-600 uppercase"
-							key="name"
-						>
-							Class Title
-						</span>
-						<input
-							className="w-full p-3 mt-2 text-gray-900 bg-gray-300 rounded-lg focus:outline-none focus:shadow-outline"
-							type="text"
-							onChange={handleChangeInputCourseTitle}
-							value={courseTitle}
-							placeholder="Foundations of Deprecation"
-							maxLength={50}
-							key="title-input"
-						/> */}
 					</div>
 
 					<div className="mt-6">
+						{/* <span
+							className="text-sm font-bold text-gray-600 uppercase"
+							key="email"
+						>
+							Topic
+						</span> */}
+						<input
+							className="w-full p-3 mt-2 text-gray-900 bg-gray-200 rounded-lg focus:outline-none focus:shadow-outline"
+							onChange={handleChangeInputTopic}
+							value={topic}
+							type="text"
+							placeholder="Quad-Matrix Theory, AIBlockchainNFTs, Discrete Computational Nanotech"
+							key="top-input"
+							maxLength={100}
+						/>
+					</div>
+					{/* <div className="mt-6">
 						<span
 							className="text-sm font-bold text-gray-600 uppercase"
 							key="email"
@@ -157,40 +101,6 @@ const ContributeForm = () => {
 							placeholder="https://computerclass.college.edu"
 							key="url-input"
 							maxLength={100}
-						/>
-					</div>
-					{/* <div className="mt-6">
-						<span
-							className="text-sm font-bold text-gray-600 uppercase "
-							key="attending"
-						>
-							College Name
-						</span>
-						<input
-							className="w-full p-3 mt-2 text-gray-900 bg-gray-300 rounded-lg focus:outline-none focus:shadow-outline"
-							onChange={handleChangeInputSource}
-							value={source}
-							type="text"
-							placeholder="South Harmon Institute of Technology"
-							key="source-input"
-							maxLength={100}
-						/>
-					</div>
-					<div className="mt-6">
-						<span
-							className="text-sm font-bold text-gray-600 uppercase "
-							key="desc"
-						>
-							Class Description
-						</span>
-						<textarea
-							className="w-full p-3 mt-2 text-gray-900 bg-gray-300 rounded-lg focus:outline-none focus:shadow-outline"
-							onChange={handleChangeInputDesc}
-							value={desc}
-							key="desc-input"
-							placeholder="A Descriptively Descriptive Description"
-							maxLength={300}
-							rows={4}
 						/>
 					</div> */}
 				</div>
@@ -229,7 +139,7 @@ const ContributeForm = () => {
 					onClick={handleSubmit}
 					className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-lg font-medium rounded-md text-white bg-fuchsia-400 hover:bg-fuchsia-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
 				>
-					Submit
+					Share it with us!
 				</button>
 			</div>
 		</div>
