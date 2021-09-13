@@ -18,6 +18,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Navbar, Footer, ScrollToTop } from "./components";
 import TermsOfService from "./components/Terms";
 import { Class } from "./typings/interfaces";
+import useGA from "./hooks/useGA";
 import {
 	// TempSplashPage,
 	HomePage,
@@ -30,6 +31,9 @@ function App() {
 	const [classes, setClasses] = useState<Class[]>([])
 	const [featured, setFeatured] = useState<Class[]>([]);
 	const [loading, setLoading] = useState(true);
+
+	// analytics
+	useGA();
 
 	useEffect(() => {
 			// console.log(process.env.REACT_APP_JSONIO_API_KEY);
