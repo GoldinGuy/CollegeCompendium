@@ -232,7 +232,7 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 							</span>
 						</h2>
 						<p className="mt-3 text-3xl font-extrabold text-white">
-							Join Over 60000 Programmers In 147 Countries Learning with College Compendium
+							Join Over 70000 Programmers In 179 Countries Learning with College Compendium
 						</p>
 						<p className="mt-5 text-lg text-gray-300">
 							Startup founder, CS student, data enthusiast, or first-time coder.

@@ -1,13 +1,13 @@
 # CollegeCompendium
 
-📓 **Join over 60000 programmers in over 147 countries across the world and learn at your own pace with a curated collection of free and open source Computer Science resources from top colleges**
+📓 **Join over 60000 programmers in over 179 countries across the world and learn at your own pace with a curated collection of free and open source Computer Science resources from top colleges**
 
 
 [![Discuss On Discord][discord]][discord-url]
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues]][issues-url]
 
-<a href="https://www.producthunt.com/posts/college-compendium?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-college-compendium" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=300824&theme=light&period=daily" alt="College Compendium - A collection of 800+ university CS courses for the curious | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+<a href="https://www.producthunt.com/posts/college-compendium?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-college-compendium" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=300824&theme=light&period=daily" alt="College Compendium - A collection of 1000+ university CS courses for the curious | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
 <!-- ### Looking for the CSV/Excel Files? 
 
