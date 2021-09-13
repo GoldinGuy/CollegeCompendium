@@ -18,7 +18,6 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Navbar, Footer, ScrollToTop } from "./components";
 import TermsOfService from "./components/Terms";
 import { Class } from "./typings/interfaces";
-import posthog from "posthog-js";
 import {
 	// TempSplashPage,
 	HomePage,
@@ -26,13 +25,6 @@ import {
 	ExplorePage,
 	SubmitPage,
 } from "./views";
-
-// analytics
-if (!window.location.href.includes('127.0.0.1')) {
-	posthog.init("erFRx_zaLEx45ICMHGo5VD3hlS_Es2IENCEKhmSdKYY", {
-		api_host: "https://app.posthog.com",
-	});
-}
 
 function App() {
 	const [classes, setClasses] = useState<Class[]>([])
