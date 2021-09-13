@@ -18,9 +18,10 @@ import {
 	faExternalLinkAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import { Class } from "../typings/interfaces";
 import { collegeColors } from "../utils";
+import React from "react";
+import ReactGA from "react-ga";
 
 const ClassItem = React.memo(({ _class, idx }: { _class: Class; idx: number }) => {
 	return (
@@ -39,12 +40,18 @@ const ClassItem = React.memo(({ _class, idx }: { _class: Class; idx: number }) =
 						],
 				}}
 			/>
-			<a href={_class.url} target="_blank" rel="noreferrer" key={_class.id + idx}>
+			<ReactGA.OutboundLink
+				eventLabel="clicked-resource"
+				to={_class.url}
+				target="_blank"
+				rel="noreferrer"
+				key={_class.id + idx}
+			>
 				<div className="p-3">
 					<p
 						className="mb-2 text-xs font-semibold tracking-wider text-gray-400 uppercase"
 						key={"meta" + idx}
-					> 
+					>
 						{_class.source} | {_class.year}{" "}
 						<FontAwesomeIcon icon={faExternalLinkAlt} className="float-right" />
 					</p>
@@ -123,7 +130,7 @@ const ClassItem = React.memo(({ _class, idx }: { _class: Class; idx: number }) =
 						)}
 					</span>
 				</div>
-			</a>
+			</ReactGA.OutboundLink>
 		</div>
 	);
 });

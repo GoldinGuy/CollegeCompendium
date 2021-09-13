@@ -17,6 +17,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Classes from "../components/Classes";
 import { Class } from "../typings/interfaces";
+import ReactGA from "react-ga"
 // import CLASSES from "../data/class_data.json";
 import { shuffle, useQuery } from "../utils";
 
@@ -56,6 +57,11 @@ const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean 
 						return (
 							<div
 								onClick={() => {
+									ReactGA.event({
+										category: "filtering",
+										action: "filtered-resources",
+										label: tag,
+									});
 									history.push(
 										`/search?q=${tag
 											.toLowerCase()
@@ -103,6 +109,11 @@ const LargeSearchBar = ({ asTable }: { asTable: boolean }) => {
 		term = term.toLowerCase().trim().replaceAll(" ", "-");
 
 		if (term.length > 0) {
+			ReactGA.event({
+				category: "searching",
+				action: "searched-resources",
+				label: term,
+			});
 			// TODO: addFilter(term);
 			history.push(`/search?q=${term}${asTable ? "&table=true" : ""}`);
 			setQuery("");

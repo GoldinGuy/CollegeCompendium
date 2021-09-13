@@ -16,6 +16,7 @@ You can contact us for more details at team@collegecompendium.org. */
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { useQuery } from "../utils";
+import ReactGA from "react-ga"
 
 const NavSearchBar = ({ classN }: { classN?: string }) => {
 	const [term, setTerm] = React.useState("");
@@ -36,6 +37,11 @@ const NavSearchBar = ({ classN }: { classN?: string }) => {
 		let searchTerm = term.toLowerCase().trim().replaceAll(" ", "-");
 
 		if (searchTerm.length > 0) {
+			ReactGA.event({
+				category: "searching",
+				action: "searched-resources",
+				label: term,
+			});
 			history.push(
 				`/search?q=${searchTerm}${
 					query.get("table") === "true" ? "&table=true" : ""

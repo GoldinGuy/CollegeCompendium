@@ -19,6 +19,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NavSearchBar from "./Search";
 import { useQuery } from "../utils";
 import { faList, faTable } from "@fortawesome/free-solid-svg-icons";
+import ReactGA from "react-ga"
 
 const Navbar = () => {
 	const loc = useLocation();
@@ -131,6 +132,10 @@ const Navbar = () => {
 								title="Toggle Table/Grid View"
 								onClick={() => {
 									if (query.get("table") === "true") {
+										ReactGA.event({
+											category: "toggle-layout",
+											action: "disabled-table",
+										});
 										history.push(
 											`?${query}`
 												.replace("&table=true", "")
@@ -138,6 +143,10 @@ const Navbar = () => {
 										);
 									} else {
 										history.push(`?${query}&table=true`);
+										ReactGA.event({
+											category: "toggle-layout",
+											action: "enabled-table",
+										});
 									}
 								}}
 							>

@@ -29,7 +29,7 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 			<section className="px-4 py-16 sm:pb-20 sm:pt-15 mx-auto max-w-7xl">
 				<div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
 					<h1 className="mb-6 congress text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
-						Audit Over <br className="sm:hidden" /> 900 CS Classes
+						Audit Over <br className="sm:hidden" /> 1000 CS Classes
 						<br className="hidden sm:flex" />
 						<span className="block w-full text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-blue-500 lg:inline">
 							{" "}
