@@ -14,7 +14,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 You can contact us for more details at team@collegecompendium.org. */
 
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { Navbar, Footer, ScrollToTop } from "./components";
 import TermsOfService from "./components/Terms";
 import { Class } from "./typings/interfaces";
@@ -28,18 +28,15 @@ import {
 } from "./views";
 
 function App() {
-	const [classes, setClasses] = useState<Class[]>([])
+	const [classes, setClasses] = useState<Class[]>([]);
 	const [featured, setFeatured] = useState<Class[]>([]);
 	const [loading, setLoading] = useState(true);
 
-	// analytics
-	useGA();
-
 	useEffect(() => {
-			// console.log(process.env.REACT_APP_JSONIO_API_KEY);
+		// console.log(process.env.REACT_APP_JSONIO_API_KEY);
 		if (featured.length === 0) {
-			const locF = localStorage.getItem('featured')
-			if (locF && typeof locF === 'string') {
+			const locF = localStorage.getItem("featured");
+			if (locF && typeof locF === "string") {
 				setFeatured(JSON.parse(locF));
 			} else if (
 				process.env.REACT_APP_JSONIO_API_KEY &&
@@ -69,8 +66,8 @@ function App() {
 			}
 		}
 		if (classes.length === 0) {
-			const locC = localStorage.getItem('classes');
-			if (locC && typeof locC === 'string') {
+			const locC = localStorage.getItem("classes");
+			if (locC && typeof locC === "string") {
 				setClasses(JSON.parse(locC));
 			} else if (
 				process.env.REACT_APP_JSONIO_API_KEY &&
@@ -101,12 +98,13 @@ function App() {
 		}
 		if (classes.length > 0 && featured.length > 0) {
 			setLoading(false);
-		} 
+		}
 	}, [classes.length, featured.length]);
 
+	// analytics
+	useGA();
 
 	return (
-		<BrowserRouter basename="/">
 			<ScrollToTop>
 				{/* TODO: enable while under active development */}
 				{/* <Route path="/" exact component={TempSplashPage} /> */}
@@ -129,7 +127,6 @@ function App() {
 				</Switch>
 				<Footer />
 			</ScrollToTop>
-		</BrowserRouter>
 	);
 }
 
