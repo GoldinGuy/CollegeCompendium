@@ -19,7 +19,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NavSearchBar from "./Search";
 import { useQuery } from "../utils";
 import { faList, faTable } from "@fortawesome/free-solid-svg-icons";
-import ReactGA from "react-ga"
+import ReactGA from "react-ga4";
+
 
 const Navbar = () => {
 	const loc = useLocation();

@@ -21,7 +21,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Class } from "../typings/interfaces";
 import { collegeColors } from "../utils";
 import React from "react";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const ClassItem = React.memo(({ _class, idx }: { _class: Class; idx: number }) => {
 	return (
@@ -40,12 +40,18 @@ const ClassItem = React.memo(({ _class, idx }: { _class: Class; idx: number }) =
 						],
 				}}
 			/>
-			<ReactGA.OutboundLink
-				eventLabel="clicked-resource"
-				to={_class.url}
+			<a
+				href={_class.url}
 				target="_blank"
 				rel="noreferrer"
 				key={_class.id + idx}
+				onClick={() => {
+					ReactGA.event({
+						category: "view-resource",
+						action: _class.url,
+						label: _class.title,
+					});
+				}}
 			>
 				<div className="p-3">
 					<p
@@ -130,7 +136,7 @@ const ClassItem = React.memo(({ _class, idx }: { _class: Class; idx: number }) =
 						)}
 					</span>
 				</div>
-			</ReactGA.OutboundLink>
+			</a>
 		</div>
 	);
 });

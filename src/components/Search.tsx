@@ -16,7 +16,7 @@ You can contact us for more details at team@collegecompendium.org. */
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { useQuery } from "../utils";
-import ReactGA from "react-ga"
+import ReactGA from "react-ga4"
 
 const NavSearchBar = ({ classN }: { classN?: string }) => {
 	const [term, setTerm] = React.useState("");

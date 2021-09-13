@@ -17,7 +17,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Classes from "../components/Classes";
 import { Class } from "../typings/interfaces";
-import ReactGA from "react-ga"
+import ReactGA from "react-ga4";
 // import CLASSES from "../data/class_data.json";
 import { shuffle, useQuery } from "../utils";
 
