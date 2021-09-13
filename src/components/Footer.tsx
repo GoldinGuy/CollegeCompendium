@@ -45,7 +45,7 @@ const Footer = React.memo(() => {
 					</Link>
 					<a
 						className="mb-2 md:mb-0 hover:underline pr-6 flex items-center"
-						href="https://discord.gg/gKYSMeJ"
+						href="https://twitter.com/CSCompendium"
 					>
 						Twitter <FontAwesomeIcon icon={faTwitter} className="ml-2 inline" />
 					</a>
