@@ -13,7 +13,7 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 You can contact us for more details at team@collegecompendium.org. */
 
-import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -33,7 +33,7 @@ const Footer = React.memo(() => {
 				<span className="mb-0 text-xs lg:text-sm text-left text-gray-600 md:mb-0 flex flex-col md:flex-row justify-between">
 					<p className="mb-2 md:mb-0 pr-6">
 						College Compendium is not affiliated with any colleges or classes.
-						Please do <i>not</i> attempt to contact professors.
+						Please do <i>not</i> contact professors.
 					</p>
 					<Link
 						to="/tos"
@@ -43,6 +43,12 @@ const Footer = React.memo(() => {
 						Terms{" "}
 						<FontAwesomeIcon icon={faInfoCircle} className="ml-2 inline" />
 					</Link>
+					<a
+						className="mb-2 md:mb-0 hover:underline pr-6 flex items-center"
+						href="https://discord.gg/gKYSMeJ"
+					>
+						Twitter <FontAwesomeIcon icon={faTwitter} className="ml-2 inline" />
+					</a>
 					<a
 						className="mb-2 md:mb-0 hover:underline pr-6 flex items-center"
 						href="https://discord.gg/gKYSMeJ"
