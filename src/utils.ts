@@ -90,4 +90,9 @@ export const collegeColors = {
 	upitt: "#003594",
 	michigan: "#FFCB05",
 	tomlooman: "#8C1515",
+	jhu: "#68ace5",
+	uci: "#FFC72C",
+	ucla: "#2774AE",
+	bu: "#CC0000",
+	bw: "#FFCC33",
 };
