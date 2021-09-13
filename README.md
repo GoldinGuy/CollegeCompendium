@@ -1,6 +1,6 @@
 # CollegeCompendium
 
-📓 **Join over 60000 programmers in over 179 countries across the world and learn at your own pace with a curated collection of free and open source Computer Science resources from top colleges**
+📓 **Join over 70000 programmers in over 179 countries across the world and learn at your own pace with a curated collection of free and open source Computer Science resources from top colleges**
 
 
 [![Discuss On Discord][discord]][discord-url]
