@@ -103,7 +103,7 @@ function App() {
 
 	// analytics
 	useGA();
-
+	
 	return (
 			<ScrollToTop>
 				{/* TODO: enable while under active development */}

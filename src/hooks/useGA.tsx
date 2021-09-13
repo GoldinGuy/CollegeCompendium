@@ -7,15 +7,22 @@ const useGa = () => {
 	const [initialized, setInitialized] = useState(false);
 
 	useEffect(() => {
-		if (!window.location.href.includes("localhost")) {
-            ReactGA.initialize(`${process.env.REACT_APP_GA_ID}`);
-		    setInitialized(true);
-		}
+		// if (!window.location.href.includes("localhost")) {
+			console.log(process.env.REACT_APP_GA_ID);
+
+            ReactGA.initialize(`${process.env.REACT_APP_GA_ID}`, {
+				debug: true,
+				titleCase: false,
+			});
+			setInitialized(true);
+			console.log('initialized')
+		// }
 	}, []);
 
 	useEffect(() => {
 		if (initialized) {
 			ReactGA.pageview(location.pathname + location.search);
+			console.log(location.pathname + location.search);
 		}
 	}, [initialized, location]);
 };
