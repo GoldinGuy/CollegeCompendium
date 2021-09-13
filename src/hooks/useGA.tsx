@@ -9,7 +9,6 @@ const useGa = () => {
 	useEffect(() => {
 		if (!window.location.href.includes("localhost")) {
 			// console.log(process.env.REACT_APP_GA_ID);
-
             ReactGA.initialize(`${process.env.REACT_APP_GA_ID}`);
 			setInitialized(true);
 			// console.log('initialized')
