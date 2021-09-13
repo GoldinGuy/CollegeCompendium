@@ -24,6 +24,9 @@ import ClassItem from "./ClassItem";
 import ExploreTable from "./Table";
 import ClipLoader from "react-spinners/ClipLoader";
 
+
+const DATA_TAGS = ["Written Notes", "Assignments", "Video Lecture(s)"];
+
 const Classes = ({
 	imgUrl,
 	classes,
@@ -38,37 +41,56 @@ const Classes = ({
 	filters?: string[];
     asTable: boolean;
 	loading: boolean
-}) => {
+	}) => {
+	const [filteredClasses, setFilteredClasses] = useState<Class[]>([]);
+	const [dataFilters, setDataFilters] = useState({
+	videos: true,
+	written: true,
+	assignments: true
+	});
+	const [page, setPageCount] = useState(0);
+	const startVid = displayPromo ? 1 : 0;
+	const MAX_PAGES = Math.floor(filteredClasses.length / 12);
+	
 	useEffect(() => {
 		const formatText = (text: string) => {
 			return text.toString().toLowerCase().trim().replaceAll(" ", "-");
 		};
 
 		const checkFilters = (_class: Class) => {
-			if (filters) {
-				let included = false;
-				included = filters.some((tag) => {
-					let inTags = _class.tags.some((cat) => {
-						if (formatText(cat).includes(tag)) {
+			if (
+				(dataFilters.written &&
+					dataFilters.written === _class.contains.written) ||
+				(dataFilters.assignments &&
+					dataFilters.assignments === _class.contains.assignments) ||
+				(dataFilters.videos && dataFilters.videos === _class.contains.videos)
+			) {
+				if (filters) {
+					let included = false;
+					included = filters.some((tag) => {
+						let inTags = _class.tags.some((cat) => {
+							if (formatText(cat).includes(tag)) {
+								return true;
+							}
+							return false;
+						});
+						if (
+							formatText(_class.title).includes(tag) ||
+							formatText(_class.source).includes(tag) ||
+							formatText(_class.url).includes(tag) ||
+							formatText(_class.year).includes(tag) ||
+							inTags
+						) {
 							return true;
 						}
 						return false;
 					});
-					if (
-						formatText(_class.title).includes(tag) ||
-						formatText(_class.source).includes(tag) ||
-						formatText(_class.url).includes(tag) ||
-						formatText(_class.year).includes(tag) ||
-						inTags
-					) {
-						return true;
-					}
-					return false;
-				});
 
-				return included;
+					return included;
+				}
+				return true;
 			}
-			return true;
+			return false;
 		};
 
 		setFilteredClasses(
@@ -76,12 +98,8 @@ const Classes = ({
 				return checkFilters(course);
 			})
 		);
-	}, [filters, classes]);
+	}, [filters, classes, dataFilters]);
 
-	const [filteredClasses, setFilteredClasses] = useState<Class[]>([]);
-	const [page, setPageCount] = useState(0);
-	const startVid = displayPromo ? 1 : 0;
-	const MAX_PAGES = Math.floor(filteredClasses.length / 12);
 
 	// console.log(filteredClasses, filters);
 
@@ -213,11 +231,7 @@ const Classes = ({
 									className="mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center"
 									key="loader"
 								>
-									<ClipLoader
-										color={"#e47cfc"}
-										loading={loading}
-										size={100}
-									/>
+									<ClipLoader color={"#e47cfc"} loading={loading} size={100} />
 								</div>
 							) : (
 								<div
@@ -244,29 +258,72 @@ const Classes = ({
 						) : null}
 
 						<div
-							className="flex flex-col items-center justify-center mt-20 space-x-0 space-y-2 md:space-x-2 md:space-y-0 md:flex-row"
+							className="flex flex-col items-center justify-center mt-20 space-x-0 space-y-2 md:space-x-2 md:space-y-0 "
 							key="nav"
 						>
-							{page > 0 ? (
-								<button
-									onClick={() => {
-										if (page > 0) setPageCount(page - 1);
-									}}
-									className="w-full rounded-full btn btn-light btn-xl md:w-auto bg-gray-200 hover:bg-gray-300 px-5 py-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-fuchsia-400 "
-								>
-									Classes You've Already Viewed
-								</button>
-							) : null}
-							{page < MAX_PAGES ? (
-								<button
-									onClick={() => {
-										if (page < MAX_PAGES) setPageCount(page + 1);
-									}}
-									className="w-full rounded-full btn btn-light btn-xl md:w-auto bg-gray-200  hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-fuchsia-400  px-5 py-2"
-								>
-									More classes!
-								</button>
-							) : null}
+							<div className="pt-0 pb-4 text-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
+								{DATA_TAGS.map((tag) => {
+									return (
+										<div
+											onClick={() => {
+													console.log(dataFilters);
+												switch (tag) {
+													case "Written Notes":
+														setDataFilters((data) => ({
+															...data,
+															written: !data.written,
+														}));
+														break;
+													case "Assignments":
+														setDataFilters((data) => ({
+															...data,
+															assignments: !data.assignments,
+														}));
+														break;
+													case "Video Lecture(s)":
+														setDataFilters((data) => ({
+															...data,
+															videos: !data.videos,
+														}));
+														break;
+													default:
+														console.log("something weird happened");
+												}
+											}}
+											className={`ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 ${
+												(tag === "Written Notes" && dataFilters.written) || (tag === "Assignments" && dataFilters.assignments )|| (tag === "Video Lecture(s)" && dataFilters.videos)
+													? "bg-blue-200 text-blue-700"
+													: "bg-gray-200 text-gray-700"
+											} rounded-full cursor-pointer`}
+											key={tag}
+										>
+											#{tag}
+										</div>
+									);
+								})}
+							</div>
+							<div className="flex-col md:flex-row">
+								{page > 0 ? (
+									<button
+										onClick={() => {
+											if (page > 0) setPageCount(page - 1);
+										}}
+										className="w-full rounded-full btn btn-light btn-xl md:w-auto bg-gray-200 hover:bg-gray-300 px-5 py-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-fuchsia-400 "
+									>
+										Classes You've Already Viewed
+									</button>
+								) : null}
+								{page < MAX_PAGES ? (
+									<button
+										onClick={() => {
+											if (page < MAX_PAGES) setPageCount(page + 1);
+										}}
+										className="w-full rounded-full btn btn-light btn-xl md:w-auto bg-gray-200  hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-fuchsia-400  px-5 py-2"
+									>
+										More classes!
+									</button>
+								) : null}
+							</div>
 						</div>
 					</section>
 				</>

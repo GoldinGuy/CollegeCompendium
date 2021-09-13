@@ -86,32 +86,6 @@ const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean 
 							</div>
 						);
 					})}
-					<br />
-					{DATA_TAGS.map((tag) => {
-						return (
-							<div
-								onClick={() => {
-									ReactGA.event({
-										category: "filtering",
-										action: "filtered-resources",
-										label: tag,
-									});
-									history.push(
-										`/search?q=${tag
-											.toLowerCase()
-											.trim()
-											.replaceAll(" ", "-")}${
-											query.get("table") === "true" ? "&table=true" : ""
-										}`
-									);
-								}}
-								className="ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 bg-gray-200 text-gray-700 rounded-full cursor-pointer"
-								key={tag}
-							>
-								#{tag}
-							</div>
-						);
-					})}
 				</div>
 
 				<Classes
@@ -119,6 +93,7 @@ const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean 
 					asTable={query.get("table") === "true"}
 					loading={loading}
 				/>
+			
 			</section>
 		</>
 	);
