@@ -13,10 +13,19 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 You can contact us for more details at team@collegecompendium.org. */
 
+import posthog from "posthog-js";
 import React, { useState } from "react";
 
+const FUNNY_TOPICS = [
+	"Discrete Computational Nanotech",
+	"Quad-Matrix Theory",
+	"AIBlockchainNFTs",
+	"How To Google",
+	"Intro to Stack Overflow",
+];
+
 const ContributeForm = () => {
-	const [url, setUrl] = useState("");
+	// const [url, setUrl] = useState("");
 	const [topic, setTopic] = useState("");
 
 	const [isError, setError] = useState(false);
@@ -38,13 +47,16 @@ const ContributeForm = () => {
 		event: React.FormEvent<HTMLButtonElement>
 	): Promise<void> => {
 		event.preventDefault();
-		if (url.length > 0) {
-			console.log("submitting ", url);
+		if (topic.length > 0) {
+			console.log("submitting ", topic);
+			posthog.capture("topic-suggestion", {
+				topic: topic,
+			});
 			window.open(
-				`mailto:team@collegecompendium.org?subject=ClassContribution&body=${url}`
+				`mailto:team@collegecompendium.org?subject=TopicSuggestion&body=${topic}`
 			);
 			setError(false);
-			setUrl("");
+			setTopic("");
 		} else {
 			setError(true);
 		}
@@ -81,7 +93,9 @@ const ContributeForm = () => {
 							onChange={handleChangeInputTopic}
 							value={topic}
 							type="text"
-							placeholder="Quad-Matrix Theory, AIBlockchainNFTs, Discrete Computational Nanotech"
+							placeholder={
+								FUNNY_TOPICS[Math.floor(Math.random() * FUNNY_TOPICS.length)]
+							}
 							key="top-input"
 							maxLength={100}
 						/>

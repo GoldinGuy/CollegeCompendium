@@ -13,10 +13,11 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 You can contact us for more details at team@collegecompendium.org. */
 
+import posthog from "posthog-js";
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { useQuery } from "../utils";
-import ReactGA from "react-ga4"
+
 
 const NavSearchBar = ({ classN }: { classN?: string }) => {
 	const [term, setTerm] = React.useState("");
@@ -37,10 +38,8 @@ const NavSearchBar = ({ classN }: { classN?: string }) => {
 		let searchTerm = term.toLowerCase().trim().replaceAll(" ", "-");
 
 		if (searchTerm.length > 0) {
-			ReactGA.event({
-				category: "searching",
-				action: "searched-resources",
-				label: term,
+			posthog.capture("searching", {
+				term: term,
 			});
 			history.push(
 				`/search?q=${searchTerm}${
@@ -72,7 +71,7 @@ const NavSearchBar = ({ classN }: { classN?: string }) => {
 							onKeyUp={inputKeyDown}
 							placeholder="Search"
 							spellCheck="false"
-							className="px-6 py-2 -mr-8 font-sans transition-colors duration-300 transform bg-gray-200 border-none rounded-full focus:outline-none focus:bg-gray-300"
+							className="px-6 py-2 -mr-8 font-sans transition-colors duration-300 transform bg-gray-200 border-none rounded-full focus:outline-none focus:bg-gray-300 ph-no-capture"
 						/>
 						<button
 							className="transform border-none focus:border-0 focus:outline-none"

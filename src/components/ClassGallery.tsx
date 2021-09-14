@@ -44,12 +44,12 @@ const ClassGallery = ({ classes,loading }: { classes: Class[], loading: boolean 
 			{loading ? (
 				<div className="mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center"
 					key="gallery-loader">
-									<ClipLoader
-										color={"#e47cfc"}
-										loading={loading}
-										size={100}
-									/>
-								</div> ) : 
+					<ClipLoader
+						color={"#e47cfc"}
+						loading={loading}
+						size={100}
+					/>
+				</div> ) : 
 				(<Carousel
 					swipeable={true}
 					draggable={false}

@@ -172,11 +172,11 @@ const Classes = ({
 											{filteredClasses[0].source} | {filteredClasses[0].year}
 										</p>
 										<h2 className="mb-4 text-xl font-bold leading-snug text-gray-900">
-											<span className="text-gray-900 hover:text-fuchsia-500 bg-fuchsia-200 px-2 py-1">
+											<span className="text-gray-900 hover:text-fuchsia-500 bg-fuchsia-200 px-2 py-1 ph-no-capture">
 												{filteredClasses[0].title}
 											</span>
 										</h2>
-										<p className="mb-5 text-sm font-normal text-gray-600  px-2">
+										<p className="mb-5 text-sm font-normal text-gray-600 ph-no-capture px-2">
 											{filteredClasses[0].desc}
 										</p>
 										<div className="py-2 text-gray-500">
@@ -266,7 +266,7 @@ const Classes = ({
 									return (
 										<div
 											onClick={() => {
-													console.log(dataFilters);
+												console.log(dataFilters);
 												switch (tag) {
 													case "Written Notes":
 														setDataFilters((data) => ({
@@ -291,7 +291,9 @@ const Classes = ({
 												}
 											}}
 											className={`ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 ${
-												(tag === "Written Notes" && dataFilters.written) || (tag === "Assignments" && dataFilters.assignments )|| (tag === "Video Lecture(s)" && dataFilters.videos)
+												(tag === "Written Notes" && dataFilters.written) ||
+												(tag === "Assignments" && dataFilters.assignments) ||
+												(tag === "Video Lecture(s)" && dataFilters.videos)
 													? "bg-blue-200 text-blue-700"
 													: "bg-gray-200 text-gray-700"
 											} rounded-full cursor-pointer`}
@@ -308,7 +310,7 @@ const Classes = ({
 										onClick={() => {
 											if (page > 0) setPageCount(page - 1);
 										}}
-										className="w-full rounded-full btn btn-light btn-xl md:w-auto bg-gray-200 hover:bg-gray-300 px-5 py-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-fuchsia-400 "
+										className="w-full rounded-full btn btn-light btn-xl md:w-auto bg-gray-200 hover:bg-gray-300 px-5 py-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-fuchsia-400 ph-no-capture"
 									>
 										Classes You've Already Viewed
 									</button>
@@ -318,7 +320,7 @@ const Classes = ({
 										onClick={() => {
 											if (page < MAX_PAGES) setPageCount(page + 1);
 										}}
-										className="w-full rounded-full btn btn-light btn-xl md:w-auto bg-gray-200  hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-fuchsia-400  px-5 py-2"
+										className="w-full rounded-full btn btn-light btn-xl md:w-auto bg-gray-200  hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-fuchsia-400  px-5 py-2 ph-no-capture"
 									>
 										More classes!
 									</button>

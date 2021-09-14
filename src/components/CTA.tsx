@@ -40,11 +40,11 @@ const CTA = () => {
 						href="https://www.producthunt.com/posts/college-compendium?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-college-compendium"
 						target="_blank"
 						rel="noreferrer"
-						className=""
+						data-attr="producthunt-ref"
 					>
 						<img
 							src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=300824&theme=light&period=daily"
-							alt="College Compendium - A collection of 650+ university CS courses for the curious | Product Hunt"
+							alt="College Compendium - A collection of 1000+ university CS courses for the curious | Product Hunt"
 						/>
 					</a>
 				</div>

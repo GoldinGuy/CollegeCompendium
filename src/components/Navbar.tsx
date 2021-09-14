@@ -19,7 +19,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NavSearchBar from "./Search";
 import { useQuery } from "../utils";
 import { faList, faTable } from "@fortawesome/free-solid-svg-icons";
-import ReactGA from "react-ga4";
+import posthog from "posthog-js";
 
 
 const Navbar = () => {
@@ -39,7 +39,7 @@ const Navbar = () => {
 
 	return (
 		<nav
-			className={`z-30 w-full overflow-x-hidden px-2 py-4 bg-white sm:px-4 ${
+			className={`ph-no-capture z-30 w-full overflow-x-hidden px-2 py-4 bg-white sm:px-4 ${
 				mobileOpen ? "border-b-2" : ""
 			}`}
 		>
@@ -81,7 +81,7 @@ const Navbar = () => {
 						mobileOpen ? "" : "hidden md:flex"
 					}`}
 				>
-					<div className="flex flex-col md:flex-row md:mx-6 items-center">
+					<div className="flex flex-col md:flex-row md:mx-6 items-center ">
 						<Link
 							className="my-1 text-md font-medium text-gray-700 dark:text-gray-200 hover:text-fuchsia-500 dark:hover:text-fuchsia-400  md:mx-4 md:my-0 relative"
 							to="/"
@@ -133,10 +133,6 @@ const Navbar = () => {
 								title="Toggle Table/Grid View"
 								onClick={() => {
 									if (query.get("table") === "true") {
-										ReactGA.event({
-											category: "toggle-layout",
-											action: "disabled-table",
-										});
 										history.push(
 											`?${query}`
 												.replace("&table=true", "")
@@ -144,11 +140,10 @@ const Navbar = () => {
 										);
 									} else {
 										history.push(`?${query}&table=true`);
-										ReactGA.event({
-											category: "toggle-layout",
-											action: "enabled-table",
-										});
 									}
+									posthog.capture("toggle-layout", {
+										table_enabled: query.get("table") === "true",
+									});
 								}}
 							>
 								<FontAwesomeIcon

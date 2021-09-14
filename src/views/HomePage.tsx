@@ -56,7 +56,9 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 							className="inline-flex items-center justify-center w-full text-white font-semibold mb-2 bg-fuchsia-400 hover:bg-fuchsia-500 px-4 py-2 btn btn-light btn-lg sm:w-auto sm:mb-0 transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
 							target="_blank"
 							rel="noreferrer"
+							data-attr="github-ref"
 							href="https://github.com/GoldinGuy/CollegeCompendium"
+				
 						>
 							Star On GitHub
 							<FontAwesomeIcon icon={faStar} className="ml-2" />
@@ -174,6 +176,7 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 								href="https://github.com/GoldinGuy"
 								target="_blank"
 								rel="noreferrer"
+								data-attr="seth-ref"
 								className="text-fuchsia-500 hover:text-fuchsia-600"
 							>
 								@GoldinGuy
@@ -184,21 +187,23 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 								target="_blank"
 								rel="noreferrer"
 								className="text-fuchsia-500 hover:text-fuchsia-600"
+								data-attr="sam-ref"
 							>
 								@Samfydega
 							</a>
 							, two student developers passionate about improving access to
-							high-quality educational computer science resources to intellectually
-							curious people across the world. Learning and applying computer
-							science skills can be a difficult journey, which is why we've
-							created a catalog of public classes with resources to help
-							you achieve your personal goals.
+							high-quality educational computer science resources to
+							intellectually curious people across the world. Learning and
+							applying computer science skills can be a difficult journey, which
+							is why we've created a catalog of public classes with resources to
+							help you achieve your personal goals.
 						</p>
 						<a
-							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105 "
+							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
 							target="_blank"
 							rel="noreferrer"
 							href="https://discord.gg/gKYSMeJ"
+							data-attr="discord-ref"
 						>
 							Join The Discord
 							<FontAwesomeIcon icon={faDiscord} className="ml-2" />
@@ -232,7 +237,8 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 							</span>
 						</h2>
 						<p className="mt-3 text-3xl font-extrabold text-white">
-							Join Over 70000 Programmers In 179 Countries Learning with College Compendium
+							Join Over 70000 Programmers In 179 Countries Learning with College
+							Compendium
 						</p>
 						<p className="mt-5 text-lg text-gray-300">
 							Startup founder, CS student, data enthusiast, or first-time coder.

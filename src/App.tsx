@@ -18,7 +18,7 @@ import { Switch, Route } from "react-router-dom";
 import { Navbar, Footer, ScrollToTop } from "./components";
 import TermsOfService from "./components/Terms";
 import { Class } from "./typings/interfaces";
-import useGA from "./hooks/useGA";
+import posthog from "posthog-js";
 import {
 	// TempSplashPage,
 	HomePage,
@@ -26,6 +26,13 @@ import {
 	ExplorePage,
 	SubmitPage,
 } from "./views";
+
+// analytics
+// if (!window.location.href.includes('127.0.0.1')) {
+	posthog.init("phc_DvkoE60lwYQSAJINaYdgecI8hVo8Sjn14XD26xISQuR", {
+		api_host: "https://app.posthog.com",
+	});
+// }
 
 function App() {
 	const [classes, setClasses] = useState<Class[]>([]);
@@ -101,9 +108,6 @@ function App() {
 		}
 	}, [classes.length, featured.length]);
 
-	// analytics
-	useGA();
-	
 	return (
 			<ScrollToTop>
 				{/* TODO: enable while under active development */}

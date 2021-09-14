@@ -17,10 +17,10 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Classes from "../components/Classes";
 import { Class } from "../typings/interfaces";
-import ReactGA from "react-ga4";
 // import CLASSES from "../data/class_data.json";
 import { shuffle, useQuery } from "../utils";
 import { ContributeForm } from "../components";
+import posthog from "posthog-js";
 
 
 	// TODO: add more filters here
@@ -41,12 +41,6 @@ import { ContributeForm } from "../components";
 		"Database",
 	];
 
-const DATA_TAGS = [
-			"Written Notes",
-			"Assignments",
-			"Video Lecture(s)"
-		];
-
 const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean }) => {
 	const history = useHistory();
 	let query = useQuery();
@@ -66,10 +60,8 @@ const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean 
 						return (
 							<div
 								onClick={() => {
-									ReactGA.event({
-										category: "filtering",
-										action: "filtered-resources",
-										label: tag,
+									posthog.capture("filtering", {
+										filter: tag,
 									});
 									history.push(
 										`/search?q=${tag
@@ -80,7 +72,7 @@ const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean 
 										}`
 									);
 								}}
-								className="ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 bg-fuchsia-200 text-fuchsia-700 rounded-full cursor-pointer"
+								className="ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 bg-fuchsia-200 text-fuchsia-700 rounded-full cursor-pointer ph-no-capture"
 								key={tag}
 							>
 								#{tag}
@@ -119,10 +111,8 @@ const LargeSearchBar = ({ asTable }: { asTable: boolean }) => {
 		term = term.toLowerCase().trim().replaceAll(" ", "-");
 
 		if (term.length > 0) {
-			ReactGA.event({
-				category: "searching",
-				action: "searched-resources",
-				label: term,
+			posthog.capture("searching", {
+				term: term,
 			});
 			// TODO: addFilter(term);
 			history.push(`/search?q=${term}${asTable ? "&table=true" : ""}`);
@@ -154,7 +144,7 @@ const LargeSearchBar = ({ asTable }: { asTable: boolean }) => {
 							onKeyUp={inputKeyDown}
 							placeholder="Search by topic, university, or year"
 							spellCheck="false"
-							className="px-6 sm:px-10 w-full py-4 -mr-8 font-sans transition-colors duration-300 transform bg-gray-200 border-none rounded-full focus:outline-none focus:bg-gray-300"
+							className="px-6 sm:px-10 w-full py-4 -mr-8 font-sans transition-colors duration-300 transform bg-gray-200 border-none rounded-full focus:outline-none focus:bg-gray-300 ph-no-capture"
 						/>
 						<button
 							className="transform border-none focus:border-0 focus:outline-none"
