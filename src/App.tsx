@@ -29,9 +29,10 @@ import {
 
 // analytics
 // if (!window.location.href.includes('127.0.0.1')) {
-	posthog.init("phc_DvkoE60lwYQSAJINaYdgecI8hVo8Sjn14XD26xISQuR", {
-		api_host: "https://app.posthog.com",
-	});
+	if (process.env.REACT_APP_PH_ID)
+		posthog.init(process.env.REACT_APP_PH_ID, {
+			api_host: "https://app.posthog.com",
+		});
 // }
 
 function App() {
@@ -73,7 +74,10 @@ function App() {
 			}
 		}
 		if (classes.length === 0) {
-			const locC = localStorage.getItem("classes");
+			// if (localStorage.getItem("classes")) {
+			// 	localStorage.removeItem("classes");
+			// }
+			const locC = localStorage.getItem("classes2");
 			if (locC && typeof locC === "string") {
 				setClasses(JSON.parse(locC));
 			} else if (
@@ -86,7 +90,7 @@ function App() {
 						// console.log(cReq.responseText);
 						if (cReq.status === 200) {
 							setClasses(JSON.parse(cReq.responseText));
-							localStorage.setItem("classes", cReq.responseText);
+							localStorage.setItem("classes2", cReq.responseText);
 						}
 					}
 				};
@@ -95,6 +99,7 @@ function App() {
 					`https://api.jsonbin.io/v3/b/${process.env.REACT_APP_CLASSES_JSON_ID}/latest`,
 					true
 				);
+				console.log(process.env.REACT_APP_JSONIO_API_KEY);
 				cReq.setRequestHeader(
 					"X-Master-Key",
 					`${process.env.REACT_APP_JSONIO_API_KEY}`

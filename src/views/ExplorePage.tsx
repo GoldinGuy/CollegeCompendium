@@ -55,7 +55,7 @@ const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean 
 				{/* Search */}
 				<LargeSearchBar asTable={query.get("table") === "true"} />
 
-				<div className="pt-4 pb-0 text-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
+				<div className="pt-4 pb-0 text-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl  ph-no-capture">
 					{CLASS_TAGS.map((tag) => {
 						return (
 							<div
@@ -72,7 +72,7 @@ const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean 
 										}`
 									);
 								}}
-								className="ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 bg-fuchsia-200 text-fuchsia-700 rounded-full cursor-pointer ph-no-capture"
+								className="ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 bg-fuchsia-200 text-fuchsia-700 rounded-full cursor-pointer"
 								key={tag}
 							>
 								#{tag}

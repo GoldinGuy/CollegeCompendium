@@ -64,7 +64,7 @@ const ContributeForm = () => {
 	};
 
 	return (
-		<div id="register" className="py-14 bg-gray-50">
+		<div id="register" className="py-14 bg-gray-50 pg-no-capture">
 			<div
 				className="grid max-w-screen-xl grid-cols-1 gap-8 px-8  mx-auto text-dark md:grid-cols-1 md:px-12 lg:px-32 xl:px-64 mb-5"
 				key="input-form"
@@ -89,10 +89,11 @@ const ContributeForm = () => {
 							Topic
 						</span> */}
 						<input
-							className="w-full p-3 mt-2 text-gray-900 bg-gray-200 rounded-lg focus:outline-none focus:shadow-outline"
+							className="pg-no-capture w-full p-3 mt-2 text-gray-900 bg-gray-200 rounded-lg focus:outline-none focus:shadow-outline"
 							onChange={handleChangeInputTopic}
 							value={topic}
 							type="text"
+							data-attr="topic-submission-form"
 							placeholder={
 								FUNNY_TOPICS[Math.floor(Math.random() * FUNNY_TOPICS.length)]
 							}

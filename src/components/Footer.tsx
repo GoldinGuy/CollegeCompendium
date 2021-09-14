@@ -38,6 +38,7 @@ const Footer = React.memo(() => {
 					<Link
 						to="/tos"
 						className="mb-2 md:mb-0 hover:underline pr-6 flex items-center"
+						data-attr="tos-ref"
 						// href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
 					>
 						Terms{" "}
@@ -46,17 +47,20 @@ const Footer = React.memo(() => {
 					<a
 						className="mb-2 md:mb-0 hover:underline pr-6 flex items-center"
 						href="https://twitter.com/CSCompendium"
+						data-attr="twitter-ref"
 					>
 						Twitter <FontAwesomeIcon icon={faTwitter} className="ml-2 inline" />
 					</a>
 					<a
 						className="mb-2 md:mb-0 hover:underline pr-6 flex items-center"
 						href="https://discord.gg/gKYSMeJ"
+						data-attr="discord-ref"
 					>
 						Discord <FontAwesomeIcon icon={faDiscord} className="ml-2 inline" />
 					</a>
 					<a
 						className="mb-2 md:mb-0 hover:underline pr-6 flex items-center"
+						data-attr="email-ref"
 						href="mailto:team@collegecompendium.org&subject=College Compendium Inquiry"
 					>
 						Contact{" "}

@@ -263,7 +263,7 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 							</p>
 							<p>
 								<span className="block text-2xl font-bold text-white">
-									900+
+									1000+
 								</span>
 								<span className="mt-1 block text-base text-gray-300">
 									<span className="font-medium text-white">

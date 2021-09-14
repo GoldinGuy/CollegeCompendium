@@ -23,6 +23,7 @@ import { collegeColors } from "../utils";
 import ClassItem from "./ClassItem";
 import ExploreTable from "./Table";
 import ClipLoader from "react-spinners/ClipLoader";
+import posthog from "posthog-js";
 
 
 const DATA_TAGS = ["Written Notes", "Assignments", "Video Lecture(s)"];
@@ -100,6 +101,15 @@ const Classes = ({
 		);
 	}, [filters, classes, dataFilters]);
 
+
+	useEffect(() => {
+		if (filters && filteredClasses.length === 0 && filters?.length > 0) {
+			posthog.capture("no-classes-found", {
+				filters: filters,
+				dataFilters: dataFilters
+			});
+		}
+	}, [filteredClasses, filters, dataFilters]);
 
 	// console.log(filteredClasses, filters);
 
@@ -257,7 +267,7 @@ const Classes = ({
 							)
 						) : null}
 
-						<div
+						{filteredClasses.length > 0 && <div
 							className="flex flex-col items-center justify-center mt-20 space-x-0 space-y-2 md:space-x-2 md:space-y-0 "
 							key="nav"
 						>
@@ -273,30 +283,41 @@ const Classes = ({
 															...data,
 															written: !data.written,
 														}));
+														posthog.capture("contains-filtering", {
+															filter: tag,
+															enabled: dataFilters.written,
+														});
 														break;
 													case "Assignments":
 														setDataFilters((data) => ({
 															...data,
 															assignments: !data.assignments,
 														}));
+														posthog.capture("contains-filtering", {
+															filter: tag,
+															enabled: dataFilters.assignments,
+														});
 														break;
 													case "Video Lecture(s)":
 														setDataFilters((data) => ({
 															...data,
 															videos: !data.videos,
 														}));
+														posthog.capture("contains-filtering", {
+															filter: tag,
+															enabled: dataFilters.videos,
+														});
 														break;
 													default:
 														console.log("something weird happened");
 												}
 											}}
-											className={`ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 ${
-												(tag === "Written Notes" && dataFilters.written) ||
-												(tag === "Assignments" && dataFilters.assignments) ||
-												(tag === "Video Lecture(s)" && dataFilters.videos)
+											className={`ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 ${(tag === "Written Notes" && dataFilters.written) ||
+													(tag === "Assignments" && dataFilters.assignments) ||
+													(tag === "Video Lecture(s)" && dataFilters.videos)
 													? "bg-blue-200 text-blue-700"
 													: "bg-gray-200 text-gray-700"
-											} rounded-full cursor-pointer`}
+												} rounded-full cursor-pointer`}
 											key={tag}
 										>
 											#{tag}
@@ -326,7 +347,7 @@ const Classes = ({
 									</button>
 								) : null}
 							</div>
-						</div>
+						</div>}
 					</section>
 				</>
 			) : (
