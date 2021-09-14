@@ -103,13 +103,18 @@ const Classes = ({
 
 
 	useEffect(() => {
-		if (filters && filteredClasses.length === 0 && filters?.length > 0) {
+		if (
+			!loading &&
+			filters &&
+			filteredClasses.length === 0 &&
+			filters?.length > 0
+		) {
 			posthog?.capture("no-classes-found", {
 				filters: filters,
-				dataFilters: dataFilters
+				dataFilters: dataFilters,
 			});
 		}
-	}, [filteredClasses, filters, dataFilters]);
+	}, [filteredClasses, filters, dataFilters, loading]);
 
 	// console.log(filteredClasses, filters);
 
