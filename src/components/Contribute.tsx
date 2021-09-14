@@ -49,7 +49,7 @@ const ContributeForm = () => {
 		event.preventDefault();
 		if (topic.length > 0) {
 			console.log("submitting ", topic);
-			posthog.capture("topic-suggestion", {
+			posthog?.capture("topic-suggestion", {
 				topic: topic,
 			});
 			window.open(

@@ -13,13 +13,14 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 You can contact us for more details at team@collegecompendium.org. */
 
+import posthog from "posthog-js";
 import { useState } from "react";
 
 const EmailForm = () => {
 	const [email, setEmail] = useState("");
 
 	return (
-		<section className="px-4 py-8 mx-auto max-w-7xl">
+		<section className="px-4 py-8 mx-auto max-w-7xl ph-no-capture">
 			<div className="w-full mx-auto text-left md:w-11/12 xl:w-8/12 md:text-center">
 				<p className="mb-6 text-lg text-gray-500 md:text-xl md:leading-normal">
 					<i className="mb-4 block">
@@ -41,7 +42,8 @@ const EmailForm = () => {
 						/>
 					</label>
 					<button
-						onClick={() => {
+						onClick={(e) => {
+							e.preventDefault();
 							if (
 								email.includes("@") &&
 								email.includes(".") &&
@@ -53,13 +55,6 @@ const EmailForm = () => {
 									{
 										method: "POST",
 										mode: "no-cors",
-										// headers: {
-										// 	"Content-Type": "application/json"
-										// 	// "Access-Control-Allow-Methods": "*"
-										// },
-										// body: JSON.stringify({
-										// 	value1: email
-										// })
 									}
 								);
 								setEmail("");
@@ -67,6 +62,7 @@ const EmailForm = () => {
 						}}
 						className="w-full col-auto btn py-3 btn-primary btn-lg lg:col-span-2 rounded-xl text-white bg-fuchsia-400 hover:bg-fuchsia-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 font-semibold"
 						type="submit"
+						data-attr="mailing-list-signup"
 					>
 						Oh Yeah!
 					</button>

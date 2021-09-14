@@ -141,7 +141,7 @@ const Navbar = () => {
 									} else {
 										history.push(`?${query}&table=true`);
 									}
-									posthog.capture("toggle-layout", {
+									posthog?.capture("toggle-layout", {
 										table_enabled: query.get("table") === "true",
 									});
 								}}

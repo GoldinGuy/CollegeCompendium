@@ -38,7 +38,7 @@ const NavSearchBar = ({ classN }: { classN?: string }) => {
 		let searchTerm = term.toLowerCase().trim().replaceAll(" ", "-");
 
 		if (searchTerm.length > 0) {
-			posthog.capture("searching", {
+			posthog?.capture("searching", {
 				term: term,
 			});
 			history.push(

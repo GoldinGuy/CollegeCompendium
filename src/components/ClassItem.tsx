@@ -46,7 +46,7 @@ const ClassItem = React.memo(({ _class, idx }: { _class: Class; idx: number }) =
 				rel="noreferrer"
 				key={_class.id + idx}
 				onClick={() => {
-					posthog.capture("view-resource", {
+					posthog?.capture("view-resource", {
 						url: _class.url,
 						title: _class.title,
 					});

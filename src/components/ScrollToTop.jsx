@@ -13,7 +13,7 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 You can contact us for more details at team@collegecompendium.org. */
 
-import React, { Component } from "react";
+import { Component } from "react";
 import { withRouter } from "react-router";
 
 class ScrollToTop extends Component {

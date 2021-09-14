@@ -104,7 +104,7 @@ const Classes = ({
 
 	useEffect(() => {
 		if (filters && filteredClasses.length === 0 && filters?.length > 0) {
-			posthog.capture("no-classes-found", {
+			posthog?.capture("no-classes-found", {
 				filters: filters,
 				dataFilters: dataFilters
 			});
@@ -267,87 +267,93 @@ const Classes = ({
 							)
 						) : null}
 
-						{filteredClasses.length > 0 && <div
-							className="flex flex-col items-center justify-center mt-20 space-x-0 space-y-2 md:space-x-2 md:space-y-0 "
-							key="nav"
-						>
-							<div className="pt-0 pb-4 text-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
-								{DATA_TAGS.map((tag) => {
-									return (
-										<div
-											onClick={() => {
-												console.log(dataFilters);
-												switch (tag) {
-													case "Written Notes":
-														setDataFilters((data) => ({
-															...data,
-															written: !data.written,
-														}));
-														posthog.capture("contains-filtering", {
-															filter: tag,
-															enabled: dataFilters.written,
-														});
-														break;
-													case "Assignments":
-														setDataFilters((data) => ({
-															...data,
-															assignments: !data.assignments,
-														}));
-														posthog.capture("contains-filtering", {
-															filter: tag,
-															enabled: dataFilters.assignments,
-														});
-														break;
-													case "Video Lecture(s)":
-														setDataFilters((data) => ({
-															...data,
-															videos: !data.videos,
-														}));
-														posthog.capture("contains-filtering", {
-															filter: tag,
-															enabled: dataFilters.videos,
-														});
-														break;
-													default:
-														console.log("something weird happened");
-												}
-											}}
-											className={`ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 ${(tag === "Written Notes" && dataFilters.written) ||
+						{filteredClasses.length > 0 && (
+							<div
+								className="flex flex-col items-center justify-center mt-20 space-x-0 space-y-2 md:space-x-2 md:space-y-0 "
+								key="nav"
+							>
+								<div
+									className="pt-0 pb-4 text-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl"
+									key="data-contains-tags"
+								>
+									{DATA_TAGS.map((tag) => {
+										return (
+											<div
+												onClick={() => {
+													console.log(dataFilters);
+													switch (tag) {
+														case "Written Notes":
+															setDataFilters((data) => ({
+																...data,
+																written: !data.written,
+															}));
+															posthog?.capture("contains-filtering", {
+																filter: tag,
+																enabled: dataFilters.written,
+															});
+															break;
+														case "Assignments":
+															setDataFilters((data) => ({
+																...data,
+																assignments: !data.assignments,
+															}));
+															posthog?.capture("contains-filtering", {
+																filter: tag,
+																enabled: dataFilters.assignments,
+															});
+															break;
+														case "Video Lecture(s)":
+															setDataFilters((data) => ({
+																...data,
+																videos: !data.videos,
+															}));
+															posthog?.capture("contains-filtering", {
+																filter: tag,
+																enabled: dataFilters.videos,
+															});
+															break;
+														default:
+															console.log("something weird happened");
+													}
+												}}
+												className={`ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 ${
+													(tag === "Written Notes" && dataFilters.written) ||
 													(tag === "Assignments" && dataFilters.assignments) ||
 													(tag === "Video Lecture(s)" && dataFilters.videos)
-													? "bg-blue-200 text-blue-700"
-													: "bg-gray-200 text-gray-700"
+														? "bg-blue-200 text-blue-700"
+														: "bg-gray-200 text-gray-700"
 												} rounded-full cursor-pointer`}
-											key={tag}
+												key={tag}
+											>
+												#{tag}
+											</div>
+										);
+									})}
+								</div>
+								<div className="flex-col md:flex-row" key="pagination">
+									{page > 0 ? (
+										<button
+											onClick={() => {
+												if (page > 0) setPageCount(page - 1);
+											}}
+											className="w-full rounded-full btn btn-light btn-xl md:w-auto bg-gray-200 hover:bg-gray-300 px-5 py-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-fuchsia-400 ph-no-capture"
 										>
-											#{tag}
-										</div>
-									);
-								})}
+											Classes You've Already Viewed
+										</button>
+									) : null}
+									{page < MAX_PAGES ? (
+										<button
+											onClick={() => {
+												if (page < MAX_PAGES) setPageCount(page + 1);
+											}}
+											className="w-full rounded-full btn btn-light btn-xl md:w-auto bg-gray-200  hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-fuchsia-400  px-5 py-2 ph-no-capture"
+										>
+											More classes!
+										</button>
+									) : null}
+								</div>
 							</div>
-							<div className="flex-col md:flex-row">
-								{page > 0 ? (
-									<button
-										onClick={() => {
-											if (page > 0) setPageCount(page - 1);
-										}}
-										className="w-full rounded-full btn btn-light btn-xl md:w-auto bg-gray-200 hover:bg-gray-300 px-5 py-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-fuchsia-400 ph-no-capture"
-									>
-										Classes You've Already Viewed
-									</button>
-								) : null}
-								{page < MAX_PAGES ? (
-									<button
-										onClick={() => {
-											if (page < MAX_PAGES) setPageCount(page + 1);
-										}}
-										className="w-full rounded-full btn btn-light btn-xl md:w-auto bg-gray-200  hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-fuchsia-400  px-5 py-2 ph-no-capture"
-									>
-										More classes!
-									</button>
-								) : null}
-							</div>
-						</div>}
+						)}
 					</section>
 				</>
 			) : (

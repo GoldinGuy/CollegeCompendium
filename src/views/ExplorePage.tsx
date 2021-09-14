@@ -60,7 +60,7 @@ const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean 
 						return (
 							<div
 								onClick={() => {
-									posthog.capture("filtering", {
+									posthog?.capture("filtering", {
 										filter: tag,
 									});
 									history.push(
@@ -111,7 +111,7 @@ const LargeSearchBar = ({ asTable }: { asTable: boolean }) => {
 		term = term.toLowerCase().trim().replaceAll(" ", "-");
 
 		if (term.length > 0) {
-			posthog.capture("searching", {
+			posthog?.capture("searching", {
 				term: term,
 			});
 			// TODO: addFilter(term);

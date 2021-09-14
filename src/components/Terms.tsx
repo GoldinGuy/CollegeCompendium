@@ -21,8 +21,8 @@ const TermsOfService = () => {
 			<span className="text-2xl font-semibold mt-4 block">Terms of Use</span>
 			College Compendium Corporation is a nonprofit organization based in
 			Florida dedicated to improving access of computer-science educational
-			resources to students across the world. The College Compendium website is licensed
-			under the{" "}
+			resources to students across the world. The College Compendium website is
+			licensed under the{" "}
 			<a href="https://github.com/GoldinGuy/CollegeCompendium/blob/master/LICENSE">
 				GNU AGPL 3.0
 			</a>{" "}
@@ -68,22 +68,41 @@ const TermsOfService = () => {
 			This privacy policy covers the services accessed using College Compendium.
 			College Compendium is an open-source, not-for-profit directory that links
 			users to publicly accessible resources at various universities. College
-			Compendium does not store or alter your data in any way. You can access
-			College Compendium through the website, www.collegecompendium.org. This
+			Compendium does not store or alter your personal data in any way. You can
+			access College Compendium through the website, collegecompendium.org. This
 			Privacy Policy describes College Compendium’s privacy practices in
 			relation to information collected through the web application and made
 			available by us for use on or through devices that link to this Privacy
-			Policy (the “App”). Information We Collect “Personal Information” is
-			information that identifies you as an individual or relates to an
-			identifiable individual. No personal information is collected by College
-			Compendium. College Compendium uses device names, IP addresses, device
-			type, and limited additional information in order to display content to
-			the user, but no data ever leaves the device for servers accessible by
-			College Compendium. Tracking Technologies Cookies, Beacons, and other
-			Similar Technologies: Technologies such as cookies, beacons, tags and
-			scripts are used by College Compendium. These technologies are used to
-			better understand our users needs and preferences and are not used for
-			for-profit reasons.
+			Policy (the “App”).
+			<span className="text-xl font-semibold mt-4 block">
+				Information We Collect
+			</span>
+			“Personal Information” is information that identifies you as an individual
+			or relates to an identifiable individual. The only personally-identifiable
+			information College Compendium collects is email addresses for our mailing
+			list. These emails are only used to send informational weekly newletters
+			to our users and are not shared with any third-parties. College Compendium
+			also uses anonymous device name, IP address, device type, and limited
+			additional information such as geographic data in order to display content
+			to the user.
+			<br /> We switched from Google Analytics to PostHog because we believe in
+			transparency and the power of open-source. The purpose of us using this
+			software is to understand our website traffic in the most privacy-friendly
+			way possible so that we can continually improve our website and business.
+			The basis as per the GDPR is "where our legitimate interests are to
+			improve our website continually." You can read more about PostHog at
+			https://posthog.com/privacy.
+			<span className="text-xl font-semibold mt-4 block">
+				Tracking Technologies
+			</span>
+			Technologies such as cookies, beacons, tags and scripts are used by
+			College Compendium. These technologies are used to better understand our
+			users needs and preferences and are not used for for-profit reasons. For
+			example, we cache resource data in local storage to improve performance
+			and reduce server strain. Our analytics software, PostHog, stores
+			temporary session ids in memory not accessible from servers to remain GDPR compliant. It is possible that referrers such as
+			ProductHunt may store a cookie on the site, but that varies based on your
+			interaction with the referrer.
 			<span className="text-xl font-semibold mt-4 block">
 				Changes to this Privacy Policy
 			</span>

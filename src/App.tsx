@@ -28,12 +28,12 @@ import {
 } from "./views";
 
 // analytics
-// if (!window.location.href.includes('127.0.0.1')) {
-	if (process.env.REACT_APP_PH_ID)
-		posthog.init(process.env.REACT_APP_PH_ID, {
-			api_host: "https://app.posthog.com",
-		});
-// }
+if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+	posthog.init(process.env.REACT_APP_PH_ID, {
+		api_host: "https://app.posthog.com",
+		persistence: 'memory'
+	});
+}
 
 function App() {
 	const [classes, setClasses] = useState<Class[]>([]);
@@ -74,9 +74,11 @@ function App() {
 			}
 		}
 		if (classes.length === 0) {
-			// if (localStorage.getItem("classes")) {
-			// 	localStorage.removeItem("classes");
-			// }
+			// clean up old data
+			if (localStorage.getItem("classes")) {
+				localStorage.removeItem("classes");
+			}
+			// fetch new data
 			const locC = localStorage.getItem("classes2");
 			if (locC && typeof locC === "string") {
 				setClasses(JSON.parse(locC));
@@ -97,6 +99,7 @@ function App() {
 				cReq.open(
 					"GET",
 					`https://api.jsonbin.io/v3/b/${process.env.REACT_APP_CLASSES_JSON_ID}/latest`,
+
 					true
 				);
 				console.log(process.env.REACT_APP_JSONIO_API_KEY);
