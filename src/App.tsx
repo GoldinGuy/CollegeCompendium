@@ -102,7 +102,7 @@ function App() {
 
 					true
 				);
-				console.log(process.env.REACT_APP_JSONIO_API_KEY);
+				// console.log(process.env.REACT_APP_JSONIO_API_KEY);
 				cReq.setRequestHeader(
 					"X-Master-Key",
 					`${process.env.REACT_APP_JSONIO_API_KEY}`
