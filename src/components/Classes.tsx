@@ -94,27 +94,17 @@ const Classes = ({
 			return false;
 		};
 
-		setFilteredClasses(
-			classes.filter((course) => {
-				return checkFilters(course);
-			})
-		);
-	}, [filters, classes, dataFilters]);
-
-
-	useEffect(() => {
-		if (
-			!loading &&
-			filters &&
-			filteredClasses.length === 0 &&
-			filters?.length > 0
-		) {
+		let _classes = classes.filter((course) => {
+			return checkFilters(course);
+		});
+		if (_classes.length === 0 && filters && filters?.length > 0) {
 			posthog?.capture("no-classes-found", {
 				filters: filters,
 				dataFilters: dataFilters,
 			});
 		}
-	}, [filteredClasses, filters, dataFilters, loading]);
+		setFilteredClasses(_classes);
+	}, [filters, classes, dataFilters]);
 
 	// console.log(filteredClasses, filters);
 
