@@ -15,14 +15,16 @@ You can contact us for more details at team@collegecompendium.org. */
 
 import React from "react";
 import Classes from "../components/classes/Classes";
-// import CLASSES from "../data/class_data.json";
-import { Class } from "../typings/interfaces";
+import { Class, Textbook } from "../typings/interfaces";
 import { shuffle, useQuery } from "../utils";
 
 const SearchPage = ({
-	classes,loading,
+	classes,
+	textbooks,
+	loading,
 }: {
 	classes: Class[];
+	textbooks: Textbook[];
 	loading: boolean;
 }) => {
 	let query = useQuery();

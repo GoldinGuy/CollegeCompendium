@@ -19,5 +19,9 @@ import ClassGallery from "./classes/ClassGallery";
 import ScrollToTop from "./ScrollToTop";
 import ContributeForm from "./forms/Contribute";
 import CTA from "./sections/CTA";
+import LargeSearchBar from "./sections/LargeSearch";
+import BookLoader from "./sections/loader";
+import Filters from "./sections/Filters";
+import TextbookGallery from "./sections/TextbookGallery";
 
-export { Navbar, Footer, ClassGallery, ContributeForm, CTA, ScrollToTop };
+export { Navbar, Footer, ClassGallery, ContributeForm, CTA, LargeSearchBar, BookLoader, Filters, TextbookGallery, ScrollToTop };

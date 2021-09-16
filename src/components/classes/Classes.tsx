@@ -24,7 +24,7 @@ import ClassItem from "./ClassItem";
 import ExploreTable from "./Table";
 import posthog from "posthog-js";
 import { DATA_TAGS } from "../../globals";
-import BookLoader from "../sections/loader";
+import { BookLoader } from "..";
 
 const Classes = ({
 	imgUrl,

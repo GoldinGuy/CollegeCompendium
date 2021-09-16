@@ -103,11 +103,11 @@ function App() {
 					/>
 					<Route
 						path="/search"
-						render={() => <SearchPage classes={classes} loading={loading} />}
+						render={() => <SearchPage classes={classes} textbooks={textbooks}  loading={loading} />}
 					/>
 					<Route
 						path="/explore"
-						render={() => <ExplorePage classes={classes} loading={loading} />}
+						render={() => <ExplorePage classes={classes} textbooks={textbooks} loading={loading} />}
 					/>
 					<Route path="/submit" exact component={SubmitPage} />
 					<Route path="/tos" exact component={TermsOfService} />
