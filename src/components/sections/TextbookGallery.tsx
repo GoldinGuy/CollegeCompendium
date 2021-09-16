@@ -36,8 +36,8 @@ const TextbookGallery = ({ textbooks }: { textbooks: Textbook[] }) => {
 									className="absolute right-0 top-0 text-col ml-5"
 									key={text.category + "2"}
 								>
-									<h3 className="font-semibold px-3 py-3">{text.book}</h3>
-									<p className="text-xs px-3 pb-2 italic">
+									<h3 className="font-semibold px-3 py-3 float-left">{text.book}</h3>
+									<p className="text-xs px-3 pb-2 italic trunc-3">
 										{text.author}
 									</p>
 								</div>

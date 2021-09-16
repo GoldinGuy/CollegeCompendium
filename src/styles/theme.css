@@ -64,6 +64,14 @@
   overflow: hidden;
 }
 
+.trunc-3 {
+  -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+
 /* book loader 
 Based on https://dribbble.com/shots/7425055-Book-Loader
 */
