@@ -38,11 +38,11 @@ const ExplorePage = ({
 				<LargeSearchBar asTable={query.get("table") === "true"} />
 				<Filters />
 				<Classes
-					classes={shuffle(classes)?.slice(0, 18) ?? []}
+					classes={shuffle(classes) ?? []}
 					asTable={query.get("table") === "true"}
 					loading={loading}
 				/>
-				<TextbookGallery textbooks={textbooks} />
+				{textbooks.length > 0 && <TextbookGallery textbooks={textbooks} />}
 			</section>
 			<ContributeForm />
 		</>

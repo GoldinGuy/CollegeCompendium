@@ -91,11 +91,19 @@ const Classes = ({
 			}
 			return false;
 		};
-
-		const _classes = classes.filter((course) => {
+		let data = classes;
+		if (
+			filters &&
+			dataFilters.written &&
+			dataFilters.assignments &&
+			dataFilters.videos
+		) {
+			data = classes?.slice(0, 18);
+		}
+		const _classes = data.filter((course) => {
 			return checkFilters(course);
 		});
-		if (_classes !== classes) {
+		if (_classes !== data) {
 			setFilteredClasses(_classes);
 		}
 		if (_classes.length === 0 && filters && filters?.length > 0) {
@@ -266,9 +274,11 @@ const Classes = ({
 
 						{filteredClasses.length > 0 && (
 							<div
-								className="flex flex-col items-center justify-center mt-20 space-x-0 space-y-2 md:space-x-2 md:space-y-0 "
+								className="flex flex-col items-center justify-center mt-12 space-x-0 space-y-2 md:space-x-2 md:space-y-0 "
 								key="nav"
 							>
+								<div className="pb-1">Filter by content</div>
+
 								<div
 									className="pt-0 pb-4 text-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl"
 									key="data-contains-tags"
@@ -312,6 +322,11 @@ const Classes = ({
 														default:
 															console.log("something weird happened");
 													}
+														window.scrollTo({
+															top: 0,
+															left: 0,
+															behavior: "smooth",
+														});
 												}}
 												className={`ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 ${
 													(tag === "Written Notes" && dataFilters.written) ||
@@ -327,25 +342,37 @@ const Classes = ({
 										);
 									})}
 								</div>
+								<div className="pb-1">Or</div>
+
 								<div className="flex-col md:flex-row" key="pagination">
 									{page > 0 ? (
 										<button
 											onClick={() => {
 												if (page > 0) setPageCount(page - 1);
+												window.scrollTo({
+													top: 0,
+													left: 0,
+													behavior: 'smooth'
+												})
 											}}
 											className="w-full rounded-full btn btn-light btn-xl md:w-auto bg-gray-200 hover:bg-gray-300 px-5 py-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-fuchsia-400 ph-no-capture"
 										>
-											Classes You've Already Viewed
+											See Classes You've Already Viewed
 										</button>
 									) : null}
 									{page < MAX_PAGES ? (
 										<button
 											onClick={() => {
 												if (page < MAX_PAGES) setPageCount(page + 1);
+												window.scrollTo({
+													top: 0,
+													left: 0,
+													behavior: "smooth",
+												});
 											}}
-											className="w-full rounded-full btn btn-light btn-xl md:w-auto bg-gray-200  hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-fuchsia-400  px-5 py-2 ph-no-capture"
+											className="w-full rounded-full btn btn-light btn-xl md:w-auto bg-gray-200  hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-fuchsia-400 px-5 py-2 ph-no-capture mt-2 sm:mt-0 sm:ml-2"
 										>
-											More classes!
+											View More classes!
 										</button>
 									) : null}
 								</div>
@@ -367,7 +394,15 @@ const Classes = ({
 								</span>
 							</h2>
 							<Link
-								to="/explore"
+									to="/explore"
+									onClick={() => {
+										setDataFilters({
+												videos: true,
+												written: true,
+												assignments: true,
+											});
+									    setPageCount(0);
+									}}
 								className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400 hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
 							>
 								Find A Class

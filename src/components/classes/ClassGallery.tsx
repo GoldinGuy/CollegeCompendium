@@ -17,7 +17,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Class } from "../../typings/interfaces";
 import { shuffle } from "../../utils";
-import BookLoader from "../sections/loader";
+import BookLoader from "../sections/BookLoader";
 import ClassItem from "./ClassItem";
 
 const ClassGallery = ({ classes,loading }: { classes: Class[], loading: boolean }) => {
