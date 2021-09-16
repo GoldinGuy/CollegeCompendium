@@ -16,8 +16,8 @@ You can contact us for more details at team@collegecompendium.org. */
 import React, { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import { Navbar, Footer, ScrollToTop } from "./components";
-import TermsOfService from "./components/Terms";
-import { Class } from "./typings/interfaces";
+import TermsOfService from "./components/info/Terms";
+import { Class, Textbook } from "./typings/interfaces";
 import posthog from "posthog-js";
 import {
 	// TempSplashPage,
@@ -26,6 +26,7 @@ import {
 	ExplorePage,
 	SubmitPage,
 } from "./views";
+import { JSON_DATA_VERSION } from "./globals";
 
 // analytics
 if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
@@ -38,31 +39,36 @@ if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) 
 function App() {
 	const [classes, setClasses] = useState<Class[]>([]);
 	const [featured, setFeatured] = useState<Class[]>([]);
+	const [textbooks, setTextbooks] = useState<Textbook[]>([]);
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
-		// console.log(process.env.REACT_APP_JSONIO_API_KEY);
-		if (featured.length === 0) {
-			const locF = localStorage.getItem("featured");
-			if (locF && typeof locF === "string") {
-				setFeatured(JSON.parse(locF));
+		if (featured.length === 0 || classes.length === 0 || textbooks.length === 0) {
+			const locData = localStorage.getItem("compendium");
+			if (locData && typeof locData === "string" && JSON.parse(locData).version === JSON_DATA_VERSION) {
+				const locJSONData = JSON.parse(locData);
+				setFeatured(locJSONData["featured"]);
+				setClasses(locJSONData["courses"]);
+				setTextbooks(locJSONData["textbooks"]);
 			} else if (
 				process.env.REACT_APP_JSONIO_API_KEY &&
-				process.env.REACT_APP_FEATURED_JSON_ID
+				process.env.REACT_APP_DATA_ID
 			) {
 				let fReq = new XMLHttpRequest();
 				fReq.onreadystatechange = () => {
 					if (fReq.readyState === XMLHttpRequest.DONE) {
-						// console.log(cReq.responseText);
 						if (fReq.status === 200) {
-							setFeatured(JSON.parse(fReq.responseText));
-							localStorage.setItem("featured", fReq.responseText);
+							const data = JSON.parse(fReq.responseText);
+							setFeatured(data['featured']);
+							setClasses(data['courses']);
+							setTextbooks(data['textbooks']);
+							localStorage.setItem("compendium", fReq.responseText);
 						}
 					}
 				};
 				fReq.open(
 					"GET",
-					`https://api.jsonbin.io/v3/b/${process.env.REACT_APP_FEATURED_JSON_ID}/latest`,
+					`https://api.jsonbin.io/v3/b/${process.env.REACT_APP_DATA_ID}/latest`,
 					true
 				);
 				fReq.setRequestHeader(
@@ -71,50 +77,19 @@ function App() {
 				);
 				fReq.setRequestHeader("X-Bin-Meta", "false");
 				fReq.send();
-			}
-		}
-		if (classes.length === 0) {
-			// clean up old data
-			if (localStorage.getItem("classes")) {
-				localStorage.removeItem("classes");
-			}
-			// fetch new data
-			const locC = localStorage.getItem("classes2");
-			if (locC && typeof locC === "string") {
-				setClasses(JSON.parse(locC));
-			} else if (
-				process.env.REACT_APP_JSONIO_API_KEY &&
-				process.env.REACT_APP_CLASSES_JSON_ID
-			) {
-				let cReq = new XMLHttpRequest();
-				cReq.onreadystatechange = () => {
-					if (cReq.readyState === XMLHttpRequest.DONE) {
-						// console.log(cReq.responseText);
-						if (cReq.status === 200) {
-							setClasses(JSON.parse(cReq.responseText));
-							localStorage.setItem("classes2", cReq.responseText);
-						}
-					}
-				};
-				cReq.open(
-					"GET",
-					`https://api.jsonbin.io/v3/b/${process.env.REACT_APP_CLASSES_JSON_ID}/latest`,
-
-					true
-				);
-				// console.log(process.env.REACT_APP_JSONIO_API_KEY);
-				cReq.setRequestHeader(
-					"X-Master-Key",
-					`${process.env.REACT_APP_JSONIO_API_KEY}`
-				);
-				cReq.setRequestHeader("X-Bin-Meta", "false");
-				cReq.send();
+				// clean up old data caches - TODO: remove in future versions
+				if (localStorage.getItem("classes")) {
+					localStorage.removeItem("classes");
+				}
+				if (localStorage.getItem("featured")) {
+					localStorage.removeItem("featured");
+				}
 			}
 		}
 		if (classes.length > 0 && featured.length > 0) {
 			setLoading(false);
 		}
-	}, [classes.length, featured.length]);
+	}, [classes.length, featured.length, textbooks.length]);
 
 	return (
 			<ScrollToTop>

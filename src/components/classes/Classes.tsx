@@ -18,15 +18,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Class } from "../typings/interfaces";
-import { collegeColors } from "../utils";
+import { Class } from "../../typings/interfaces";
+import { SOURCE_COLORS } from "../../globals";
 import ClassItem from "./ClassItem";
 import ExploreTable from "./Table";
-import ClipLoader from "react-spinners/ClipLoader";
 import posthog from "posthog-js";
-
-
-const DATA_TAGS = ["Written Notes", "Assignments", "Video Lecture(s)"];
+import { DATA_TAGS } from "../../globals";
+import BookLoader from "../sections/loader";
 
 const Classes = ({
 	imgUrl,
@@ -168,7 +166,7 @@ const Classes = ({
 											className="w-full h-2 mb-3"
 											style={{
 												background:
-													collegeColors[
+													SOURCE_COLORS[
 														filteredClasses[0].source
 															.toString()
 															.toLowerCase()
@@ -240,7 +238,7 @@ const Classes = ({
 									className="mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center"
 									key="loader"
 								>
-									<ClipLoader color={"#e47cfc"} loading={loading} size={100} />
+									<BookLoader />
 								</div>
 							) : (
 								<div
@@ -279,7 +277,7 @@ const Classes = ({
 										return (
 											<div
 												onClick={() => {
-													console.log(dataFilters);
+													// console.log(dataFilters);
 													switch (tag) {
 														case "Written Notes":
 															setDataFilters((data) => ({

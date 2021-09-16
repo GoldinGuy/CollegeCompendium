@@ -29,3 +29,12 @@ export interface Class {
 	};
 	// source_thumb: string;
 }
+
+export interface Textbook {
+	book: string;
+	url: string;
+	author: string;
+	category: string;
+}
+
+export type Tag = string;

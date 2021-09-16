@@ -15,9 +15,9 @@ You can contact us for more details at team@collegecompendium.org. */
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { ClipLoader } from "react-spinners";
-import { Class } from "../typings/interfaces";
-import { shuffle } from "../utils";
+import { Class } from "../../typings/interfaces";
+import { shuffle } from "../../utils";
+import BookLoader from "../sections/loader";
 import ClassItem from "./ClassItem";
 
 const ClassGallery = ({ classes,loading }: { classes: Class[], loading: boolean }) => {
@@ -44,11 +44,7 @@ const ClassGallery = ({ classes,loading }: { classes: Class[], loading: boolean 
 			{loading ? (
 				<div className="mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center"
 					key="gallery-loader">
-					<ClipLoader
-						color={"#e47cfc"}
-						loading={loading}
-						size={100}
-					/>
+					<BookLoader />
 				</div> ) : 
 				(<Carousel
 					swipeable={true}

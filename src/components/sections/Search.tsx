@@ -16,7 +16,7 @@ You can contact us for more details at team@collegecompendium.org. */
 import posthog from "posthog-js";
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { useQuery } from "../utils";
+import { useQuery } from "../../utils";
 
 
 const NavSearchBar = ({ classN }: { classN?: string }) => {

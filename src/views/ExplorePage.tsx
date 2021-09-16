@@ -15,31 +15,14 @@ You can contact us for more details at team@collegecompendium.org. */
 
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import Classes from "../components/Classes";
+import Classes from "../components/classes/Classes";
 import { Class } from "../typings/interfaces";
 // import CLASSES from "../data/class_data.json";
 import { shuffle, useQuery } from "../utils";
 import { ContributeForm } from "../components";
 import posthog from "posthog-js";
+import { CLASS_TAGS } from "../globals";
 
-
-	// TODO: add more filters here
-	const CLASS_TAGS = [
-		"Programming Languages",
-		"Compilers",
-		"Security",
-		"Systems",
-		"Machine Learning",
-		"Introduction",
-		"Theory",
-		"Graphics",
-		"Application Development",
-		"Game",
-		"Algorithms",
-		"Artificial Intelligence",
-		"Crypto",
-		"Database",
-	];
 
 const ExplorePage = ({ classes, loading }: { classes: Class[]; loading: boolean }) => {
 	const history = useHistory();

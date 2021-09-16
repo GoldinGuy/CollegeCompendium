@@ -13,11 +13,11 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 You can contact us for more details at team@collegecompendium.org. */
 
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import ClassGallery from "./ClassGallery";
+import Navbar from "./sections/Navbar";
+import Footer from "./sections/Footer";
+import ClassGallery from "./classes/ClassGallery";
 import ScrollToTop from "./ScrollToTop";
-import ContributeForm from "./Contribute";
-import CTA from "./CTA";
+import ContributeForm from "./forms/Contribute";
+import CTA from "./sections/CTA";
 
 export { Navbar, Footer, ClassGallery, ContributeForm, CTA, ScrollToTop };

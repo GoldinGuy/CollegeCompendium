@@ -16,8 +16,8 @@ You can contact us for more details at team@collegecompendium.org. */
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Class } from "../typings/interfaces";
-import { collegeColors } from "../utils";
+import { Class } from "../../typings/interfaces";
+import { SOURCE_COLORS } from "../../globals";
 
 const ExploreTable = React.memo(({ classes }: { classes: Class[] }) => {
 	if (classes.length > 0) {
@@ -77,7 +77,7 @@ const ExploreTable = React.memo(({ classes }: { classes: Class[] }) => {
 														className="w-2 h-full mb-3 absolute bottom-0 left-0 top-0"
 														style={{
 															background:
-																collegeColors[
+																SOURCE_COLORS[
 																	_class.source
 																		.toString()
 																		.toLowerCase()
@@ -91,7 +91,7 @@ const ExploreTable = React.memo(({ classes }: { classes: Class[] }) => {
 															className="w-2 h-full mb-3"
 															style={{
 																background:
-																	collegeColors[
+																	SOURCE_COLORS[
 																		_class.source
 																			.toString()
 																			.toLowerCase()

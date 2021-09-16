@@ -15,14 +15,7 @@ You can contact us for more details at team@collegecompendium.org. */
 
 import posthog from "posthog-js";
 import React, { useState } from "react";
-
-const FUNNY_TOPICS = [
-	"Discrete Computational Nanotech",
-	"Quad-Matrix Theory",
-	"AIBlockchainNFTs",
-	"How To Google",
-	"Intro to Stack Overflow",
-];
+import { FUNNY_TOPICS } from "../../globals";
 
 const ContributeForm = () => {
 	// const [url, setUrl] = useState("");

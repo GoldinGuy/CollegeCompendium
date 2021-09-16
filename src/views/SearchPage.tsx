@@ -14,7 +14,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 You can contact us for more details at team@collegecompendium.org. */
 
 import React from "react";
-import Classes from "../components/Classes";
+import Classes from "../components/classes/Classes";
 // import CLASSES from "../data/class_data.json";
 import { Class } from "../typings/interfaces";
 import { shuffle, useQuery } from "../utils";

@@ -58,7 +58,6 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 							rel="noreferrer"
 							data-attr="github-ref"
 							href="https://github.com/GoldinGuy/CollegeCompendium"
-				
 						>
 							Star On GitHub
 							<FontAwesomeIcon icon={faStar} className="ml-2" />
@@ -219,7 +218,7 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 						<div className="h-full xl:relative xl:col-start-2">
 							<img
 								className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-								src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+								src="https://user-images.githubusercontent.com/47064842/133554110-cd17d131-14ca-4a16-a7f6-a19297fab487.png"
 								alt="People working on laptops"
 							/>
 							<div
@@ -274,7 +273,7 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 							</p>
 							<p>
 								<span className="block text-2xl font-bold text-white">
-									125,000+
+									150,000+
 								</span>
 								<span className="mt-1 block text-base text-gray-300">
 									<span className="font-medium text-white">

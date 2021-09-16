@@ -17,7 +17,7 @@ import { Link, useHistory, useLocation } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NavSearchBar from "./Search";
-import { useQuery } from "../utils";
+import { useQuery } from "../../utils";
 import { faList, faTable } from "@fortawesome/free-solid-svg-icons";
 import posthog from "posthog-js";
 

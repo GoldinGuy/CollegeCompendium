@@ -16,7 +16,7 @@ You can contact us for more details at team@collegecompendium.org. */
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import EmailForm from "./EmailForm";
+import EmailForm from "../forms/EmailForm";
 
 const CTA = () => {
 	return (

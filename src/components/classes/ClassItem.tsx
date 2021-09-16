@@ -18,8 +18,8 @@ import {
 	faExternalLinkAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Class } from "../typings/interfaces";
-import { collegeColors } from "../utils";
+import { Class } from "../../typings/interfaces";
+import { SOURCE_COLORS } from "../../globals";
 import React from "react";
 import posthog from "posthog-js";
 
@@ -35,7 +35,7 @@ const ClassItem = React.memo(({ _class, idx }: { _class: Class; idx: number }) =
 				key={"color" + idx}
 				style={{
 					background:
-						collegeColors[
+						SOURCE_COLORS[
 							_class.source.toString().toLowerCase().trim().replaceAll(" ", "")
 						],
 				}}
