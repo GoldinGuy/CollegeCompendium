@@ -17,6 +17,7 @@ import Classes from "../components/classes/Classes";
 import { Class, Textbook } from "../typings/interfaces";
 import { shuffle, useQuery } from "../utils";
 import { ContributeForm, Filters, LargeSearchBar, TextbookGallery } from "../components";
+import { CLASS_TAGS } from "../globals";
 
 const ExplorePage = ({
 	classes,
@@ -36,13 +37,15 @@ const ExplorePage = ({
 					Find Your Next CS Resource
 				</h2>
 				<LargeSearchBar asTable={query.get("table") === "true"} />
-				<Filters />
+				<Filters filters={shuffle(CLASS_TAGS) ?? []} />
 				<Classes
 					classes={shuffle(classes) ?? []}
 					asTable={query.get("table") === "true"}
 					loading={loading}
 				/>
-				{textbooks.length > 0 && <TextbookGallery textbooks={textbooks} />}
+				{textbooks.length > 0 && (
+					<TextbookGallery textbooks={shuffle(textbooks) ?? []} />
+				)}
 			</section>
 			<ContributeForm />
 		</>

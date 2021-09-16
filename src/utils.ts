@@ -29,8 +29,8 @@ export function useQuery() {
 // }
 
 // fisher yates
-export function shuffle(array: Class[]): Class[] {
-	if(!array || array.length === 0) {
+export function shuffle(array: Array<any>): Array<any> {
+	if (!array || array.length === 0) {
 		return [];
 	}
 	var a = array.length,
