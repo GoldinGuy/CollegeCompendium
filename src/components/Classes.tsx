@@ -94,17 +94,21 @@ const Classes = ({
 			return false;
 		};
 
-		let _classes = classes.filter((course) => {
+		const _classes = classes.filter((course) => {
 			return checkFilters(course);
 		});
+		if (_classes !== classes) {
+			setFilteredClasses(_classes);
+		}
 		if (_classes.length === 0 && filters && filters?.length > 0) {
+			console.log(_classes, filters);
 			posthog?.capture("no-classes-found", {
 				filters: filters,
 				dataFilters: dataFilters,
 			});
 		}
-		setFilteredClasses(_classes);
 	}, [filters, classes, dataFilters]);
+
 
 	// console.log(filteredClasses, filters);
 
