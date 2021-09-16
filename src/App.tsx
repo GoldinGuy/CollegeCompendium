@@ -44,7 +44,7 @@ function App() {
 
 	useEffect(() => {
 		if (featured.length === 0 || classes.length === 0 || textbooks.length === 0) {
-			const locData = localStorage.getItem("compendium");
+			const locData = localStorage?.getItem("compendium");
 			if (locData && typeof locData === "string" && JSON.parse(locData).version === JSON_DATA_VERSION) {
 				const locJSONData = JSON.parse(locData);
 				setFeatured(locJSONData["featured"]);
@@ -62,7 +62,7 @@ function App() {
 							setFeatured(data['featured']);
 							setClasses(data['courses']);
 							setTextbooks(data['textbooks']);
-							localStorage.setItem("compendium", fReq.responseText);
+							localStorage?.setItem("compendium", fReq.responseText);
 						}
 					}
 				};
@@ -78,11 +78,11 @@ function App() {
 				fReq.setRequestHeader("X-Bin-Meta", "false");
 				fReq.send();
 				// clean up old data caches - TODO: remove in future versions
-				if (localStorage.getItem("classes")) {
-					localStorage.removeItem("classes");
+				if (localStorage?.getItem("classes")) {
+					localStorage?.removeItem("classes");
 				}
-				if (localStorage.getItem("featured")) {
-					localStorage.removeItem("featured");
+				if (localStorage?.getItem("featured")) {
+					localStorage?.removeItem("featured");
 				}
 			}
 		}
