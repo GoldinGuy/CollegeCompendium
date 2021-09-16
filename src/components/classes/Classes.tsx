@@ -92,8 +92,8 @@ const Classes = ({
 			return false;
 		};
 		let data = classes;
-		if (
-			filters &&
+		if (filters &&
+			filters.length === 0 &&
 			dataFilters.written &&
 			dataFilters.assignments &&
 			dataFilters.videos
@@ -322,19 +322,18 @@ const Classes = ({
 														default:
 															console.log("something weird happened");
 													}
-														window.scrollTo({
-															top: 0,
-															left: 0,
-															behavior: "smooth",
-														});
+													window.scrollTo({
+														top: 0,
+														left: 0,
+														behavior: "smooth",
+													});
 												}}
-												className={`ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 ${
-													(tag === "Written Notes" && dataFilters.written) ||
-													(tag === "Assignments" && dataFilters.assignments) ||
-													(tag === "Video Lecture(s)" && dataFilters.videos)
+												className={`ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 ${(tag === "Written Notes" && dataFilters.written) ||
+														(tag === "Assignments" && dataFilters.assignments) ||
+														(tag === "Video Lecture(s)" && dataFilters.videos)
 														? "bg-blue-200 text-blue-700"
 														: "bg-gray-200 text-gray-700"
-												} rounded-full cursor-pointer`}
+													} rounded-full cursor-pointer`}
 												key={tag}
 											>
 												#{tag}
@@ -342,7 +341,7 @@ const Classes = ({
 										);
 									})}
 								</div>
-								<div className="pb-1">Or</div>
+								{(page > 0 || page < MAX_PAGES) && < div className="pb-1">Or</div>}
 
 								<div className="flex-col md:flex-row" key="pagination">
 									{page > 0 ? (

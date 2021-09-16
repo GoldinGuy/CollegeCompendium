@@ -24,6 +24,8 @@ export const CLASS_TAGS: Tag[] = [
 	"Artificial Intelligence",
 	"Crypto",
 	"Database",
+	"Software",
+	"Robotics"
 ];
 
 export const TEXTBOOK_TAGS: Tag[] = [

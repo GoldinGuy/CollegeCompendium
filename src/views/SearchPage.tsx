@@ -31,7 +31,7 @@ const SearchPage = ({
 
 	return (
 		<Classes
-			classes={shuffle(classes)}
+			classes={shuffle(classes) ?? []}
 			displayPromo={true}
 			filters={query.get("q")?.split("-")}
 			loading={loading}
