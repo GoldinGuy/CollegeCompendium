@@ -290,7 +290,9 @@ Based on https://dribbble.com/shots/7425055-Book-Loader
   }
 }
 
-/* book loader 2  */
+/* book loader 2
+Based on https://codepen.io/aaroniker/pen/zYOewEP
+*/
 .book-loading-indicator {
   --color: #e879f9;
   --duration: 6.8s;
