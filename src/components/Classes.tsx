@@ -101,7 +101,7 @@ const Classes = ({
 			setFilteredClasses(_classes);
 		}
 		if (_classes.length === 0 && filters && filters?.length > 0) {
-			console.log(_classes, filters);
+			// console.log(_classes, filters);
 			posthog?.capture("no-classes-found", {
 				filters: filters,
 				dataFilters: dataFilters,
