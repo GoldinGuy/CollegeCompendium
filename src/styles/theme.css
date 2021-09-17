@@ -62,11 +62,12 @@
 .ani-under {
   position: relative;
   text-decoration: none;
+  width: fit-content;
 }
 
 .ani-under:hover {
   /* color: #000; */
-  color: #e879f9
+  color: #e879f9;
 }
 
 
