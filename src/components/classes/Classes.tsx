@@ -122,7 +122,7 @@ const Classes = ({
 		<>
 			<div className="container relative flex flex-col justify-between h-full max-w-6xl px-8 mx-auto xl:px-0 overflow-x-hidden">
 				<div className="relative flex items-center self-start sm:mb-1 mt-2 font-black w-auto">
-					{/* w-auto */}
+					{/* filters */}
 					<h2
 						className="relative flex items-center self-start w-auto text-4xl font-black mr-4 "
 						key="header"
@@ -146,7 +146,7 @@ const Classes = ({
 					</h2>
 				</div>
 			</div>
-
+			{/* table  */}
 			{!asTable ? (
 				<>
 					{imgUrl ? (
@@ -232,14 +232,14 @@ const Classes = ({
 									</a>
 								</div>
 							) : null}
-
+							{/* classes */}
 							{filteredClasses
 								?.slice(page * 12 + startVid, page * 12 + 12 + startVid)
 								.map((_class, idx) => {
 									return <ClassItem _class={_class} idx={idx} />;
 								})}
 						</div>
-
+						{/* loading/not found */}
 						{filteredClasses.length === 0 ? (
 							loading ? (
 								<div
@@ -271,7 +271,7 @@ const Classes = ({
 								</div>
 							)
 						) : null}
-
+						{/* content filters */}
 						{filteredClasses.length > 0 && (
 							<div
 								className="flex flex-col items-center justify-center mt-12 space-x-0 space-y-2 md:space-x-2 md:space-y-0 "
@@ -342,7 +342,7 @@ const Classes = ({
 									})}
 								</div>
 								{(page > 0 || page < MAX_PAGES) && < div className="pb-1">Or</div>}
-
+								{/* pagination */}
 								<div className="flex-col md:flex-row" key="pagination">
 									{page > 0 ? (
 										<button

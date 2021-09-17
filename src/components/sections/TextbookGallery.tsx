@@ -18,6 +18,7 @@ const TextbookGallery = ({ textbooks }: { textbooks: Textbook[] }) => {
 							<a
 								href={text.url}
 								target="_blank"
+								data-attr="textbook"
 								rel="noreferrer"
 								onClick={() => {
 									posthog?.capture("view-textbook", {

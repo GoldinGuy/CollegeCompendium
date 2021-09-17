@@ -68,7 +68,9 @@ const ClassGallery = ({ classes,loading }: { classes: Class[], loading: boolean 
 					{shuffle(classes)
 						?.slice(0, 9)
 						.map((_class, idx) => {
-							return <ClassItem _class={_class} idx={idx} />;
+							return (
+								<ClassItem _class={_class} idx={idx} data-attr="class-item" />
+							);
 						}) ?? []}
 				</Carousel>)
 			}

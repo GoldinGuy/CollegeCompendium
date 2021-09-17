@@ -25,6 +25,7 @@ import {
 	SearchPage,
 	ExplorePage,
 	SubmitPage,
+	TextbookPage,
 } from "./views";
 import { JSON_DATA_VERSION } from "./globals";
 
@@ -92,28 +93,46 @@ function App() {
 	}, [classes.length, featured.length, textbooks.length]);
 
 	return (
-			<ScrollToTop>
-				{/* TODO: enable while under active development */}
-				{/* <Route path="/" exact component={TempSplashPage} /> */}
-				<Navbar />
-				<Switch>
-					<Route
-						path="//"
-						render={() => <HomePage featured={featured} loading={loading} />}
-					/>
-					<Route
-						path="/search"
-						render={() => <SearchPage classes={classes} textbooks={textbooks}  loading={loading} />}
-					/>
-					<Route
-						path="/explore"
-						render={() => <ExplorePage classes={classes} textbooks={textbooks} loading={loading} />}
-					/>
-					<Route path="/submit" exact component={SubmitPage} />
-					<Route path="/tos" exact component={TermsOfService} />
-				</Switch>
-				<Footer />
-			</ScrollToTop>
+		<ScrollToTop>
+			{/* TODO: enable while under active development */}
+			{/* <Route path="/" exact component={TempSplashPage} /> */}
+			<Navbar />
+			<Switch>
+				<Route
+					path="//"
+					render={() => <HomePage featured={featured} loading={loading} />}
+				/>
+				<Route
+					path="/search"
+					render={() => (
+						<SearchPage
+							classes={classes}
+							textbooks={textbooks}
+							loading={loading}
+						/>
+					)}
+				/>
+				<Route
+					path="/explore"
+					render={() => (
+						<ExplorePage
+							classes={classes}
+							textbooks={textbooks}
+							loading={loading}
+						/>
+					)}
+				/>
+				<Route
+					path="/textbooks"
+					render={() => (
+						<TextbookPage textbooks={textbooks} loading={loading} />
+					)}
+				/>
+				<Route path="/submit" exact component={SubmitPage} />
+				<Route path="/tos" exact component={TermsOfService} />
+			</Switch>
+			<Footer />
+		</ScrollToTop>
 	);
 }
 
