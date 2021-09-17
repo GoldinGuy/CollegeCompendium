@@ -1,6 +1,7 @@
 import { BookLoader } from "../components";
 import { TEXTBOOK_TAGS } from "../globals";
 import { Textbook } from "../typings/interfaces";
+import { shuffle } from "../utils";
 
 const TextbookPage = ({
 	textbooks,
@@ -23,14 +24,23 @@ const TextbookPage = ({
 					<div className="flex flex-col">
 						{TEXTBOOK_TAGS.map((category) => {
 							return (
-                                <div>
-                                   <span className="capitalize text-md"> {category}</span>
-									{textbooks.map((text) => {
-										if (text.category === category) {
+								<div className="mt-4">
+									<span className="capitalize text-md"> {category}</span>
+									{shuffle(textbooks).map((text) => {
+										if (text.category.includes(category.toLowerCase())) {
 											return (
-												<div data-attr="textbook" className="text-sm font-normal">
-													{text.book}
-												</div>
+												<a
+													href={text.url}
+													target="_blank"
+													rel="noreferrer"
+													data-attr="textbook"
+													className="font-normal flex flex-col py-1"
+												>
+													<div className="text-sm ani-under w-max">
+														{text.book}
+													</div>
+													<span className="text-xs">{text.author}</span>
+												</a>
 											);
 										} else return null;
 									})}
