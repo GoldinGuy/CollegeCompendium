@@ -1,6 +1,6 @@
 import { Tag } from "./typings/interfaces";
 
-export const JSON_DATA_VERSION = "1";
+export const JSON_DATA_VERSION = "2";
 export const DATA_TAGS: Tag[] = ["Written Notes", "Assignments", "Video Lecture(s)"];
 export const FUNNY_TOPICS = [
 	"Discrete Computational Nanotech",
@@ -32,7 +32,7 @@ export const TEXTBOOK_TAGS: Tag[] = [
 	"introduction",
 	// maths
 	"mathematics",
-	"statistics",
+	// "statistics",
 	// core
 	"algorithms",
 	"datastructures",
@@ -41,29 +41,30 @@ export const TEXTBOOK_TAGS: Tag[] = [
 	"systems",
 	"theory",
 	// langs
-	"javascript",
+	// "javascript",
 	"cprogramming",
 	"python",
 	"java",
-	"flask",
-	"redis",
-	"mongodb",
-	"haskell",
+	"web",
+	// "flask",
+	// "redis",
+	// "mongodb",
+	// "haskell",
 	"rprogramming",
 	"matlab",
 	"latex",
-	"xml",
+	// "xml",
 	// random
 	"machinelearning",
 	"crypto",
-	"robotics",
+	// "robotics",
 	"graphics",
-	"blender",
-	"linux",
+	// "blender",
 	"biology",
-	"security",
-	"knoppix",
-	"xforms",
+	"linux",
+	// "knoppix",
+	// "security",
+	// "xforms",
 	"GIS",
 	"misc",
 ];

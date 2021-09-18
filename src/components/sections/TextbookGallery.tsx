@@ -51,7 +51,7 @@ const TextbookGallery = ({ textbooks, filters }: { textbooks: Textbook[], filter
 										<h3 className="font-semibold px-3 py-3 float-left w-full">
 											{text.book}
 										</h3>
-										<p className="text-xs px-3 pb-2 italic">
+										<p className="text-xs px-3 pb-2 italic float-left w-full">
 											{text.author.replace(/ *\([^)]*\) */g, "")}
 										</p>
 									</div>
