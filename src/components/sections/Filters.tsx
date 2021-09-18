@@ -23,7 +23,7 @@ const Filters = (({ filters }: {filters: Tag[]}) => {
 									}`
 								);
 							}}
-							className="ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 bg-fuchsia-200 text-fuchsia-700 rounded-full cursor-pointer"
+							className="sm:ml-4 mx-2 sm:mx-0 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 bg-fuchsia-200 text-fuchsia-700 rounded-full cursor-pointer"
 							key={tag}
 						>
 							#{tag}

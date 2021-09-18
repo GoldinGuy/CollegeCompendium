@@ -15,9 +15,9 @@ const TextbookPage = ({
 	}) => {
 	const [textView, setTextView] = useState(false);
 	
-	const getFeaturedByCat = (books: Textbook[], cat: string) => {
-		return books.filter((text) => text.category === cat).slice(0, 3);
-	}
+	// const getFeaturedByCat = (books: Textbook[], cat: string) => {
+	// 	return books.filter((text) => text.category === cat).slice(0, 3);
+	// }
 	
 	
 	return (
@@ -25,26 +25,25 @@ const TextbookPage = ({
 			<h2 className="pb-6 mb-1 text-center congress text-xl sm:text-2xl font-extrabold leading-tight px-1 text-gray-900 md:text-4xl flex flex-col items-center justify-center">
 				<span className="">View Free Public CS Textbooks</span>
 			</h2>
-
-			<div className="pt-2 pb-0 text-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl  ph-no-capture">
-				{TEXTBOOK_TAGS.map((cat) => {
-					return (
-						<a
-							href={`#${cat}`}
-							onClick={() => {
-								posthog?.capture("filter-textbooks", {
-									filter: cat,
-								});
-							}}
-							className="sm:ml-4 mx-2 sm:mx-0 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 bg-fuchsia-200 text-fuchsia-700 rounded-full cursor-pointer"
-							key={cat}
-						>
-							{cat}
-						</a>
-					);
-				})}
-			</div>
-			<div className="flex justify-center mt-3">
+			<div className="flex flex-col sm:flex-row items-center">
+				<div className="pt-2 pb-0 text-center max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl  ph-no-capture mb-2 sm:mb-0">
+					{TEXTBOOK_TAGS.map((cat) => {
+						return (
+							<a
+								href={`#${cat}`}
+								onClick={() => {
+									posthog?.capture("filter-textbooks", {
+										filter: cat,
+									});
+								}}
+								className="sm:ml-4 mx-2 sm:mx-0 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 bg-fuchsia-200 text-fuchsia-700 rounded-full cursor-pointer"
+								key={cat}
+							>
+								{cat.replace("programming", "").replace("introduction", "intro")}
+							</a>
+						);
+					})}
+				</div>
 				<Toggle onTrigger={() => setTextView((tv) => !tv)} label="Plain Text" />
 			</div>
 

@@ -13,9 +13,11 @@ return (
 				<div className="block bg-gray-600 w-10 h-6 rounded-full"></div>
 				<div className="dot absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition"></div>
 			</div>
-			<div className="ml-3 text-base text-gray-700 font-medium">{label}</div>
+			<div className="ml-3 whitespace-nowrap text-base text-gray-700 font-medium">
+				{label}
+			</div>
 		</label>
-    </div>
+	</div>
 );
 }
 export default Toggle
