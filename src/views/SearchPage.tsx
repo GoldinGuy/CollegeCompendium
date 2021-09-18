@@ -14,6 +14,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 You can contact us for more details at team@collegecompendium.org. */
 
 import React from "react";
+import { TextbookGallery } from "../components";
 import Classes from "../components/classes/Classes";
 import { Class, Textbook } from "../typings/interfaces";
 import { shuffle, useQuery } from "../utils";
@@ -30,13 +31,21 @@ const SearchPage = ({
 	let query = useQuery();
 
 	return (
-		<Classes
-			classes={shuffle(classes) ?? []}
-			displayPromo={true}
-			filters={query.get("q")?.split("-")}
-			loading={loading}
-			asTable={query.get("table") === "true"}
-		/>
+		<>
+			<Classes
+				classes={shuffle(classes) ?? []}
+				displayPromo={true}
+				filters={query.get("q")?.split("-")}
+				loading={loading}
+				asTable={query.get("table") === "true"}
+			/>
+			{textbooks.length > 0 && (
+				<TextbookGallery
+					textbooks={shuffle(textbooks) ?? []}
+					filters={query.get("q")?.split("-")}
+				/>
+			)}
+		</>
 	);
 };
 export default SearchPage;

@@ -2,7 +2,22 @@ import posthog from "posthog-js";
 import { Link } from "react-router-dom";
 import { Textbook } from "../../typings/interfaces";
 
-const TextbookGallery = ({ textbooks }: { textbooks: Textbook[] }) => {
+const TextbookGallery = ({ textbooks, filters }: { textbooks: Textbook[], filters?: string[] }) => {
+	const filter = (textbooks: Textbook[]): Textbook[] => {
+		if (filters && filters.length > 0) {
+			return textbooks.filter((text) => {
+				if (
+					filters.some((f) => text.book.includes(f)) ||
+					filters.some((f) => text.category.includes(f)) ||
+					filters.some((f) => text.author.includes(f))
+				) {
+					return true;
+				}
+				return false
+			}).slice(0, 14)
+		}
+		return textbooks.slice(0, 6);
+	}
 	return (
 		<>
 			<h2
@@ -12,8 +27,8 @@ const TextbookGallery = ({ textbooks }: { textbooks: Textbook[] }) => {
 				Searching for the right textbook?
 			</h2>
 			<section className="w-full px-4 py-12 mx-auto sm:w-3/4 md:w-4/5 max-w-7xl">
-				<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 text-center ">
-					{textbooks.slice(0, 6).map((text) => {
+				<div className="flex flex-row flex-wrap	justify-center">
+					{filter(textbooks).map((text) => {
 						return (
 							<a
 								href={text.url}

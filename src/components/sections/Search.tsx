@@ -79,9 +79,11 @@ const NavSearchBar = ({ classN }: { classN?: string }) => {
 							onClick={() => search(term)}
 						>
 							<svg
-								className={`text-gray-500 duration-200 fill-current hover:text-gray-700 focus:text-gray-700 ${
-									classN ?? ""
-								}`}
+								className={` duration-200 fill-current ${
+									window.location.pathname.includes("search")
+										? "text-fuchsia-500 hover:text-fuchsia-500 focus:text-fuchsia-500"
+										: "text-gray-500 hover:text-gray-700 focus:text-gray-700"
+								} ${classN ?? ""}`}
 								version="1.1"
 								xmlns="http://www.w3.org/2000/svg"
 								width={20}
