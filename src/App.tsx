@@ -28,6 +28,7 @@ import {
 	TextbookPage,
 } from "./views";
 import { JSON_DATA_VERSION } from "./globals";
+import ScrollArrow from "./components/ScrollArrow";
 
 // analytics
 if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
@@ -131,6 +132,7 @@ function App() {
 				<Route path="/submit" exact component={SubmitPage} />
 				<Route path="/tos" exact component={TermsOfService} />
 			</Switch>
+			<ScrollArrow/>
 			<Footer />
 		</ScrollToTop>
 	);

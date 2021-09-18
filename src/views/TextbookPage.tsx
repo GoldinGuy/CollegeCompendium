@@ -39,12 +39,12 @@ const TextbookPage = ({
 								className="sm:ml-4 mx-2 sm:mx-0 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 bg-fuchsia-200 text-fuchsia-700 rounded-full cursor-pointer"
 								key={cat}
 							>
-								{cat.replace("programming", "").replace("introduction", "intro")}
+								{cat?.replace("programming", "")?.replace("introduction", "intro")}
 							</a>
 						);
 					})}
 				</div>
-				<Toggle onTrigger={() => setTextView((tv) => !tv)} label="Plain Text" />
+				<Toggle onTrigger={() => setTextView((tv) => !tv)} label="Plaintext" />
 			</div>
 
 			{/* <p className="px-0 mb-6 text-lg text-gray-600 md:text-xl lg:px-24 text-center"></p> */}
