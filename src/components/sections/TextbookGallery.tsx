@@ -26,7 +26,7 @@ const TextbookGallery = ({ textbooks, filters }: { textbooks: Textbook[], filter
 			>
 				Searching for the right textbook?
 			</h2>
-			<section className="w-full px-4 py-12 mx-auto sm:w-3/4 md:w-4/5 max-w-7xl">
+			<section className="w-full sm:px-4 py-12 mx-auto sm:w-3/4 md:w-4/5 max-w-7xl">
 				<div className="flex flex-row flex-wrap	justify-center">
 					{filter(textbooks).map((text) => {
 						return (
@@ -51,8 +51,8 @@ const TextbookGallery = ({ textbooks, filters }: { textbooks: Textbook[], filter
 										<h3 className="font-semibold px-3 py-3 float-left w-full">
 											{text.book}
 										</h3>
-										<p className="text-xs px-3 pb-2 italic trunc-3">
-											{text.author}
+										<p className="text-xs px-3 pb-2 italic">
+											{text.author.replace(/ *\([^)]*\) */g, "")}
 										</p>
 									</div>
 									<div

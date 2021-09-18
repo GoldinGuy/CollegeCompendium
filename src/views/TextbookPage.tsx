@@ -1,3 +1,4 @@
+import posthog from "posthog-js";
 import { BookLoader } from "../components";
 import { TEXTBOOK_TAGS } from "../globals";
 import { Textbook } from "../typings/interfaces";
@@ -26,7 +27,7 @@ const TextbookPage = ({
 							return (
 								<div className="mt-4">
 									<span className="capitalize text-md"> {category}</span>
-									{shuffle(textbooks).map((text) => {
+									{shuffle(textbooks).map((text, i) => {
 										if (text.category.includes(category.toLowerCase())) {
 											return (
 												<a
@@ -35,11 +36,17 @@ const TextbookPage = ({
 													rel="noreferrer"
 													data-attr="textbook"
 													className="font-normal flex flex-col py-1"
+													key={text.book + i}
+													onClick={() => {
+														posthog?.capture("view-textbook", {
+															book: text.book,
+														});
+													}}
 												>
 													<div className="text-sm ani-under w-max">
 														{text.book}
 													</div>
-													<span className="text-xs">{text.author}</span>
+													<span className="text-xs">{text.author.replace(/ *\([^)]*\) */g, "")}</span>
 												</a>
 											);
 										} else return null;
