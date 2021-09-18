@@ -105,7 +105,7 @@ const Navbar = () => {
 							Explore
 							<span
 								className={
-									loc.pathname === "/explore"
+									loc.pathname.includes("/explore")
 										? "absolute bottom-0 left-0 w-full h-1 -mb-2 bg-fuchsia-300 rounded-full"
 										: "hidden"
 								}
@@ -118,7 +118,7 @@ const Navbar = () => {
 							Textbooks
 							<span
 								className={
-									loc.pathname === "/textbooks"
+									loc.pathname.includes("/textbooks")
 										? "absolute bottom-0 left-0 w-full h-1 -mb-2 bg-fuchsia-300 rounded-full"
 										: "hidden"
 								}

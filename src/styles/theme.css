@@ -56,6 +56,12 @@
   }
 }
 
+/* toggle checkbox  */
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #3b82f6;
+}
+
 
 /* animated underline  */
 
