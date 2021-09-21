@@ -94,6 +94,7 @@ export const SOURCE_COLORS = {
 	columbia: "#9BCBEB",
 	rpi: "#D6001C",
 	nyu: "#57068c",
+	uf: "#FA4616",
 	utexas: "#BF5700",
 	chicago: "#800000",
 	riverside: "#2D6CC0",
