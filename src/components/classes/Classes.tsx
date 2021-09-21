@@ -68,7 +68,8 @@ const Classes = ({
 					let included = false;
 					included = filters.some((tag) => {
 						let inTags = _class.tags.some((cat) => {
-							if (formatText(cat).includes(tag)) {
+							// console.log(cat);	
+							if (cat && formatText(cat).includes(tag)) {
 								return true;
 							}
 							return false;

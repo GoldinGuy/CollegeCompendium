@@ -52,6 +52,7 @@ function App() {
 				setFeatured(locJSONData["featured"]);
 				setClasses(locJSONData["courses"]);
 				setTextbooks(locJSONData["textbooks"]);
+				// console.log(locJSONData["courses"]);
 			} else if (
 				process.env.REACT_APP_JSONIO_API_KEY &&
 				process.env.REACT_APP_DATA_ID
