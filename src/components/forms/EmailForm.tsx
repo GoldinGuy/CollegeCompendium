@@ -30,44 +30,50 @@ const EmailForm = () => {
 					Join us for personal content recommendations and weekly digests on awesome
 					CS resources
 				</p>
-				<form className="grid w-full grid-cols-1 gap-3 pt-1 mx-auto mb-8 lg:grid-cols-6 md:w-7/12">
+
+
+
+				<form action="https://collegecompendium.us5.list-manage.com/subscribe/post?u=20885e7b5573defa4709ae6a2&amp;id=fbc4b1cb3e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate className="grid w-full grid-cols-1 gap-3 pt-1 mx-auto mb-8 lg:grid-cols-6 md:w-7/12">
 					<label className="col-auto lg:col-span-4 ">
 						<span className="sr-only">Your Email</span>
 						<input
 							className="w-full p-3 text-md text-gray-900 bg-gray-200 rounded-xl focus:outline-none focus:shadow-outline"
-							type="email"
 							placeholder="Enter your email..."
-							required={true}
+							type="email"
+							name="EMAIL" id="mce-EMAIL"
+							required
 							onChange={(e) => setEmail(e.target.value)}
 							value={email}
 						/>
+						{/* <input type="checkbox" value="8" name="group[01245][8]" id="mce-group[01234]-01234-0" className="invisible" checked/> */}
+						<div style={{ position: "absolute", left: "-5000px" }} aria-hidden="true">
+							<input type="text" name="b_20885e7b5573defa4709ae6a2_fbc4b1cb3e" tabIndex={-1} value="" />
+						</div>
 					</label>
-					<button
-						onClick={(e) => {
-							e.preventDefault();
-							if (
-								email.includes("@") &&
-								email.includes(".") &&
-								process.env.REACT_APP_IFTTT_KEY
-							) {
-								console.log("Email is valid: ", email);
-								posthog?.capture("joined-mailing-list");
-								fetch(
-									`https://maker.ifttt.com/trigger/email_received/with/key/${process.env.REACT_APP_IFTTT_KEY}?&value1=${email}`,
-									{
-										method: "POST",
-										mode: "no-cors",
-									}
-								);
-								setEmail("");
-							}
-						}}
+					<input
+						// onClick={(e) => {
+						// 	e.preventDefault();
+						// 	if (
+						// 		email.includes("@") &&
+						// 		email.includes(".") &&
+						// 		process.env.REACT_APP_IFTTT_KEY
+						// 	) {
+						// 		console.log("Email is valid: ", email);
+						// 		posthog?.capture("joined-mailing-list");
+						// 		fetch(
+						// 			`https://maker.ifttt.com/trigger/email_received/with/key/${process.env.REACT_APP_IFTTT_KEY}?&value1=${email}`,
+						// 			{
+						// 				method: "POST",
+						// 				mode: "no-cors",
+						// 			}
+						// 		);
+						// 		setEmail("");
+						// 	}
+						// }}
 						className="w-full col-auto btn py-3 btn-primary btn-lg lg:col-span-2 rounded-xl text-white bg-fuchsia-400 hover:bg-fuchsia-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 font-semibold"
-						type="submit"
+						type="submit" value="Oh Yeah!" name="subscribe" id="mc-embedded-subscribe" 
 						data-attr="mailing-list-signup"
-					>
-						Oh Yeah!
-					</button>
+					/>
 				</form>
 			</div>
 		</section>

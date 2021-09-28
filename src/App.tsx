@@ -26,6 +26,7 @@ import {
 	ExplorePage,
 	SubmitPage,
 	TextbookPage,
+	WelcomePage,
 } from "./views";
 import { JSON_DATA_VERSION } from "./globals";
 import ScrollArrow from "./components/ScrollArrow";
@@ -131,9 +132,10 @@ function App() {
 					)}
 				/>
 				<Route path="/submit" exact component={SubmitPage} />
+				<Route path="/welcome" exact component={WelcomePage} />
 				<Route path="/tos" exact component={TermsOfService} />
 			</Switch>
-			<ScrollArrow/>
+			<ScrollArrow />
 			<Footer />
 		</ScrollToTop>
 	);
