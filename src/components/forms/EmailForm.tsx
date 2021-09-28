@@ -27,27 +27,42 @@ const EmailForm = () => {
 						We’re on a mission to bring the best of open-source learning to
 						students everywhere
 					</i>
-					Join us for personal content recommendations and weekly digests on awesome
-					CS resources
+					Join us for personal content recommendations and weekly digests on
+					awesome CS resources
 				</p>
 
-
-
-				<form action="https://collegecompendium.us5.list-manage.com/subscribe/post?u=20885e7b5573defa4709ae6a2&amp;id=fbc4b1cb3e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate className="grid w-full grid-cols-1 gap-3 pt-1 mx-auto mb-8 lg:grid-cols-6 md:w-7/12">
+				<form
+					action="https://collegecompendium.us5.list-manage.com/subscribe/post?u=20885e7b5573defa4709ae6a2&amp;id=fbc4b1cb3e"
+					method="post"
+					id="mc-embedded-subscribe-form"
+					name="mc-embedded-subscribe-form"
+					target="_blank"
+					noValidate
+					className="grid w-full grid-cols-1 gap-3 pt-1 mx-auto mb-8 lg:grid-cols-6 md:w-7/12"
+				>
 					<label className="col-auto lg:col-span-4 ">
 						<span className="sr-only">Your Email</span>
 						<input
 							className="w-full p-3 text-md text-gray-900 bg-gray-200 rounded-xl focus:outline-none focus:shadow-outline"
 							placeholder="Enter your email..."
 							type="email"
-							name="EMAIL" id="mce-EMAIL"
+							name="EMAIL"
+							id="mce-EMAIL"
 							required
 							onChange={(e) => setEmail(e.target.value)}
 							value={email}
 						/>
-						{/* <input type="checkbox" value="8" name="group[01245][8]" id="mce-group[01234]-01234-0" className="invisible" checked/> */}
-						<div style={{ position: "absolute", left: "-5000px" }} aria-hidden="true">
-							<input type="text" name="b_20885e7b5573defa4709ae6a2_fbc4b1cb3e" tabIndex={-1} value="" />
+						<input type="checkbox" value="1" name="group[fbc4b1cb3e][1]" id="mce-group[fbc4b1cb3e]-fbc4b1cb3e-0" className="hidden" checked/>
+						<div
+							style={{ position: "absolute", left: "-5000px" }}
+							aria-hidden="true"
+						>
+							<input
+								type="text"
+								name="b_20885e7b5573defa4709ae6a2_fbc4b1cb3e"
+								tabIndex={-1}
+								value=""
+							/>
 						</div>
 					</label>
 					<input
@@ -70,8 +85,11 @@ const EmailForm = () => {
 						// 		setEmail("");
 						// 	}
 						// }}
-						className="w-full col-auto btn py-3 btn-primary btn-lg lg:col-span-2 rounded-xl text-white bg-fuchsia-400 hover:bg-fuchsia-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 font-semibold"
-						type="submit" value="Oh Yeah!" name="subscribe" id="mc-embedded-subscribe" 
+						className="w-full col-auto btn btn-primary btn-lg lg:col-span-2 rounded-xl text-white bg-fuchsia-400 hover:bg-fuchsia-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 font-semibold"
+						type="submit"
+						value="Oh Yeah!"
+						name="subscribe"
+						id="mc-embedded-subscribe"
 						data-attr="mailing-list-signup"
 					/>
 				</form>
