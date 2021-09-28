@@ -27,7 +27,8 @@ const EmailForm = () => {
 						We’re on a mission to bring the best of open-source learning to
 						students everywhere
 					</i>
-					Join our mailing list and hear about more awesome CS resources!
+					Join us for personal content recommendations and weekly digests on awesome
+					CS resources
 				</p>
 				<form className="grid w-full grid-cols-1 gap-3 pt-1 mx-auto mb-8 lg:grid-cols-6 md:w-7/12">
 					<label className="col-auto lg:col-span-4 ">
@@ -50,6 +51,7 @@ const EmailForm = () => {
 								process.env.REACT_APP_IFTTT_KEY
 							) {
 								console.log("Email is valid: ", email);
+								posthog?.capture("joined-mailing-list");
 								fetch(
 									`https://maker.ifttt.com/trigger/email_received/with/key/${process.env.REACT_APP_IFTTT_KEY}?&value1=${email}`,
 									{

@@ -148,7 +148,7 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 				<p className="mb-6 text-lg font-regular italic font-semibold text-gray-500">
 					"Education is the most powerful weapon which you can use to change the
 					world."{" "}
-					<span className="text-base text-fuchsia-400"> - Nelson Mandela </span>
+					<span className="text-base text-fuchsia-400"> — Nelson Mandela </span>
 				</p>
 			</section>
 			<ClassGallery classes={featured} loading={loading} />

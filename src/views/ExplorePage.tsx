@@ -18,6 +18,7 @@ import { Class, Textbook } from "../typings/interfaces";
 import { shuffle, useQuery } from "../utils";
 import { ContributeForm, Filters, LargeSearchBar, TextbookGallery } from "../components";
 import { CLASS_TAGS } from "../globals";
+import EmailForm from "../components/forms/EmailForm";
 
 const ExplorePage = ({
 	classes,
@@ -32,7 +33,7 @@ const ExplorePage = ({
 
 	return (
 		<>
-			<section className="px-4 pb-16 pt-6 mx-auto max-w-7xl">
+			<div className="px-4 pb-4 pt-6 mx-auto max-w-7xl">
 				<h2 className="pb-6 mb-1 text-center congress text-2xl font-extrabold leading-tight text-gray-900 md:text-4xl">
 					Find Your Next CS Resource
 				</h2>
@@ -43,11 +44,14 @@ const ExplorePage = ({
 					asTable={query.get("table") === "true"}
 					loading={loading}
 				/>
+			</div>
+			<EmailForm />
+			<div className="px-4 pb-12 pt-1 mx-auto max-w-7xl">
 				{textbooks.length > 0 && (
 					<TextbookGallery textbooks={shuffle(textbooks) ?? []} />
 				)}
-			</section>
-			<ContributeForm />
+			</div>
+			{/* <ContributeForm /> */}
 		</>
 	);
 };

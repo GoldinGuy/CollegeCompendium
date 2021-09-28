@@ -16,6 +16,7 @@ You can contact us for more details at team@collegecompendium.org. */
 import React from "react";
 import { TextbookGallery } from "../components";
 import Classes from "../components/classes/Classes";
+import EmailForm from "../components/forms/EmailForm";
 import { Class, Textbook } from "../typings/interfaces";
 import { shuffle, useQuery } from "../utils";
 
@@ -45,6 +46,7 @@ const SearchPage = ({
 					filters={query.get("q")?.split("-")}
 				/>
 			)}
+			<EmailForm />
 		</>
 	);
 };
