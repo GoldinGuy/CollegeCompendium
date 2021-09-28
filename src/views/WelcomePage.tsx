@@ -38,9 +38,8 @@ const WelcomePage = () => {
 						students everywhere
 					</i>
 					Like what we're doing? Share Compendium with a friend!
-                </p>
-                
-                
+				</p>
+
 				<form className="grid w-full grid-cols-1 gap-3 pt-1 mx-auto mb-8 lg:grid-cols-6 md:w-7/12">
 					<label className="col-auto lg:col-span-4 ">
 						<span className="sr-only">Friend's Email</span>
@@ -60,9 +59,11 @@ const WelcomePage = () => {
 								email.includes(".") &&
 								process.env.REACT_APP_IFTTT_KEY
 							) {
-                                console.log("Email is valid: ", email);
-                                window.open(`mailto:${email}?subject=College%20Compendium%2C%20an%20Awesome%20CS%20Resource!&body=Hey%2C%20feel%20free%20to%20check%20out%20https%3A%2F%2Fcollegecompendium.org%2C%20a%20free%20open-source%20collection%20of%20college%20CS%20resources%20with%20personal%20content%20recommendations%20and%20weekly%20digests!`);
-                                posthog?.capture("referred-compendium");
+								console.log("Email is valid: ", email);
+								window.open(
+									`mailto:${email}?subject=College%20Compendium%2C%20an%20Awesome%20CS%20Resource!&body=Hey%2C%20feel%20free%20to%20check%20out%20https%3A%2F%2Fcollegecompendium.org%2C%20a%20free%20open-source%20collection%20of%20college%20CS%20resources%20with%20personal%20content%20recommendations%20and%20weekly%20digests!`
+								);
+								posthog?.capture("referred-compendium");
 								// fetch(
 								// 	`https://maker.ifttt.com/trigger/email_received/with/key/${process.env.REACT_APP_IFTTT_KEY}?&value1=${email}`,
 								// 	{
@@ -87,22 +88,19 @@ const WelcomePage = () => {
 					</button>
 				</form>
 				<div className="flex flex-col justify-start mb-3 space-x-0 space-y-2 text-sm text-gray-600 md:flex-row md:justify-center md:space-x-8 md:space-y-0">
+					<Link to="/" className="hover:underline">
+						Back to Home <FontAwesomeIcon icon={faHome} className="ml-2 " />
+					</Link>
+					<a className="hover:underline" href="https://discord.gg/gKYSMeJ">
+						Join Our Discord{" "}
+						<FontAwesomeIcon icon={faDiscord} className="ml-2 " />
+					</a>
 					<a
 						className="hover:underline"
 						href="mailto:team@collegecompendium.org&subject=College Compendium Inquiry"
 					>
 						Get In Touch <FontAwesomeIcon icon={faEnvelope} className="ml-2 " />
 					</a>
-					{/* <p className="">
-							College Compendium is not affiliated with any classes
-						</p> */}
-					<a className="hover:underline" href="https://discord.gg/gKYSMeJ">
-						Join Our Discord{" "}
-						<FontAwesomeIcon icon={faDiscord} className="ml-2 " />
-					</a>
-					<Link to="/" className="hover:underline">
-						Back to Home <FontAwesomeIcon icon={faHome} className="ml-2 " />
-					</Link>
 				</div>
 			</div>
 		</section>
