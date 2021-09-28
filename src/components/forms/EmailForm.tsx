@@ -66,25 +66,27 @@ const EmailForm = () => {
 						</div>
 					</label>
 					<input
-						// onClick={(e) => {
-						// 	e.preventDefault();
-						// 	if (
-						// 		email.includes("@") &&
-						// 		email.includes(".") &&
-						// 		process.env.REACT_APP_IFTTT_KEY
-						// 	) {
-						// 		console.log("Email is valid: ", email);
-						// 		posthog?.capture("joined-mailing-list");
-						// 		fetch(
-						// 			`https://maker.ifttt.com/trigger/email_received/with/key/${process.env.REACT_APP_IFTTT_KEY}?&value1=${email}`,
-						// 			{
-						// 				method: "POST",
-						// 				mode: "no-cors",
-						// 			}
-						// 		);
-						// 		setEmail("");
-						// 	}
-						// }}
+						onSubmit={
+							(e) =>{
+							e.preventDefault();
+							if (
+								email.includes("@") &&
+								email.includes(".") &&
+								process.env.REACT_APP_IFTTT_KEY
+							) {
+								console.log("Email is valid: ", email);
+								posthog?.capture("joined-mailing-list");
+								fetch(
+									`https://maker.ifttt.com/trigger/email_received/with/key/${process.env.REACT_APP_IFTTT_KEY}?&value1=${email}`,
+									{
+										method: "POST",
+										mode: "no-cors",
+									}
+								);
+								setEmail("");
+							}
+						}
+						}
 						className="w-full col-auto btn btn-primary btn-lg lg:col-span-2 rounded-xl text-white bg-fuchsia-400 hover:bg-fuchsia-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 font-semibold"
 						type="submit"
 						value="Oh Yeah!"
