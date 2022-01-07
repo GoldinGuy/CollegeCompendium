@@ -251,13 +251,13 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 						<div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
 							<p>
 								<span className="block text-2xl font-bold text-white">
-									$68,800
+								150,000+
 								</span>
 								<span className="mt-1 block text-base text-gray-300">
 									<span className="font-medium text-white">
-										Annual cost of attending a university{" "}
-									</span>
-									with a top CS curriculum
+										Hours of Computer Science content{" "}
+									</span>{" "}
+									to learn on College Compendium
 								</span>
 							</p>
 							<p>
@@ -273,13 +273,13 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 							</p>
 							<p>
 								<span className="block text-2xl font-bold text-white">
-									150,000+
+									100+
 								</span>
 								<span className="mt-1 block text-base text-gray-300">
 									<span className="font-medium text-white">
-										Hours of Computer Science content{" "}
+										Computer Science & Mathematics textbooks compiled{" "}
 									</span>{" "}
-									to learn on College Compendium
+									and listed on College Compendium
 								</span>
 							</p>
 							<p>
