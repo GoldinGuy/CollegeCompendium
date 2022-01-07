@@ -277,7 +277,7 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 								</span>
 								<span className="mt-1 block text-base text-gray-300">
 									<span className="font-medium text-white">
-										Computer Science & Mathematics textbooks compiled{" "}
+										Computer Science textbooks compiled{" "}
 									</span>{" "}
 									and listed on College Compendium
 								</span>
