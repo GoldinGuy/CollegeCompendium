@@ -33,14 +33,14 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 						<br className="hidden sm:flex" />
 						<span className="block w-full text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-blue-500 lg:inline">
 							{" "}
-							From Top Universities
+							From Renowned Universities
 						</span>
 					</h1>
 					<p className="px-0 mb-6 text-lg text-gray-600 md:text-xl lg:px-24">
 						Learn at your own pace with a curated collection of{" "}
 						<br className="hidden sm:flex" />
 						<strong>
-							free and open source computer science resources from top colleges
+							public free and open source computer science resources from awesome colleges
 						</strong>
 					</p>
 					<div className="mb-4 space-x-0 md:space-x-2 md:mb-6">
