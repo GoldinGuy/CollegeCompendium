@@ -1,4 +1,4 @@
-# CollegeCompendium
+# College Compendium
 
 📓 **Join over 70000 programmers in 179 countries and learn at your own pace with a curated collection of free, public, open source computer science resources from awesome colleges**
 
@@ -16,23 +16,23 @@ Here they are! [csv](https://github.com/GoldinGuy/CollegeCompendium/blob/master/
 ### We Complement Your CS Journey By Cataloging Resources Across Topics & Experience Levels
 
 College Compendium serves a single purpose: we help you find your
-next computer science resource or curriculum. Regardless of where
-you are in your journey, we've compiled a catalog of CS course
+next computer science resource or curriculum to audit. Regardless of where
+you are in your self-guided learning journey, we've compiled CS course
 resources that are relevant to your skill-level, time-commitment,
-and learning style. With hundreds of classes (and growing), you
-will never hit a dead end.
+and preferred learning style so you'll
+ never hit a dead end.
 
 [View The Official College Compendium Site](https://collegecompendium.org)
 
 ## Development setup
 
-Simply clone the repository, then run
+Simply clone this repository, then run
 
 ```
 npm install
 ```
 
-To test the app, run
+To test the site, run
 
 ```
 npm start
@@ -48,7 +48,9 @@ npm start
 
 ## Meta
 
-College Compendium Corporation is a nonprofit organization led by [@GoldinGuy](https://github.com/GoldinGuy) and [@Samfydega](https://github.com/samfydega) dedicated to improving access of computer-science educational resources to students across the world. 
+College Compendium Corporation is a nonprofit organization led by [@GoldinGuy](https://github.com/GoldinGuy) and [@Samfydega](https://github.com/samfydega) dedicated to improving access to educational computer science resources for students across the world. 
+
+College Compendium is proudly supported by [JSONBin.io](https://jsonbin.io/open-source) as an open source project.
 
 The College Compendium website is distributed under the GNU Affero General Public License v3.0 license. See [LICENSE](https://github.com/GoldinGuy/CollegeCompendium/blob/master/LICENSE) for more information.
 

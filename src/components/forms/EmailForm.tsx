@@ -24,10 +24,10 @@ const EmailForm = () => {
 			<div className="w-full mx-auto text-left md:w-11/12 xl:w-8/12 md:text-center">
 				<p className="mb-6 text-lg text-gray-500 md:text-xl md:leading-normal">
 					<i className="mb-4 block">
-						We’re on a mission to bring the best of open-source learning to
+						We’re on a mission to bring the best of open source learning to
 						students everywhere
 					</i>
-					Join us for personal content recommendations and weekly digests on
+					Join us for personal content recommendations and periodic digests on
 					awesome CS resources
 				</p>
 

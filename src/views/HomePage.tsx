@@ -16,7 +16,6 @@ You can contact us for more details at team@collegecompendium.org. */
 import React from "react";
 import { Link } from "react-router-dom";
 import { ClassGallery, CTA } from "../components";
-// import FEATURED from "../data/featured.json";
 import { faArrowCircleRight, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
@@ -29,7 +28,7 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 			<section className="px-4 py-16 sm:pb-20 sm:pt-15 mx-auto max-w-7xl">
 				<div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
 					<h1 className="mb-6 congress text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
-						Audit Over <br className="sm:hidden" /> 1000 CS Classes
+						Audit Over <br className="sm:hidden" /> 700 CS Classes
 						<br className="hidden sm:flex" />
 						<span className="block w-full text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-blue-500 lg:inline">
 							{" "}
@@ -40,7 +39,8 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 						Learn at your own pace with a curated collection of{" "}
 						<br className="hidden sm:flex" />
 						<strong>
-							public free and open source computer science resources from awesome colleges
+							public computer science resources from
+							awesome colleges
 						</strong>
 					</p>
 					<div className="mb-4 space-x-0 md:space-x-2 md:mb-6">
@@ -86,11 +86,11 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 						</h2>
 						<p className="mb-8 text-base  text-gray-600 text-left md:text-lg">
 							College Compendium serves a single purpose: we help you find your
-							next computer science resource or curriculum. Regardless of where
-							you are in your journey, we've compiled a catalog of CS course
-							resources that are relevant to your skill-level, time-commitment,
-							and learning style. With hundreds of classes (and growing), you
-							will never hit a dead end.
+							next computer science resource or curriculum to audit. Regardless
+							of where you are in your self-guided learning journey, we've
+							compiled CS course resources that are relevant to your
+							skill-level, time-commitment, and preferred learning style so
+							you'll never hit a dead end.
 						</p>
 						<Link
 							to="/explore"
@@ -191,7 +191,7 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 								@Samfydega
 							</a>
 							, two student developers passionate about improving access to
-							high-quality educational computer science resources to
+							high-quality educational computer science resources for
 							intellectually curious people across the world. Learning and
 							applying computer science skills can be a difficult journey, which
 							is why we've created a catalog of public classes with resources to
@@ -251,7 +251,7 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 						<div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
 							<p>
 								<span className="block text-2xl font-bold text-white">
-								150,000+
+									100,000+
 								</span>
 								<span className="mt-1 block text-base text-gray-300">
 									<span className="font-medium text-white">
@@ -262,7 +262,7 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 							</p>
 							<p>
 								<span className="block text-2xl font-bold text-white">
-									1000+
+									750+
 								</span>
 								<span className="mt-1 block text-base text-gray-300">
 									<span className="font-medium text-white">
@@ -288,7 +288,7 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 								</span>
 								<span className="mt-1 block text-base text-gray-300">
 									<span className="font-medium text-white">
-										Free & open-source for everyone
+										Free & open source for everyone
 									</span>{" "}
 									looking to learn Computer Science
 								</span>

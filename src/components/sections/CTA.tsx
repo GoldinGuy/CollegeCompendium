@@ -25,7 +25,7 @@ const CTA = () => {
 				<h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
 					<span className="block">Ready to learn some Computer Science?</span>
 					<span className="block bg-gradient-to-r from-fuchsia-400 to-blue-500 bg-clip-text text-transparent">
-						Explore our collection of resources!
+						Explore our compendium!
 					</span>
 				</h2>
 				<div className="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5 items-center">
