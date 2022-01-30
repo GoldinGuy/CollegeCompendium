@@ -195,7 +195,15 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 							intellectually curious people across the world. Learning and
 							applying computer science skills can be a difficult journey, which
 							is why we've created a catalog of public classes with resources to
-							help you achieve your personal goals.
+							help you achieve your personal goals. We thank <a
+								href="https://jsonbin.io/open-source"
+								target="_blank"
+								rel="noreferrer"
+								className="text-fuchsia-500 hover:text-fuchsia-600"
+								data-attr="jsonbin-ref"
+							>
+								JSONBin.io
+							</a> for supporting College Compendium.
 						</p>
 						<a
 							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"

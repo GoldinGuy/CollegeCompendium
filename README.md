@@ -22,7 +22,7 @@ resources that are relevant to your skill-level, time-commitment,
 and preferred learning style so you'll
  never hit a dead end.
 
-[View The Official College Compendium Site](https://collegecompendium.org)
+[Official College Compendium Site](https://collegecompendium.org)
 
 ## Development setup
 

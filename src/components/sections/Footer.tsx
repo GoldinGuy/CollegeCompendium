@@ -24,7 +24,7 @@ const Footer = React.memo(() => {
 		<footer className="px-6 sm:px-12 md:px-24 pb-12 mx-auto max-w-screen bg-gray-50">
 			<div className="flex flex-col items-start justify-between pt-10 mt-10 border-t border-gray-100 md:flex-row md:items-center">
 				<p className="mb-2 font-semibold text-sm text-left text-gray-600 md:mb-0">
-					© 2021{" "}
+					© 2022{" "}
 					<a href="https://collegecompendium.org" className="text-fuchsia-500">
 						College Compendium Nonprofit Corporation
 					</a>{" "}
