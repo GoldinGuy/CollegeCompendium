@@ -52,7 +52,7 @@ const EmailForm = () => {
 							onChange={(e) => setEmail(e.target.value)}
 							value={email}
 						/>
-						<input type="checkbox" value="1" name="group[fbc4b1cb3e][1]" id="mce-group[fbc4b1cb3e]-fbc4b1cb3e-0" className="hidden" checked/>
+						<input type="checkbox" value="1" name="group[fbc4b1cb3e][1]" id="mce-group[fbc4b1cb3e]-fbc4b1cb3e-0" className="hidden" defaultChecked />
 						<div
 							style={{ position: "absolute", left: "-5000px" }}
 							aria-hidden="true"
@@ -61,7 +61,7 @@ const EmailForm = () => {
 								type="text"
 								name="b_20885e7b5573defa4709ae6a2_fbc4b1cb3e"
 								tabIndex={-1}
-								value=""
+								defaultValue=""
 							/>
 						</div>
 					</label>

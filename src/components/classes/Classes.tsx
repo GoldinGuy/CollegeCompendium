@@ -43,9 +43,9 @@ const Classes = ({
 	}) => {
 	const [filteredClasses, setFilteredClasses] = useState<Class[]>([]);
 	const [dataFilters, setDataFilters] = useState({
-	videos: true,
-	written: true,
-	assignments: true
+		videos: true,
+		written: true,
+		assignments: true
 	});
 	const [page, setPageCount] = useState(0);
 	const startVid = displayPromo ? 1 : 0;
