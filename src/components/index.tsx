@@ -23,5 +23,18 @@ import LargeSearchBar from "./sections/LargeSearch";
 import BookLoader from "./sections/BookLoader";
 import Filters from "./sections/Filters";
 import TextbookGallery from "./sections/TextbookGallery";
+import RemovalForm from "./forms/Removal";
 
-export { Navbar, Footer, ClassGallery, ContributeForm, CTA, LargeSearchBar, BookLoader, Filters, TextbookGallery, ScrollToTop };
+export {
+	Navbar,
+	Footer,
+	ClassGallery,
+	ContributeForm,
+	CTA,
+	LargeSearchBar,
+	BookLoader,
+	Filters,
+	TextbookGallery,
+	ScrollToTop,
+	RemovalForm,
+};

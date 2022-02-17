@@ -14,15 +14,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 You can contact us for more details at team@collegecompendium.org. */
 
 import React from "react";
-import { ContributeForm, CTA } from "../components";
+import { ContributeForm, RemovalForm, CTA } from "../components";
 
-const SubmitPage = React.memo(() => {
+const ContributePage = React.memo(() => {
 	return (
 		<div className="overflow-x-hidden bg-gray-50">
 			<ContributeForm />
+			<RemovalForm />
 			{/* cta  */}
 			<CTA />
 		</div>
 	);
 });
-export default SubmitPage;
+export default ContributePage;

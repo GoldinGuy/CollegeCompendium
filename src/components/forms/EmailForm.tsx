@@ -93,7 +93,7 @@ const EmailForm = () => {
 							}
 						}
 						}
-						className="w-full col-auto btn btn-primary btn-lg lg:col-span-2 rounded-xl text-white bg-fuchsia-400 hover:bg-fuchsia-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 font-semibold"
+						className="w-full col-auto btn btn-primary btn-lg lg:col-span-2 rounded-xl text-white bg-fuchsia-400 hover:bg-fuchsia-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 font-semibold cursor-pointer"
 						type="submit"
 						value="Oh Yeah!"
 						name="subscribe"

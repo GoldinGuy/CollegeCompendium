@@ -24,9 +24,9 @@ import {
 	HomePage,
 	SearchPage,
 	ExplorePage,
-	SubmitPage,
 	TextbookPage,
 	WelcomePage,
+	ContributePage
 } from "./views";
 import { JSON_DATA_VERSION } from "./globals";
 import ScrollArrow from "./components/ScrollArrow";
@@ -131,7 +131,7 @@ function App() {
 						<TextbookPage textbooks={textbooks} loading={loading} />
 					)}
 				/>
-				<Route path="/submit" exact component={SubmitPage} />
+				<Route path="/contribute" exact component={ContributePage} />
 				<Route path="/welcome" exact component={WelcomePage} />
 				<Route path="/tos" exact component={TermsOfService} />
 			</Switch>
