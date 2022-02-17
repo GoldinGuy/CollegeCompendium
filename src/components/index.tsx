@@ -24,6 +24,7 @@ import BookLoader from "./sections/BookLoader";
 import Filters from "./sections/Filters";
 import TextbookGallery from "./sections/TextbookGallery";
 import RemovalForm from "./forms/Removal";
+import Banner from "./Banner";
 
 export {
 	Navbar,
@@ -37,4 +38,5 @@ export {
 	TextbookGallery,
 	ScrollToTop,
 	RemovalForm,
+	Banner
 };

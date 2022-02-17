@@ -15,7 +15,7 @@ You can contact us for more details at team@collegecompendium.org. */
 
 import React, { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
-import { Navbar, Footer, ScrollToTop } from "./components";
+import { Navbar, Footer, ScrollToTop, Banner } from "./components";
 import TermsOfService from "./components/info/Terms";
 import { Class, Textbook } from "./typings/interfaces";
 import posthog from "posthog-js";
@@ -99,6 +99,7 @@ function App() {
 		<ScrollToTop>
 			{/* TODO: enable while under active development */}
 			{/* <Route path="/" exact component={TempSplashPage} /> */}
+			<Banner />
 			<Navbar />
 			<Switch>
 				<Route

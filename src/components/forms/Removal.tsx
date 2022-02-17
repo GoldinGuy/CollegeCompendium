@@ -46,7 +46,7 @@ const RemovalForm = () => {
 				!window.location.href.includes("127.0.0.1") &&
 				process.env.REACT_APP_PH_ID
 			) {
-				posthog?.capture("topic-suggestion", {
+				posthog?.capture("removal-request", {
 					topic: topic,
 				});
 			}

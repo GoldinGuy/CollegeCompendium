@@ -163,7 +163,7 @@ const Classes = ({
 						<img
 							src={imgUrl}
 							alt="header img"
-							className="object-cover w-screen object-center-top h-32 sm:h-full"
+							className="object-cover w-screen object-center-top h-28 sm:h-full"
 							key="header-img"
 						/>
 					) : null}
