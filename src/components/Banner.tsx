@@ -3,9 +3,8 @@ import { useState } from "react";
 import { NEWS_DATA_VERSION } from "../globals";
 
 const Banner = () => {
-	const locData = localStorage?.getItem("news-banner");
 	const [showBanner, setShowBanner] = useState(
-		locData && JSON.parse(locData)?.version === NEWS_DATA_VERSION ? false : true
+		(localStorage?.getItem("news-banner") === NEWS_DATA_VERSION) ? false : true
 	);
 
 	const hideBanner = (act: string) => {
@@ -43,11 +42,11 @@ const Banner = () => {
 							<p className="ml-3 font-medium text-white truncate">
 								<span className="md:hidden">
 									{" "}
-									We launched a course on auditing with FreeCodeCamp!{" "}
+									We launched a course on auditing!{" "}
 								</span>
 								<span className="hidden md:inline">
 									{" "}
-									We just launched a course on auditing with FreeCodeCamp!{" "}
+									We just launched a course on auditing in partnership with FreeCodeCamp!{" "}
 								</span>
 							</p>
 						</div>
