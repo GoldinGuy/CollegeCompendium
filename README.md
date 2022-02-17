@@ -1,13 +1,13 @@
 # College Compendium
 
-📓 **Join over 70000 programmers in 179 countries and learn at your own pace with a curated collection of free, public, open source computer science resources from awesome colleges**
+📓 **Join over 85000 programmers in 179 countries and learn at your own pace with a curated collection of free, public, open source computer science resources from awesome colleges**
 
 
 [![Discuss On Discord][discord]][discord-url]
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues]][issues-url]
 
-<a href="https://www.producthunt.com/posts/college-compendium?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-college-compendium" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=300824&theme=light&period=daily" alt="College Compendium - A collection of 1000+ university CS courses for the curious | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+<a href="https://www.producthunt.com/posts/college-compendium?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-college-compendium" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=300824&theme=light&period=daily" alt="College Compendium - A collection of 700+ university CS courses for the curious | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
 <!-- ### Looking for the CSV/Excel Files? 
 
@@ -19,8 +19,7 @@ College Compendium serves a single purpose: we help you find your
 next computer science resource or curriculum to audit. Regardless of where
 you are in your self-guided learning journey, we've compiled CS course
 resources that are relevant to your skill-level, time-commitment,
-and preferred learning style so you'll
- never hit a dead end.
+and preferred learning style so you'll never hit a dead end.
 
 [Official College Compendium Site](https://collegecompendium.org)
 
