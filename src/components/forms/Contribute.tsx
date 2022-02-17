@@ -42,9 +42,11 @@ const ContributeForm = () => {
 		event.preventDefault();
 		if (topic.length > 0) {
 			console.log("submitting ", topic);
-			posthog?.capture("topic-suggestion", {
-				topic: topic,
-			});
+			if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+				posthog?.capture("topic-suggestion", {
+					topic: topic,
+				});
+			}
 			window.open(
 				`mailto:team@collegecompendium.org?subject=TopicSuggestion&body=${topic}`
 			);

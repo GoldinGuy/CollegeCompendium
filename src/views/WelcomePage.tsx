@@ -63,7 +63,9 @@ const WelcomePage = () => {
 								window.open(
 									`mailto:${email}?subject=College%20Compendium%2C%20an%20Awesome%20CS%20Resource!&body=Hey%2C%20feel%20free%20to%20check%20out%20https%3A%2F%2Fcollegecompendium.org%2C%20a%20free%20open-source%20collection%20of%20college%20CS%20resources%20with%20personal%20content%20recommendations%20and%20weekly%20digests!`
 								);
-								posthog?.capture("referred-compendium");
+								if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+									posthog?.capture("referred-compendium");
+								}
 								// fetch(
 								// 	`https://maker.ifttt.com/trigger/email_received/with/key/${process.env.REACT_APP_IFTTT_KEY}?&value1=${email}`,
 								// 	{

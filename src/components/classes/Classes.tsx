@@ -109,10 +109,12 @@ const Classes = ({
 		}
 		if (_classes.length === 0 && filters && filters?.length > 0) {
 			// console.log(_classes, filters);
-			posthog?.capture("no-classes-found", {
-				filters: filters,
-				dataFilters: dataFilters,
-			});
+			if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+				posthog?.capture("no-classes-found", {
+					filters: filters,
+					dataFilters: dataFilters,
+				});
+			}
 		}
 	}, [filters, classes, dataFilters]);
 
@@ -302,30 +304,36 @@ const Classes = ({
 																...data,
 																written: !data.written,
 															}));
-															posthog?.capture("contains-filtering", {
-																filter: tag,
-																enabled: dataFilters.written,
-															});
+															if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+																posthog?.capture("contains-filtering", {
+																	filter: tag,
+																	enabled: dataFilters.written,
+																});
+															}
 															break;
 														case "Assignments":
 															setDataFilters((data) => ({
 																...data,
 																assignments: !data.assignments,
 															}));
-															posthog?.capture("contains-filtering", {
-																filter: tag,
-																enabled: dataFilters.assignments,
-															});
+															if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+																posthog?.capture("contains-filtering", {
+																	filter: tag,
+																	enabled: dataFilters.assignments,
+																});
+															}
 															break;
 														case "Video Lecture(s)":
 															setDataFilters((data) => ({
 																...data,
 																videos: !data.videos,
 															}));
-															posthog?.capture("contains-filtering", {
-																filter: tag,
-																enabled: dataFilters.videos,
-															});
+															if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+																posthog?.capture("contains-filtering", {
+																	filter: tag,
+																	enabled: dataFilters.videos,
+																});
+															}
 															break;
 														default:
 															console.log("something weird happened");

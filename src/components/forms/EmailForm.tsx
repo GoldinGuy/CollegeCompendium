@@ -75,7 +75,9 @@ const EmailForm = () => {
 								process.env.REACT_APP_IFTTT_KEY
 							) {
 								console.log("Email is valid: ", email);
-								posthog?.capture("joined-mailing-list");
+								if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+									posthog?.capture("joined-mailing-list");
+								}
 								try {
 									fetch(
 										`https://maker.ifttt.com/trigger/email_received/with/key/${process.env.REACT_APP_IFTTT_KEY}?&value1=${email}`,

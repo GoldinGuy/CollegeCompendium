@@ -53,9 +53,11 @@ const TextbookGallery = ({ textbooks, filters }: { textbooks: Textbook[], filter
 									data-attr="textbook"
 									rel="noreferrer"
 									onClick={() => {
-										posthog?.capture("view-textbook", {
-											book: text.book,
-										});
+										if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+											posthog?.capture("view-textbook", {
+												book: text.book,
+											});
+										}
 									}}
 									className="flex justify-center"
 									key={text.book}

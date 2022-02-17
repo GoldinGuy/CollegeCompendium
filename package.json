@@ -56,7 +56,7 @@
 	"devDependencies": {
 		"@types/react-router-dom": "^5.1.7",
 		"autoprefixer": "^9.8.6",
-		"postcss": "^7.0.39",
+		"postcss": "^8.0.0",
 		"tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.4"
 	}
 }

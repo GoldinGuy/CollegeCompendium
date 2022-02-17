@@ -38,9 +38,11 @@ const NavSearchBar = ({ classN }: { classN?: string }) => {
 		let searchTerm = term.toLowerCase().trim().replaceAll(" ", "-");
 
 		if (searchTerm.length > 0) {
-			posthog?.capture("searching", {
-				term: term,
-			});
+			if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+				posthog?.capture("searching", {
+					term: term,
+				});
+			}
 			history.push(
 				`/search?q=${searchTerm}${
 					query.get("table") === "true" ? "&table=true" : ""

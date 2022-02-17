@@ -46,10 +46,12 @@ const ClassItem = React.memo(({ _class, idx }: { _class: Class; idx: number }) =
 				rel="noreferrer"
 				key={_class.id + idx}
 				onClick={() => {
-					posthog?.capture("view-resource", {
-						url: _class.url,
-						title: _class.title,
-					});
+					if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+						posthog?.capture("view-resource", {
+							url: _class.url,
+							title: _class.title,
+						});
+					}
 				}}
 			>
 				<div className="p-3 ph-no-capture">

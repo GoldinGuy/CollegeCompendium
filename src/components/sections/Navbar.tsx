@@ -154,9 +154,11 @@ const Navbar = () => {
 									} else {
 										history.push(`?${query}&table=true`);
 									}
-									posthog?.capture("toggle-layout", {
-										table_enabled: query.get("table") === "true",
-									});
+									if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+										posthog?.capture("toggle-layout", {
+											table_enabled: query.get("table") === "true",
+										});
+									}
 								}}
 							>
 								<FontAwesomeIcon

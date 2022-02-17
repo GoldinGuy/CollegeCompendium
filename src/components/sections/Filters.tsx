@@ -14,9 +14,11 @@ const Filters = (({ filters }: {filters: Tag[]}) => {
 					return (
 						<div
 							onClick={() => {
-								posthog?.capture("filtering", {
-									filter: tag,
-								});
+								if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+									posthog?.capture("filtering", {
+										filter: tag,
+									});
+								}
 								history.push(
 									`/search?q=${tag.toLowerCase().trim().replaceAll(" ", "-")}${
 										query.get("table") === "true" ? "&table=true" : ""
