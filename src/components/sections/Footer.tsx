@@ -61,7 +61,7 @@ const Footer = React.memo(() => {
 					<a
 						className="mb-2 md:mb-0 hover:underline pr-6 flex items-center"
 						data-attr="email-ref"
-						href="mailto:team@collegecompendium.org&subject=College Compendium Inquiry"
+						href="mailto:seth@collegecompendium.org,sam@collegecompendium.org"
 					>
 						Contact{" "}
 						<FontAwesomeIcon icon={faEnvelope} className="ml-2 inline" />

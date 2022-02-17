@@ -147,9 +147,9 @@ const Classes = ({
 					</h2>
 				</div>
 				<section
-					className="px-4 mb-6 mr-6 py-2 text-center"
+					className={`mb-6 mr-6 py-2 ${displayPromo ? '' : 'text-center'}`}
 					id="disclaimer">
-					<p className="mb-6 text-md font-regular italic font-semibold text-gray-500">
+					<p className="mb-6 text-md font-regular italic text-gray-500">
 							Auditing is a self-guided activity. Please do not contact professors.
 					</p>
 				</section>
