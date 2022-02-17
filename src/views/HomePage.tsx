@@ -156,9 +156,9 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 				className="mx-auto px-4 max-w-7xl lg:max-w-9xl mb-6 mr-6 md:mr-16 lg:mr-24"
 				id="disclaimer"
 			>
-				<p className="mb-6 text-md font-regular italic text-gray-500">
-						Auditing is a self-guided activity. Please do not contact professors.
-				</p>
+				{!loading && <p className="mb-6 text-md font-regular italic text-gray-500">
+					Auditing is a self-guided activity. Please do not contact professors.
+				</p>}
 			</section>
 			{/* about  */}
 			<section className="px-4 pt-20 pb-10 mx-auto max-w-7xl" id="about">

@@ -148,13 +148,13 @@ const Classes = ({
 						</span>
 					</h2>
 				</div>
-				<section
+				{filteredClasses.length > 0 && <section
 					className={`mb-1 mr-6 py-2 ${displayPromo ? '' : 'text-center'}`}
 					id="disclaimer">
 					<p className="text-md font-regular italic text-gray-500">
-							Auditing is a self-guided activity. Please do not contact professors.
+						Auditing is a self-guided activity. Please do not contact professors.
 					</p>
-				</section>
+				</section>}
 			</div>
 			{/* table  */}
 			{!asTable ? (
