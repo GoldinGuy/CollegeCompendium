@@ -1,5 +1,5 @@
 /*  College Compendium Component File
-Copyright (C) 2021 Seth Goldin & Samuel Crombie
+Copyright (C) 2022 Seth Goldin & Samuel Crombie
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
 by the Free Software Foundation, either version 3 of the License, or
@@ -61,7 +61,7 @@ const Footer = React.memo(() => {
 					<a
 						className="mb-2 md:mb-0 hover:underline pr-6 flex items-center"
 						data-attr="email-ref"
-						href="mailto:team@collegecompendium.org&subject=College Compendium Inquiry"
+						href="mailto:seth@collegecompendium.org,sam@collegecompendium.org"
 					>
 						Contact{" "}
 						<FontAwesomeIcon icon={faEnvelope} className="ml-2 inline" />

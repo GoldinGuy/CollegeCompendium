@@ -1,5 +1,5 @@
 /*  College Compendium Component File
-Copyright (C) 2021 Seth Goldin & Samuel Crombie
+Copyright (C) 2022 Seth Goldin & Samuel Crombie
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
 by the Free Software Foundation, either version 3 of the License, or
@@ -124,19 +124,19 @@ const Navbar = () => {
 								}
 							/>
 						</Link>
-						{/* <Link
+						<Link
 							className="my-1 text-md font-medium text-gray-700 dark:text-gray-200 hover:text-fuchsia-500 dark:hover:text-fuchsia-400  md:mx-4 md:my-0 relative"
-							to="/submit"
+							to="/contribute"
 						>
-							Submit
+							Contribute
 							<span
 								className={
-									loc.pathname === "/submit"
+									loc.pathname === "/contribute"
 										? "absolute bottom-0 left-0 w-full h-1 -mb-2 bg-fuchsia-300 rounded-full"
 										: "hidden"
 								}
 							/>
-						</Link> */}
+						</Link>
 						<NavSearchBar
 							classN={loc.pathname === "/explore" ? "invisible w-0" : ""}
 						/>
@@ -154,9 +154,14 @@ const Navbar = () => {
 									} else {
 										history.push(`?${query}&table=true`);
 									}
-									posthog?.capture("toggle-layout", {
-										table_enabled: query.get("table") === "true",
-									});
+									if (
+										!window.location.href.includes("127.0.0.1") &&
+										process.env.REACT_APP_PH_ID
+									) {
+										posthog?.capture("toggle-layout", {
+											table_enabled: query.get("table") === "true",
+										});
+									}
 								}}
 							>
 								<FontAwesomeIcon

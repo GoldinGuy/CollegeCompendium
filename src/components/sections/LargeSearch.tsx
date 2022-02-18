@@ -20,9 +20,11 @@ const LargeSearchBar = ({ asTable }: { asTable: boolean }) => {
 		term = term.toLowerCase().trim().replaceAll(" ", "-");
 
 		if (term.length > 0) {
-			posthog?.capture("searching", {
-				term: term,
-			});
+			if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+				posthog?.capture("searching", {
+					term: term,
+				});
+			}
 			// TODO: addFilter(term);
 			history.push(`/search?q=${term}${asTable ? "&table=true" : ""}`);
 			setQuery("");

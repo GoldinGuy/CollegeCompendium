@@ -1,5 +1,5 @@
 /*  College Compendium Component File
-Copyright (C) 2021 Seth Goldin & Samuel Crombie
+Copyright (C) 2022 Seth Goldin & Samuel Crombie
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
 by the Free Software Foundation, either version 3 of the License, or
@@ -43,9 +43,9 @@ const Classes = ({
 	}) => {
 	const [filteredClasses, setFilteredClasses] = useState<Class[]>([]);
 	const [dataFilters, setDataFilters] = useState({
-	videos: true,
-	written: true,
-	assignments: true
+		videos: true,
+		written: true,
+		assignments: true
 	});
 	const [page, setPageCount] = useState(0);
 	const startVid = displayPromo ? 1 : 0;
@@ -109,10 +109,12 @@ const Classes = ({
 		}
 		if (_classes.length === 0 && filters && filters?.length > 0) {
 			// console.log(_classes, filters);
-			posthog?.capture("no-classes-found", {
-				filters: filters,
-				dataFilters: dataFilters,
-			});
+			if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+				posthog?.capture("no-classes-found", {
+					filters: filters,
+					dataFilters: dataFilters,
+				});
+			}
 		}
 	}, [filters, classes, dataFilters]);
 
@@ -146,6 +148,13 @@ const Classes = ({
 						</span>
 					</h2>
 				</div>
+				{filteredClasses.length > 0 && <section
+					className={`mb-1 mr-6 py-2 ${displayPromo ? '' : 'text-center'}`}
+					id="disclaimer">
+					<p className="text-md font-regular italic text-gray-500">
+						Auditing is a self-guided activity. Please do not contact professors.
+					</p>
+				</section>}
 			</div>
 			{/* table  */}
 			{!asTable ? (
@@ -154,7 +163,7 @@ const Classes = ({
 						<img
 							src={imgUrl}
 							alt="header img"
-							className="object-cover w-screen object-center-top h-32 sm:h-full"
+							className="object-cover w-screen object-center-top h-28 sm:h-full"
 							key="header-img"
 						/>
 					) : null}
@@ -295,30 +304,36 @@ const Classes = ({
 																...data,
 																written: !data.written,
 															}));
-															posthog?.capture("contains-filtering", {
-																filter: tag,
-																enabled: dataFilters.written,
-															});
+															if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+																posthog?.capture("contains-filtering", {
+																	filter: tag,
+																	enabled: dataFilters.written,
+																});
+															}
 															break;
 														case "Assignments":
 															setDataFilters((data) => ({
 																...data,
 																assignments: !data.assignments,
 															}));
-															posthog?.capture("contains-filtering", {
-																filter: tag,
-																enabled: dataFilters.assignments,
-															});
+															if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+																posthog?.capture("contains-filtering", {
+																	filter: tag,
+																	enabled: dataFilters.assignments,
+																});
+															}
 															break;
 														case "Video Lecture(s)":
 															setDataFilters((data) => ({
 																...data,
 																videos: !data.videos,
 															}));
-															posthog?.capture("contains-filtering", {
-																filter: tag,
-																enabled: dataFilters.videos,
-															});
+															if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+																posthog?.capture("contains-filtering", {
+																	filter: tag,
+																	enabled: dataFilters.videos,
+																});
+															}
 															break;
 														default:
 															console.log("something weird happened");

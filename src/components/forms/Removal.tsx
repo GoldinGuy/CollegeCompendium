@@ -17,7 +17,7 @@ import posthog from "posthog-js";
 import React, { useState } from "react";
 import { FUNNY_TOPICS } from "../../globals";
 
-const ContributeForm = () => {
+const RemovalForm = () => {
 	// const [url, setUrl] = useState("");
 	const [topic, setTopic] = useState("");
 
@@ -29,12 +29,12 @@ const ContributeForm = () => {
 	// 	const newUrl = event.target.value;
 	// 	setUrl(newUrl);
 	// };
-		const handleChangeInputTopic = async (
-			event: React.ChangeEvent<HTMLInputElement>
-		): Promise<void> => {
-			const newTopic = event.target.value;
-			setTopic(newTopic);
-		};
+	const handleChangeInputTopic = async (
+		event: React.ChangeEvent<HTMLInputElement>
+	): Promise<void> => {
+		const newTopic = event.target.value;
+		setTopic(newTopic);
+	};
 
 	const handleSubmit = async (
 		event: React.FormEvent<HTMLButtonElement>
@@ -42,20 +42,22 @@ const ContributeForm = () => {
 		event.preventDefault();
 		if (topic.length > 0) {
 			console.log("submitting ", topic);
-			if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
-				posthog?.capture("topic-suggestion", {
+			if (
+				!window.location.href.includes("127.0.0.1") &&
+				process.env.REACT_APP_PH_ID
+			) {
+				posthog?.capture("removal-request", {
 					topic: topic,
 				});
 			}
 			window.open(
-				`mailto:seth@collegecompendium.org,sam@collegecompendium.org?subject=TopicSuggestion&body=${topic}`
+				`mailto:seth@collegecompendium.org,sam@collegecompendium.org?subject=RemovalRequest&body=${topic}`
 			);
 			setError(false);
 			setTopic("");
 		} else {
 			setError(true);
 		}
-
 	};
 
 	return (
@@ -70,9 +72,8 @@ const ContributeForm = () => {
 							className="mb-6 text-center text-3xl leading-9 font-extrabold text-dark"
 							key="contribute"
 						>
-							Don't see what you're looking for?
-							{/* <br />
-							Share it with us! */}
+							Want us to remove content from the Compendium?
+						
 						</h2>
 					</div>
 
@@ -88,7 +89,7 @@ const ContributeForm = () => {
 							onChange={handleChangeInputTopic}
 							value={topic}
 							type="text"
-							data-attr="topic-submission-form"
+							data-attr="removal-request-form"
 							placeholder={
 								FUNNY_TOPICS[Math.floor(Math.random() * FUNNY_TOPICS.length)]
 							}
@@ -149,11 +150,11 @@ const ContributeForm = () => {
 					onClick={handleSubmit}
 					className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-lg font-medium rounded-md text-white bg-fuchsia-400 hover:bg-fuchsia-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
 				>
-					Share it with us!
+					Let us know!
 				</button>
 			</div>
 		</div>
 	);
 };
 
-export default ContributeForm;
+export default RemovalForm;

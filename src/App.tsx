@@ -1,5 +1,5 @@
 /*  College Compendium Component File
-Copyright (C) 2021 Seth Goldin & Samuel Crombie
+Copyright (C) 2022 Seth Goldin & Samuel Crombie
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
 by the Free Software Foundation, either version 3 of the License, or
@@ -15,7 +15,7 @@ You can contact us for more details at team@collegecompendium.org. */
 
 import React, { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
-import { Navbar, Footer, ScrollToTop } from "./components";
+import { Navbar, Footer, ScrollToTop, Banner } from "./components";
 import TermsOfService from "./components/info/Terms";
 import { Class, Textbook } from "./typings/interfaces";
 import posthog from "posthog-js";
@@ -24,9 +24,9 @@ import {
 	HomePage,
 	SearchPage,
 	ExplorePage,
-	SubmitPage,
 	TextbookPage,
 	WelcomePage,
+	ContributePage
 } from "./views";
 import { JSON_DATA_VERSION } from "./globals";
 import ScrollArrow from "./components/ScrollArrow";
@@ -99,6 +99,7 @@ function App() {
 		<ScrollToTop>
 			{/* TODO: enable while under active development */}
 			{/* <Route path="/" exact component={TempSplashPage} /> */}
+			<Banner />
 			<Navbar />
 			<Switch>
 				<Route
@@ -131,7 +132,7 @@ function App() {
 						<TextbookPage textbooks={textbooks} loading={loading} />
 					)}
 				/>
-				<Route path="/submit" exact component={SubmitPage} />
+				<Route path="/contribute" exact component={ContributePage} />
 				<Route path="/welcome" exact component={WelcomePage} />
 				<Route path="/tos" exact component={TermsOfService} />
 			</Switch>

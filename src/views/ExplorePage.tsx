@@ -1,5 +1,5 @@
 /*  College Compendium Component File
-Copyright (C) 2021 Seth Goldin & Samuel Crombie
+Copyright (C) 2022 Seth Goldin & Samuel Crombie
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
 by the Free Software Foundation, either version 3 of the License, or
@@ -16,7 +16,7 @@ You can contact us for more details at team@collegecompendium.org. */
 import Classes from "../components/classes/Classes";
 import { Class, Textbook } from "../typings/interfaces";
 import { shuffle, useQuery } from "../utils";
-import { ContributeForm, Filters, LargeSearchBar, TextbookGallery } from "../components";
+import { Filters, LargeSearchBar, TextbookGallery } from "../components";
 import { CLASS_TAGS } from "../globals";
 import EmailForm from "../components/forms/EmailForm";
 

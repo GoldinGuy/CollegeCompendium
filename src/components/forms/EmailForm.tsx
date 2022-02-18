@@ -1,5 +1,5 @@
 /*  College Compendium Component File
-Copyright (C) 2021 Seth Goldin & Samuel Crombie
+Copyright (C) 2022 Seth Goldin & Samuel Crombie
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
 by the Free Software Foundation, either version 3 of the License, or
@@ -52,7 +52,7 @@ const EmailForm = () => {
 							onChange={(e) => setEmail(e.target.value)}
 							value={email}
 						/>
-						<input type="checkbox" value="1" name="group[fbc4b1cb3e][1]" id="mce-group[fbc4b1cb3e]-fbc4b1cb3e-0" className="hidden" checked/>
+						<input type="checkbox" value="1" name="group[fbc4b1cb3e][1]" id="mce-group[fbc4b1cb3e]-fbc4b1cb3e-0" className="hidden" defaultChecked />
 						<div
 							style={{ position: "absolute", left: "-5000px" }}
 							aria-hidden="true"
@@ -61,7 +61,7 @@ const EmailForm = () => {
 								type="text"
 								name="b_20885e7b5573defa4709ae6a2_fbc4b1cb3e"
 								tabIndex={-1}
-								value=""
+								defaultValue=""
 							/>
 						</div>
 					</label>
@@ -75,19 +75,25 @@ const EmailForm = () => {
 								process.env.REACT_APP_IFTTT_KEY
 							) {
 								console.log("Email is valid: ", email);
-								posthog?.capture("joined-mailing-list");
-								fetch(
-									`https://maker.ifttt.com/trigger/email_received/with/key/${process.env.REACT_APP_IFTTT_KEY}?&value1=${email}`,
-									{
-										method: "POST",
-										mode: "no-cors",
-									}
-								);
+								if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+									posthog?.capture("joined-mailing-list");
+								}
+								try {
+									fetch(
+										`https://maker.ifttt.com/trigger/email_received/with/key/${process.env.REACT_APP_IFTTT_KEY}?&value1=${email}`,
+										{
+											method: "POST",
+											mode: "no-cors",
+										}
+									);
+								} catch (e) {
+									console.log(e)
+								}
 								setEmail("");
 							}
 						}
 						}
-						className="w-full col-auto btn btn-primary btn-lg lg:col-span-2 rounded-xl text-white bg-fuchsia-400 hover:bg-fuchsia-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 font-semibold"
+						className="w-full col-auto btn btn-primary btn-lg lg:col-span-2 rounded-xl text-white bg-fuchsia-400 hover:bg-fuchsia-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 font-semibold cursor-pointer"
 						type="submit"
 						value="Oh Yeah!"
 						name="subscribe"

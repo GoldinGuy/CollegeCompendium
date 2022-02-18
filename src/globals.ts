@@ -1,6 +1,7 @@
 import { Tag } from "./typings/interfaces";
 
 export const JSON_DATA_VERSION = "4";
+export const NEWS_DATA_VERSION = "1";
 export const DATA_TAGS: Tag[] = ["Written Notes", "Assignments", "Video Lecture(s)"];
 export const FUNNY_TOPICS = [
 	"Discrete Computational Nanotech",

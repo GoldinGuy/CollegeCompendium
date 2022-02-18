@@ -1,5 +1,5 @@
 /*  College Compendium Component File
-Copyright (C) 2021 Seth Goldin & Samuel Crombie
+Copyright (C) 2022 Seth Goldin & Samuel Crombie
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
 by the Free Software Foundation, either version 3 of the License, or
@@ -23,5 +23,20 @@ import LargeSearchBar from "./sections/LargeSearch";
 import BookLoader from "./sections/BookLoader";
 import Filters from "./sections/Filters";
 import TextbookGallery from "./sections/TextbookGallery";
+import RemovalForm from "./forms/Removal";
+import Banner from "./Banner";
 
-export { Navbar, Footer, ClassGallery, ContributeForm, CTA, LargeSearchBar, BookLoader, Filters, TextbookGallery, ScrollToTop };
+export {
+	Navbar,
+	Footer,
+	ClassGallery,
+	ContributeForm,
+	CTA,
+	LargeSearchBar,
+	BookLoader,
+	Filters,
+	TextbookGallery,
+	ScrollToTop,
+	RemovalForm,
+	Banner
+};

@@ -34,9 +34,11 @@ const TextbookPage = ({
 								<a
 									href={`#${cat}`}
 									onClick={() => {
-										posthog?.capture("filter-textbooks", {
-											filter: cat,
-										});
+										if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+											posthog?.capture("filter-textbooks", {
+												filter: cat,
+											});
+										}
 									}}
 									className="sm:ml-4 mx-2 sm:mx-0 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mt-1 bg-fuchsia-200 text-fuchsia-700 rounded-full cursor-pointer"
 									key={cat}
@@ -85,9 +87,11 @@ const TextbookPage = ({
 															className="font-normal flex flex-col py-1"
 															key={text.book + i}
 															onClick={() => {
-																posthog?.capture("view-textbook", {
-																	book: text.book,
-																});
+																if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+																	posthog?.capture("view-textbook", {
+																		book: text.book,
+																	});
+																}
 															}}
 														>
 															<div className="text-sm ani-under w-max">
@@ -130,9 +134,11 @@ const TextbookPage = ({
 																.replace(/\s/g, "-")}
 															id={text.book.toLowerCase().replace(/\s/g, "-")}
 															onClick={() => {
-																posthog?.capture("view-textbook", {
-																	book: text.book,
-																});
+																if (!window.location.href.includes('127.0.0.1') && process.env.REACT_APP_PH_ID) {
+																	posthog?.capture("view-textbook", {
+																		book: text.book,
+																	});
+																}
 															}}
 															className="flex justify-center"
 															key={text.book + j}

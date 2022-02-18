@@ -1,5 +1,5 @@
 /*  College Compendium Component File
-Copyright (C) 2021 Seth Goldin & Samuel Crombie
+Copyright (C) 2022 Seth Goldin & Samuel Crombie
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
 by the Free Software Foundation, either version 3 of the License, or
@@ -39,8 +39,7 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 						Learn at your own pace with a curated collection of{" "}
 						<br className="hidden sm:flex" />
 						<strong>
-							public computer science resources from
-							awesome colleges
+							public computer science resources from awesome colleges
 						</strong>
 					</p>
 					<div className="mb-4 space-x-0 md:space-x-2 md:mb-6">
@@ -152,7 +151,17 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 				</p>
 			</section>
 			<ClassGallery classes={featured} loading={loading} />
-
+			<section
+				className="mx-auto px-4 max-w-7xl lg:max-w-9xl mb-6 mr-6 md:mr-16 lg:mr-24"
+				id="disclaimer"
+			>
+				{!loading && (
+					<p className="mb-6 text-md font-regular italic text-gray-500">
+						Auditing is a self-guided activity. Please do not contact
+						professors.
+					</p>
+				)}
+			</section>
 			{/* about  */}
 			<section className="px-4 pt-20 pb-10 mx-auto max-w-7xl" id="about">
 				<div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
@@ -195,7 +204,8 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 							intellectually curious people across the world. Learning and
 							applying computer science skills can be a difficult journey, which
 							is why we've created a catalog of public classes with resources to
-							help you achieve your personal goals. We thank <a
+							help you achieve your personal goals. We thank{" "}
+							<a
 								href="https://jsonbin.io/open-source"
 								target="_blank"
 								rel="noreferrer"
@@ -203,7 +213,8 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 								data-attr="jsonbin-ref"
 							>
 								JSONBin.io
-							</a> for supporting College Compendium.
+							</a>{" "}
+							for supporting College Compendium.
 						</p>
 						<a
 							className="w-full btn btn-dark text-white font-semibold bg-fuchsia-400  hover:bg-fuchsia-500 px-6 py-3 btn-lg sm:w-auto  transition duration-500 ease-in-out transform rounded shadow-xl hover:shadow-xl hover:scale-105"
@@ -244,7 +255,7 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 							</span>
 						</h2>
 						<p className="mt-3 text-3xl font-extrabold text-white">
-							Join Over 70000 Programmers In 179 Countries Learning with College
+							Join Over 85000 Programmers In 179 Countries Learning with College
 							Compendium
 						</p>
 						<p className="mt-5 text-lg text-gray-300">
