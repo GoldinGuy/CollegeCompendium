@@ -1,6 +1,6 @@
 # College Compendium
 
-📓 **Join over 85000 programmers in 179 countries and learn at your own pace with a curated collection of free, public, open source computer science resources from awesome colleges**
+📓 **Join over 100000 programmers in 179 countries and learn at your own pace with a curated collection of free, public, open source computer science resources from awesome colleges**
 
 
 [![Discuss On Discord][discord]][discord-url]

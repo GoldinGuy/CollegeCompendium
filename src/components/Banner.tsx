@@ -42,7 +42,7 @@ const Banner = () => {
 							<p className="ml-3 font-medium text-white truncate">
 								<span className="md:hidden">
 									{" "}
-									We launched a course on auditing!{" "}
+									We launched a FreeCodeCamp course!{" "}
 								</span>
 								<span className="hidden md:inline">
 									{" "}

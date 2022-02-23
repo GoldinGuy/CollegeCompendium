@@ -255,7 +255,7 @@ const HomePage = React.memo(({ featured, loading }: { featured: Class[]; loading
 							</span>
 						</h2>
 						<p className="mt-3 text-3xl font-extrabold text-white">
-							Join Over 85000 Programmers In 179 Countries Learning with College
+							Join Over 100000 Programmers In 179 Countries Learning with College
 							Compendium
 						</p>
 						<p className="mt-5 text-lg text-gray-300">
