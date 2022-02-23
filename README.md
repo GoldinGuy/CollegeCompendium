@@ -22,6 +22,7 @@ resources that are relevant to your skill-level, time-commitment,
 and preferred learning style so you'll never hit a dead end.
 
 [Official College Compendium Site](https://collegecompendium.org)
+
 [FreeCodeCamp Course "All About Auditing"](https://www.freecodecamp.org/news/how-to-audit-a-class-university-course/)
 
 ## Development setup
